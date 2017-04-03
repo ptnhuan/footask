@@ -166,6 +166,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Footask\Admin\AdminServiceProvider::class,
 
         //
 
