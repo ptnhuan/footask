@@ -1,6 +1,6 @@
 <?php
 
-namespace Group_F\Front;
+namespace Footask\Front;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ class FrontServiceProvider extends ServiceProvider
     {
         //
         include __DIR__ . '/routes.php';
-        $this->app->make('Group_F\Front\Controllers\Front\FrontController');
+        $this->app->make('Footask\Front\Controllers\Front\FrontController');
 
     }
 }

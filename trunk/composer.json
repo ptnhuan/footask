@@ -21,7 +21,8 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "Footask\\Admin\\": "packages/admin/src"
+            "Footask\\Admin\\": "packages/admin/src",
+            "Footask\\Front\\": "packages/front/src"
 
         }
     },
