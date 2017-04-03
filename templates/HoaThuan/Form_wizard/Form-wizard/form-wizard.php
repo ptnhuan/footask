@@ -228,13 +228,11 @@
                                                         <h5>&nbsp;</h5>
                                                     </div>
                                                     <div id="level" class="collapse">
-                                                        <div class="c_level">
-                                                            <ul class="tow">
-                                                                <li><a href="#">Level Two</a></li>
-                                                                <li><a href="#">Level Two</a></li>
-                                                                <li><a href="#">Level Two</a></li>
-                                                            </ul>                 
-                                                        </div>
+                                                        <ul class="tow">
+                                                            <li><a href="#">Level Two</a></li>
+                                                            <li><a href="#">Level Two</a></li>
+                                                            <li><a href="#">Level Two</a></li>
+                                                        </ul>                 
                                                     </div>
 
 
