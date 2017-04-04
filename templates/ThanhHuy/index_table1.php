@@ -108,7 +108,7 @@
                                         </a>
                                     </div>
                                     <ul class="child-menu" id="child-tables" style="display: block;">
-                                        <li class="current-page"><a href="index_table1.php">Tables</a></li>
+                                        <li class="current-page" style="margin-top: 3px;"><a href="index_table1.php">Tables</a></li>
                                         <li><a href="index_table2.php">Table Dynamic</a></li>
                                     </ul>
                                 </li>
@@ -225,6 +225,66 @@
                                 <a href="#" title="Off"><i class="glyphicon glyphicon-off"></i></a>
                             </div>
                         </div>
+                    </div>
+                    <div class="nav-collapse">
+                        <div class="logo-collapse">
+                            <a href="#" class=""><i class="fa fa-paw"></i></a>
+                        </div>
+                        <nav class="menu-collapse">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-home"></i><small>Home</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-edit"></i><small>Form</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-desktop"></i><small>UIE</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-table"></i><small>Tables</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-bar-chart-o"></i><small>Data Present</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-clone"></i><small>Layouts</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-bug"></i><small>Add Pages</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-windows"></i><small>Extras</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sitemap"></i><small>Mullevel Menu</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-laptop"></i><small>Landing page</small>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
                 <div class="col-md-10 page-content-wrraper">

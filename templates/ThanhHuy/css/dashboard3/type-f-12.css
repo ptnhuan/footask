@@ -148,6 +148,9 @@
 .type-f-12 .container-fluid .sidebar-left .menu-vertical .sidebar-footer a:hover {
   background-color: #425567;
 }
+.type-f-12 .container-fluid .nav-collapse {
+  display: none;
+}
 .type-f-12 .container-fluid .top-nav .nav_menu {
   background-color: #ededed;
   border-bottom: 1px solid #d9dee4;
@@ -692,8 +695,47 @@
   }
 }
 .type-f-12.toggled {
-  margin-left: -270px;
+  margin-left: -190px;
 }
 .type-f-12.toggled #chart_plot_03 {
   width: 1300px;
+}
+.type-f-12.toggled .sidebar-left {
+  display: none;
+}
+.type-f-12.toggled .nav-collapse {
+  display: block;
+  margin-left: 192px;
+}
+.type-f-12.toggled .nav-collapse .logo-collapse {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin-top: 12px;
+}
+.type-f-12.toggled .nav-collapse .logo-collapse a {
+  font-size: 27px;
+  margin: 25px 0 0 3px;
+  color: #ffffff;
+}
+.type-f-12.toggled .nav-collapse nav.menu-collapse {
+  margin: 35px 0;
+  text-align: center;
+}
+.type-f-12.toggled .nav-collapse nav.menu-collapse ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.type-f-12.toggled .nav-collapse nav.menu-collapse ul li {
+  margin: 25px 0;
+}
+.type-f-12.toggled .nav-collapse nav.menu-collapse ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.type-f-12.toggled .nav-collapse nav.menu-collapse ul li a i {
+  font-size: 25px;
+}
+.type-f-12.toggled .nav-collapse nav.menu-collapse ul li a small {
+  font-size: 10px;
 }

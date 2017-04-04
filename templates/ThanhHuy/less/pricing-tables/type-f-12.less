@@ -166,6 +166,9 @@ and open the template in the editor.
                 }
             }
         }
+        .nav-collapse {
+            display: none;
+        }
         .top-nav {
             .nav_menu {
                 background-color: #ededed;
@@ -511,12 +514,53 @@ and open the template in the editor.
     }
 }
 .type-f-12.toggled {
-    margin-left: -270px;
+    margin-left: -190px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    .sidebar-left {
-        display: none;
+    .sidebar-left {        
+        display:  none;
+    }
+    .nav-collapse {
+        display: block;
+        margin-left: 192px;        
+        .logo-collapse {
+            border: 1px solid #fff;
+            border-radius: 50px;
+            margin-top: 12px;
+            a{               
+                font-size: 27px;
+                margin: 25px 0 0 3px;
+                color: #ffffff;
+            }
+        }
+
+        nav.menu-collapse {
+            margin: 35px 0;
+            text-align: center;
+
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                li {
+                    margin: 25px 0;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        i {
+                            font-size: 25px;
+
+                        }
+                        small {
+                            font-size: 10px;
+                        }
+
+                    }
+                }
+            }
+        }
     }
 }
