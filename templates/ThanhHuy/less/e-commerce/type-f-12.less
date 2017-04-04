@@ -557,29 +557,6 @@ and open the template in the editor.
     }
 
 }
-@media (max-width: 980px) {
-    .sidebar-left {
-        display: none;
-    }
-    .content {
-        .content-left {
-            h3 {
-                font-size: 16px;
-            }
-        }
-        .content-right {
-            margin-top: -5px;
-        }
-    }
-    .product-img {
-        text-align: center;
-    }
-    .product-name {
-        h3 {
-            display: inline-block;
-        }        
-    }
-}
 .type-f-12.toggled {
     margin-left: -190px;
     -webkit-transition: all 0.5s ease;
@@ -628,6 +605,35 @@ and open the template in the editor.
                     }
                 }
             }
+        }
+    }
+}
+@media (max-width: 980px) {
+    .sidebar-left {
+        display: none;
+    }
+    .content {
+        .content-left {
+            h3 {
+                font-size: 16px;
+            }
+        }
+        .content-right {
+            margin-top: -5px;
+        }
+    }
+    .product-img {
+        text-align: center;
+    }
+    .product-name {
+        h3 {
+            display: inline-block;
+        }        
+    }
+    .type-f-12.toggled {
+        margin-left: 75px;
+        .nav-collapse {
+            display: none;
         }
     }
 }

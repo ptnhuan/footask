@@ -430,11 +430,6 @@
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-@media (max-width: 980px) {
-  .sidebar-left {
-    display: none;
-  }
-}
 .type-f-12.toggled {
   margin-left: -190px;
   -webkit-transition: all 0.5s ease;
@@ -480,4 +475,15 @@
 }
 .type-f-12.toggled .nav-collapse nav.menu-collapse ul li a small {
   font-size: 10px;
+}
+@media (max-width: 980px) {
+  .sidebar-left {
+    display: none;
+  }
+  .type-f-12.toggled {
+    margin-left: 75px;
+  }
+  .type-f-12.toggled .nav-collapse {
+    display: none;
+  }
 }
