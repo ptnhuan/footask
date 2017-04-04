@@ -7,6 +7,9 @@ and open the template in the editor.
     Created on : Mar 27, 2017, 4:59:45 PM
     Author     : ITLAB
 */
+@text-decoration: none;
+@background-color: #2A3F54;
+@float: left;
 .type-f-12 {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -15,12 +18,12 @@ and open the template in the editor.
 
     .container-fluid {
         .sidebar-left {
-            background-color: #2A3F54;
+            background-color: @background-color;
             .logo {
                 text-align: center;
                 line-height: 60px;
                 a {
-                    text-decoration: none;
+                    text-decoration: @text-decoration;
                     color: #fff;
                     .fa-paw {
                         border: 1px solid #e0e0e0;
@@ -38,12 +41,12 @@ and open the template in the editor.
                     width: 30%;
                     border: 4px solid #fff;
                     border-radius: 50%;
-                    float: left;
+                    float: @float;
 
                 }
                 .welcome-name {
                     color: #ffffff;
-                    float: left;
+                    float: @float;
                     font-size: 15px;
                     text-align: center;
                     margin-left: 25px;
@@ -134,7 +137,7 @@ and open the template in the editor.
                         width: 20.5%;
                         font-size: 13px;
                         display: block;
-                        float: left;
+                        float: @float;
                         background: #172D44;
                         cursor: pointer;
                         i {
@@ -220,7 +223,7 @@ and open the template in the editor.
                                 }
                                 .image {
                                     img {
-                                        float: left;
+                                        float: @float;
                                         margin-right: 10px;
                                         width: 11%;
                                     }
@@ -318,7 +321,7 @@ and open the template in the editor.
                 padding: 1px 5px 6px;
                 h3 {
                     margin: 5px 0 6px;
-                    float: left;
+                    float: @float;
                     display: block;
                     font-size: 18px;
                 }
@@ -329,7 +332,7 @@ and open the template in the editor.
                     list-style: none;
                     margin-top: 5px;
                     li {
-                        float: left;
+                        float: @float;
                         cursor: pointer;
                         a {
                             padding: 5px;
@@ -355,7 +358,7 @@ and open the template in the editor.
                     a {
                         width: 100px;
                         height: 100px;
-                        float: left;
+                        float: @float;
                         margin: 10px;
                         border: 1px solid #e5e5e5;
                         img {
@@ -380,7 +383,7 @@ and open the template in the editor.
                             li {
                                 margin: 0 10px; 
                                 padding: 0 5px;
-                                float: left;
+                                float: @float;
                                 p {
                                     margin-bottom: 0;
                                 }
@@ -419,7 +422,7 @@ and open the template in the editor.
                             li {
                                 margin: 0; 
                                 padding: 0 5px;
-                                float: left;
+                                float: @float;
                                 a.btn-size {
                                     margin-bottom: 5px;
                                     margin-right: 5px;
@@ -478,7 +481,7 @@ and open the template in the editor.
                             margin-left: -5px;
                             list-style: none;
                             li {
-                                float: left;
+                                float: @float;
                                 padding: 0 4px;
                                 margin: 0;
                                 a {
