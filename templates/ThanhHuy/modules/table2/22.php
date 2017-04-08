@@ -11,7 +11,6 @@
 
         <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="../../css/font-awesome.min.css">
-        <link href="../../css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
         <?php
         if (!class_exists('lessc')) {
@@ -24,9 +23,10 @@
         <script src="../../js/table2/22/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/table2/22/bootstrap.min.js" type="text/javascript"></script>
 
-        <script src="../../js/table2/22/jquery.dataTables.min.js" type="text/javascript"></script>
-        <script src="../../js/table2/22/dataTables.bootstrap.min.js" type="text/javascript"></script>
         <script src="../../js/table2/22/custom-script.js" type="text/javascript"></script>
+        <script src="../../js/table2/22/search-table.js" type="text/javascript"></script>
+        <script src="../../js/table2/22/pagination-table.js" type="text/javascript"></script>
+        <script src="../../js/table2/22/close-panel.js" type="text/javascript"></script>
 
     </head>
 
@@ -70,7 +70,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="close-link">
+                                        <a class="close-link" onclick="closePanel();">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
@@ -82,18 +82,39 @@
 
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <table id="datatable" class="table  table-bordered ">
+                                        <div class="show-data">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <span class="data">
+                                                        Show 
+                                                        <select class="form-control form-select">
+                                                            <option value="5">5</option>
+                                                            <option value="5">10</option>
+                                                            <option value="5">15</option>
+                                                            <option value="5">20</option>
+                                                        </select>
+                                                        entries 
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <span class="search-query">
+                                                        Search: <input type="search" id="input" onkeyup="searchDataTable();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="data-table table table-bordered" id="table">
                                             <thead>
-                                                <tr role="row">
-                                                    <th style="width: 160px;">Name</th>
-                                                    <th style="width: 261px;">Position</th>
-                                                    <th style="width: 118px;">Office</th>
-                                                    <th style="width: 59px;">Age</th>
-                                                    <th style="width: 113px;">Start date</th>
-                                                    <th style="width: 87px;">Salary</th>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Position</th>
+                                                    <th>Office</th>
+                                                    <th>Age</th>
+                                                    <th>Start date</th>
+                                                    <th>Salary</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody id="myDataTable">
                                                 <tr>
                                                     <td>Ashton Cox</td>
                                                     <td>Junior Technical Author</td>
@@ -166,7 +187,23 @@
                                                     <td>2011/12/06</td>
                                                     <td>$145,600</td>
                                                 </tr>
-                                                <tr >
+                                                <tr>
+                                                    <td>Cedric Kelly</td>
+                                                    <td>Senior Javascript Developer</td>
+                                                    <td>Edinburgh</td>
+                                                    <td>22</td>
+                                                    <td>2012/03/29</td>
+                                                    <td>$433,060</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cedric Kelly</td>
+                                                    <td>Senior Javascript Developer</td>
+                                                    <td>Edinburgh</td>
+                                                    <td>22</td>
+                                                    <td>2012/03/29</td>
+                                                    <td>$433,060</td>
+                                                </tr>
+                                                <tr>
                                                     <td>Cedric Kelly</td>
                                                     <td>Senior Javascript Developer</td>
                                                     <td>Edinburgh</td>
@@ -176,6 +213,15 @@
                                                 </tr>
                                             </tbody>
                                         </table>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p>Showing 1 to 5 of 12 entries</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="pagination page" id="myPager">
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
