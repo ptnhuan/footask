@@ -6,8 +6,8 @@
 
 
 $(document).ready(function (e) {
-    $("#close-link").click(function (e) {
+    $("#collapse-link").click(function (e) {
         e.preventDefault();
-        $(".admin-panel").toggleClass("toggled");
+        $(".admin-content").toggleClass("toggled");
     });
 });

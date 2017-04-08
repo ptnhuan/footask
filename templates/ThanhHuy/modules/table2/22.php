@@ -23,10 +23,10 @@
         <script src="../../js/table2/22/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/table2/22/bootstrap.min.js" type="text/javascript"></script>
 
-        <script src="../../js/table2/22/custom-script.js" type="text/javascript"></script>
         <script src="../../js/table2/22/search-table.js" type="text/javascript"></script>
         <script src="../../js/table2/22/pagination-table.js" type="text/javascript"></script>
         <script src="../../js/table2/22/close-panel.js" type="text/javascript"></script>
+        <script src="../../js/table2/22/collapse-panel.js" type="text/javascript"></script>
 
     </head>
 
@@ -56,7 +56,7 @@
                                 </h3>
                                 <ul class="items">
                                     <li>
-                                        <a class="collapse-link">
+                                        <a class="collapse-link toggled" id="collapse-link">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
@@ -70,7 +70,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="close-link" onclick="closePanel();">
+                                        <a class="close-link toggled" id="close-link">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
