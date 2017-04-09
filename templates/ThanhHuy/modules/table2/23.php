@@ -96,12 +96,12 @@
                                                     <th style="width: 34px;">
                                                         <input type="checkbox" class="item" onclick="checkAll('item', this)">
                                                     </th>
-                                                    <th style="width: 141px;">Name</th>
-                                                    <th style="width: 233px;">Position</th>
-                                                    <th style="width: 103px;">Office</th>
-                                                    <th style="width: 50px;">Age</th>
-                                                    <th style="width: 99px;">Start date</th>
-                                                    <th style="width: 76px;">Salary</th></tr>
+                                                    <th onclick="sortTable(1)" style="width: 141px;">Name</th>
+                                                    <th onclick="sortTable(2)" style="width: 233px;">Position</th>
+                                                    <th onclick="sortTable(3)" style="width: 103px;">Office</th>
+                                                    <th onclick="sortTable(4)" style="width: 50px;">Age</th>
+                                                    <th onclick="sortTable(5)" style="width: 99px;">Start date</th>
+                                                    <th onclick="sortTable(6)" style="width: 76px;">Salary</th></tr>
                                             </thead>
                                             <tbody id="myDataTable">
                                                 <tr>

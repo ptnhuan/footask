@@ -105,12 +105,12 @@
                                         <table class="data-table table table-bordered" id="table">
                                             <thead>
                                                 <tr>
-                                                    <th>Name</th>
-                                                    <th>Position</th>
-                                                    <th>Office</th>
-                                                    <th>Age</th>
-                                                    <th>Start date</th>
-                                                    <th>Salary</th>
+                                                    <th onclick="sortTable(0)">Name</th>
+                                                    <th onclick="sortTable(1)">Position</th>
+                                                    <th onclick="sortTable(2)">Office</th>
+                                                    <th onclick="sortTable(3)">Age</th>
+                                                    <th onclick="sortTable(4)">Start date</th>
+                                                    <th onclick="sortTable(5)">Salary</th>
                                                 </tr>
                                             </thead>
                                             <tbody id="myDataTable">
