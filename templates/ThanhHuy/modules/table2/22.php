@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="../../css/table2/22.css">
         <script src="../../js/table2/22/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/table2/22/bootstrap.min.js" type="text/javascript"></script>
-
         <script src="../../js/table2/22/search-table.js" type="text/javascript"></script>
         <script src="../../js/table2/22/pagination-table.js" type="text/javascript"></script>
         <script src="../../js/table2/22/close-panel.js" type="text/javascript"></script>

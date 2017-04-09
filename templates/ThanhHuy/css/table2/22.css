@@ -74,7 +74,7 @@
   opacity: 1;
 }
 .type-22 .admin-panel .admin-content p {
-  margin-top: 10px;
+  margin-top: 12px !important;
 }
 .type-22 .admin-panel .admin-content .show-data .data,
 .type-22 .admin-panel .admin-content .show-data .search-query {
@@ -102,9 +102,6 @@
 }
 .type-22 .admin-panel .admin-content #myPager {
   opacity: 1;
-}
-.type-22 .admin-panel .admin-content p {
-  margin-top: 4px !important;
 }
 .type-22 .admin-panel .admin-content .pagination {
   display: inline-block;
