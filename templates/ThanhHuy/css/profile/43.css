@@ -71,6 +71,9 @@
   color: #C5C7CB;
   font-size: 13px;
 }
+.type-43 .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
+  min-width: 0 !important;
+}
 .type-43 .admin-panel .admin-title ul.items .collapse-link,
 .type-43 .admin-panel .admin-title ul.items .close-link {
   opacity: 1;
