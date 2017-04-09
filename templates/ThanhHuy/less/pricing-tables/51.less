@@ -102,7 +102,12 @@ and open the template in the editor.
                         font-size: 13px;
                     }
                 }
-                .collapse-link, .close-link {
+                li.dropdown {
+                    ul.dropdown-menu {
+                        min-width: 0px!important;
+                    }
+                }
+                #collapse-link, #close-link {
                     opacity: 1;
                 }
             }
@@ -199,6 +204,13 @@ and open the template in the editor.
                 }
             }
         }
+        .admin-content.toggled {
+            display: none;
+        }
+    }
+    .admin-panel.toggled {
+        display: none;
+
     }
 }
 

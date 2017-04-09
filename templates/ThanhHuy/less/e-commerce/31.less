@@ -8,8 +8,17 @@ and open the template in the editor.
     Author     : ITLAB
 */
 
+@color: #73879C;
+@text-decoration: none;
+@list-style: none;
+@background-color: #ffffff;
+@background-color-green: #1ABB9C;
+@background-color-blue: #3498DB;
+@background-color-red: #E74C3C;
+@background-color-orange: #F39C12;
+@color-white: #fff;
 .type-31 {
-    color: #73879C;
+    color: @color;
     .content {
         .content-left {
             float: left;
@@ -35,8 +44,8 @@ and open the template in the editor.
                         border-radius: 0 25px 25px 0;
                         border: 1px solid rgba(221,226,232,.49);
                         border-left: 0;
-                        background-color: #ffffff;
-                        color: #73879C;
+                        background-color: @background-color;
+                        color: @color;
                     }
                     .btn-search:hover {
                         background-color:#93A2B2;
@@ -49,7 +58,7 @@ and open the template in the editor.
         width: 100%;
         padding: 10px 17px;
         display: inline-block;
-        background: #fff;
+        background-color: @background-color;
         border: 1px solid #E6E9ED;
         opacity: 1;
         transition: all .2s ease;
@@ -69,7 +78,7 @@ and open the template in the editor.
                 margin-right: 0;
                 min-width: 70px;
                 float: right;
-                list-style: none;
+                list-style: @list-style;
                 margin-top: 5px;
                 li {
                     float: left;
@@ -80,7 +89,12 @@ and open the template in the editor.
                         font-size: 13px;
                     }
                 }
-                .collapse-link, .close-link {
+                li.dropdown {
+                    ul.dropdown-menu {
+                        min-width: 0px!important;
+                    }
+                }
+                #collapse-link, #close-link {
                     opacity: 1;
                 }
             }
@@ -120,7 +134,7 @@ and open the template in the editor.
 
                         padding-left: 0;
                         margin-left: -5px;
-                        list-style: none;
+                        list-style: @list-style;
                         li {
                             margin: 0 10px; 
                             padding: 0 5px;
@@ -135,21 +149,25 @@ and open the template in the editor.
                                 padding: 2px;
                                 border-radius: 50px;
                             }
+
                             .color.green {
-                                background: #1ABB9C!important;
-                                color: #fff;
+                                background-color: @background-color-green!important;
+                                color: @color-white;
                             }
                             .color.blue {
-                                background: #3498DB!important;
-                                color: #fff;
+
+                                background-color: @background-color-blue!important;
+                                color: @color-white;
                             }
                             .color.red {
-                                background: #E74C3C!important;
-                                color: #fff;
+
+                                background-color: @background-color-red!important;
+                                color: @color-white;
                             }
                             .color.orange {
-                                background: #F39C12!important;
-                                color: #fff;
+
+                                background-color: @background-color-orange!important;
+                                color: @color-white;
                             }
                         }
                     }
@@ -159,7 +177,7 @@ and open the template in the editor.
                     ul.size-name {
                         padding-left: 0;
                         margin-left: -5px;
-                        list-style: none;
+                        list-style: @list-style;
                         li {
                             margin: 0; 
                             padding: 0 5px;
@@ -168,9 +186,9 @@ and open the template in the editor.
                                 margin-bottom: 5px;
                                 margin-right: 5px;
                                 color: #333;
-                                background-color: #fff;
+                                background-color: @background-color;
                                 border: 1px solid #ccc;
-                                text-decoration: none;
+                                text-decoration: @text-decoration;
                                 padding: 1px 5px;
                                 border-radius: 3px;
                                 font-size: 12px;
@@ -185,7 +203,7 @@ and open the template in the editor.
                 .product-price {
                     margin-top: 50px;
                     padding: 5px 10px;
-                    background-color: #FFF;
+                    background-color: @background-color;
                     text-align: left;
                     border: 2px dashed #E0E0E0; 
                     .price {
@@ -203,12 +221,12 @@ and open the template in the editor.
                         margin-bottom: 5px;
                         margin-right: 5px;
                         color: #333;
-                        background-color: #fff;
+                        background-color: @background-color;
                         border: 1px solid #ccc;
                         padding: 10px 16px;
                         border-radius: 5px;
                         font-size: 18px;
-                        text-decoration: none;
+                        text-decoration: @text-decoration;
                     }
                     .add-to-cart:hover {
                         background-color: #e6e6e6;
@@ -220,7 +238,7 @@ and open the template in the editor.
                     ul.list-social {
                         padding-left: 0;
                         margin-left: -5px;
-                        list-style: none;
+                        list-style: @list-style;
                         li {
                             float: left;
                             padding: 0 4px;
@@ -260,6 +278,13 @@ and open the template in the editor.
                 }
             }
         }
+        .admin-content.toggled {
+            display: none;
+        }
+    }
+    .admin-panel.toggled {
+        display: none;
+        
     }
 }
 

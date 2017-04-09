@@ -120,6 +120,7 @@
 .type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-additional,
 .type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-data,
 .type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-layout,
+.type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-extras,
 .type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-forms {
   opacity: 1;
   z-index: 10;
@@ -321,8 +322,11 @@
   color: #C5C7CB;
   font-size: 13px;
 }
-.type-f-12 .container-fluid .admin-panel .admin-title ul.items .collapse-link,
-.type-f-12 .container-fluid .admin-panel .admin-title ul.items .close-link {
+.type-f-12 .container-fluid .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
+  min-width: 0px !important;
+}
+.type-f-12 .container-fluid .admin-panel .admin-title ul.items #collapse-link,
+.type-f-12 .container-fluid .admin-panel .admin-title ul.items #close-link {
   opacity: 1;
 }
 .type-f-12 .container-fluid .admin-panel .admin-content .product-img,
@@ -488,6 +492,12 @@
 .type-f-12 .container-fluid .admin-panel .admin-content .tab-content #menu1,
 .type-f-12 .container-fluid .admin-panel .admin-content .tab-content #menu2 {
   padding: 0;
+}
+.type-f-12 .container-fluid .admin-panel .admin-content.toggled {
+  display: none;
+}
+.type-f-12 .container-fluid .admin-panel.toggled {
+  display: none;
 }
 .type-f-12 .container-fluid .page-content-wrraper {
   background-color: #f7f7f7;

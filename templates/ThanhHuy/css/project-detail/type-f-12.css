@@ -321,6 +321,9 @@
   color: #C5C7CB;
   font-size: 13px;
 }
+.type-f-12 .container-fluid .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
+  min-width: 0px !important;
+}
 .type-f-12 .container-fluid .admin-panel .admin-title ul.items .collapse-link,
 .type-f-12 .container-fluid .admin-panel .admin-title ul.items .close-link {
   opacity: 1;

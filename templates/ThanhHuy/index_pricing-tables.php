@@ -22,10 +22,11 @@
         <link rel="stylesheet" href="css/pricing-tables/type-f-12.css">
         <script src="js/pricing-tables/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="js/pricing-tables/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/pricing-tables/custom-script.js" type="text/javascript"></script>
         <script src="js/pricing-tables/back-to-top.js" type="text/javascript"></script>
         <script src="js/pricing-tables/sibarmenu-left.js" type="text/javascript"></script>
         <script src="js/pricing-tables/flexible-menu.js" type="text/javascript"></script>
+        <script src="js/pricing-tables/close-panel.js" type="text/javascript"></script>
+        <script src="js/pricing-tables/collapse-panel.js" type="text/javascript"></script>
     </head>
 
     <body style="background-color: #2A3F54;">
@@ -408,12 +409,12 @@
                                     </h3>
                                     <ul class="items">
                                         <li>
-                                            <a class="collapse-link">
+                                            <a class="toggled" id="collapse-link">
                                                 <i class="fa fa-chevron-up"></i>
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <a href="#" data-toggle="dropdown">
                                                 <i class="fa fa-wrench"></i>
                                             </a>
                                             <ul class="dropdown-menu">
@@ -422,7 +423,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a class="close-link">
+                                            <a class="toggled" id="close-link">
                                                 <i class="fa fa-close"></i>
                                             </a>
                                         </li>
