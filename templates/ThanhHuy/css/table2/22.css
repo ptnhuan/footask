@@ -73,6 +73,9 @@
 .type-22 .admin-panel .admin-title ul.items #close-link {
   opacity: 1;
 }
+.type-22 .admin-panel .admin-content {
+  transition: .5s all ease-in-out;
+}
 .type-22 .admin-panel .admin-content p {
   margin-top: 12px !important;
 }
@@ -119,6 +122,7 @@
   color: #23527c;
 }
 .type-22 .admin-panel .admin-content.toggled {
+  transition: .5s all ease-in-out;
   display: none;
 }
 .type-22 .admin-panel.toggled {
