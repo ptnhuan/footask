@@ -8,8 +8,8 @@ body{
 
     }
     .left-col {
+        transition: width 0.2s;
         background: #2A3F54;
-        height:100%!important;
         a{
             text-decoration: none;
             color: #E7E7E7;
@@ -40,7 +40,7 @@ body{
             padding: 5px 6px;
             border-radius: 50%;
         }
-        .clearfix{
+        .profile{
             margin-bottom: 20px;
             .profile_pic {
                 width: 35%;
@@ -153,12 +153,11 @@ body{
 
         }
         .sidebar-footer {
-            bottom: 0;
-            clear: both;
+            bottom: 0;           
             display: block;
             padding: 5px 0 0;
             position: fixed;
-            width: 225px;
+            width: 16.67%;
             background: #2A3F54;
             z-index: 999;
             left: 0;
@@ -400,8 +399,8 @@ body{
 
     }
 
-     .content2{
-         padding-bottom: 20px;
+    .content2{
+        padding-bottom: 20px;
         @font-size:18px;
         @color-bg:#fff;
         .dashboard_graph {
@@ -493,7 +492,7 @@ body{
             bottom: 0px;
             right: 0px;
             display: block;
-            
+
             .flot-tick-label{
                 position: absolute;
                 max-width: 99px;
@@ -546,47 +545,47 @@ body{
                     top: 194px;
                     left: 7px;                   
                 }
-                 .tick5{
-                     top: 174px;
-                     left: 7px;
+                .tick5{
+                    top: 174px;
+                    left: 7px;
                 }
-                 .tick6{
-                     top: 155px;
-                     left: 7px;
+                .tick6{
+                    top: 155px;
+                    left: 7px;
                 }
-                 .tick7{
-                     top: 136px; 
-                     left: 7px;
+                .tick7{
+                    top: 136px; 
+                    left: 7px;
                 }
-                 .tick8{
-                     top: 116px;
-                     left: 7px;
+                .tick8{
+                    top: 116px;
+                    left: 7px;
                 }
-                 .tick9{
-                     top: 97px;
-                     left: 7px;
+                .tick9{
+                    top: 97px;
+                    left: 7px;
                 }
-                 .tick10{
-                     top: 78px;
-                     left: 7px;
+                .tick10{
+                    top: 78px;
+                    left: 7px;
                 }
-                 .tick11{
-                     top: 58px;
-                     left: 1px;
+                .tick11{
+                    top: 58px;
+                    left: 1px;
                 }
-                 .tick12{
-                     top: 39px;
-                     left: 2px;
+                .tick12{
+                    top: 39px;
+                    left: 2px;
                 }
-                 .tick13{
-                     top: 20px;
-                     left: 1px;
+                .tick13{
+                    top: 20px;
+                    left: 1px;
                 }
-                 .tick14{
+                .tick14{
                     top: 1px;
                     left: 1px;
                 }
-                
+
             }
 
         }
@@ -1020,13 +1019,103 @@ body{
     }
 
 }
-.type-25.toggled {
-    margin-left: -268px;
-    .sidebar-footer{
+@media (max-width: 992px){
+    .left-col{
         display: none;
     }
+    .left-repon{
+        display: block;
+    }
+
+    .type-25.toggled {
+        // margin-left: 80px;
+
+        .left-repon{
+            margin-left: 180px;
+            display:block;
+            text-align: center!important;
+
+            .logo-repon .fa{
+                font-size: 27px!important;
+                margin: 13px 5px 20px -3px;
+
+            }
+            .logo-repon i{
+                border: 1px solid #EAEAEA;
+                padding: 10px 6px;
+                border-radius: 50%;
+            }
+            ul{
+                padding: 0px;
+            }
+            .menu-repon ul li a .fa{
+                font-size: 25px!important;
+                margin: 13px 0 0 -5px;
+                font-weight: 400;
+
+            }
+            a{
+                font-size: 10px;
+                text-align: center!important;
+
+            }
+        }
 
 
+    }
+}
+@media (min-width: 992px){
+    .left-col{
+        display: block;
+    }
+    .left-repon{
+        display: none;
+    }
+    .type-25.toggled {
+        margin-left: -180px;
+        .sidebar-footer{
+            display: none;    
+        }
+        .scroll-view{
+            display: none;
+
+        }
+        .left-repon{
+            margin-left: 180px;
+            display:block;
+            text-align: center!important;
+
+            .logo-repon .fa{
+                font-size: 27px!important;
+                margin: 13px 5px 20px -3px;
+
+            }
+            .logo-repon i{
+                border: 1px solid #EAEAEA;
+                padding: 10px 6px;
+                border-radius: 50%;
+            }
+            ul{
+                padding: 0px;
+            }
+            .menu-repon ul li a .fa{
+                font-size: 25px!important;
+                margin: 13px 0 0 -5px;
+                font-weight: 400;
+
+            }
+            a{
+                font-size: 10px;
+                text-align: center!important;
+
+            }
+            .pull-right{
+                background-color: #5cb85c;
+            }
+        }
+
+
+    }
 }
 @media (max-width: 1200px)
 {

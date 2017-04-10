@@ -5,8 +5,8 @@ body {
   padding: 0px;
 }
 .type-25 .left-col {
+  transition: width 0.2s;
   background: #2A3F54;
-  height: 100% !important;
 }
 .type-25 .left-col a {
   text-decoration: none;
@@ -36,15 +36,15 @@ body {
   padding: 5px 6px;
   border-radius: 50%;
 }
-.type-25 .left-col .clearfix {
+.type-25 .left-col .profile {
   margin-bottom: 20px;
 }
-.type-25 .left-col .clearfix .profile_pic {
+.type-25 .left-col .profile .profile_pic {
   width: 35%;
   float: left;
   padding: 0px;
 }
-.type-25 .left-col .clearfix .profile_img {
+.type-25 .left-col .profile .profile_img {
   width: 70%;
   background: #fff;
   z-index: 1000;
@@ -54,17 +54,17 @@ body {
   padding: 4px;
   border-radius: 50%;
 }
-.type-25 .left-col .clearfix .profile_info {
+.type-25 .left-col .profile .profile_info {
   padding: 20px 10px 10px;
   width: 65%;
   float: left;
 }
-.type-25 .left-col .clearfix .profile_info span {
+.type-25 .left-col .profile .profile_info span {
   font-size: 13px;
   line-height: 30px;
   color: #BAB8B8;
 }
-.type-25 .left-col .clearfix .profile_info h2 {
+.type-25 .left-col .profile .profile_info h2 {
   font-size: 14px;
   color: #ECF0F1;
   margin: 0;
@@ -145,11 +145,10 @@ body {
 }
 .type-25 .left-col .sidebar-footer {
   bottom: 0;
-  clear: both;
   display: block;
   padding: 5px 0 0;
   position: fixed;
-  width: 225px;
+  width: 16.67%;
   background: #2A3F54;
   z-index: 999;
   left: 0;
@@ -504,62 +503,83 @@ body {
     font-size: 13px;
   }
 }
-@media (max-width: 1200px) {
-  a {
-    font-size: 11px;
-  }
-  table.tile_info td {
-    text-align: left;
-    padding: 1px;
-    font-size: 11px;
-  }
-  p {
-    font-size: 11px;
-  }
-  .widget_summary .w_20 span {
-    font-size: 15px;
-  }
-  .x_content h4 {
-    font-size: 13px;
-    font-weight: 500;
-  }
-}
-@media (min-width: 768px) {
-  .row .tile_stats_count span {
-    font-size: 13px;
-  }
-}
 @media (max-width: 992px) {
   .left-col {
     display: none;
+  }
+  .left-repon {
+    display: block;
+  }
+  .type-25.toggled .left-repon {
+    margin-left: 180px;
+    display: block;
+    text-align: center !important;
+  }
+  .type-25.toggled .left-repon .logo-repon .fa {
+    font-size: 27px !important;
+    margin: 13px 5px 20px -3px;
+  }
+  .type-25.toggled .left-repon .logo-repon i {
+    border: 1px solid #EAEAEA;
+    padding: 10px 6px;
+    border-radius: 50%;
+  }
+  .type-25.toggled .left-repon ul {
+    padding: 0px;
+  }
+  .type-25.toggled .left-repon .menu-repon ul li a .fa {
+    font-size: 25px !important;
+    margin: 13px 0 0 -5px;
+    font-weight: 400;
+  }
+  .type-25.toggled .left-repon a {
+    font-size: 10px;
+    text-align: center !important;
   }
 }
 @media (min-width: 992px) {
   .left-col {
     display: block;
   }
-}
-@media (min-width: 768px) {
-  .row .tile_stats_count .count {
-    font-size: 40px;
+  .left-repon {
+    display: none;
   }
-}
-@media (min-width: 992px) {
-  .content1 .tile_stats_count {
-    margin-bottom: 10px;
-    border-bottom: none;
-    padding-bottom: 10px;
-    height: 70px;
+  .type-25.toggled {
+    margin-left: -180px;
   }
-}
-@media (max-width: 992px) {
-  .content1 .tile_stats_count {
-    border-bottom: 1px solid #D9DEE4;
+  .type-25.toggled .sidebar-footer {
+    display: none;
   }
-}
-.type-25.toggled {
-  margin-left: -268px;
-}
-.type-25.toggled .sidebar-footer {
-  display: none;
+  .type-25.toggled .scroll-view {
+    display: none;
+  }
+  .type-25.toggled .left-repon {
+    margin-left: 180px;
+    display: block;
+    text-align: center !important;
+  }
+  .type-25.toggled .left-repon .logo-repon .fa {
+    font-size: 27px !important;
+    margin: 13px 5px 20px -3px;
+  }
+  .type-25.toggled .left-repon .logo-repon i {
+    border: 1px solid #EAEAEA;
+    padding: 10px 6px;
+    border-radius: 50%;
+  }
+  .type-25.toggled .left-repon ul {
+    padding: 0px;
+  }
+  .type-25.toggled .left-repon .menu-repon ul li a .fa {
+    font-size: 25px !important;
+    margin: 13px 0 0 -5px;
+    font-weight: 400;
+  }
+  .type-25.toggled .left-repon a {
+    font-size: 10px;
+    text-align: center !important;
+  }
+  .type-25.toggled .left-repon .pull-right {
+    background-color: #5cb85c;
+  }
 }
