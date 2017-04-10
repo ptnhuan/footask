@@ -18,7 +18,6 @@
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/demo.js" type="text/javascript"></script>
-        <script src="js/nump1.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="type-25-21">
