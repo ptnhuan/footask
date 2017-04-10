@@ -324,8 +324,8 @@
 .type-f-12 .container-fluid .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
   min-width: 0px !important;
 }
-.type-f-12 .container-fluid .admin-panel .admin-title ul.items .collapse-link,
-.type-f-12 .container-fluid .admin-panel .admin-title ul.items .close-link {
+.type-f-12 .container-fluid .admin-panel .admin-title ul.items #collapse-link,
+.type-f-12 .container-fluid .admin-panel .admin-title ul.items #close-link {
   opacity: 1;
 }
 .type-f-12 .container-fluid .admin-panel .admin-content {
@@ -356,11 +356,12 @@
 .type-f-12 .container-fluid .admin-panel .admin-content ul.detail-overview li.border-none {
   border-right: none;
 }
-.type-f-12 .container-fluid .admin-panel .admin-content #graph-bussiness {
+.type-f-12 .container-fluid .admin-panel .admin-content #chartDynamicContainer {
   height: 350px;
-  padding-top: 15px;
+  max-width: 100%;
 }
 .type-f-12 .container-fluid .admin-panel .admin-content h5 {
+  margin: 15px 0;
   font-size: 16px;
 }
 .type-f-12 .container-fluid .admin-panel .admin-content ul.recent-activity {
@@ -455,6 +456,12 @@
 }
 .type-f-12 .container-fluid .admin-panel .admin-content .project-description .button-function a.btn-report:hover {
   background-color: #d58512;
+}
+.type-f-12 .container-fluid .admin-panel .admin-content.toggled {
+  display: none;
+}
+.type-f-12 .container-fluid .admin-panel.toggled {
+  display: none;
 }
 .type-f-12 .container-fluid .page-content-wrraper {
   background-color: #f7f7f7;

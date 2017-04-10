@@ -101,7 +101,7 @@ and open the template in the editor.
                         min-width: 0!important;
                     }
                 }
-                .collapse-link, .close-link {
+                #collapse-link, #close-link {
                     opacity: 1;
                 }
             }
@@ -136,11 +136,12 @@ and open the template in the editor.
                     border-right: @none;
                 }
             }
-            #graph-bussiness {
+            #chartDynamicContainer {
                 height: 350px;
-                padding-top: 15px;
+                max-width: 100%;
             }
             h5 {
+                margin: 15px 0;
                 font-size: 16px;
             }
             ul.recent-activity{
@@ -243,6 +244,13 @@ and open the template in the editor.
                 }
             }
         }
+        .admin-content.toggled {
+            display: none;
+        }
+    }
+    .admin-panel.toggled {
+        display: none;
+
     }
 }
 
