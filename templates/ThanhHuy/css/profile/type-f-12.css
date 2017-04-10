@@ -120,7 +120,8 @@
 .type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-additional,
 .type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-data,
 .type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-layout,
-.type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-forms {
+.type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-forms,
+.type-f-12 .container-fluid .sidebar-left .menu-vertical ul.item-menu li #child-extras {
   opacity: 1;
   z-index: 10;
 }
@@ -327,8 +328,8 @@
 .type-f-12 .container-fluid .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
   min-width: 0 !important;
 }
-.type-f-12 .container-fluid .admin-panel .admin-title ul.items .collapse-link,
-.type-f-12 .container-fluid .admin-panel .admin-title ul.items .close-link {
+.type-f-12 .container-fluid .admin-panel .admin-title ul.items #collapse-link,
+.type-f-12 .container-fluid .admin-panel .admin-title ul.items #close-link {
   opacity: 1;
 }
 .type-f-12 .container-fluid .admin-panel .admin-content {
@@ -374,7 +375,7 @@
   background-color: #F5F7FA;
   padding: 7px 10px;
 }
-.type-f-12 .container-fluid .admin-panel .admin-content .user-report #reportrange {
+.type-f-12 .container-fluid .admin-panel .admin-content .user-report .show-calendar {
   margin-top: 5px;
   float: right;
   border: 1px solid #E6E9ED;
@@ -382,13 +383,15 @@
   padding: 5px 10px;
   background-color: #ffffff;
 }
-.type-f-12 .container-fluid .admin-panel .admin-content #mybarChart {
-  margin-top: 25px;
-  width: 484px;
-  height: 242px;
+.type-f-12 .container-fluid .admin-panel .admin-content .user-report .show-calendar #datepicker {
+  border: none;
+  color: #73879C;
+}
+.type-f-12 .container-fluid .admin-panel .admin-content #chartSkillsContainer {
+  height: 350px;
 }
 .type-f-12 .container-fluid .admin-panel .admin-content ul.nav-tabs {
-  margin-top: 10px;
+  margin-top: 15px;
   padding-left: 10px;
   background-color: #F5F7FA;
 }
@@ -447,6 +450,12 @@
 .type-f-12 .container-fluid .admin-panel .admin-content .tab-content #home ul.comments li .date-comment {
   float: right;
   text-align: right;
+}
+.type-f-12 .container-fluid .admin-panel .admin-content.toggled {
+  display: none;
+}
+.type-f-12 .container-fluid .admin-panel.toggled {
+  display: none;
 }
 .type-f-12 .container-fluid .page-content-wrraper {
   background-color: #f7f7f7;

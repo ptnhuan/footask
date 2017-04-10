@@ -122,7 +122,7 @@ and open the template in the editor.
                                 background-color: rgba(255,255,255,.06);
                             }
                         }
-                        ul#child-home, #child-elements, #child-tables, #child-additional, #child-data, #child-layout, #child-forms {
+                        ul#child-home, #child-elements, #child-tables, #child-additional, #child-data, #child-layout, #child-forms, #child-extras {
                             opacity: 1;
                             z-index: 10;
                         }
@@ -355,7 +355,7 @@ and open the template in the editor.
                             min-width: 0!important;
                         }
                     }
-                    .collapse-link, .close-link {
+                    #collapse-link, #close-link {
                         opacity: 1;
                     }
                 }
@@ -407,23 +407,25 @@ and open the template in the editor.
                 .user-report {
                     background-color: #F5F7FA;
                     padding: 7px 10px;
-                    #reportrange {
+                    .show-calendar {
                         margin-top: 5px;
                         float: right;
                         border: 1px solid #E6E9ED;
                         cursor: pointer;
                         padding: 5px 10px;
                         background-color: @background-color-ffffff;
+                        #datepicker {
+                            border: none;
+                            color: @color-body;
+                        }
                     }
                 }
-                #mybarChart {
-                    margin-top: 25px;
-                    width: 484px;
-                    height: 242px;
+                #chartSkillsContainer {
+                    height: 350px;
                 }
 
                 ul.nav-tabs {
-                    margin-top: 10px;
+                    margin-top: 15px;
                     padding-left: 10px;
                     background-color: @background-color-tabs;
                     li {
@@ -486,6 +488,12 @@ and open the template in the editor.
                     }
                 }
             }
+            .admin-content.toggled {
+                display: none;
+            }
+        }
+        .admin-panel.toggled {
+            display: none;
         }
 
         .page-content-wrraper {
