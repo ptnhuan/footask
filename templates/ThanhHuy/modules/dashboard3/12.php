@@ -21,10 +21,10 @@
         <link href="../../css/dashboard3/12.css" rel="stylesheet" type="text/css"/>
         <script src="../../js/dashboard3/12/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/12/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/12/chart.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/12/gauge.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/12/jquery.sparkline.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/12/custom-script.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/12/canvasjs.min.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/12/chart-pie.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/12/close-panel.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/12/collapse-panel.js" type="text/javascript"></script>
 
     </head>
 
@@ -33,7 +33,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="admin-panel">
+                        <div class="admin-panel1">
                             <div class="admin-title">
                                 <h2>
                                     App Devices 
@@ -41,12 +41,12 @@
                                 </h2>
                                 <ul class="items">
                                     <li>
-                                        <a class="collapse-link">
+                                        <a class="toggled" id="collapse-link1">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <a href="#" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -55,14 +55,14 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="close-link">
+                                        <a class="toggled" id="close-link1">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="admin-content">
+                            <div class="admin-content1">
                                 <h4>App Versions</h4>
                                 <div class="widget_summary">
                                     <div class="w_left">
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="admin-panel">
+                        <div class="admin-panel2">
                             <div class="admin-title">
                                 <h2>
                                     Daily users
@@ -158,12 +158,12 @@
                                 </h2>
                                 <ul class="items">
                                     <li>
-                                        <a class="collapse-link">
+                                        <a class="toggled" id="collapse-link2">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <a href="#" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -172,7 +172,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="close-link">
+                                        <a class="toggled" id="close-link2">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
@@ -180,7 +180,7 @@
                                 <div class="clearfix"></div>
                             </div>
 
-                            <div class="admin-content">
+                            <div class="admin-content2">
                                 <table class="" style="width:100%">
                                     <tbody><tr>
                                             <th style="width:37%;">
@@ -197,7 +197,8 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <canvas class="canvasDoughnut" height="110" width="110"></canvas>
+                                                <div id="chartPieContainer"></div>
+
                                             </td>
                                             <td>
                                                 <table class="tile_info">
@@ -209,25 +210,25 @@
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <p><i class="fa fa-square green"></i>Android </p>
+                                                                <p><i class="fa fa-square red"></i>Android </p>
                                                             </td>
                                                             <td>10%</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <p><i class="fa fa-square purple"></i>Blackberry </p>
+                                                                <p><i class="fa fa-square black"></i>Blackberry </p>
                                                             </td>
                                                             <td>20%</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <p><i class="fa fa-square aero"></i>Symbian </p>
+                                                                <p><i class="fa fa-square gray"></i>Symbian </p>
                                                             </td>
                                                             <td>15%</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <p><i class="fa fa-square red"></i>Others </p>
+                                                                <p><i class="fa fa-square orange"></i>Others </p>
                                                             </td>
                                                             <td>30%</td>
                                                         </tr>
@@ -241,7 +242,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="admin-panel">
+                        <div class="admin-panel3">
                             <div class="admin-title">
                                 <h2>
                                     Profile Setting
@@ -249,12 +250,12 @@
                                 </h2>
                                 <ul class="items">
                                     <li>
-                                        <a class="collapse-link">
+                                        <a class="toggled" id="collapse-link3">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <a href="#" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -263,7 +264,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="close-link">
+                                        <a class="toggled" id="close-link3">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
@@ -271,7 +272,7 @@
                                 <div class="clearfix"></div>
                             </div>
 
-                            <div class="admin-content">
+                            <div class="admin-content3">
                                 <ul class="quick-list">
                                     <li><i class="fa fa-line-chart"></i><a href="#">Achievements</a></li>
                                     <li><i class="fa fa-thumbs-up"></i><a href="#">Favorites</a></li>
@@ -279,16 +280,6 @@
                                     <li><i class="fa fa-cog"></i><a href="#">Settings</a></li>
                                     <li><i class="fa fa-area-chart"></i><a href="#">Logout</a></li>
                                 </ul>
-
-                                <div class="sidebar-widget">
-                                    <h4>Profile Completion</h4>
-                                    <canvas width="150" height="80" id="chart_gauge_01"></canvas>
-                                    <div class="goal-wrapper">
-                                        <span id="gauge-text" class="pull-left">3,200</span>
-                                        <span class="gauge-value pull-left">%</span>
-                                        <span id="goal-text" class="goal-value pull-right">100%</span>
-                                    </div>
-                                </div
                             </div>
                         </div>
                     </div>
