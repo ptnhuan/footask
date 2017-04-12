@@ -11,7 +11,7 @@
 
         <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="../../css/daterangepicker.css" rel="stylesheet" type="text/css"/>
+        <link href="../../css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
         <?php
         if (!class_exists('lessc')) {
             include ('../../libs/lessc.inc.php');
@@ -22,13 +22,12 @@
         <link href="../../css/dashboard2/4.css" rel="stylesheet" type="text/css"/>
         <script src="../../js/dashboard2/4/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard2/4/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/4/jquery.flot.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/4/jquery.flot.time.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/4/date.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/4/moment.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/4/daterangepicker.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/4/jquery.sparkline.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/4/custom-script.js" type="text/javascript"></script>
+        <script src="../../js/dashboard2/4/canvasjs.min.js" type="text/javascript"></script>
+        <script src="../../js/dashboard2/4/chart-rain.js" type="text/javascript"></script>
+        <script src="../../js/dashboard2/4/close-panel.js" type="text/javascript"></script>
+        <script src="../../js/dashboard2/4/collapse-panel.js" type="text/javascript"></script>
+        <script src="../../js/dashboard2/4/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="../../js/dashboard2/4/datetimepicker.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -43,32 +42,30 @@
                                     <small>Weekly progress</small>
                                 </h2>
                                 <div class="filter-time">
-                                    <div id="reportrange">
-                                        <i class="glyphicon glyphicon-calendar"></i>
-                                        <span>January 31, 2017 - March 1, 2017</span>
-                                        <i class="fa fa-caret-down"></i>
+                                    <div class="show-calendar">
+                                        <i class="fa fa-calendar"></i> <input type="text" id="datepicker" placeholder="Click view date">
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="admin-content">
                                 <div class="col-md-9">
-                                    <div id="chart_plot_02" class="demo-placeholder"></div>
+                                    <div id="chartRainContainer"></div>
                                     <div class="total-chart">
                                         <div class="col-md-4 col-sm-4 col-xs-12">
                                             <span>Total Sessions</span>
                                             <h2>231,809</h2>
-                                            <span class="sparkline11"></span>
+                                            <div id="chartCoalContainer2"></div>
                                         </div>
                                         <div class="col-md-4 col-sm-4 col-xs-12">
                                             <span>Total Revenue</span>
                                             <h2>231,809</h2>
-                                            <span class="sparkline22"></span>
+                                            <div id="chartCoalContainer3"></div>
                                         </div>
                                         <div class="col-md-4 col-sm-4 col-xs-12">
                                             <span>Total Sessions</span>
                                             <h2>231,809</h2>
-                                            <span class="sparkline11"></span>
+                                            <div id="chartCoalContainer4"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -77,12 +74,12 @@
                                         <h2>Top Profiles</h2>
                                         <ul class="profile-user">
                                             <li>
-                                                <a class="collapse-link">
+                                                <a class="toggled" id="collapse-link">
                                                     <i class="fa fa-chevron-up"></i>
                                                 </a>
                                             </li>
                                             <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                <a href="#" data-toggle="dropdown">
                                                     <i class="fa fa-wrench"></i>
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -91,7 +88,7 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="close-link">
+                                                <a class="toggled" id="close-link">
                                                     <i class="fa fa-close"></i>
                                                 </a>
                                             </li>

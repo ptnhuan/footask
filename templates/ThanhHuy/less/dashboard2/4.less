@@ -25,7 +25,7 @@ and open the template in the editor.
         .admin-title {
             border-bottom: 2px solid #E6E9ED;
             padding: 1px 5px 6px;
-            span, .fa, .glyphicon{
+            span, .fa{
                 color: @color;
             }
 
@@ -42,12 +42,16 @@ and open the template in the editor.
             }
             .filter-time {
                 font-size: @font-size;
-                #reportrange {
-                    background: @background-color;
+                .show-calendar {
+                    float: right;
+                    border: 1px solid #E6E9ED;
                     cursor: pointer;
-                    padding: 5px 10px;
-                    border: 1px solid #ccc;
-                    float:right;
+                    padding: 4px 10px;
+                    background-color: @background-color;
+                    #datepicker {
+                        border: none;
+                        color: @color;
+                    }
                 }
             }
 
@@ -58,8 +62,9 @@ and open the template in the editor.
             clear: both;
             margin-top: 5px;
 
-            .demo-placeholder {
-                height: 280px;
+            #chartRainContainer {
+                height: 300px;
+                width: 100%;
             }
             .total-chart {
                 border-top: 1px solid #ccc;
@@ -71,6 +76,10 @@ and open the template in the editor.
                     margin-top: 10px;
                     margin-bottom: 10px;
                     font-size: 20px;
+                }
+
+                #chartCoalContainer2, #chartCoalContainer3, #chartCoalContainer4 {
+                    height: 120px;
                 }
             }
             .admin-title {
@@ -99,12 +108,9 @@ and open the template in the editor.
                     float: left;
                     cursor: pointer;
                 }
-                .collapse-link, .close-link {
+                #collapse-link, #close-link {
                     opacity: 1;
                 }
-            }
-            .sparkline11, .sparkline22, #chart_plot_02 {
-                opacity: 1;
             }
             ul.profiles-user {
                 padding-left: 0;
@@ -151,6 +157,12 @@ and open the template in the editor.
                 }
             }
         }
+        .admin-content.toggled {
+            display: none;
+        }
+    }
+    .admin-panel.toggled {
+        display: none;
     }
 
 }

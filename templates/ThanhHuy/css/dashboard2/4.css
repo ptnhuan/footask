@@ -15,8 +15,7 @@
   padding: 1px 5px 6px;
 }
 .type-4 .admin-panel .admin-title span,
-.type-4 .admin-panel .admin-title .fa,
-.type-4 .admin-panel .admin-title .glyphicon {
+.type-4 .admin-panel .admin-title .fa {
   color: #73879C;
 }
 .type-4 .admin-panel .admin-title h2 {
@@ -33,12 +32,16 @@
 .type-4 .admin-panel .admin-title .filter-time {
   font-size: 13px;
 }
-.type-4 .admin-panel .admin-title .filter-time #reportrange {
-  background: #fff;
-  cursor: pointer;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
+.type-4 .admin-panel .admin-title .filter-time .show-calendar {
   float: right;
+  border: 1px solid #E6E9ED;
+  cursor: pointer;
+  padding: 4px 10px;
+  background-color: #fff;
+}
+.type-4 .admin-panel .admin-title .filter-time .show-calendar #datepicker {
+  border: none;
+  color: #73879C;
 }
 .type-4 .admin-panel .admin-content {
   padding: 0 5px 6px;
@@ -46,8 +49,9 @@
   clear: both;
   margin-top: 5px;
 }
-.type-4 .admin-panel .admin-content .demo-placeholder {
-  height: 280px;
+.type-4 .admin-panel .admin-content #chartRainContainer {
+  height: 300px;
+  width: 100%;
 }
 .type-4 .admin-panel .admin-content .total-chart {
   border-top: 1px solid #ccc;
@@ -60,6 +64,11 @@
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 20px;
+}
+.type-4 .admin-panel .admin-content .total-chart #chartCoalContainer2,
+.type-4 .admin-panel .admin-content .total-chart #chartCoalContainer3,
+.type-4 .admin-panel .admin-content .total-chart #chartCoalContainer4 {
+  height: 120px;
 }
 .type-4 .admin-panel .admin-content .admin-title {
   border-bottom: 2px solid #E6E9ED;
@@ -87,13 +96,8 @@
   float: left;
   cursor: pointer;
 }
-.type-4 .admin-panel .admin-content .admin-title .collapse-link,
-.type-4 .admin-panel .admin-content .admin-title .close-link {
-  opacity: 1;
-}
-.type-4 .admin-panel .admin-content .sparkline11,
-.type-4 .admin-panel .admin-content .sparkline22,
-.type-4 .admin-panel .admin-content #chart_plot_02 {
+.type-4 .admin-panel .admin-content .admin-title #collapse-link,
+.type-4 .admin-panel .admin-content .admin-title #close-link {
   opacity: 1;
 }
 .type-4 .admin-panel .admin-content ul.profiles-user {
@@ -137,4 +141,10 @@
 }
 .type-4 .admin-panel .admin-content ul.profiles-user li .profile-comment p span {
   white-space: nowrap;
+}
+.type-4 .admin-panel .admin-content.toggled {
+  display: none;
+}
+.type-4 .admin-panel.toggled {
+  display: none;
 }
