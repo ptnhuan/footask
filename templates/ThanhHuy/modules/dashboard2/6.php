@@ -22,7 +22,8 @@
         <link href="../../css/dashboard2/6.css" rel="stylesheet" type="text/css"/>
         <script src="../../js/dashboard2/6/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard2/6/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/6/custom-script.js" type="text/javascript"></script>
+        <script src="../../js/dashboard2/6/close-panel.js" type="text/javascript"></script>
+        <script src="../../js/dashboard2/6/collapse-panel.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -30,7 +31,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="admin-panel">
+                        <div class="admin-panel1">
                             <div class="admin-title">
                                 <h2>
                                     Top Profiles
@@ -38,12 +39,12 @@
                                 </h2>
                                 <ul class="items">
                                     <li>
-                                        <a class="collapse-link">
+                                        <a class="toggled" id="collapse-link1">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <a href="#" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -52,14 +53,14 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="close-link">
+                                        <a class="toggled" id="close-link1">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="admin-content">
+                            <div class="admin-content1">
                                 <div class="list-items">
                                     <a class="date">
                                         <p class="month">
@@ -134,7 +135,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="admin-panel">
+                        <div class="admin-panel2">
                             <div class="admin-title">
                                 <h2>
                                     Top Profiles
@@ -142,12 +143,12 @@
                                 </h2>
                                 <ul class="items">
                                     <li>
-                                        <a class="collapse-link">
+                                        <a class="toggled" id="collapse-link2">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <a href="#" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -156,14 +157,14 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="close-link">
+                                        <a class="toggled" id="close-link2">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="admin-content">
+                            <div class="admin-content2">
                                 <div class="list-items">
                                     <a class="date">
                                         <p class="month">
@@ -238,7 +239,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="admin-panel">
+                        <div class="admin-panel3">
                             <div class="admin-title">
                                 <h2>
                                     Top Profiles
@@ -246,12 +247,12 @@
                                 </h2>
                                 <ul class="items">
                                     <li>
-                                        <a class="collapse-link">
+                                        <a class="toggled" id="collapse-link3">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <a href="#" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -260,14 +261,14 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="close-link">
+                                        <a class="toggled" id="close-link3">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="admin-content">
+                            <div class="admin-content3">
                                 <div class="list-items">
                                     <a class="date">
                                         <p class="month">
