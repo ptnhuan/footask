@@ -98,8 +98,8 @@
 .type-12 .admin-panel3 .admin-content1 #chartPieContainer,
 .type-12 .admin-panel3 .admin-content2 #chartPieContainer,
 .type-12 .admin-panel3 .admin-content3 #chartPieContainer {
-  margin: 15px 10px 10px 0;
-  height: 150px;
+  margin: -10px 10px -12px 0;
+  height: 175px;
   width: 100%;
 }
 .type-12 .admin-panel1 .admin-content1 h4,

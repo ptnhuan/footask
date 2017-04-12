@@ -22,8 +22,9 @@
         <link href="../../css/dashboard3/10.css" rel="stylesheet" type="text/css"/>
         <script src="../../js/dashboard3/10/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/10/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/10/jquery.sparkline.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/10/custom-script.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/10/canvasjs.min.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/10/chart-temperature.js" type="text/javascript"></script>
+        
     </head>
 
     <body>
@@ -34,28 +35,28 @@
                         <div class="total-chart">
                             <span>Total Sessions</span>
                             <h3>231,809</h3>
-                            <span class="sparkline11" style="height: 60px;"></span>
+                            <div id="chartCoalContainer" style="height: 120px;"></div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="total-chart">
                             <span>Total Sessions</span>
                             <h3>231,809</h3>
-                            <span class="sparkline11" style="height: 60px;"></span>
+                            <div id="chartCoalContainer2" style="height: 120px;"></div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="total-chart">
                             <span>Total Sessions</span>
                             <h3>231,809</h3>
-                            <span class="sparkline_three" style="height: 60px;"></span>
+                            <div id="chartCoalContainer3" style="height: 120px;"></div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="total-chart">
                             <span>Total Sessions</span>
                             <h3>231,809</h3>
-                            <span class="sparkline11" style="height: 60px;"></span>
+                            <div id="chartCoalContainer4" style="height: 120px;"></div>
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,9 @@
   margin: 3px 0 7px;
   font-weight: 700;
 }
-.type-10 .total-chart .sparkline11,
-.type-10 .total-chart .sparkline_three {
-  opacity: 1;
+.type-10 .total-chart #chartCoalContainer,
+.type-10 .total-chart #chartCoalContainer2,
+.type-10 .total-chart #chartCoalContainer3,
+.type-10 .total-chart #chartCoalContainer4 {
+  height: 120px;
 }
