@@ -45,7 +45,7 @@ and open the template in the editor.
                 padding-left: 0;
                 margin-top: 5px;
 
-                .collapse-link, .close-link {
+                #collapse-link, #close-link {
                     opacity: 1;
                 }
             }
@@ -66,6 +66,9 @@ and open the template in the editor.
             margin-top: 5px;
             width: 100%;
             position: relative;
+            #chartReportContainer {
+                height: 150px;
+            }
             .row {
                 margin-right: -10px;
                 margin-left: -10px;
@@ -77,20 +80,23 @@ and open the template in the editor.
                     color: #73879C;
                     margin: 18px;
                 }
-                .sparkline_one {
-                    padding: 10px 25px;
-                }
 
-                .canvasDoughnut {
+                #chartPieContainer1, #chartPieContainer2, #chartPieContainer3{
                     margin: 5px 10px 10px 0px;
                     width: 110px;
-                    height: 110px;
+                    height: 150px;
                 }
                 .rates {
                     margin:0;
                 }
             }
         }
+        .admin-content.toggled {
+            display: none;
+        }
+    }
+    .admin-panel.toggled {
+        display: none;
     }
 
 }
