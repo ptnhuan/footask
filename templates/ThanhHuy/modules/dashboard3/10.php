@@ -23,7 +23,7 @@
         <script src="../../js/dashboard3/10/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/10/bootstrap.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/10/canvasjs.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/10/chart-temperature.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/10/chart1.js" type="text/javascript"></script>
         
     </head>
 
@@ -35,28 +35,28 @@
                         <div class="total-chart">
                             <span>Total Sessions</span>
                             <h3>231,809</h3>
-                            <div id="chartCoalContainer" style="height: 120px;"></div>
+                            <div id="chartContainer1"></div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="total-chart">
                             <span>Total Sessions</span>
                             <h3>231,809</h3>
-                            <div id="chartCoalContainer2" style="height: 120px;"></div>
+                            <div id="chartContainer2"></div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="total-chart">
                             <span>Total Sessions</span>
                             <h3>231,809</h3>
-                            <div id="chartCoalContainer3" style="height: 120px;"></div>
+                            <div id="chartContainer3"></div>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="total-chart">
                             <span>Total Sessions</span>
                             <h3>231,809</h3>
-                            <div id="chartCoalContainer4" style="height: 120px;"></div>
+                            <div id="chartContainer4"></div>
                         </div>
                     </div>
                 </div>

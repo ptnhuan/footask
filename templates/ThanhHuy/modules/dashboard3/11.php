@@ -24,7 +24,7 @@
         <script src="../../js/dashboard3/11/jquery-ui.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/11/datetimepicker.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/11/canvasjs.min.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/11/chart-rangetemprature.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/11/chart2.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -47,12 +47,10 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div class="clearfix"></div>
                             </div>
                             <div class="admin-content">
-                                <div id="chartRangeareaContainer"></div>
+                                <div id="chartContainer5"></div>
                             </div>
                         </div>
                     </div>

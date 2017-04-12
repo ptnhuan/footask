@@ -5,14 +5,19 @@
  */
 
 
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
 window.onload = function () {
-    var chart = new CanvasJS.Chart("chartRangeareaContainer",
+    var chart5 = new CanvasJS.Chart("chartContainer5",
             {
                 animationEnabled: true,
-                exportEnabled: true,
                 axisY: {
                     includeZero: false,
-                    title: "Temperature (°C)",
                 },
                 axisX: {
                     valueFormatString: "DD-MMM",
@@ -56,5 +61,5 @@ window.onload = function () {
                     }
                 ]
             });
-    chart.render();
+    chart5.render();
 }

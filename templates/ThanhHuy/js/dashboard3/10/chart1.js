@@ -5,8 +5,15 @@
  */
 
 
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
 window.onload = function () {
-    var chart = new CanvasJS.Chart("chartCoalContainer",
+    var chart1 = new CanvasJS.Chart("chartContainer1",
             {
                 animationEnabled: true,
                 data: [
@@ -47,7 +54,7 @@ window.onload = function () {
                 }
             });
 
-    var chart2 = new CanvasJS.Chart("chartCoalContainer2",
+    var chart2 = new CanvasJS.Chart("chartContainer2",
             {
                 animationEnabled: true,
                 data: [
@@ -88,7 +95,7 @@ window.onload = function () {
                 }
             });
 
-    var chart3 = new CanvasJS.Chart("chartCoalContainer3",
+    var chart3 = new CanvasJS.Chart("chartContainer3",
             {
                 animationEnabled: true,
                 data: [
@@ -128,7 +135,7 @@ window.onload = function () {
                     }
                 }
             });
-    var chart4 = new CanvasJS.Chart("chartCoalContainer4",
+    var chart4 = new CanvasJS.Chart("chartContainer4",
             {
                 animationEnabled: true,
                 data: [
@@ -169,7 +176,7 @@ window.onload = function () {
                 }
             });
 
-    chart.render();
+    chart1.render();
     chart2.render();
     chart3.render();
     chart4.render();
