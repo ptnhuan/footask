@@ -11,7 +11,6 @@ and open the template in the editor.
 
 @color-body: #73879C;
 @font-size: 17px;
-@none: none;
 @background-color-button-contact: #26B99A;
 @border-color-button-contact: #169F85;
 @border-color-button-contact-hover: #169F85;
@@ -19,42 +18,49 @@ and open the template in the editor.
 @border-color-button-view: #2e6da4;
 @border-color-button-view-hover: #286090;
 
+@background-color-menu: #2A3F54;
+@font-size-t: 13px;
+@text-decoration: none;
+@color: #ffffff;
+@list-style: none;
+@background-color-white: #ffffff;
+
 .type-f-12 {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 
     .container-fluid {
-        .sidebar-left {
-            background-color: #2A3F54;
+        .nav-side-menu {
+            background-color: @background-color-menu;
             .logo {
+                padding: 0;
                 text-align: center;
                 line-height: 60px;
+                padding: 0;
                 a {
-                    text-decoration: @none;
-                    color: #fff;
+                    text-decoration: @text-decoration;
+                    color: @color;
+                    font-size: 21px;
                     .fa-paw {
                         border: 1px solid #e0e0e0;
                         border-radius: 50%;
                         padding: 5px;
-                    }
-                    .fa-paw, span {
-                        font-size: 21px;
+                        font-size: 22px;
                     }
                 }
             }
             .img-user {
+                padding-left: 12px;
                 margin: 10px 0;
+                padding: 0;
                 img {
                     width: 30%;
-                    border: 4px solid #fff;
+                    border: 4px solid @color;
                     border-radius: 50%;
                     float: left;
 
                 }
                 .welcome-name {
-                    color: #ffffff;
+                    color: @color;
                     float: left;
                     font-size: 15px;
                     text-align: center;
@@ -65,93 +71,93 @@ and open the template in the editor.
                     }
                 }
             }
-            .menu-vertical {
-                h4 {
+            .sidebar-menu {
+                h2 {
+                    padding-left: 15px;
+                    color: @color;
                     text-transform: uppercase;
-                    line-height: 50px;
-                    font-size: 13px;;
-                    color: #fff;
+                    font-weight: bold;
+                    letter-spacing: .5px;
+                    font-size: 11px;
                     text-shadow: 1px 1px #000;
-                }
-                ul.item-menu {
-                    list-style: @none;
-                    margin: 0;
                     padding: 0;
-                    margin-right: -5px;
-                    li {
-                        padding-bottom: 5px;
-                        .parent-menu {
-                            cursor: pointer;
-                            background-color: rgba(255,255,255,.06);
-                            padding: 10px;
-                            a {
-                                text-decoration: @none;
-                                font-size: 13px;
-                                .fa-home, .fa-edit, .fa-table, .fa-desktop, .fa-bar-chart-o, .fa-clone, .fa-bug, .fa-windows, .fa-sitemap, .fa-laptop {
-                                    width: 30px;
-                                    font-size: 18px;
+                    margin-top: 25px;
+                }
+                .menu-list {
+                    ul#menu-content {
+                        list-style: @list-style;
+                        padding: 0;
+                        margin: 0;
 
+                        .collapsed {
+                            border: none;
+                        }
+                        li {
+                            padding: 3px 0;
+                            line-height: 35px;
+                            cursor: pointer;
+                            font-size: @font-size-t;
+                            a {
+                                text-decoration: @text-decoration;
+                                color: @color;
+                                padding: 10px 10px;
+                                i.fa {
+                                    font-size: 19px;
+                                    padding-right: 5px;
+                                    padding-left: 0;
                                 }
-                                color: #ededed;
-                                font-weight: normal;
-                                .fa-chevron-down {
+                                i.fa-chevron-down {
                                     float: right;
+                                    padding: 12px 8px;
                                     font-size: 10px;
-                                    margin-top: 5px;
                                 }
                             }
                         }
-
-                        ul.child-menu {
-                            list-style: @none;
-                            margin: 0;
+                        li.active {
+                            background-color: rgba(255,255,255,.05);
+                        }
+                        ul.sub-menu {
+                            list-style: @list-style;
                             padding: 0;
-                            li {
-                                cursor: pointer;
-                                padding: 10px;
-                                border-right: 5px solid #1ABB9C;
+                            li.active {   
                                 a {
-                                    text-decoration: @none;
-                                    padding-left: 30px;
-                                    color: #ededed;
-                                    font-size: 13px;
+                                    color: @color;
                                 }
                             }
-                            li.current-page {
-                                background-color: rgba(255,255,255,.06);
+                            li {
+                                padding-left: 25px;
+                                border: none;
+                                font-size: @font-size-t;
+                                border-right: 3px solid #1ABB9C;
                             }
                             li:hover {
-                                background-color: rgba(255,255,255,.06);
+                                background-color: rgba(255,255,255,.05);
+                                color: #1ABB9C;
                             }
                         }
-                        ul#child-home, #child-elements, #child-tables, #child-additional, #child-data, #child-layout, #child-forms {
-                            opacity: 1;
-                            z-index: 10;
-                        }
-                        .comming-soon {
-                            font-size: 8px;
-                            background-color: #5cb85c;
-                            margin-top: 4px;
+                        #uie, #tables, #pages, #extras {
+                            border: none;
                         }
                     }
                 }
                 .sidebar-footer {
                     padding: 5px 0 0;
+                    width: 195px;
+                    margin-top: 25px;
                     position: fixed;
                     bottom: 0;
-                    width: 244px;
+                    background-color: @background-color-menu;
+
                     a {
                         padding: 7px 0 3px;
                         text-align: center;
-                        width: 20.5%;
-                        font-size: 13px;
+                        width: 25%;
+                        font-size: 17px;
                         display: block;
                         float: left;
-                        background: #172D44;
+                        background-color: #172D44;
                         cursor: pointer;
-                        i {
-                            color: #5A738E;
-                        }
+                        color: #5A738E;
                     }
                     a:hover {
                         background-color: #425567;
@@ -159,9 +165,7 @@ and open the template in the editor.
                 }
             }
         }
-        .nav-collapse {
-            display: none;
-        }
+
         .top-nav {
             .nav_menu {
                 background-color: #ededed;
@@ -169,7 +173,7 @@ and open the template in the editor.
                 #menu-toggle {
                     color: #5A738E;
                     font-size: 26px;
-                    border: @none;
+                    border: none;
                     background-color: #ededed;
                 }
                 #menu-toggle:hover {                
@@ -189,7 +193,7 @@ and open the template in the editor.
                         line-height: 32px;
 
                         img {
-                            max-width: @none;
+                            max-width: none;
                             width: 29px;
                             height: 29px;
                             border-radius: 50%;
@@ -208,7 +212,7 @@ and open the template in the editor.
                     ul.msg_list {
                         width: 300px;
                         position: absolute;
-                        background: #fff;
+                        background-color: @background-color-white;
                         margin-top: 0;
                         border: 1px solid #D9DEE4;
                         right: 0;
@@ -253,7 +257,7 @@ and open the template in the editor.
 
                             .text-center {
                                 a {
-                                    text-decoration: @none;
+                                    text-decoration: @text-decoration;
                                 }
                             }
                         }
@@ -263,7 +267,7 @@ and open the template in the editor.
                     }
                     .info-number {
                         .badge {
-                            font-size: 13px;
+                            font-size: @font-size-t;
                             line-height: 13px;
                             padding: 2px 6px;
                             position: absolute;
@@ -271,7 +275,7 @@ and open the template in the editor.
                             top: 8px;
                             background-color: #1ABB9C;
                             border: 1px solid #1ABB9C;
-                            color: #fff;
+                            color: @color;
                         }
                     }
                 }
@@ -304,7 +308,7 @@ and open the template in the editor.
                             border-radius: 0 25px 25px 0;
                             border: 1px solid rgba(221,226,232,.49);
                             border-left: 0;
-                            background-color: #fff;
+                            background-color: @background-color-white;
                             color: #93A2B2;
                         }
                         .btn-search:hover {
@@ -318,7 +322,7 @@ and open the template in the editor.
             width: 100%;
             padding: 10px 17px;
             display: inline-block;
-            background: #fff;
+            background-color: @background-color-white;
             border: 1px solid #E6E9ED;
             opacity: 1;
             transition: all .2s ease;
@@ -332,15 +336,15 @@ and open the template in the editor.
                     padding-bottom: 5px;
                     margin: 25px 0;
                     li {
-                        list-style: @none;
+                        list-style: @list-style;
                         float: left;
                         margin: 0 3px;
                         padding: 0;
                         a {
-                            text-decoration: @none;
+                            text-decoration: @text-decoration;
                             color: #768399;
                             padding: 5px 10px;
-                            background-color: #fff;
+                            background-color: @background-color-white;
                             border: 1px solid #ddd;
                             border-radius: 5px;
                         }
@@ -384,9 +388,9 @@ and open the template in the editor.
                             margin: 0 0 0;
                         }
                         a.btn-contact, a.btn-view {
-                            text-decoration: @none;
+                            text-decoration: @text-decoration;
                             padding: 3px 4px;
-                            color: #ffffff;
+                            color: @color;
                             border-radius: 4px;
                             margin-right: 5px;
                         }
@@ -413,9 +417,6 @@ and open the template in the editor.
         }
         .page-content-wrraper {
             background-color: #f7f7f7;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
         }
         footer {
@@ -424,11 +425,11 @@ and open the template in the editor.
             color: #5A738E;
             text-align: right;
             a {
-                text-decoration: none;
+                text-decoration: @text-decoration;
                 color: #5A738E;
             }
             a:hover {
-                text-decoration: none;
+                text-decoration: @text-decoration;
             }
         }
         #back-to-top{
@@ -441,7 +442,7 @@ and open the template in the editor.
             right:10px;
             cursor:pointer;
             display:none;
-            color:#fff;
+            color:@color;
             font-size:11px;
         }
         #back-to-top:hover {
@@ -451,18 +452,21 @@ and open the template in the editor.
     }
 
 }
+
 .type-f-12.toggled {
     margin-left: -190px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    .sidebar-left {        
+    .logo, .img-user {        
         display:  none;
+    }
+
+    .sidebar-menu {
+        display:  none;
+
     }
     .nav-collapse {
         display: block;
-        margin-left: 192px;        
+        margin-left: 190px;        
         .logo-collapse {
             border: 1px solid #fff;
             border-radius: 50px;
@@ -483,7 +487,7 @@ and open the template in the editor.
                 margin: 0;
                 list-style: none;
 
-                li {
+                li.dropdown {
                     margin: 25px 0;
                     a {
                         color: #fff;
@@ -497,64 +501,19 @@ and open the template in the editor.
                         }
 
                     }
-                }
-            }
-        }
-    }
-}
-.type-f-12.toggled {
-    margin-left: -190px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    .sidebar-left {        
-        display:  none;
-    }
-    .nav-collapse {
-        display: block;
-        margin-left: 192px;        
-        .logo-collapse {
-            border: 1px solid #fff;
-            border-radius: 50px;
-            margin-top: 12px;
-            a{               
-                font-size: 27px;
-                margin: 25px 0 0 3px;
-                color: #ffffff;
-            }
-        }
-
-        nav.menu-collapse {
-            margin: 35px 0;
-            text-align: center;
-
-            ul {
-                padding: 0;
-                margin: 0;
-                list-style: none;
-
-                li {
-                    margin: 25px 0;
-                    a {
-                        color: #fff;
-                        text-decoration: none;
-                        i {
-                            font-size: 25px;
-
+                    ul.dropdown-menu {
+                        li {
+                            background-color: red;                            
                         }
-                        small {
-                            font-size: 10px;
-                        }
-
                     }
                 }
             }
         }
     }
+
 }
 @media (max-width: 980px) {
-    .sidebar-left {
+    .logo, .img-user, .sidebar-footer {
         display: none;
     }
     .content {
@@ -567,10 +526,16 @@ and open the template in the editor.
             margin-top: -5px;
         }
     }
-    .type-f-12.toggled {
-        margin-left: 75px;
-        .nav-collapse {
-            display: none;
+}
+@media (min-width: 980px) {
+    .nav-collapse {
+        display: none;
+    }
+    .nav-side-menu {
+        .menu-list {
+            ul#menu-content {
+                display: block;
+            }
         }
     }
 }
