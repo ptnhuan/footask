@@ -45,7 +45,7 @@ and open the template in the editor.
             width: 70%;
             float: right;
 
-            li {
+            li.dropdown {
                 position: relative;
                 float: right;
                 display: inline-block;
@@ -62,13 +62,22 @@ and open the template in the editor.
                         margin-right: 10px;
                     }
                 }
-                ul.user-profile {
+                ul.dropdown-menu {
+                    border-radius:4px;
+                    width:150px;
                     li {
                         a {
-                            span, i {
-                                float: right;
+                            color: #555;
+                            .badge{
+                                background-color: red;
+                                margin-left: 25px;
+                            }
+                            .fa-sign-out {
+                                color: #73879C;
+                                margin-left: 60px;
                             }
                         }
+
                     }
                 }
                 ul.msg_list {

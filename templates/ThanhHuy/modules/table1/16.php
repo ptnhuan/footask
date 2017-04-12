@@ -34,21 +34,21 @@
                                 <a href="#"><i class="fa fa-bars"></i></a>
                             </div>
                             <ul class="nav navbar-right">
-                                <li>
+                                <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         <img src="../../images/img.jpg" alt="">John Doe
                                         <i class="fa fa-angle-down"></i>
                                     </a>
 
 
-                                    <ul class="dropdown-menu user-profile">
+                                    <ul class="dropdown-menu">
                                         <li>
                                             <a href="#">Profile</a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <span class="badge">50%</span>
                                                 <span>Settings</span>
+                                                <span class="badge">50%</span>
                                             </a>
                                         </li>
                                         <li>
@@ -56,7 +56,7 @@
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="fa fa-sign-out"></i>Logout
+                                                Logout<i class="fa fa-sign-out"></i>
                                             </a>
                                         </li>
                                     </ul>
