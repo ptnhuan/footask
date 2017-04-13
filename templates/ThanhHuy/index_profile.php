@@ -28,8 +28,7 @@
         <script src="js/profile/datetimepicker.js" type="text/javascript"></script>
         <script src="js/profile/canvasjs.min.js" type="text/javascript"></script>
         <script src="js/profile/chart-skills.js" type="text/javascript"></script>
-        <script src="js/profile/close-panel.js" type="text/javascript"></script>
-        <script src="js/profile/collapse-panel.js" type="text/javascript"></script>
+        <script src="js/profile/collapse-close.js" type="text/javascript"></script>
     </head>
 
     <body style="background-color: #2A3F54;">
@@ -435,12 +434,12 @@
                                     </h3>
                                     <ul class="items">
                                         <li>
-                                            <a class="toggled" id="collapse-link">
+                                            <a class="collapse-link">
                                                 <i class="fa fa-chevron-up"></i>
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a href="#" data-toggle="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                 <i class="fa fa-wrench"></i>
                                             </a>
                                             <ul class="dropdown-menu">
@@ -449,7 +448,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a class="toggled" id="close-link">
+                                            <a class="close-link">
                                                 <i class="fa fa-close"></i>
                                             </a>
                                         </li>

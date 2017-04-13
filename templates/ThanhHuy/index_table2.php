@@ -27,8 +27,7 @@
         <script src="js/table2/flexible-menu.js" type="text/javascript"></script>
         <script src="js/table2/pagination-table.js" type="text/javascript"></script>
         <script src="js/table2/search-table.js" type="text/javascript"></script>
-        <script src="js/table2/collapse-panel.js" type="text/javascript"></script>
-        <script src="js/table2/close-panel.js" type="text/javascript"></script>
+        <script src="js/table2/collapse-close.js" type="text/javascript"></script>
     </head>
 
 
@@ -425,7 +424,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="admin-panel1">
+                                <div class="admin-panel">
                                     <div class="admin-title">
                                         <h3>
                                             Default Example  
@@ -433,12 +432,12 @@
                                         </h3>
                                         <ul class="items">
                                             <li>
-                                                <a class="toggled" id="collapse-link">
+                                                <a class="collapse-link">
                                                     <i class="fa fa-chevron-up"></i>
                                                 </a>
                                             </li>
                                             <li class="dropdown">
-                                                <a href="#" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                     <i class="fa fa-wrench"></i>
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -447,14 +446,14 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="toggled" id="close-link">
+                                                <a class="close-link">
                                                     <i class="fa fa-close"></i>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="admin-content1">
+                                    <div class="admin-content">
                                         <p>DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function:<code>$().DataTable();</code></p>
 
                                         <div class="row">
@@ -605,19 +604,19 @@
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="admin-panel2">
+                                <div class="admin-panel">
                                     <div class="admin-title">
                                         <h3>
                                             Plus Table Design
                                         </h3>
                                         <ul class="items">
                                             <li>
-                                                <a class="toggled" id="collapse-link2">
+                                                <a class="collapse-link">
                                                     <i class="fa fa-chevron-up"></i>
                                                 </a>
                                             </li>
                                             <li class="dropdown">
-                                                <a href="#" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                     <i class="fa fa-wrench"></i>
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -626,14 +625,14 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="toggled" id="close-link2">
+                                                <a class="close-link">
                                                     <i class="fa fa-close"></i>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="admin-content2">
+                                    <div class="admin-content">
                                         <p>DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function:<code>$().DataTable();</code></p>
 
                                         <div class="row">
@@ -866,19 +865,19 @@
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="admin-panel3">
+                                <div class="admin-panel">
                                     <div class="admin-title">
                                         <h3>
                                             Button Example <small>Users</small>
                                         </h3>
                                         <ul class="items">
                                             <li>
-                                                <a class="toggled" id="collapse-link3">
+                                                <a class="collapse-link">
                                                     <i class="fa fa-chevron-up"></i>
                                                 </a>
                                             </li>
                                             <li class="dropdown">
-                                                <a href="#" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                     <i class="fa fa-wrench"></i>
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -887,14 +886,14 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="toggled" id="close-link3">
+                                                <a class="close-link">
                                                     <i class="fa fa-close"></i>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="admin-content3">
+                                    <div class="admin-content">
                                         <p>
                                             The Buttons extension for DataTables provides a common set of options, API methods and styling to display buttons on a page that will interact with a DataTable. The core library provides the based framework upon which plug-ins can built.</p>
 
@@ -1047,7 +1046,7 @@
 
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="admin-panel4">
+                                <div class="admin-panel">
                                     <div class="admin-title">
                                         <h3>
                                             Fixed Header Example  
@@ -1055,12 +1054,12 @@
                                         </h3>
                                         <ul class="items">
                                             <li>
-                                                <a class="toggled" id="collapse-link4">
+                                                <a class="collapse-link">
                                                     <i class="fa fa-chevron-up"></i>
                                                 </a>
                                             </li>
                                             <li class="dropdown">
-                                                <a href="#" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                     <i class="fa fa-wrench"></i>
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -1069,14 +1068,14 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="toggled" id="close-link4">
+                                                <a class="close-link">
                                                     <i class="fa fa-close"></i>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="admin-content4">
+                                    <div class="admin-content">
                                         <p>This example shows FixedHeader being styling by the Bootstrap CSS framework.</p>
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -1226,7 +1225,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="admin-panel5">
+                                <div class="admin-panel">
                                     <div class="admin-title">
                                         <h3>
                                             KeyTable example 
@@ -1234,12 +1233,12 @@
                                         </h3>
                                         <ul class="items">
                                             <li>
-                                                <a class="toggled" id="collapse-link5">
+                                                <a class="collapse-link">
                                                     <i class="fa fa-chevron-up"></i>
                                                 </a>
                                             </li>
                                             <li class="dropdown">
-                                                <a href="#" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                     <i class="fa fa-wrench"></i>
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -1248,14 +1247,14 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="toggled" id="close-link5">
+                                                <a class="close-link">
                                                     <i class="fa fa-close"></i>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="admin-content5">
+                                    <div class="admin-content">
                                         <p>KeyTable provides Excel like cell navigation on any table. Events (focus, blur, action etc) can be assigned to individual cells, columns, rows or all cells.</p>
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -1406,7 +1405,7 @@
 
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="admin-panel6">
+                                <div class="admin-panel">
                                     <div class="admin-title">
                                         <h3>
                                             Responsive example 
@@ -1414,12 +1413,12 @@
                                         </h3>
                                         <ul class="items">
                                             <li>
-                                                <a class="toggled" id="collapse-link6">
+                                                <a class="collapse-link">
                                                     <i class="fa fa-chevron-up"></i>
                                                 </a>
                                             </li>
                                             <li class="dropdown">
-                                                <a href="#" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                     <i class="fa fa-wrench"></i>
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -1428,14 +1427,14 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="toggled" id="close-link6">
+                                                <a class="close-link">
                                                     <i class="fa fa-close"></i>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <div class="admin-content6">
+                                    <div class="admin-content">
                                         <p>Responsive is an extension for DataTables that resolves that problem by optimising the table's layout for different screen sizes through the dynamic insertion and removal of columns from the table.</p>
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12">

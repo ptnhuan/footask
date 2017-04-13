@@ -22,10 +22,10 @@
         <link rel="stylesheet" href="css/table1/type-f-12.css">
         <script src="js/table1/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="js/table1/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/table1/custom-script.js" type="text/javascript"></script>
         <script src="js/table1/check-all.js" type="text/javascript"></script>
         <script src="js/table1/back-to-top.js" type="text/javascript"></script>
         <script src="js/table1/flexible-menu.js" type="text/javascript"></script>
+        <script src="js/table1/collapse-close.js" type="text/javascript"></script>
     </head>
 
     <body style="background-color: #2A3F54;">
@@ -677,7 +677,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="admin-panel table-full">
+                                <div class="admin-panel">
                                     <div class="admin-title">
                                         <h3>
                                             Table design
