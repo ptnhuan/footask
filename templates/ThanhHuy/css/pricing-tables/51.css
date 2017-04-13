@@ -76,8 +76,8 @@
 .type-51 .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
   min-width: 0px !important;
 }
-.type-51 .admin-panel .admin-title ul.items #collapse-link,
-.type-51 .admin-panel .admin-title ul.items #close-link {
+.type-51 .admin-panel .admin-title ul.items .collapse-link,
+.type-51 .admin-panel .admin-title ul.items .close-link {
   opacity: 1;
 }
 .type-51 .admin-panel .admin-content {
@@ -166,12 +166,6 @@
   left: -5px;
   top: 15px;
   background-color: #555;
-}
-.type-51 .admin-panel .admin-content.toggled {
-  display: none;
-}
-.type-51 .admin-panel.toggled {
-  display: none;
 }
 @media (max-width: 980px) {
   .content .content-left h3 {

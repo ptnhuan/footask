@@ -71,8 +71,8 @@
 .type-35 .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
   min-width: 0px !important;
 }
-.type-35 .admin-panel .admin-title ul.items #collapse-link,
-.type-35 .admin-panel .admin-title ul.items #close-link {
+.type-35 .admin-panel .admin-title ul.items .collapse-link,
+.type-35 .admin-panel .admin-title ul.items .close-link {
   opacity: 1;
 }
 .type-35 .admin-panel .admin-content p {
@@ -154,12 +154,6 @@
 }
 .type-35 .admin-panel .admin-content table tbody tr:nth-child(even) {
   background-color: #f2f2f2;
-}
-.type-35 .admin-panel .admin-content.toggled {
-  display: none;
-}
-.type-35 .admin-panel.toggled {
-  display: none;
 }
 @media (max-width: 980px) {
   .content .content-left h3 {

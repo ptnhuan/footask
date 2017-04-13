@@ -24,8 +24,7 @@
         <script src="../../js/table2/25/bootstrap.min.js" type="text/javascript"></script>
         <script src="../../js/table2/25/pagination-table.js" type="text/javascript"></script>
         <script src="../../js/table2/25/search-table.js" type="text/javascript"></script>
-        <script src="../../js/table2/25/close-panel.js" type="text/javascript"></script>
-        <script src="../../js/table2/25/collapse-panel.js" type="text/javascript"></script>
+        <script src="../../js/table2/25/collapse-close.js" type="text/javascript"></script>
 
     </head>
 
@@ -42,12 +41,12 @@
                                 </h3>
                                 <ul class="items">
                                     <li>
-                                        <a class="toggled" id="collapse-link">
+                                        <a class="collapse-link">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -56,7 +55,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="toggled" id="close-link">
+                                        <a class="close-link">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>

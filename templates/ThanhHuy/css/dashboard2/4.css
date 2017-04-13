@@ -16,7 +16,7 @@
 }
 .type-4 .admin-panel .admin-title span,
 .type-4 .admin-panel .admin-title .fa {
-  color: #73879C;
+  color: #BAB8B8;
 }
 .type-4 .admin-panel .admin-title h2 {
   margin: 5px 0 6px;
@@ -96,8 +96,8 @@
   float: left;
   cursor: pointer;
 }
-.type-4 .admin-panel .admin-content .admin-title #collapse-link,
-.type-4 .admin-panel .admin-content .admin-title #close-link {
+.type-4 .admin-panel .admin-content .admin-title .collapse-link,
+.type-4 .admin-panel .admin-content .admin-title .close-link {
   opacity: 1;
 }
 .type-4 .admin-panel .admin-content ul.profiles-user {
@@ -141,10 +141,4 @@
 }
 .type-4 .admin-panel .admin-content ul.profiles-user li .profile-comment p span {
   white-space: nowrap;
-}
-.type-4 .admin-panel .admin-content.toggled {
-  display: none;
-}
-.type-4 .admin-panel.toggled {
-  display: none;
 }

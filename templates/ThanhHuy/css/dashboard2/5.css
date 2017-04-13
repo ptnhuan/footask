@@ -32,8 +32,8 @@
   padding-left: 0;
   margin-top: 5px;
 }
-.type-5 .admin-panel .admin-title ul.sales #collapse-link,
-.type-5 .admin-panel .admin-title ul.sales #close-link {
+.type-5 .admin-panel .admin-title ul.sales .collapse-link,
+.type-5 .admin-panel .admin-title ul.sales .close-link {
   opacity: 1;
 }
 .type-5 .admin-panel .admin-title ul.sales > li {
@@ -75,10 +75,4 @@
 }
 .type-5 .admin-panel .admin-content .row .rates {
   margin: 0;
-}
-.type-5 .admin-panel .admin-content.toggled {
-  display: none;
-}
-.type-5 .admin-panel.toggled {
-  display: none;
 }

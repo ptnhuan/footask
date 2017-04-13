@@ -24,8 +24,7 @@
         <script src="../../js/dashboard2/4/bootstrap.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard2/4/canvasjs.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard2/4/chart-rain.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/4/close-panel.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/4/collapse-panel.js" type="text/javascript"></script>
+        <script src="../../js/dashboard2/4/collapse-close.js" type="text/javascript"></script>
         <script src="../../js/dashboard2/4/jquery-ui.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard2/4/datetimepicker.js" type="text/javascript"></script>
     </head>
@@ -74,12 +73,12 @@
                                         <h2>Top Profiles</h2>
                                         <ul class="profile-user">
                                             <li>
-                                                <a class="toggled" id="collapse-link">
+                                                <a class="collapse-link">
                                                     <i class="fa fa-chevron-up"></i>
                                                 </a>
                                             </li>
                                             <li class="dropdown">
-                                                <a href="#" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                                     <i class="fa fa-wrench"></i>
                                                 </a>
                                                 <ul class="dropdown-menu">
@@ -88,7 +87,7 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="toggled" id="close-link">
+                                                <a class="close-link">
                                                     <i class="fa fa-close"></i>
                                                 </a>
                                             </li>

@@ -74,8 +74,8 @@
 .type-47 .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
   min-width: 0 !important;
 }
-.type-47 .admin-panel .admin-title ul.items #collapse-link,
-.type-47 .admin-panel .admin-title ul.items #close-link {
+.type-47 .admin-panel .admin-title ul.items .collapse-link,
+.type-47 .admin-panel .admin-title ul.items .close-link {
   opacity: 1;
 }
 .type-47 .admin-panel .admin-content {
@@ -206,12 +206,6 @@
 }
 .type-47 .admin-panel .admin-content .project-description .button-function a.btn-report:hover {
   background-color: #d58512;
-}
-.type-47 .admin-panel .admin-content.toggled {
-  display: none;
-}
-.type-47 .admin-panel.toggled {
-  display: none;
 }
 @media (max-width: 980px) {
   .content .content-left h3 {

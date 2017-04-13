@@ -22,8 +22,8 @@
         <link rel="stylesheet" href="../../css/table1/18.css">
         <script src="../../js/table1/18/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/table1/18/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../../js/table1/18/custom-script.js" type="text/javascript"></script>
         <script src="../../js/table1/18/check-all.js" type="text/javascript"></script>
+        <script src="../../js/table1/18/collapse-close.js" type="text/javascript"></script>
     </head>
 
     <body>

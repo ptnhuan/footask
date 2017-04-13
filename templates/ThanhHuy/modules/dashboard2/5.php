@@ -23,8 +23,7 @@
         <script src="../../js/dashboard2/5/bootstrap.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard2/5/canvasjs.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard2/5/chart-report.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/5/close-panel.js" type="text/javascript"></script>
-        <script src="../../js/dashboard2/5/collapse-panel.js" type="text/javascript"></script>
+        <script src="../../js/dashboard2/5/collapse-close.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -40,12 +39,12 @@
                                 </h2>
                                 <ul class="sales">
                                     <li>
-                                        <a class="toggled" id="collapse-link">
+                                        <a class="collapse-link">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -54,7 +53,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="toggled" id="close-link">
+                                        <a class="close-link">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>

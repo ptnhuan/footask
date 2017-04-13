@@ -41,8 +41,8 @@
 .type-23 .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
   min-width: 0px !important;
 }
-.type-23 .admin-panel .admin-title ul.items #collapse-link,
-.type-23 .admin-panel .admin-title ul.items #close-link {
+.type-23 .admin-panel .admin-title ul.items .collapse-link,
+.type-23 .admin-panel .admin-title ul.items .close-link {
   opacity: 1;
 }
 .type-23 .admin-panel .admin-content p {
@@ -89,10 +89,4 @@
 }
 .type-23 .admin-panel .admin-content .pagination a:hover {
   color: #23527c;
-}
-.type-23 .admin-panel .admin-content.toggled {
-  display: none;
-}
-.type-23 .admin-panel.toggled {
-  display: none;
 }

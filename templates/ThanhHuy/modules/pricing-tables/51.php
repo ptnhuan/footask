@@ -22,8 +22,7 @@
         <link rel="stylesheet" href="../../css/pricing-tables/51.css">
         <script src="../../js/pricing-tables/51/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/pricing-tables/51/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../../js/pricing-tables/51/close-panel.js" type="text/javascript"></script>
-        <script src="../../js/pricing-tables/51/collapse-panel.js" type="text/javascript"></script>
+        <script src="../../js/pricing-tables/51/collapse-close.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -55,12 +54,12 @@
                                 </h3>
                                 <ul class="items">
                                     <li>
-                                        <a class="toggled" id="collapse-link">
+                                        <a class="collapse-link">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -69,7 +68,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="toggled" id="close-link">
+                                        <a class="close-link">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>

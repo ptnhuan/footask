@@ -22,14 +22,13 @@
         <script src="../../js/dashboard3/13/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/13/bootstrap.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/13/canvasjs.min.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/13/script-gauge.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/13/weather-icons.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/13/skycons.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/13/init-script.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/13/chart-column.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/13/jquery.jqGauges.min.js" type="text/javascript"></script>
         <script src="../../js/dashboard3/13/excanvas.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/13/script-gauge.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/13/close-panel.js" type="text/javascript"></script>
-        <script src="../../js/dashboard3/13/collapse-panel.js" type="text/javascript"></script>
+        <script src="../../js/dashboard3/13/collapse-close.js" type="text/javascript"></script>
 
     </head>
 
@@ -38,19 +37,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="admin-panel1">
+                        <div class="admin-panel">
                             <div class="admin-title">
                                 <h2>
                                     User Uptake
                                 </h2>
                                 <ul class="items">
                                     <li>
-                                        <a class="toggled" id="collapse-link1">
+                                        <a class="collapse-link">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -59,14 +58,14 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="toggled" id="close-link1">
+                                        <a class="close-link">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="admin-content1">
+                            <div class="admin-content">
 
                                 <div class="col-md-12 info-progress">
                                     <div class="row">
@@ -127,19 +126,19 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="admin-panel2">
+                        <div class="admin-panel">
                             <div class="admin-title">
                                 <h2>
                                     Today Weather <small>Sessions</small>
                                 </h2>
                                 <ul class="items">
                                     <li>
-                                        <a class="toggled" id="collapse-link2">
+                                        <a class="collapse-link">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -148,14 +147,14 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="toggled" id="close-link2">
+                                        <a class="close-link">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="admin-content2" style="color: #73879C;">
+                            <div class="admin-content" style="color: #73879C;">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class=""><b>Monday</b>, 07:30 AM
@@ -237,7 +236,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="admin-panel3">
+                        <div class="admin-panel">
                             <div class="admin-title">
                                 <h2>
                                     Incomes 
@@ -245,12 +244,12 @@
                                 </h2>
                                 <ul class="items">
                                     <li>
-                                        <a class="toggled" id="collapse-link3">
+                                        <a class="collapse-link">
                                             <i class="fa fa-chevron-up"></i>
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                             <i class="fa fa-wrench"></i>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -259,7 +258,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="toggled" id="close-link3">
+                                        <a class="close-link">
                                             <i class="fa fa-close"></i>
                                         </a>
                                     </li>
@@ -267,7 +266,7 @@
                                 <div class="clearfix"></div>
                             </div>
 
-                            <div class="admin-content3">
+                            <div class="admin-content">
                                 <ul class="quick-list">
                                     <li><i class="fa fa-bars"></i><a href="#">Subscription</a></li>
                                     <li><i class="fa fa-bar-chart"></i><a href="#">Auto Renewal</a></li>
@@ -277,7 +276,7 @@
 
                                 <div class="sidebar-widget">
                                     <h4>Goal</h4>   
-                                                                     
+
                                     <div class="goal-wrapper">
                                         <div id="jqRadialGauge">
                                         </div>                                      
