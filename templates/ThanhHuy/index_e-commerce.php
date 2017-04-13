@@ -33,256 +33,279 @@
     <body style="background-color: #2A3F54;">
         <div class="type-f-12">
             <div class="container-fluid">
-                <div class="col-md-2 col-sm-12 col-xs-12">
-                    <div class="sidebar-left"> 
-                        <div class="logo">
-                            <a href="#">
-                                <i class="fa fa-paw"></i>
-                                <span>Gentelella Alela!</span>
+                <div class="nav-side-menu col-md-2">
+                    <div class="logo">
+                        <a href="index_dashboard2.php">
+                            <i class="fa fa-paw"></i>
+                            <span>Gentelella Alela!</span>
+                        </a>
+                    </div>
+                    <div class="img-user clearfix">
+                        <img src="images/img.jpg" alt="men">
+                        <div class="welcome-name">
+                            <span>Welcome,</span>
+                            <p>John Due</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-menu">
+                        <h3>General</h3>
+
+                        <div class="menu-list">
+                            <ul id="menu-content" class="menu-content collapse out">
+                                <li data-toggle="collapse" data-target="#home" class="collapsed active">
+                                    <a href="#">
+                                        <i class="fa fa-home"></i> Home <i class="fa fa-chevron-down arrow"></i>
+                                    </a>
+                                </li>
+                                <ul class="sub-menu collapse" id="home">
+                                    <li><a href="#">&#8226; Dashboard</a></li>
+                                    <li><a href="index_dashboard2.php">&#8226; Dashboard2</a></li>
+                                    <li><a href="index_dashboard3.php">&#8226; Dashboard3</a></li>
+                                </ul>
+
+                                <li data-toggle="collapse" data-target="#form" class="collapsed active">
+                                    <a href="#">
+                                        <i class="fa fa-edit"></i> Forms <i class="fa fa-chevron-down arrow"></i>
+                                    </a>
+                                </li>
+                                <ul class="sub-menu collapse" id="form">
+                                    <li><a href="#">&#8226; General Form</a></li>
+                                    <li><a href="#">&#8226; Advanced Components</a></li>
+                                    <li><a href="#">&#8226; Form Validation</a></li>
+                                    <li><a href="#">&#8226; Form Wizard</a></li>
+                                    <li><a href="#">&#8226; Form Upload</a></li>
+                                    <li><a href="#">&#8226; Form Buttons</a></li>
+                                </ul>
+
+                                <li data-toggle="collapse" data-target="#uie" class="collapsed active">
+                                    <a href="#">
+                                        <i class="fa fa-desktop"></i>  UI Elements  <i class="fa fa-chevron-down arrow"></i>
+                                    </a>
+                                </li>
+                                <ul class="sub-menu collapse" id="uie">
+                                    <li><a href="#">&#8226; General Elements</a></li>
+                                    <li><a href="#">&#8226; Media Gallery</a></li>
+                                    <li><a href="#">&#8226; Typography</a></li>
+                                    <li><a href="#">&#8226; Icons</a></li>
+                                    <li><a href="#">&#8226; Glyphicons</a></li>
+                                    <li><a href="#">&#8226; Widgets</a></li>
+                                    <li><a href="#">&#8226; Invoice</a></li>
+                                    <li><a href="#">&#8226; Inbox</a></li>
+                                    <li><a href="#">&#8226; Calendar</a></li>
+                                </ul>
+
+                                <li data-toggle="collapse" data-target="#tables" class="collapsed active">
+                                    <a href="#">
+                                        <i class="fa fa-table"></i> Tables <i class="fa fa-chevron-down arrow"></i>
+                                    </a>
+                                </li>
+                                <ul class="sub-menu collapse" id="tables">
+                                    <li><a href="index_table1.php">&#8226; Tables</a></li>
+                                    <li><a href="index_table2.php">&#8226; Table Dynamic</a></li>
+                                </ul>
+
+                                <li data-toggle="collapse" data-target="#chart" class="collapsed active">
+                                    <a href="#">
+                                        <i class="fa fa-bar-chart-o"></i> Data Presentation  <i class="fa fa-chevron-down arrow"></i>
+                                    </a>
+                                </li>
+                                <ul class="sub-menu collapse" id="chart">
+                                    <li><a href="#">&#8226; Chart JS</a></li>
+                                    <li><a href="#">&#8226; Chart JS2</a></li>
+                                    <li><a href="#">&#8226; Moris JS</a></li>
+                                    <li><a href="#">&#8226; Echarts</a></li>
+                                    <li><a href="#">&#8226; Other Charts</a></li>
+                                </ul>
+
+                                <li data-toggle="collapse" data-target="#layout" class="collapsed active">
+                                    <a href="#">
+                                        <i class="fa fa-clone"></i>  Layouts  <i class="fa fa-chevron-down arrow"></i>
+                                    </a>
+                                </li>
+                                <ul class="sub-menu collapse" id="layout">
+                                    <li><a href="#">&#8226; Fixed Sidebar</a></li>
+                                    <li><a href="#">&#8226; Fixed Footer</a></li>
+                                </ul>
+                                <h3>Live on</h3>
+
+                                <li data-toggle="collapse" data-target="#pages" class="collapsed active">
+                                    <a href="#">
+                                        <i class="fa fa-pagelines"></i>  Additional Pages  <i class="fa fa-chevron-down arrow"></i>
+                                    </a>
+                                </li>
+                                <ul class="sub-menu collapse" id="pages">
+                                    <li class="active"><a href="index_e-commerce.php">&#8226; E-commerce</a></li>
+                                    <li><a href="index_projects.php">&#8226; Projects</a></li>
+                                    <li><a href="index_projects-detail.php">&#8226; Project Detail</a></li>                                    
+                                    <li><a href="index_contacts.php">&#8226; Contacts</a></li>
+                                    <li><a href="index_profile.php">&#8226; Profile</a></li>
+                                </ul>
+
+                                <li data-toggle="collapse" data-target="#extras" class="collapsed active">
+                                    <a href="#">
+                                        <i class="fa fa-windows"></i>  Extras  <i class="fa fa-chevron-down arrow"></i>
+                                    </a>
+                                </li>
+                                <ul class="sub-menu collapse" id="extras">
+                                    <li><a href="#">&#8226; 403 Error</a></li>
+                                    <li><a href="#">&#8226; 404 Error</a></li>
+                                    <li><a href="#">&#8226; 500 Error</a></li>                                    
+                                    <li><a href="#">&#8226; Plain Page</a></li>
+                                    <li><a href="index_login.php">&#8226; Login Page</a></li>
+                                    <li><a href="index_pricing-tables.php">&#8226; Pricing Tables</a></li>
+                                </ul>
+
+                                <li data-toggle="collapse" data-target="#menu" class="collapsed active">
+                                    <a href="#">
+                                        <i class="fa fa-sitemap"></i>   Multilevel Menu   <i class="fa fa-chevron-down arrow"></i>
+                                    </a>
+                                </li>
+                                <ul class="sub-menu collapse" id="menu">
+                                    <li><a href="#">&#8226; Level One</a></li>
+                                    <li><a href="#">&#8226; Level One</a></li>
+                                    <li><a href="#">&#8226; Level One</a></li>    
+                                </ul>
+
+                                <li class="active">
+                                    <a href="#">
+                                        <i class="fa fa-laptop"></i>  Landing Page 
+                                        <span class="label label-success pull-right" style="margin-top: 11px;">Coming Soon</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-footer">
+                            <a href="#" title="Settings">
+                                <i class="glyphicon glyphicon-cog"></i>
                             </a>
-                        </div>
-                        <div class="img-user">
-                            <img src="images/img.jpg" alt="men">
-                            <div class="welcome-name">
-                                <span>Welcome,</span>
-                                <p>John Due</p>
-                            </div>
-                        </div>
-                        <div class="menu-vertical">
-                            <h4>General</h4>
-                            <ul class="item-menu">
-                                <li>
-                                    <div class="parent-menu" onclick="toggleMenuHome()">
-                                        <a href="#">
-                                            <i class="fa fa-home"></i>Home<i class="fa fa-chevron-down"></i>
-                                        </a>
-                                    </div>
-                                    <ul class="child-menu" id="child-home" style="display: none;">
-                                        <li>
-                                            <a href="#">Dashboard</a>
-                                        </li>
-                                        <li>
-                                            <a href="index_dashboard2.php">Dashboard2</a>
-                                        </li>
-                                        <li style="margin-bottom: 8px;">
-                                            <a href="index_dashboard3.php">Dashboard3</a>
-                                        </li>
-                                    </ul>
-                                </li> 
-                                <li>
-                                    <div class="parent-menu" onclick="toggleMenuForms()">
-                                        <a href="#">
-                                            <i class="fa fa-edit"></i>Forms<i class="fa fa-chevron-down"></i>
-                                        </a>
-                                    </div>
-                                    <ul class="child-menu" id="child-forms" style="display: none;">
-                                        <li><a href="#">General Form</a></li>
-                                        <li><a href="#">Advanced</a></li>
-                                        <li><a href="#">Form Validation</a></li>
-                                        <li><a href="#">Form Wizard</a></li>
-                                        <li><a href="#">Form Upload</a></li>
-                                        <li style="margin-bottom: 8px;"><a href="#">Form Buttons</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div class="parent-menu" onclick="toggleMenuElements()">
-                                        <a href="#">
-                                            <i class="fa fa-desktop"></i>UI Elements<i class="fa fa-chevron-down"></i>
-                                        </a>
-                                    </div>
-                                    <ul class="child-menu" id="child-elements" style="display: none;">
-                                        <li><a href="#">General</a></li>
-                                        <li><a href="#">Media Gallery</a></li>
-                                        <li><a href="#">Typography</a></li>
-                                        <li><a href="#">Icons</a></li>
-                                        <li><a href="#">Glyphicons</a></li>
-                                        <li><a href="#">Widgets</a></li>
-                                        <li><a href="#">Invoice</a></li>
-                                        <li><a href="#">Inbox</a></li>
-                                        <li style="margin-bottom: 8px;"><a href="#">Calendar</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div class="parent-menu" onclick="toggleMenuTables()">
-                                        <a href="#">
-                                            <i class="fa fa-table"></i>Tables<i class="fa fa-chevron-down"></i>
-                                        </a>
-                                    </div>
-                                    <ul class="child-menu" id="child-tables" style="display: none;">
-                                        <li style="margin-top: 6px;"><a href="index_table1.php">Tables</a></li>
-                                        <li><a href="index_table2.php" style="margin-bottom: 8px;">Table Dynamic</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div class="parent-menu" onclick="toggleMenuDataPresentation()">
-                                        <a href="#">
-                                            <i class="fa fa-bar-chart-o"></i>Data Presentation<i class="fa fa-chevron-down"></i>
-                                        </a>
-                                    </div>
-                                    <ul class="child-menu" id="child-data" style="display: none;">
-                                        <li><a href="#">Chart JS</a></li>
-                                        <li><a href="#">Chart JS2</a></li>
-                                        <li><a href="#">Moris JS</a></li>
-                                        <li><a href="#">ECharts</a></li>
-                                        <li style="margin-bottom: 8px;"><a href="#">Other Charts</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div class="parent-menu" onclick="toggleMenuLayouts()">
-                                        <a href="#">
-                                            <i class="fa fa-clone"></i>Layouts<i class="fa fa-chevron-down"></i>
-                                        </a>
-                                    </div>
-                                    <ul class="child-menu" id="child-layout" style="display: none;">
-                                        <li><a href="#">Fixed Sidebar</a></li>
-                                        <li style="margin-bottom: 8px;"><a href="#">Fixed Footer</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <h4>Live on</h4>
-                            <ul class="item-menu">
-                                <li>
-                                    <div class="parent-menu" onclick="toggleMenuAdditional()">
-                                        <a href="#">
-                                            <i class="fa fa-bug"></i>Additional Pages<i class="fa fa-chevron-down"></i>
-                                        </a>
-                                    </div>
-                                    <ul class="child-menu" id="child-additional" style="display: block;">
-                                        <li class="current-page" style="margin-top: 2px;">
-                                            <a href="index_e-commerce.php">E-commerce</a>
-                                        </li>
-                                        <li>
-                                            <a href="index_projects.php">Projects</a>
-                                        </li>
-                                        <li>
-                                            <a href="index_projects-detail.php">Project Detail</a>
-                                        </li>
-                                        <li>
-                                            <a href="index_contacts.php">Contacts</a>
-                                        </li>
-                                        <li style="margin-bottom: 8px;">
-                                            <a href="index_profile.php">Profile</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div class="parent-menu" onclick="toggleMenuExtras()">
-                                        <a href="#">
-                                            <i class="fa fa-windows"></i>Extras<i class="fa fa-chevron-down"></i>
-                                        </a>
-                                    </div>
-                                    <ul class="child-menu" id="child-extras" style="display: none;">
-                                        <li>
-                                            <a href="#">403 Error</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">404 Error</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">500 Error</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Plain Page</a>
-                                        </li>
-                                        <li>
-                                            <a href="index_login.php">Login Page</a>
-                                        </li>
-                                        <li style="margin-bottom: 8px;">
-                                            <a href="index_pricing-tables.php">Pricing Tables</a>
-                                        </li>
-                                    </ul>
-                                </li> 
-                                <li>
-                                    <div class="parent-menu">
-                                        <a href="#">
-                                            <i class="fa fa-sitemap"></i>Multilevel Menu<i class="fa fa-chevron-down"></i>
-                                        </a>
-                                    </div>
-                                    <ul class="child-menu" style="display: none;">
-                                        <li>
-                                            <a href="#">Level One</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Level One</a>
-                                        </li>
-                                        <li style="margin-bottom: 8px;">
-                                            <a href="#">Level One</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div class="parent-menu">
-                                        <a href="#">
-                                            <i class="fa fa-laptop"></i>Landing Page
-                                            <span class="comming-soon">Coming Soon</span>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="sidebar-footer">
-                                <a href="#" title="Settings"><i class="glyphicon glyphicon-cog"></i></a>
-                                <a href="#" title="Full screen"><i class="glyphicon glyphicon-fullscreen"></i></a>
-                                <a href="#" title="Close"><i class="glyphicon glyphicon-eye-close"></i></a>
-                                <a href="#" title="Off"><i class="glyphicon glyphicon-off"></i></a>
-                            </div>
+                            <a href="#" title="Full screen">
+                                <i class="glyphicon glyphicon-fullscreen"></i>
+                            </a>
+
+                            <a href="#" title="Lock">
+                                <i class="glyphicon glyphicon-eye-close"></i>
+                            </a>
+                            <a href="#" title="Logout">
+                                <i class="glyphicon glyphicon-off"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="nav-collapse">
                         <div class="logo-collapse">
-                            <a href="#" class=""><i class="fa fa-paw"></i></a>
+                            <a href="index_dashboard2.php"><i class="fa fa-paw"></i></a>
                         </div>
                         <nav class="menu-collapse">
                             <ul>
-                                <li>
-                                    <a href="#">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="fa fa-home"></i><small>Home</small>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">&#8226; Dashboard</a></li>
+                                        <li><a href="index_dashboard2.php">&#8226; Dashboard2</a></li>
+                                        <li><a href="index_dashboard3.php">&#8226; Dashboard3</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="fa fa-edit"></i><small>Form</small>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">&#8226; General Form</a></li>
+                                        <li><a href="#">&#8226; Advanced Components</a></li>
+                                        <li><a href="#">&#8226; Form Validation</a></li>
+                                        <li><a href="#">&#8226; Form Wizard</a></li>
+                                        <li><a href="#">&#8226; Form Upload</a></li>
+                                        <li><a href="#">&#8226; Form Buttons</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-desktop"></i><small>UIE</small>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="fa fa-laptop"></i><small>UIE</small>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">&#8226; General Elements</a></li>
+                                        <li><a href="#">&#8226; Media Gallery</a></li>
+                                        <li><a href="#">&#8226; Typography</a></li>
+                                        <li><a href="#">&#8226; Icons</a></li>
+                                        <li><a href="#">&#8226; Glyphicons</a></li>
+                                        <li><a href="#">&#8226; Widgets</a></li>
+                                        <li><a href="#">&#8226; Invoice</a></li>
+                                        <li><a href="#">&#8226; Inbox</a></li>
+                                        <li><a href="#">&#8226; Calendar</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="fa fa-table"></i><small>Tables</small>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="index_table1.php">&#8226; Tables</a></li>
+                                        <li><a href="index_table2.php">&#8226; Table Dynamic</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="fa fa-bar-chart-o"></i><small>Data Present</small>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">&#8226; Chart JS</a></li>
+                                        <li><a href="#">&#8226; Chart JS2</a></li>
+                                        <li><a href="#">&#8226; Moris JS</a></li>
+                                        <li><a href="#">&#8226; Echarts</a></li>
+                                        <li><a href="#">&#8226; Other Charts</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="fa fa-clone"></i><small>Layouts</small>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">&#8226; Fixed Sidebar</a></li>
+                                        <li><a href="#">&#8226; Fixed Footer</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="fa fa-bug"></i><small>Add Pages</small>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="active"><a href="index_e-commerce.php">&#8226; E-commerce</a></li>
+                                        <li><a href="index_projects.php">&#8226; Projects</a></li>
+                                        <li><a href="index_projects-detail.php">&#8226; Project Detail</a></li>                                    
+                                        <li><a href="index_contacts.php">&#8226; Contacts</a></li>
+                                        <li><a href="index_profile.php">&#8226; Profile</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="fa fa-windows"></i><small>Extras</small>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">&#8226; 403 Error</a></li>
+                                        <li><a href="#">&#8226; 404 Error</a></li>
+                                        <li><a href="#">&#8226; 500 Error</a></li>                                    
+                                        <li><a href="#">&#8226; Plain Page</a></li>
+                                        <li><a href="#">&#8226; Login Page</a></li>
+                                        <li><a href="index_pricing-tables.php">&#8226; Pricing Tables</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="#">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         <i class="fa fa-sitemap"></i><small>Mullevel Menu</small>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">&#8226; Level One</a></li>
+                                        <li><a href="#">&#8226; Level One</a></li>
+                                        <li><a href="#">&#8226; Level One</a></li>    
+                                    </ul>
                                 </li>
-                                <li>
+                                <li class="dropdown">
                                     <a href="#">
                                         <i class="fa fa-laptop"></i><small>Landing page</small>
                                     </a>
-
+                                    <span class="label label-success pull-right">Comming Soon</span>
                                 </li>
                             </ul>
                         </nav>
@@ -295,21 +318,21 @@
                             <nav>
                                 <a href="#menu-toggle" id="menu-toggle" class="btn btn-default toggled"><i class="fa fa-bars"></i></a>
                                 <ul class="nav navbar-right">
-                                    <li>
+                                    <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                             <img src="images/img.jpg" alt="">John Doe
                                             <i class="fa fa-angle-down"></i>
                                         </a>
 
 
-                                        <ul class="dropdown-menu user-profile">
+                                        <ul class="dropdown-menu">
                                             <li>
                                                 <a href="#">Profile</a>
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <span class="badge">50%</span>
                                                     <span>Settings</span>
+                                                    <span class="badge">50%</span>
                                                 </a>
                                             </li>
                                             <li>
@@ -317,7 +340,7 @@
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <i class="fa fa-sign-out"></i>Logout
+                                                    Logout<i class="fa fa-sign-out"></i>
                                                 </a>
                                             </li>
                                         </ul>

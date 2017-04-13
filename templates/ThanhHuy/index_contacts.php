@@ -54,8 +54,8 @@
                                 </li>
                                 <ul class="sub-menu collapse" id="home">
                                     <li><a href="#">&#8226; Dashboard</a></li>
-                                    <li><a href="#">&#8226; Dashboard2</a></li>
-                                    <li><a href="#">&#8226; Dashboard3</a></li>
+                                    <li><a href="index_dashboard2.php">&#8226; Dashboard2</a></li>
+                                    <li><a href="index_dashboard3.php">&#8226; Dashboard3</a></li>
                                 </ul>
 
                                 <li data-toggle="collapse" data-target="#form" class="collapsed active">
@@ -95,8 +95,8 @@
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="tables">
-                                    <li><a href="#">&#8226; Tables</a></li>
-                                    <li><a href="#">&#8226; Table Dynamic</a></li>
+                                    <li><a href="index_table1.php">&#8226; Tables</a></li>
+                                    <li><a href="index_table2.php">&#8226; Table Dynamic</a></li>
                                 </ul>
 
                                 <li data-toggle="collapse" data-target="#chart" class="collapsed active">
@@ -129,11 +129,11 @@
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="pages">
-                                    <li><a href="#">&#8226; E-commerce</a></li>
-                                    <li><a href="#">&#8226; Projects</a></li>
-                                    <li><a href="#">&#8226; Project Detail</a></li>                                    
-                                    <li class="active"><a href="#">&#8226; Contacts</a></li>
-                                    <li><a href="#">&#8226; Profile</a></li>
+                                    <li><a href="index_e-commerce.php">&#8226; E-commerce</a></li>
+                                    <li><a href="index_projects.php">&#8226; Projects</a></li>
+                                    <li><a href="index_projects-detail.php">&#8226; Project Detail</a></li>                                    
+                                    <li class="active"><a href="index_contacts.php">&#8226; Contacts</a></li>
+                                    <li><a href="index_profile.php">&#8226; Profile</a></li>
                                 </ul>
 
                                 <li data-toggle="collapse" data-target="#extras" class="collapsed active">
@@ -146,8 +146,8 @@
                                     <li><a href="#">&#8226; 404 Error</a></li>
                                     <li><a href="#">&#8226; 500 Error</a></li>                                    
                                     <li><a href="#">&#8226; Plain Page</a></li>
-                                    <li><a href="#">&#8226; Login Page</a></li>
-                                    <li><a href="#">&#8226; Pricing Tables</a></li>
+                                    <li><a href="index_login.php">&#8226; Login Page</a></li>
+                                    <li><a href="index_pricing-tables.php">&#8226; Pricing Tables</a></li>
                                 </ul>
 
                                 <li data-toggle="collapse" data-target="#menu" class="collapsed active">
