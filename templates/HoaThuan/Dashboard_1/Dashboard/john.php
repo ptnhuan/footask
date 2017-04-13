@@ -92,7 +92,7 @@
                                                     <li><a href="form-validation.php">Form Validation</a></li>
                                                     <li><a href="form-wizard.php">Form Wizard</a></li>
                                                     <li><a href="Form-upload.php">Form Upload</a></li>
-                                                    <li><a href="#">Form Buttons</a></li>
+                                                    <li><a href="form-button.php">Form Buttons</a></li>
                                                 </ul>                  
                                             </div>
                                         </div>
@@ -312,7 +312,7 @@
                                         <li><a href="form-validation.php">Form Validation</a></li>
                                         <li><a href="form-wizard.php">Form Wizard</a></li>
                                         <li><a href="Form-upload.php">Form Upload</a></li>
-                                        <li><a href="#">Form Buttons</a></li>
+                                        <li><a href="form-button.php">Form Buttons</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">

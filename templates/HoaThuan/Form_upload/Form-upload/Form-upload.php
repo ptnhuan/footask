@@ -14,7 +14,8 @@
         <link href="css/form-upload.css" rel="stylesheet" type="text/css"/>
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/demo.js" type="text/javascript"></script>      
+        <script src="js/demo.js" type="text/javascript"></script> 
+        <script src="js/flexible-menu.js" type="text/javascript"></script>
 
     </head>
 

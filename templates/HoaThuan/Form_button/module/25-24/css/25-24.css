@@ -1,0 +1,56 @@
+.type-25-24 .content1 {
+  color: #73879C;
+  font-size: 13px;
+}
+.type-25-24 .content1 a {
+  color: #5A738E;
+  text-decoration: none;
+}
+.type-25-24 .content1 .x_panel {
+  width: 100%;
+  padding: 10px 17px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #E6E9ED;
+  opacity: 1;
+}
+.type-25-24 .content1 .x_title {
+  border-bottom: 2px solid #E6E9ED;
+  padding: 1px 5px 6px;
+  margin-bottom: 15px;
+}
+.type-25-24 .content1 h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+.type-25-24 .content1 .navbar-right {
+  float: right;
+}
+.type-25-24 .content1 .panel_toolbox>li {
+  float: left;
+  cursor: pointer;
+}
+.type-25-24 .content1 .panel_toolbox>li>a {
+  padding: 5px;
+  color: #C5C7CB;
+  font-size: 14px;
+}
+.type-25-24 .content1 .btn {
+  margin-bottom: 5px;
+  margin-right: 9px;
+}
+.type-25-24 .content1 .btn-success {
+  background: #26B99A;
+  border: 1px solid #169F85;
+}
+.type-25-24 .content1 .btn-success:hover {
+  background: #169F85;
+  color: #fff;
+  border-color: #398439;
+}
+.type-25-24 .content1 .btn-round {
+  border-radius: 30px;
+}
