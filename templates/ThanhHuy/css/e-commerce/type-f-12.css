@@ -622,6 +622,9 @@
     left: -245px;
     width: 33px;
   }
+  .type-f-12.toggled .nav-collapse ul li.dropdown ul.dropdown-menu {
+    margin-left: 54px !important;
+  }
 }
 @media (min-width: 980px) {
   .nav-side-menu .sidebar-menu ul#menu-content {
