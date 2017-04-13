@@ -1,7 +1,4 @@
 .type-f-12 {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .type-f-12 .container-fluid {
@@ -538,9 +535,6 @@
 }
 .type-f-12.toggled {
   margin-left: -190px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .type-f-12.toggled .sidebar-left {

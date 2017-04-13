@@ -181,9 +181,11 @@ and open the template in the editor.
                 }
             }
             .navbar-right {
+                margin: 0;
+                width: 70%;
                 float: right;
 
-                li {
+                li.dropdown {
                     position: relative;
                     float: right;
                     display: inline-block;
@@ -200,13 +202,22 @@ and open the template in the editor.
                             margin-right: 10px;
                         }
                     }
-                    ul.user-profile {
+                    ul.dropdown-menu {
+                        border-radius:4px;
+                        width:150px;
                         li {
                             a {
-                                span, i {
-                                    float: right;
+                                color: #555;
+                                .badge{
+                                    background-color: red;
+                                    margin-left: 25px;
+                                }
+                                .fa-sign-out {
+                                    color: #73879C;
+                                    margin-left: 60px;
                                 }
                             }
+
                         }
                     }
                     ul.msg_list {
@@ -219,7 +230,7 @@ and open the template in the editor.
                         left: auto;
                         li {
                             position: relative;
-                            background: #f7f7f7;
+                            background-color: #f7f7f7;
                             padding: 5px;
                             margin: 6px 6px 0;
                             width: 96%;
@@ -242,7 +253,7 @@ and open the template in the editor.
                                     }
                                 }
                                 .time {
-                                    font-size: @font-size;
+                                    font-size: @font-size-t;
                                     font-style: italic;
                                     font-weight: 700;
                                     position: absolute;
@@ -250,7 +261,7 @@ and open the template in the editor.
                                 }
                                 .msg {
                                     display: block;
-                                    font-size: @font-size;
+                                    font-size: @font-size-t;
                                     font-style: italic;
                                 }
                             }
@@ -275,7 +286,7 @@ and open the template in the editor.
                             top: 8px;
                             background-color: #1ABB9C;
                             border: 1px solid #1ABB9C;
-                            color: @color;
+                            color: #fff;
                         }
                     }
                 }
@@ -490,6 +501,7 @@ and open the template in the editor.
                 li.dropdown {
                     margin: 25px 0;
                     a {
+                        font-size: 13px;
                         color: #fff;
                         text-decoration: none;
                         i {
@@ -501,10 +513,34 @@ and open the template in the editor.
                         }
 
                     }
-                    ul.dropdown-menu {
+
+                    ul.dropdown-menu  {
+                        position: absolute;
+                        top: 0;
+                        margin-left: 45px;
+                        padding: 0;
+                        border-right: 3px solid #1ABB9C;
                         li {
-                            background-color: red;                            
+                            width: 175px;
+                            text-align: left;
+                            background-color: @background-color-menu;
+                            padding: 3px 0;
+
+                            a:hover {
+                                background-color: rgba(255,255,255,.05);
+                            }
+
                         }
+                        li.active {
+                            a {
+                                background-color: rgba(255,255,255,.05)!important;
+                            }
+                        }
+                    }
+                    .label {
+                        margin-right: -8px;
+                        font-size: 7px;
+                        padding: 2px 0;
                     }
                 }
             }
@@ -513,7 +549,7 @@ and open the template in the editor.
 
 }
 @media (max-width: 980px) {
-    .logo, .img-user, .sidebar-footer {
+    .logo, .img-user, .sidebar-menu, .nav-collapse {
         display: none;
     }
     .content {
@@ -526,6 +562,16 @@ and open the template in the editor.
             margin-top: -5px;
         }
     }
+    .type-f-12.toggled {
+        margin-left: 75px;
+        .nav-collapse {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -245px;
+            width: 33px;
+        }
+    }
 }
 @media (min-width: 980px) {
     .nav-collapse {
@@ -533,7 +579,7 @@ and open the template in the editor.
     }
     .nav-side-menu {
         .menu-list {
-            ul#menu-content {
+            ul.menu-content {
                 display: block;
             }
         }
