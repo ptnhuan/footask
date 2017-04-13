@@ -56,59 +56,59 @@
   padding: 0;
   margin-top: 25px;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content .collapsed {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content .collapsed {
   border: none;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content li {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content li {
   padding: 3px 0;
   line-height: 35px;
   cursor: pointer;
   font-size: 13px;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content li a {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content li a {
   text-decoration: none;
   color: #ffffff;
   padding: 10px 10px;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content li a i.fa {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content li a i.fa {
   font-size: 19px;
   padding-right: 5px;
   padding-left: 0;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content li a i.fa-chevron-down {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content li a i.fa-chevron-down {
   float: right;
   padding: 12px 8px;
   font-size: 10px;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content li.active {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content li.active {
   background-color: rgba(255,255,255,0.05);
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content ul.sub-menu {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content ul.sub-menu {
   list-style: none;
   padding: 0;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content ul.sub-menu li.active a {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content ul.sub-menu li.active a {
   color: #ffffff;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content ul.sub-menu li {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content ul.sub-menu li {
   padding-left: 25px;
   border: none;
   font-size: 13px;
   border-right: 3px solid #1ABB9C;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content ul.sub-menu li:hover {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content ul.sub-menu li:hover {
   background-color: rgba(255,255,255,0.05);
   color: #1ABB9C;
 }
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content #uie,
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content #tables,
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content #pages,
-.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content #extras {
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content #uie,
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content #tables,
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content #pages,
+.type-f-12 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul.menu-content #extras {
   border: none;
 }
 .type-f-12 .container-fluid .nav-side-menu .sidebar-menu .sidebar-footer {
@@ -448,7 +448,7 @@
 .type-f-12.toggled .nav-collapse nav.menu-collapse ul li.dropdown ul.dropdown-menu {
   position: absolute;
   top: 0;
-  margin-left: 45px;
+  margin-left: 50px;
   padding: 0;
   border-right: 3px solid #1ABB9C;
 }
@@ -491,6 +491,9 @@
     top: 0;
     left: -245px;
     width: 33px;
+  }
+  .type-f-12.toggled .nav-collapse ul li.dropdown ul.dropdown-menu {
+    margin-left: 54px !important;
   }
 }
 @media (min-width: 980px) {

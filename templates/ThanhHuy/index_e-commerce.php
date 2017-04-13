@@ -23,7 +23,6 @@
         <script src="js/e-commerce/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="js/e-commerce/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/e-commerce/back-to-top.js" type="text/javascript"></script>
-        <script src="js/e-commerce/sibarmenu-left.js" type="text/javascript"></script>
         <script src="js/e-commerce/flexible-menu.js" type="text/javascript"></script>
         <script src="js/e-commerce/thumbs-img.js" type="text/javascript"></script>
         <script src="js/e-commerce/close-panel.js" type="text/javascript"></script>
