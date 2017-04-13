@@ -140,8 +140,9 @@ body {
   float: right !important;
   background-color: #5cb85c;
   position: absolute;
-  top: -24px;
-  margin: 31px;
+  top: -10px;
+  margin: 14px;
+  padding: 0 5px;
 }
 .type-25 .left-col .sidebar-footer {
   bottom: 0;
@@ -192,6 +193,23 @@ body {
 .type-25 .left-col .one {
   padding: 15px;
 }
+.type-25 .left-col .dropdown:hover {
+  background: #3E5367;
+}
+.type-25 .left-col .dropdown-menu {
+  left: 58px;
+  top: 11px;
+  border-radius: 0;
+  background: #3E5367;
+  width: 210px;
+}
+.type-25 .left-col .dropdown-menu a {
+  padding: 7px 10px;
+}
+.type-25 .left-col .dropdown-menu a:hover {
+  background: rgba(255,255,255,0.05);
+  color: #E7E7E7;
+}
 .type-25 .right-col {
   background: #f7f7f7;
 }
@@ -212,6 +230,7 @@ body {
 .type-25 .nav_menu .nav {
   margin-right: 0px;
   height: 50px;
+  float: right;
 }
 .type-25 .nav_menu .nav .bt {
   text-align: left;
@@ -931,38 +950,49 @@ body {
   color: #5A738E;
   text-decoration: none;
 }
+@media (max-width: 1200px) {
+  a {
+    font-size: 11px;
+  }
+  table.tile_info td {
+    text-align: left;
+    padding: 1px;
+    font-size: 11px;
+  }
+  p {
+    font-size: 11px;
+  }
+  .widget_summary .w_20 span {
+    font-size: 15px;
+  }
+  .x_content h4 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .x_title h2 {
+    width: 62%;
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) {
+  .row .tile_stats_count span {
+    font-size: 13px;
+  }
+  .row .tile_stats_count .count {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .content1 .tile_stats_count {
+    margin-bottom: 10px;
+    border-bottom: none;
+    padding-bottom: 10px;
+    height: 70px;
+  }
+}
 @media (max-width: 992px) {
-  .left-col {
-    display: none;
-  }
-  .left-repon {
-    display: block;
-  }
-  .type-25.toggled .left-repon {
-    margin-left: 180px;
-    display: block;
-    text-align: center !important;
-  }
-  .type-25.toggled .left-repon .logo-repon .fa {
-    font-size: 27px !important;
-    margin: 13px 5px 20px -3px;
-  }
-  .type-25.toggled .left-repon .logo-repon i {
-    border: 1px solid #EAEAEA;
-    padding: 10px 6px;
-    border-radius: 50%;
-  }
-  .type-25.toggled .left-repon ul {
-    padding: 0px;
-  }
-  .type-25.toggled .left-repon .menu-repon ul li a .fa {
-    font-size: 25px !important;
-    margin: 13px 0 0 -5px;
-    font-weight: 400;
-  }
-  .type-25.toggled .left-repon a {
-    font-size: 10px;
-    text-align: center !important;
+  .content1 .tile_stats_count {
+    border-bottom: 1px solid #D9DEE4;
   }
 }
 @media (min-width: 992px) {
@@ -994,6 +1024,9 @@ body {
     border: 1px solid #EAEAEA;
     padding: 10px 6px;
     border-radius: 50%;
+    width: 45px;
+    margin-left: -2px;
+    height: 45px;
   }
   .type-25.toggled .left-repon ul {
     padding: 0px;
@@ -1005,68 +1038,132 @@ body {
   }
   .type-25.toggled .left-repon a {
     font-size: 10px;
+  }
+  .type-25.toggled .left-repon .pull-right {
+    background-color: #5cb85c;
+  }
+}
+@media (max-width: 991px) {
+  .scroll-view {
+    display: none;
+  }
+  .left-repon {
+    display: none;
+  }
+  .type-25.toggled {
+    margin-left: -80px;
+  }
+  .type-25.toggled .left-repon {
+    margin-left: 80px;
+    display: block;
     text-align: center !important;
+  }
+  .type-25.toggled .left-repon .logo-repon .fa {
+    font-size: 27px !important;
+    margin: 13px 5px 20px 9px;
+  }
+  .type-25.toggled .left-repon .logo-repon i {
+    border: 1px solid #EAEAEA;
+    padding: 10px 6px;
+    border-radius: 50%;
+    width: 45px;
+    margin-left: -2px;
+    height: 45px;
+  }
+  .type-25.toggled .left-repon ul {
+    padding: 0px;
+  }
+  .type-25.toggled .left-repon .menu-repon ul li a .fa {
+    font-size: 25px !important;
+    margin: 13px 0 0 -5px;
+    font-weight: 400;
+  }
+  .type-25.toggled .left-repon a {
+    font-size: 10px;
+  }
+  .type-25.toggled .left-repon .pull-right {
+    background-color: #5cb85c;
+  }
+  .toggled .right-col {
+    width: 83%;
+  }
+}
+@media (max-width: 506px) {
+  .toggled .left-col {
+    width: 21% !important;
+  }
+  .toggled .right-col {
+    width: 79% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .toggled .left-col {
+    width: 14% !important;
+  }
+  .toggled .right-col {
+    width: 86% !important;
+  }
+}
+@media (min-width: 698px) and (max-width: 767px) {
+  .toggled .left-col {
+    width: 13% !important;
+  }
+  .toggled .right-col {
+    width: 87% !important;
+  }
+}
+@media (max-width: 398px) {
+  .toggled .left-col {
+    width: 27% !important;
+  }
+  .toggled .right-col {
+    width: 73% !important;
+  }
+}
+@media (max-width: 768px) {
+  .scroll-view {
+    display: none;
+  }
+  .left-repon {
+    display: none;
+  }
+  .type-25.toggled {
+    margin-left: -20px;
+  }
+  .type-25.toggled .left-repon {
+    margin-left: 20px;
+    display: block;
+    text-align: center !important;
+  }
+  .type-25.toggled .left-repon .logo-repon .fa {
+    font-size: 27px !important;
+    margin: 13px 5px 20px -2px;
+  }
+  .type-25.toggled .left-repon .logo-repon i {
+    border: 1px solid #EAEAEA;
+    padding: 10px 6px;
+    border-radius: 50%;
+    width: 45px;
+    margin-left: -2px;
+    height: 45px;
+  }
+  .type-25.toggled .left-repon ul {
+    padding: 0px;
+  }
+  .type-25.toggled .left-repon .menu-repon ul li a .fa {
+    font-size: 25px !important;
+    margin: 13px 0 0 7px;
+    font-weight: 400;
+  }
+  .type-25.toggled .left-repon a {
+    font-size: 10px;
   }
   .type-25.toggled .left-repon .pull-right {
     background-color: #5cb85c;
   }
 }
 @media (max-width: 1200px) {
-  .x_title h2 {
-    width: 62%;
-    font-size: 13px;
-  }
-}
-@media (max-width: 1200px) {
-  a {
-    font-size: 11px;
-  }
-  table.tile_info td {
-    text-align: left;
-    padding: 1px;
-    font-size: 11px;
-  }
-  p {
-    font-size: 11px;
-  }
-  .widget_summary .w_20 span {
-    font-size: 15px;
-  }
-  .x_content h4 {
-    font-size: 13px;
-    font-weight: 500;
-  }
-}
-@media (min-width: 768px) {
-  .row .tile_stats_count span {
-    font-size: 13px;
-  }
-}
-@media (max-width: 992px) {
-  .left-col {
-    display: none;
-  }
-}
-@media (min-width: 992px) {
-  .left-col {
-    display: block;
-  }
-}
-@media (min-width: 768px) {
-  .row .tile_stats_count .count {
-    font-size: 40px;
-  }
-}
-@media (min-width: 992px) {
-  .content1 .tile_stats_count {
-    margin-bottom: 10px;
-    border-bottom: none;
-    padding-bottom: 10px;
-    height: 70px;
-  }
-}
-@media (max-width: 992px) {
-  .content1 .tile_stats_count {
-    border-bottom: 1px solid #D9DEE4;
+  .site_title {
+    font-size: 14px !important;
   }
 }
