@@ -276,7 +276,8 @@
                                 </ul>
 
                                 <div class="sidebar-widget">
-                                    <h4>Goal</h4>                                    
+                                    <h4>Goal</h4>   
+                                                                     
                                     <div class="goal-wrapper">
                                         <div id="jqRadialGauge">
                                         </div>                                      

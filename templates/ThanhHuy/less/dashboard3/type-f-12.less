@@ -7,41 +7,48 @@ and open the template in the editor.
     Created on : Mar 1, 2017, 10:24:41 AM
     Author     : Administrator
 */
+@background-color-menu: #2A3F54;
+@font-size-t: 13px;
+@text-decoration: none;
+@color: #ffffff;
+@list-style: none;
+@background-color-white: #ffffff;
+@color-body: #2A3F54;
 .type-f-12 {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     .container-fluid {
-        .sidebar-left {
-            background-color: #2A3F54;
+        .nav-side-menu {
+            background-color: @background-color-menu;
             .logo {
+                padding: 0;
                 text-align: center;
                 line-height: 60px;
+                padding: 0;
                 a {
-                    text-decoration: none;
-                    color: #fff;
+                    text-decoration: @text-decoration;
+                    color: @color;
+                    font-size: 21px;
                     .fa-paw {
                         border: 1px solid #e0e0e0;
                         border-radius: 50%;
                         padding: 5px;
-                    }
-                    .fa-paw, span {
-                        font-size: 21px;
+                        font-size: 22px;
                     }
                 }
             }
             .img-user {
+                padding-left: 12px;
                 margin: 10px 0;
+                padding: 0;
                 img {
                     width: 30%;
-                    border: 4px solid #fff;
+                    border: 4px solid @color;
                     border-radius: 50%;
                     float: left;
 
                 }
                 .welcome-name {
-                    color: #ffffff;
+                    color: @color;
                     float: left;
                     font-size: 15px;
                     text-align: center;
@@ -52,102 +59,99 @@ and open the template in the editor.
                     }
                 }
             }
-            .menu-vertical {
-                h4 {
+            .sidebar-menu {
+                h3 {
+                    padding-left: 15px;
+                    color: @color;
                     text-transform: uppercase;
-                    line-height: 50px;
-                    font-size:13px;
-                    color: #fff;
+                    font-weight: bold;
+                    letter-spacing: .5px;
+                    font-size: 11px;
                     text-shadow: 1px 1px #000;
-                }
-                ul.item-menu {
-                    list-style: none;
-                    margin: 0;
                     padding: 0;
-                    margin-right: -5px;
-                    li {
-                        padding-bottom: 5px;
-                        .parent-menu {
-                            cursor: pointer;
-                            background-color: rgba(255,255,255,.06);
-                            padding: 10px;
-                            a {
-                                text-decoration: none;
-                                font-size: 13px;
-                                .fa-home, .fa-edit, .fa-table, .fa-desktop, .fa-bar-chart-o, .fa-clone, .fa-bug, .fa-windows, .fa-sitemap, .fa-laptop {
-                                    width: 30px;
-                                    font-size: 18px;
+                    margin-top: 25px;
+                }
+                .menu-list {
+                    ul.menu-content {
+                        list-style: @list-style;
+                        padding: 0;
+                        margin: 0;
 
+                        .collapsed {
+                            border: none;
+                        }
+                        li {
+                            padding: 3px 0;
+                            line-height: 35px;
+                            cursor: pointer;
+                            font-size: @font-size-t;
+                            a {
+                                text-decoration: @text-decoration;
+                                color: @color;
+                                padding: 10px 10px;
+                                i.fa {
+                                    font-size: 19px;
+                                    padding-right: 5px;
+                                    padding-left: 0;
                                 }
-                                color: #ededed;
-                                font-weight: normal;
-                                .fa-chevron-down {
+                                i.fa-chevron-down {
                                     float: right;
+                                    padding: 12px 8px;
                                     font-size: 10px;
-                                    margin-top: 5px;
                                 }
                             }
                         }
-
-                        ul.child-menu {
-                            list-style: none;
-                            margin: 0;
+                        li.active {
+                            background-color: rgba(255,255,255,.05);
+                        }
+                        ul.sub-menu {
+                            list-style: @list-style;
                             padding: 0;
-                            li {
-                                cursor: pointer;
-                                padding: 10px;
-                                border-right: 5px solid #1ABB9C;
+                            li.active {   
                                 a {
-                                    text-decoration: none;
-                                    padding-left: 30px;
-                                    color: #ededed;
-                                    font-size: 13px;
+                                    color: @color;
                                 }
                             }
-                            li.current-page {
-                                background-color: rgba(255,255,255,.06);
+                            li {
+                                padding-left: 25px;
+                                border: none;
+                                font-size: @font-size-t;
+                                border-right: 3px solid #1ABB9C;
                             }
                             li:hover {
-                                background-color: rgba(255,255,255,.06);
+                                background-color: rgba(255,255,255,.05);
+                                color: #1ABB9C;
                             }
                         }
-                        ul#child-home, #child-elements, #child-tables, #child-additional, #child-data, #child-layout, #child-forms {
-                            opacity: 1;
-                            z-index: 10;
-                        }
-                        .comming-soon {
-                            font-size: 8px;
-                            background-color: #5cb85c;
-                            margin-top: 4px;
+                        #uie, #tables, #pages, #extras {
+                            border: none;
                         }
                     }
                 }
                 .sidebar-footer {
                     padding: 5px 0 0;
+                    width: 195px;
+                    margin-top: 25px;
                     position: fixed;
                     bottom: 0;
-                    width: 244px;
+                    background-color: @background-color-menu;
+
                     a {
                         padding: 7px 0 3px;
                         text-align: center;
-                        width: 20.5%;
-                        font-size: 13px;
+                        width: 25%;
+                        font-size: 17px;
                         display: block;
                         float: left;
-                        background: #172D44;
+                        background-color: #172D44;
                         cursor: pointer;
-                        i {
-                            color: #5A738E;
-                        }
+                        color: #5A738E;
                     }
                     a:hover {
                         background-color: #425567;
                     }
                 }
             }
-        }   
-        .nav-collapse {
-            display: none;
         }
         .top-nav {
             .nav_menu {
@@ -165,9 +169,11 @@ and open the template in the editor.
                 }
             }
             .navbar-right {
+                margin: 0;
+                width: 70%;
                 float: right;
 
-                li {
+                li.dropdown {
                     position: relative;
                     float: right;
                     display: inline-block;
@@ -184,26 +190,35 @@ and open the template in the editor.
                             margin-right: 10px;
                         }
                     }
-                    ul.user-profile {
+                    ul.dropdown-menu {
+                        border-radius:4px;
+                        width:150px;
                         li {
                             a {
-                                span, i {
-                                    float: right;
+                                color: #555;
+                                .badge{
+                                    background-color: red;
+                                    margin-left: 25px;
+                                }
+                                .fa-sign-out {
+                                    color: #73879C;
+                                    margin-left: 60px;
                                 }
                             }
+
                         }
                     }
                     ul.msg_list {
                         width: 300px;
                         position: absolute;
-                        background: #fff;
+                        background-color: @background-color-white;
                         margin-top: 0;
                         border: 1px solid #D9DEE4;
                         right: 0;
                         left: auto;
                         li {
                             position: relative;
-                            background: #f7f7f7;
+                            background-color: #f7f7f7;
                             padding: 5px;
                             margin: 6px 6px 0;
                             width: 96%;
@@ -226,7 +241,7 @@ and open the template in the editor.
                                     }
                                 }
                                 .time {
-                                    font-size: 13px;
+                                    font-size: @font-size-t;
                                     font-style: italic;
                                     font-weight: 700;
                                     position: absolute;
@@ -234,14 +249,14 @@ and open the template in the editor.
                                 }
                                 .msg {
                                     display: block;
-                                    font-size: 13px;
+                                    font-size: @font-size-t;
                                     font-style: italic;
                                 }
                             }
 
                             .text-center {
                                 a {
-                                    text-decoration: none;
+                                    text-decoration: @text-decoration;
                                 }
                             }
                         }
@@ -251,7 +266,7 @@ and open the template in the editor.
                     }
                     .info-number {
                         .badge {
-                            font-size: 13px;
+                            font-size: @font-size-t;
                             line-height: 13px;
                             padding: 2px 6px;
                             position: absolute;
@@ -276,15 +291,15 @@ and open the template in the editor.
                 margin: 3px 0 7px;
                 font-weight: 700;
             }
-            .sparkline11, .sparkline_three {
-                opacity: 1;
+            #chartContainer1, #chartContainer2, #chartContainer3, #chartContainer4 {
+                height: 120px;
             }
-
         }
         .admin-panel.admin1 {
             padding: 10px 13px;
             display: inline-block;
-            background: #fff;
+            background: @background-color-white;
+            width: 100%;
             border: 1px solid #E6E9ED;
             opacity: 1;
             transition: all .2s ease;
@@ -305,49 +320,36 @@ and open the template in the editor.
                     color: #73879C;
                     small {
                         margin-left: 10px;
-                        font-size: 13px;
+                        font-size: @font-size-t;
                     }
                 }
                 .filter-time {
-                    font-size: 13px;
-                    #reportrange {
-                        background: #fff;
+                    font-size: @font-size-t;
+                    .show-calendar {
+                        float: right;
+                        border: 1px solid #E6E9ED;
                         cursor: pointer;
                         padding: 5px 10px;
-                        border: 1px solid #ccc;
-                        float:right;
+                        background-color: @background-color-white;
+                        #datepicker {
+                            border: none;
+                            color: @color-body;
+                        }
                     }
                 }
-
             }
             .admin-content {
-                padding: 0 5px 6px;
-                float: left;
-                clear: both;
-                margin-top: 5px;
-
-                .demo-placeholder {
-                    height: 280px;
-                }
-                .admin-title {
-                    border-bottom: 2px solid #E6E9ED;
-                    padding: 1px 5px 6px;
-
-                    h2 {
-                        margin: 5px 0 6px;
-                        float: left;
-                        display: block;
-                    }
-                }
-                #chart_plot_03 {
-                    opacity: 1;
+                margin: 10px 0;
+                #chartContainer5 {
+                    height: 300px;
+                    width: 100%;
                 }
             }
         }
         .admin-panel.admin2 {
             padding: 10px 17px;
             display: inline-block;
-            background: #fff;
+            background: @background-color-white;
             border: 1px solid #E6E9ED;
             opacity: 1;
             transition: all .2s ease;
@@ -369,13 +371,13 @@ and open the template in the editor.
 
                     small {
                         margin-left: 10px;
-                        font-size: 13px;
+                        font-size: @font-size-t;
                     }
                 }
 
                 ul.items {
                     min-width: 70px;
-                    list-style: none;
+                    list-style: @list-style;
                     margin-top: 5px;
                     float: right;
                     .collapse-link, .close-link {
@@ -397,10 +399,6 @@ and open the template in the editor.
                 float: left;
                 margin-top: 5px;
                 width: 100%;
-
-                #canvasDoughnut {
-                    margin: 15px 10px 10px 0;
-                }
                 h4 { 
                     font-size: 16px;
                     color: #73879C;
@@ -427,7 +425,7 @@ and open the template in the editor.
                         .bg-green {
                             background: #1ABB9C!important;
                             border: 1px solid #1ABB9C!important;
-                            color: #fff;
+                            color: @color;
                         }
                         span {
                             color: #73879C;
@@ -438,7 +436,7 @@ and open the template in the editor.
                         float: right;
                         text-align: right;
                         span{
-                            font-size: 13px;
+                            font-size: @font-size-t;
                             color: #73879C;
                             font-weight: bold;
                         }
@@ -452,11 +450,15 @@ and open the template in the editor.
                         }
                     }
                 }
+                #chartPieContainer {
+                    height: 140px;
+                    width: 100%;
+                }
                 table.tile_info {
                     td {
                         text-align: left;
                         padding: 1px;
-                        font-size: 13px;
+                        font-size: @font-size-t;
                         color: #73879C;
                         i {
                             margin-right: 2px;
@@ -488,11 +490,11 @@ and open the template in the editor.
                     width: 45%;
                     padding-left: 0;
                     float: left;
-                    list-style: none;
+                    list-style: @list-style;
                     padding: 0px;
                     li {
                         padding-left: 10px;
-                        list-style: none;
+                        list-style: @list-style;
                         margin: 0;
                         padding-bottom: 6px;
                         padding-top: 4px;
@@ -503,7 +505,7 @@ and open the template in the editor.
                     }
                     a{
                         color: #73879C;
-                        text-decoration: none;
+                        text-decoration: @text-decoration;
                     }
                     a:hover {
                         color: #73879C;
@@ -511,27 +513,16 @@ and open the template in the editor.
                     }
                 }
                 .sidebar-widget {
-                    background: #fff;
+                    background: @background-color-white;
                     border: 1px solid #abd9ea;
                     border-radius: 5px;
                     text-align: center;
                     float: right;
                     h4
                     {
-                        font-size: 13px;
+                        font-size: @font-size-t;
                         font-weight: 500;
                     }
-                    .goal-wrapper {
-                        display: block;
-                        .gauge-value, .goal-value, #gauge-text, #goal-text {
-                            opacity: 1;
-                        }
-                    }
-                    #chart_gauge_01 {
-                        width: 160px; 
-                        height: 100px;
-                    }
-
                 }
 
                 p{
@@ -552,7 +543,7 @@ and open the template in the editor.
             width: 100%;
             padding: 10px 17px;
             display: inline-block;
-            background: #fff;
+            background: @background-color-white;
             border: 1px solid #E6E9ED;
             opacity: 1;
             transition: all .2s ease;
@@ -573,13 +564,13 @@ and open the template in the editor.
 
                     small {
                         margin-left: 10px;
-                        font-size: 13px;
+                        font-size: @font-size-t;
                     }
                 }
 
                 ul.items {
                     min-width: 70px;
-                    list-style: none;
+                    list-style: @list-style;
                     margin-top: 5px;
                     float: right;
                     .collapse-link, .close-link {
@@ -593,7 +584,7 @@ and open the template in the editor.
                 ul.items > li > a {
                     padding: 5px;
                     color: #C5C7CB;
-                    font-size: 13px;
+                    font-size: @font-size-t;
                 }
             }
             .admin-content {
@@ -602,18 +593,34 @@ and open the template in the editor.
                 margin-top: 5px;
                 width: 100%;
 
-                .progress {
-                    height: 10px;
-                    .progress-bar {
-                        height: 10px!important;
+                .info-progress {
+                    .progress {
+                        height: 10px;
+                        .progress-bar {
+                            height: 10px!important;
+                        }
+                    }
+                    color: #73879C;
+                    #chartColumnContainer {
+                        width: 100%;
+                        height: 200px;
+                    }
+                    span.right {
+                        float: right;
                     }
                 }
+
+
                 h2 {
-                    font-size: 20px;
+                    font-size: 14px;
+                    border-bottom: 2px solid #e0e0e0;
+                    border-top: 2px solid #e0e0e0;
+                    text-align: center;
+                    padding: 5px 0;
                 }
                 h4 { 
-                    font-size: 13px;
-                    color: #73879C;
+                    font-size: @font-size-t;
+                    color: @color;
                 }
                 #partly-cloudy-day, #snow, #sleet, #cloudy {
                     display: block;
@@ -621,31 +628,25 @@ and open the template in the editor.
                 #clear-day {
                     display: block;
                 }
-                .info-progress {
-                    color: #73879C;
-
-                    .bg-green {
-                        width: 89%;
+                .title-weather {
+                    margin: 10px 0;
+                    .title {
+                        font-size: 20px;
                     }
-                }                
-                table {
-                    th {
-                        p {
-                            color: #73879C;
-
-                        }
-                    }
+                }
+                .degrees {
+                    text-align: right;
                 }
 
                 ul.quick-list {
                     width: 45%;
                     padding-left: 0;
                     float: left;
-                    list-style: none;
+                    list-style: @list-style;
                     padding: 0px;
                     li {
                         padding-left: 10px;
-                        list-style: none;
+                        list-style: @list-style;
                         margin: 0;
                         padding-bottom: 6px;
                         padding-top: 4px;
@@ -656,7 +657,7 @@ and open the template in the editor.
                     }
                     a{
                         color: #5A738E;
-                        text-decoration: none;
+                        text-decoration: @text-decoration;
                     }
                     a:hover {
                         color: #23527c;
@@ -664,48 +665,42 @@ and open the template in the editor.
                     }
                 }
                 .sidebar-widget {
-                    background: #fff;
+                    background: @background-color-white;
                     border: 1px solid #abd9ea;
                     border-radius: 5px;
                     text-align: center;
                     float: right;
                     h4
                     {
-                        font-size: 13px;
+                        font-size: @font-size-t;
                         font-weight: 500;
                     }
                     .goal-wrapper {
                         display: block;
-                        .gauge-value, .goal-value, #gauge-text, #goal-text {
-                            opacity: 1;
+
+                        #jqRadialGauge {
+                            width: 150px; 
+                            height: 80px;
                         }
-                    }
-                    #chart_gauge_01 {
-                        width: 160px; 
-                        height: 100px;
                     }
                 }
             }
         }
         .page-content-wrraper {
             background-color: #f7f7f7;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
         }
         footer {
-            background: #ffffff;
             padding: 10px 10px;
             display: block;
             color: #5A738E;
             text-align: right;
             a {
-                text-decoration: none;
+                text-decoration: @text-decoration;
                 color: #5A738E;
             }
             a:hover {
-                text-decoration: none;
+                text-decoration: @text-decoration;
             }
         }
         #back-to-top{
@@ -718,7 +713,7 @@ and open the template in the editor.
             right:10px;
             cursor:pointer;
             display:none;
-            color:#fff;
+            color:@color;
             font-size:11px;
         }
         #back-to-top:hover {
@@ -730,23 +725,26 @@ and open the template in the editor.
 }
 .type-f-12.toggled {
     margin-left: -190px;
-    #chart_plot_03 {
-        width: 1300px;
+    transition: all 0.5s ease;
+    .logo, .img-user {        
+        display:  none;
     }
-    .sidebar-left {
-        display: none;
+
+    .sidebar-menu {
+        display:  none;
+
     }
     .nav-collapse {
         display: block;
-        margin-left: 192px;        
+        margin-left: 190px;        
         .logo-collapse {
-            border: 1px solid #fff;
+            border: 1px solid @color;
             border-radius: 50px;
             margin-top: 12px;
             a{               
                 font-size: 27px;
                 margin: 25px 0 0 3px;
-                color: #ffffff;
+                color: @color;
             }
         }
 
@@ -757,13 +755,14 @@ and open the template in the editor.
             ul {
                 padding: 0;
                 margin: 0;
-                list-style: none;
+                list-style: @list-style;
 
-                li {
+                li.dropdown {
                     margin: 25px 0;
                     a {
-                        color: #fff;
-                        text-decoration: none;
+                        font-size: @font-size-t;
+                        color: @color;
+                        text-decoration: @text-decoration;
                         i {
                             font-size: 25px;
 
@@ -773,22 +772,73 @@ and open the template in the editor.
                         }
 
                     }
+
+                    ul.dropdown-menu  {
+                        position: absolute;
+                        top: 0;
+                        margin-left: 50px;
+                        padding: 0;
+                        border-right: 3px solid #1ABB9C;
+                        li {
+                            width: 175px;
+                            text-align: left;
+                            background-color: @background-color-menu;
+                            padding: 3px 0;
+
+                            a:hover {
+                                background-color: rgba(255,255,255,.05);
+                            }
+
+                        }
+                        li.active {
+                            a {
+                                background-color: rgba(255,255,255,.05)!important;
+                            }
+                        }
+                    }
+                    .label {
+                        margin-right: -8px;
+                        font-size: 7px;
+                        padding: 2px 0;
+                    }
                 }
             }
         }
     }
+
 }
 @media (max-width: 980px) {
-    .img-user, .sidebar-footer {
-        display: none;
-    }
-    .sidebar-left {
+    .logo, .img-user, .sidebar-menu, .nav-collapse {
         display: none;
     }
     .type-f-12.toggled {
         margin-left: 75px;
         .nav-collapse {
-            display: none;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -245px;
+            width: 33px;
+
+            ul {
+                li.dropdown {
+                    ul.dropdown-menu {
+                        margin-left: 54px!important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 980px) {
+    .nav-collapse {
+        display: none;
+    }
+    .nav-side-menu {
+        .menu-list {
+            ul#menu-content {
+                display: block;
+            }
         }
     }
 }
