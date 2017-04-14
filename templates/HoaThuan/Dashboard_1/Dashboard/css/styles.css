@@ -1,4 +1,4 @@
-body {
+.type-25 {
   background: #2a3f54 !important;
 }
 .type-25 .dashboard {
@@ -244,6 +244,12 @@ body {
   color: #515356 !important;
   text-decoration: none;
 }
+.type-25 .nav_menu .nav .bt img {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 .type-25 .nav_menu .nav .drop:hover,
 .type-25 .nav_menu .nav .drop:focus {
   color: #333;
@@ -255,12 +261,6 @@ body {
   float: right;
   padding: 13px 15px 12px;
   height: 60px;
-}
-.type-25 .nav_menu img {
-  width: 29px;
-  height: 29px;
-  border-radius: 50%;
-  margin-right: 10px;
 }
 .type-25 .nav_menu .c_john {
   position: absolute;
@@ -342,7 +342,9 @@ body {
   padding: 0px;
 }
 .type-25 .nav_menu .c_mail .image img {
-  border-radius: 2px;
+  margin-right: 10px;
+  width: 11%;
+  float: left;
 }
 .type-25 .nav_menu .c_mail .time {
   font-size: 11px;
@@ -941,12 +943,13 @@ body {
     float: right;
   }
 }
-.type-25 footer {
+.type-25 .footer {
   background: #fff;
   padding: 15px 20px;
   display: block;
+  width: 100%;
 }
-.type-25 footer a {
+.type-25 .footer a {
   color: #5A738E;
   text-decoration: none;
 }

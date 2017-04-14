@@ -108,7 +108,7 @@
                                         <div id="ui" class="collapse">
                                             <div class="c_home">
                                                 <ul class="nav child_menu">
-                                                    <li><a href="#">General Elements</a></li>
+                                                    <li><a href="general_Element.php">General Elements</a></li>
                                                     <li><a href="#">Media Gallery</a></li>
                                                     <li><a href="#">Typography</a></li>
                                                     <li><a href="#">Icons</a></li>
@@ -320,7 +320,7 @@
                                         <i class="fa fa-desktop"></i> <br>Ul Elements
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">General Elements</a></li>
+                                        <li><a href="general_Element.php">General Elements</a></li>
                                         <li><a href="#">Media Gallery</a></li>
                                         <li><a href="#">Typography</a></li>
                                         <li><a href="#">Icons</a></li>
@@ -1232,17 +1232,18 @@
                                         </div>
 
                                     </div>
-                                    <!-- end of weather widget -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <footer>
-                        <div class="pull-right">
-                            Gentelella - Bootstrap Admin Template by <a href="#">Colorlib</a>
+                    <div class="row">
+                        <div class="footer">
+                            <div class="pull-right">
+                                Gentelella - Bootstrap Admin Template by <a href="#">Colorlib</a>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
-                        <div class="clearfix"></div>
-                    </footer>
+                    </div>
                 </div>
 
             </div>

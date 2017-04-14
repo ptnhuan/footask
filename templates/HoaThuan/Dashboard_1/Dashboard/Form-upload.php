@@ -14,8 +14,7 @@
         <link href="css/form-upload.css" rel="stylesheet" type="text/css"/>
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/demo.js" type="text/javascript"></script>
-        <script src="js/nump1.js" type="text/javascript"></script>
+        <script src="js/demo.js" type="text/javascript"></script> 
         <script src="js/flexible-menu.js" type="text/javascript"></script>
 
     </head>
@@ -58,7 +57,7 @@
                                             <div id="home" class="collapse">
                                                 <div class="c_home">
                                                     <ul class="nav child_menu">
-                                                        <li><a href="jonh.php">Dashboard</a></li>
+                                                        <li><a href="john.php">Dashboard</a></li>
                                                         <li><a href="#">Dashboard2</a></li>
                                                         <li><a href="#">Dashboard3</a></li>
                                                     </ul>                  
@@ -81,7 +80,7 @@
                                                         <li><a href="form-validation.php">Form Validation</a></li>
                                                         <li><a href="form-wizard.php">Form Wizard</a></li>
                                                         <li><a href="Form-upload.php">Form Upload</a></li>
-                                                        <li><a href="#">Form Buttons</a></li>
+                                                        <li><a href="form-button.php">Form Buttons</a></li>
                                                     </ul>                  
                                                 </div>
                                             </div>
@@ -97,7 +96,7 @@
                                             <div id="ui" class="collapse">
                                                 <div class="c_home">
                                                     <ul class="nav child_menu">
-                                                        <li><a href="#">General Elements</a></li>
+                                                        <li><a href="general_Element.php">General Elements</a></li>
                                                         <li><a href="#">Media Gallery</a></li>
                                                         <li><a href="#">Typography</a></li>
                                                         <li><a href="#">Icons</a></li>
@@ -299,19 +298,18 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="general-form.php">General Form</a></li>
-                                            <li><a href="#">Advanced components </a></li>
+                                            <li><a href="#">Advanced Components</a></li>
                                             <li><a href="form-validation.php">Form Validation</a></li>
                                             <li><a href="form-wizard.php">Form Wizard</a></li>
                                             <li><a href="Form-upload.php">Form Upload</a></li>
-                                            <li><a href="#">Form Buttons</a></li>
-                                        </ul>
+                                            <li><a href="form-button.php">Form Buttons</a></li>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle"data-toggle="dropdown">
                                             <i class="fa fa-desktop"></i> <br>Ul Elements
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">General Elements</a></li>
+                                            <li><a href="general_Element.php">General Elements</a></li>
                                             <li><a href="#">Media Gallery</a></li>
                                             <li><a href="#">Typography</a></li>
                                             <li><a href="#">Icons</a></li>
@@ -554,12 +552,12 @@
                             </div>
                         </div>
                     </div>
-                    <footer>
+                    <div class="footer">
                         <div class="pull-right">
                             Gentelella - Bootstrap Admin Template by <a href="#">Colorlib</a>
                         </div>
                         <div class="clearfix"></div>
-                    </footer>
+                    </div>
                 </div>
             </div>
         </div>

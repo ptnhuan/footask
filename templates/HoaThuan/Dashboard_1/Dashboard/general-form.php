@@ -81,8 +81,8 @@
                                                     <li><a href="form-validation.php">Form Validation</a></li>
                                                     <li><a href="form-wizard.php">Form Wizard</a></li>
                                                     <li><a href="Form-upload.php">Form Upload</a></li>
-                                                    <li><a href="#">Form Buttons</a></li>
-                                                </ul>                   
+                                                    <li><a href="form-button.php">Form Buttons</a></li>
+                                                </ul>                  
                                             </div>
                                         </div>
                                     </div>
@@ -97,7 +97,7 @@
                                         <div id="ui" class="collapse">
                                             <div class="c_home">
                                                 <ul class="nav child_menu">
-                                                    <li><a href="#">General Elements</a></li>
+                                                    <li><a href="general_Element.phpe">General Elements</a></li>
                                                     <li><a href="#">Media Gallery</a></li>
                                                     <li><a href="#">Typography</a></li>
                                                     <li><a href="#">Icons</a></li>
@@ -274,8 +274,6 @@
                             </a>
                         </div>
                     </div>
-
-
                     <div class="left-repon">
                         <div class="logo-repon">
                             <a href="#"><i class="fa fa-paw"></i>
@@ -299,11 +297,11 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a href="general-form.php">General Form</a></li>
-                                        <li><a href="#">Advanced components </a></li>
+                                        <li><a href="#">Advanced Components</a></li>
                                         <li><a href="form-validation.php">Form Validation</a></li>
                                         <li><a href="form-wizard.php">Form Wizard</a></li>
                                         <li><a href="Form-upload.php">Form Upload</a></li>
-                                        <li><a href="#">Form Buttons</a></li>
+                                        <li><a href="form-button.php">Form Buttons</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -311,7 +309,7 @@
                                         <i class="fa fa-desktop"></i> <br>Ul Elements
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">General Elements</a></li>
+                                        <li><a href="general_Element.php">General Elements</a></li>
                                         <li><a href="#">Media Gallery</a></li>
                                         <li><a href="#">Typography</a></li>
                                         <li><a href="#">Icons</a></li>
@@ -1646,12 +1644,14 @@
                     </div>
                     <!-------------------------------------->
 
-                    <footer>
-                        <div class="pull-right">
-                            Gentelella - Bootstrap Admin Template by <a href="#">Colorlib</a>
+                    <div class="row">
+                        <div class="footer">
+                            <div class="pull-right">
+                                Gentelella - Bootstrap Admin Template by <a href="#">Colorlib</a>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
-                        <div class="clearfix"></div>
-                    </footer>
+                    </div>
                 </div>
 
             </div>

@@ -104,7 +104,7 @@
                                             <div id="ui" class="collapse">
                                                 <div class="c_home">
                                                     <ul class="nav child_menu">
-                                                        <li><a href="#">General Elements</a></li>
+                                                        <li><a href="general_Element.php">General Elements</a></li>
                                                         <li><a href="#">Media Gallery</a></li>
                                                         <li><a href="#">Typography</a></li>
                                                         <li><a href="#">Icons</a></li>
@@ -304,7 +304,7 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="general-form.php">General Form</a></li>
-                                            <li><a href="#">Advanced components </a></li>
+                                            <li><a href="#">Advanced Components</a></li>
                                             <li><a href="form-validation.php">Form Validation</a></li>
                                             <li><a href="form-wizard.php">Form Wizard</a></li>
                                             <li><a href="Form-upload.php">Form Upload</a></li>
@@ -316,7 +316,7 @@
                                             <i class="fa fa-desktop"></i> <br>Ul Elements
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">General Elements</a></li>
+                                            <li><a href="general_Element.php">General Elements</a></li>
                                             <li><a href="#">Media Gallery</a></li>
                                             <li><a href="#">Typography</a></li>
                                             <li><a href="#">Icons</a></li>
