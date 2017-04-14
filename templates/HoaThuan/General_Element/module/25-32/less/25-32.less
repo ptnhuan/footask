@@ -1,0 +1,95 @@
+.type-25-32{
+    @font-size:18px;
+    @color:#fff;
+    .content1{
+        color: #73879C;
+        font-size:13px;
+        a {
+            color: #5A738E;
+            text-decoration: none;
+        }
+        .x_panel1 {
+            width: 100%;
+            padding: 10px 17px;
+            display: inline-block;
+            background:@color;
+            border: 1px solid #E6E9ED;
+            opacity: 1;
+        }
+        .x_title {
+            border-bottom: 2px solid #E6E9ED;
+            padding: 1px 5px 6px;
+            margin-bottom: 15px;
+
+        }
+        h2 {
+            margin: 5px 0 6px;
+            float: left;
+            display: block;
+            font-size:@font-size;
+            font-weight: 400;
+        }
+        small{
+            margin-left: 10px;
+        }
+        .navbar-right{
+            float: right;
+        }
+        .panel_toolbox>li {
+            float: left;
+            cursor: pointer;
+        }
+        .panel_toolbox>li>a {
+            padding: 5px;
+            color: #C5C7CB;
+            font-size: 14px;
+        }
+        ul.bar_tabs {
+            background: #F5F7FA;
+            margin: 21px 0 14px;
+            padding-left: 14px;
+            border-bottom: 1px solid #E6E9ED; 
+            li.active a {
+                border-right: 6px solid #D3D6DA;
+                border-top: 0;
+                background: @color!important;
+            }
+            li {
+                border: 1px solid #E6E9ED;
+                margin-top: -17px;
+                margin-left: 8px;
+                border-bottom: none;
+                border-radius: 4px 4px 0 0;
+            } 
+            li a {
+                padding: 10px 17px;
+                background: #F5F7FA;
+                margin: 0;
+                border-top-right-radius: 0;
+            }
+        }
+        .bar_tabs.right{
+            padding-right: 14px; 
+            li{
+                float: right;
+
+            }
+        }
+
+        .nav-tabs li a:focus, .nav-tabs li  a:hover {
+            color: #555;
+            cursor: default;
+            background-color: @color;
+            border: 1px solid #ddd;
+            border-bottom-color: transparent;
+        }
+
+    }
+}
+@media(max-width:1200px){
+    small{
+        display: none;
+    }
+
+}
+
