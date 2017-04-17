@@ -87,25 +87,21 @@
   border-bottom: 1px solid #E6E9ED;
   padding: 10px 0;
 }
-.type-55 .admin-panel .admin-content .col-md-custom {
-  width: 12.5%;
-  margin: 12px 0;
-}
-.type-55 .admin-panel .admin-content .col-md-custom .content-glyphicon {
+.type-55 .admin-panel .admin-content .content-glyphicon {
   text-align: center;
   background-color: #f9f9f9;
   border: 1px solid #ffffff;
   padding: 10px 8px;
 }
-.type-55 .admin-panel .admin-content .col-md-custom .content-glyphicon i {
+.type-55 .admin-panel .admin-content .content-glyphicon i {
   margin-bottom: 10px;
   font-size: 24px;
 }
-.type-55 .admin-panel .admin-content .col-md-custom .content-glyphicon span {
+.type-55 .admin-panel .admin-content .content-glyphicon span {
   display: block;
   font-size: 10px;
 }
-.type-55 .admin-panel .admin-content .col-md-custom .content-glyphicon:hover {
+.type-55 .admin-panel .admin-content .content-glyphicon:hover {
   background-color: #1ABB9C;
   color: #ffffff;
 }
@@ -115,5 +111,11 @@
   }
   .content .content-right {
     margin-top: -5px;
+  }
+}
+@media (min-width: 980px) {
+  .col-md-custom {
+    width: 12.5%;
+    margin: 12px 0;
   }
 }

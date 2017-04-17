@@ -121,31 +121,29 @@ and open the template in the editor.
                 padding: 10px 0;
             }
 
-            .col-md-custom {
-                width: 12.5%;
-                margin: 12px 0;
-                .content-glyphicon {
-                    text-align: center;
-                    background-color: #f9f9f9;
-                    border: 1px solid @background-color-ffffff;
-                    padding: 10px 8px;
+
+            .content-glyphicon {
+                text-align: center;
+                background-color: #f9f9f9;
+                border: 1px solid @background-color-ffffff;
+                padding: 10px 8px;
 
 
-                    i {
-                        margin-bottom: 10px;
-                        font-size: 24px;
-                    }
-                    span {
-                        display: block;
-                        font-size: 10px;
-                    }
+                i {
+                    margin-bottom: 10px;
+                    font-size: 24px;
                 }
-                .content-glyphicon:hover {
-                    background-color: #1ABB9C;
-                    color: @color-ffffff;
+                span {
+                    display: block;
+                    font-size: 10px;
                 }
             }
+            .content-glyphicon:hover {
+                background-color: #1ABB9C;
+                color: @color-ffffff;
+            }
         }
+
     }
 }
 
@@ -159,5 +157,12 @@ and open the template in the editor.
         .content-right {
             margin-top: -5px;
         }
+    }
+}
+
+@media (min-width: 980px) {
+    .col-md-custom {
+        width: 12.5%;
+        margin: 12px 0;
     }
 }
