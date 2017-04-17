@@ -1,0 +1,18 @@
+.type-55 {
+  color: #73879C;
+}
+.type-55 .frame-copy {
+  color: #333;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+.type-55 .btn-toolbar .btn {
+  float: none;
+}
+.type-55 .error-message {
+  color: #E9EDEF;
+  background-color: rgba(231,76,60,0.88);
+}
