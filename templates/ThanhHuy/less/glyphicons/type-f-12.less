@@ -11,12 +11,6 @@ and open the template in the editor.
 
 @color-body: #73879C;
 @font-size: 17px;
-@background-color-button-contact: #26B99A;
-@border-color-button-contact: #169F85;
-@border-color-button-contact-hover: #169F85;
-@background-color-button-view: #337ab7;
-@border-color-button-view: #2e6da4;
-@border-color-button-view-hover: #286090;
 
 @background-color-menu: #2A3F54;
 @font-size-t: 13px;
@@ -555,21 +549,21 @@ and open the template in the editor.
     }
 
 }
-@media (max-width: 980px) {
-    .logo, .img-user, .sidebar-menu, .nav-collapse {
-        display: none;
-    }
-    .content {
-        .content-left {
-            h3 {
-                font-size: 16px;
-            }
+
+@media (max-width: 1280px) {
+    .type-f-12 {
+        .nav-side-menu {
+            display: none;
+
         }
-        .content-right {
-            margin-top: -5px;
+        .page-content-wrraper {
+            width: 100%;
         }
     }
     .type-f-12.toggled {
+        .nav-side-menu {
+            display: block;
+        }
         margin-left: 75px;
         .nav-collapse {
             display: block;
@@ -588,19 +582,52 @@ and open the template in the editor.
         }
     }
 }
-@media (min-width: 980px) {
-    .nav-collapse {
-        display: none;
+
+@media (max-width: 980px) {
+    .page-content-wrraper {     
+        transition: none!important;
+        .navbar-right {
+            li.dropdown {
+                ul.dropdown-menu {
+                    margin-left: -16px;
+                }
+            }
+        }
+        .content {
+            .content-left {
+                h3 {
+                    font-size: 22px;
+                    small {
+                        display: none;
+                    }
+                }
+            }
+            .content-right {
+                margin-top: -5px;
+            }
+        }
     }
+}
+
+@media (min-width: 980px) {
     .nav-side-menu {
-        .menu-list {
+        .logo {
+            white-space: nowrap;
+
+        }
+        .sidebar-menu {
             ul#menu-content {
                 display: block;
             }
         }
+        .nav-collapse {
+            display: none;
+        }
     }
-   
-    .col-md-custom {
-        width: 12.5%;
+    .page-content-wrraper {
+        transition: none!important;
+        .col-md-custom {
+            width: 12.5%;
+        }
     }
 }

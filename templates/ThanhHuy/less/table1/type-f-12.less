@@ -17,7 +17,7 @@
                 text-align: center;
                 line-height: 60px;
                 padding: 0;
-                a {
+                a {                
                     text-decoration: @text-decoration;
                     color: @color;
                     font-size: 21px;
@@ -409,28 +409,25 @@
                     margin-top: 10px;
                 }
                 .info-table {
-                    table.data-table {
-                        border: 1px solid rgba(221, 221, 221, .78);
-                        thead {
-                            background: rgba(52, 73, 94, .94);
-                            color: #ECF0F1;
-                        }
-                        tbody {
-                            tr:hover {
-                                td {
-                                    background: rgba(38, 185, 154, .07);
-                                    border-top: 1px solid rgba(38, 185, 154, .11);
-                                    border-bottom: 1px solid rgba(38, 185, 154, .11);
-                                }
-
+                    thead {
+                        background: rgba(52, 73, 94, .94);
+                        color: #ECF0F1;
+                    }
+                    tbody {
+                        tr:hover {
+                            td {
+                                background: rgba(38, 185, 154, .07);
+                                border-top: 1px solid rgba(38, 185, 154, .11);
+                                border-bottom: 1px solid rgba(38, 185, 154, .11);
                             }
-                            tr {
 
-                                td.last {
-                                    a {
-                                        text-decoration: @text-decoration;
-                                        color: #5A738E;
-                                    }
+                        }
+                        tr {
+
+                            td.last {
+                                a {
+                                    text-decoration: @text-decoration;
+                                    color: #5A738E;
                                 }
                             }
                         }
@@ -561,23 +558,20 @@
             }
         }
     }
-
 }
-@media (max-width: 980px) {
-    .logo, .img-user, .sidebar-menu, .nav-collapse {
-        display: none;
-    }
-    .content {
-        .content-left {
-            h3 {
-                font-size: 16px;
-            }
+@media (max-width: 1280px) {
+    .type-f-12 {
+        .nav-side-menu {
+            display: none;
         }
-        .content-right {
-            margin-top: -5px;
+        .page-content-wrraper {
+            width: 100%;
         }
     }
     .type-f-12.toggled {
+        .nav-side-menu {
+            display: block;
+        }
         margin-left: 75px;
         .nav-collapse {
             display: block;
@@ -585,7 +579,7 @@
             top: 0;
             left: -245px;
             width: 33px;
-            
+
             ul {
                 li.dropdown {
                     ul.dropdown-menu {
@@ -596,16 +590,58 @@
         }
     }
 }
+@media (max-width: 980px) {
+    .page-content-wrraper {     
+        transition: none!important;
+        .navbar-right {
+            li.dropdown {
+                ul.dropdown-menu {
+                    margin-left: -16px;
+                }
+            }
+        }
+        .content {
+            .content-left {
+                h3 {
+                    font-size: 22px;
+                    small {
+                        display: none;
+                    }
+                }
+            }
+            .content-right {
+                margin-top: -5px;
+            }
+        }
+        .admin-panel {
+            .admin-title {
+                h3 {
+                    font-size: 18px!important;
+                    small {
+                        font-size: 12px!important;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (min-width: 980px) {
     .nav-side-menu {
+        .logo {
+            white-space: nowrap;
+
+        }
         .sidebar-menu {
             ul#menu-content {
                 display: block;
             }
         }
+        .nav-collapse {
+            display: none;
+        }
     }
-    .nav-collapse {
-        display: none;
+    .page-content-wrraper {
+        transition: none!important;
     }
 }

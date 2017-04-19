@@ -343,32 +343,6 @@ and open the template in the editor.
                     color: #BAB8B8;
                 }
 
-                h2 {
-                    margin: 5px 0 6px;
-                    float: left;
-                    display: block;
-                    font-size: 20px;
-                    color: #73879C;
-                    small {
-                        font-size: 13px;
-                        margin-left: 10px;
-                    }
-                }
-                .filter-time {
-                    font-size: 13px;
-                    .show-calendar {
-                        float: right;
-                        border: 1px solid #E6E9ED;
-                        cursor: pointer;
-                        padding: 5px 10px;
-                        background-color: @background-color-white;
-                        #datepicker {
-                            border: none;
-                            color: @color-body;
-                        }
-                    }
-                }
-
             }
             .admin-content {
                 padding: 0 5px 6px;
@@ -610,8 +584,9 @@ and open the template in the editor.
             }
             .admin-content {
                 padding: 0 5px 6px;
+                display: grid;
                 width: 100%;
-
+                
                 div.list-items {
                     margin-top: 15px;
 
@@ -777,11 +752,20 @@ and open the template in the editor.
     }
 
 }
-@media (max-width: 980px) {
-    .logo, .img-user, .sidebar-menu, .nav-collapse {
-        display: none;
+
+@media (max-width: 1280px) {
+    .type-f-12 {
+        .nav-side-menu {
+            display: none;
+        }
+        .page-content-wrraper {
+            width: 100%;
+        }
     }
     .type-f-12.toggled {
+        .nav-side-menu {
+            display: block;
+        }
         margin-left: 75px;
         .nav-collapse {
             display: block;
@@ -800,15 +784,95 @@ and open the template in the editor.
         }
     }
 }
-@media (min-width: 980px) {
-    .nav-collapse {
+
+@media (max-width: 980px) {
+    .logo, .img-user, .sidebar-menu, .nav-collapse {
         display: none;
     }
+    .page-content-wrraper {     
+        transition: none!important;
+        .navbar-right {
+            li.dropdown {
+                ul.dropdown-menu {
+                    margin-left: -16px;
+                }
+            }
+        }
+        .admin-title  {
+            h2 {
+                font-size: 18px;
+                color: #73879C;
+                float:left;
+                small {
+                    display: none;
+                }
+            }
+            .filter-time {
+                font-size: 13px;
+                .show-calendar {
+                    float: right;
+                    border: 1px solid #E6E9ED;
+                    cursor: pointer;
+                    padding: 3px 8px;
+                    background-color: @background-color-white;
+                    #datepicker {
+                        border: none;
+                        color: @color-body;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 980px) {
     .nav-side-menu {
-        .menu-list {
+        .logo {
+            white-space: nowrap;
+
+        }
+        .sidebar-menu {
             ul#menu-content {
                 display: block;
             }
         }
+        .nav-collapse {
+            display: none;
+        }
     }
+    .page-content-wrraper {
+        transition: none!important;
+    }
+}
+
+@media (min-width: 480px) {
+    .admin-title  {
+        h2 {
+            margin: 5px 0 6px;
+            float: left;
+            display: block;
+            font-size: 20px;
+            width: 50%;
+            color: #73879C;
+
+            small {
+                font-size: 13px;
+                margin-left: 10px;
+            }
+        }
+        .filter-time {
+            font-size: 13px;
+            .show-calendar {
+                float: right;
+                border: 1px solid #E6E9ED;
+                cursor: pointer;
+                padding: 5px 10px;
+                background-color: @background-color-white;
+                #datepicker {
+                    border: none;
+                    color: @color-body;
+                }
+            }
+        }
+    }
+
 }

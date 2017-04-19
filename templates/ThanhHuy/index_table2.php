@@ -88,9 +88,9 @@
                                     <li><a href="#">&#8226; Media Gallery</a></li>
                                     <li><a href="#">&#8226; Typography</a></li>
                                     <li><a href="#">&#8226; Icons</a></li>
-                                    <li><a href="#">&#8226; Glyphicons</a></li>
+                                    <li><a href="index_glyphicons.php">&#8226; Glyphicons</a></li>
                                     <li><a href="#">&#8226; Widgets</a></li>
-                                    <li><a href="#">&#8226; Invoice</a></li>
+                                    <li><a href="index_invoice.php">&#8226; Invoice</a></li>
                                     <li><a href="#">&#8226; Inbox</a></li>
                                     <li><a href="#">&#8226; Calendar</a></li>
                                 </ul>
@@ -230,9 +230,9 @@
                                         <li><a href="#">&#8226; Media Gallery</a></li>
                                         <li><a href="#">&#8226; Typography</a></li>
                                         <li><a href="#">&#8226; Icons</a></li>
-                                        <li><a href="#">&#8226; Glyphicons</a></li>
+                                        <li><a href="index_glyphicons.php">&#8226; Glyphicons</a></li>
                                         <li><a href="#">&#8226; Widgets</a></li>
-                                        <li><a href="#">&#8226; Invoice</a></li>
+                                        <li><a href="index_invoice.php">&#8226; Invoice</a></li>
                                         <li><a href="#">&#8226; Inbox</a></li>
                                         <li><a href="#">&#8226; Calendar</a></li>
                                     </ul>
@@ -460,7 +460,7 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="show-data">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="data">
                                                                 Show 
                                                                 <select class="form-control form-select">
@@ -472,128 +472,130 @@
                                                                 entries 
                                                             </span>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="search-query">
                                                                 Search: <input type="search" id="input" onkeyup="searchDataTable();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
                                                             </span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <table class="data-table table table-bordered" id="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th onclick="sortTable(0)">Name</th>
-                                                            <th onclick="sortTable(1)">Position</th>
-                                                            <th onclick="sortTable(2)">Office</th>
-                                                            <th onclick="sortTable(3)">Age</th>
-                                                            <th onclick="sortTable(4)">Start date</th>
-                                                            <th onclick="sortTable(5)">Salary</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="myDataTable">
-                                                        <tr>
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Bradley Greer</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>London</td>
-                                                            <td>41</td>
-                                                            <td>2012/10/13</td>
-                                                            <td>$132,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Brenden Wagner</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>San Francisco</td>
-                                                            <td>28</td>
-                                                            <td>2011/06/07</td>
-                                                            <td>$206,850</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Brielle Williamson</td>
-                                                            <td>Integration Specialist</td>
-                                                            <td>New York</td>
-                                                            <td>61</td>
-                                                            <td>2012/12/02</td>
-                                                            <td>$372,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bruno Nash</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>London</td>
-                                                            <td>38</td>
-                                                            <td>2011/05/03</td>
-                                                            <td>$163,500</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Caesar Vance</td>
-                                                            <td>Pre-Sales Support</td>
-                                                            <td>New York</td>
-                                                            <td>21</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>$106,450</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cara Stevens</td>
-                                                            <td>Sales Assistant</td>
-                                                            <td>New York</td>
-                                                            <td>46</td>
-                                                            <td>2011/12/06</td>
-                                                            <td>$145,600</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cara Stevens</td>
-                                                            <td>Sales Assistant</td>
-                                                            <td>New York</td>
-                                                            <td>46</td>
-                                                            <td>2011/12/06</td>
-                                                            <td>$145,600</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                <div class="table-responsive">
+                                                    <table class="data-table table table-bordered" id="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th onclick="sortTable(0)">Name</th>
+                                                                <th onclick="sortTable(1)">Position</th>
+                                                                <th onclick="sortTable(2)">Office</th>
+                                                                <th onclick="sortTable(3)">Age</th>
+                                                                <th onclick="sortTable(4)">Start date</th>
+                                                                <th onclick="sortTable(5)">Salary</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="myDataTable">
+                                                            <tr>
+                                                                <td>Ashton Cox</td>
+                                                                <td>Junior Technical Author</td>
+                                                                <td>San Francisco</td>
+                                                                <td>66</td>
+                                                                <td>2009/01/12</td>
+                                                                <td>$86,000</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Bradley Greer</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>London</td>
+                                                                <td>41</td>
+                                                                <td>2012/10/13</td>
+                                                                <td>$132,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Brenden Wagner</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>San Francisco</td>
+                                                                <td>28</td>
+                                                                <td>2011/06/07</td>
+                                                                <td>$206,850</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Brielle Williamson</td>
+                                                                <td>Integration Specialist</td>
+                                                                <td>New York</td>
+                                                                <td>61</td>
+                                                                <td>2012/12/02</td>
+                                                                <td>$372,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bruno Nash</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>London</td>
+                                                                <td>38</td>
+                                                                <td>2011/05/03</td>
+                                                                <td>$163,500</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Caesar Vance</td>
+                                                                <td>Pre-Sales Support</td>
+                                                                <td>New York</td>
+                                                                <td>21</td>
+                                                                <td>2011/12/12</td>
+                                                                <td>$106,450</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cara Stevens</td>
+                                                                <td>Sales Assistant</td>
+                                                                <td>New York</td>
+                                                                <td>46</td>
+                                                                <td>2011/12/06</td>
+                                                                <td>$145,600</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cara Stevens</td>
+                                                                <td>Sales Assistant</td>
+                                                                <td>New York</td>
+                                                                <td>46</td>
+                                                                <td>2011/12/06</td>
+                                                                <td>$145,600</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <p>Showing 1 to 5 of 12 entries</p>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <ul class="pagination page" id="myPager">
                                                         </ul>
                                                     </div>
@@ -639,7 +641,7 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="show-data">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="data">
                                                                 Show 
                                                                 <select class="form-control form-select">
@@ -651,210 +653,212 @@
                                                                 entries 
                                                             </span>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="search-query">
                                                                 Search: <input type="search" id="input2" onkeyup="searchDataTable2();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
                                                             </span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <table class="data-table table table-bordered" id="table2">
-                                                    <thead>
-                                                        <tr role="row" class="">
-                                                            <th style="width: 6px;">
-                                                            </th>
-                                                            <th style="width: 34px;">
-                                                                <input type="checkbox" class="item" onclick="checkAll('item', this)">
-                                                            </th>
-                                                            <th onclick="sortTable2(1)" style="width: 141px;">Name</th>
-                                                            <th onclick="sortTable2(2)" style="width: 233px;">Position</th>
-                                                            <th onclick="sortTable2(3)" style="width: 103px;">Office</th>
-                                                            <th onclick="sortTable2(4)" style="width: 50px;">Age</th>
-                                                            <th onclick="sortTable2(5)" style="width: 99px;">Start date</th>
-                                                            <th onclick="sortTable2(6)" style="width: 76px;">Salary</th></tr>
-                                                    </thead>
-                                                    <tbody id="myDataTable2">
-                                                        <tr>
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                <div class="table-responsive">
+                                                    <table class="data-table table table-bordered" id="table2">
+                                                        <thead>
+                                                            <tr role="row" class="">
+                                                                <th style="width: 6px;">
+                                                                </th>
+                                                                <th style="width: 34px;">
+                                                                    <input type="checkbox" class="item" onclick="checkAll('item', this)">
+                                                                </th>
+                                                                <th onclick="sortTable2(1)" style="width: 141px;">Name</th>
+                                                                <th onclick="sortTable2(2)" style="width: 233px;">Position</th>
+                                                                <th onclick="sortTable2(3)" style="width: 103px;">Office</th>
+                                                                <th onclick="sortTable2(4)" style="width: 50px;">Age</th>
+                                                                <th onclick="sortTable2(5)" style="width: 99px;">Start date</th>
+                                                                <th onclick="sortTable2(6)" style="width: 76px;">Salary</th></tr>
+                                                        </thead>
+                                                        <tbody id="myDataTable2">
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
+                                                                <td>Ashton Cox</td>
+                                                                <td>Junior Technical Author</td>
+                                                                <td>San Francisco</td>
+                                                                <td>66</td>
+                                                                <td>2009/01/12</td>
+                                                                <td>$86,000</td>
 
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Garrett Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                                <td>Garrett Winters</td>
+                                                                <td>Accountant</td>
+                                                                <td>Tokyo</td>
+                                                                <td>63</td>
+                                                                <td>2011/07/25</td>
+                                                                <td>$170,750</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
+                                                                <td>Ashton Cox</td>
+                                                                <td>Junior Technical Author</td>
+                                                                <td>San Francisco</td>
+                                                                <td>66</td>
+                                                                <td>2009/01/12</td>
+                                                                <td>$86,000</td>
 
-                                                        </tr>
-                                                        <tr >
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Garrett Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                                <td>Garrett Winters</td>
+                                                                <td>Accountant</td>
+                                                                <td>Tokyo</td>
+                                                                <td>63</td>
+                                                                <td>2011/07/25</td>
+                                                                <td>$170,750</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
+                                                                <td>Ashton Cox</td>
+                                                                <td>Junior Technical Author</td>
+                                                                <td>San Francisco</td>
+                                                                <td>66</td>
+                                                                <td>2009/01/12</td>
+                                                                <td>$86,000</td>
 
-                                                        </tr>
-                                                        <tr >
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Garrett Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                                <td>Garrett Winters</td>
+                                                                <td>Accountant</td>
+                                                                <td>Tokyo</td>
+                                                                <td>63</td>
+                                                                <td>2011/07/25</td>
+                                                                <td>$170,750</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Garrett Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                                <td>Garrett Winters</td>
+                                                                <td>Accountant</td>
+                                                                <td>Tokyo</td>
+                                                                <td>63</td>
+                                                                <td>2011/07/25</td>
+                                                                <td>$170,750</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
+                                                                <td>Ashton Cox</td>
+                                                                <td>Junior Technical Author</td>
+                                                                <td>San Francisco</td>
+                                                                <td>66</td>
+                                                                <td>2009/01/12</td>
+                                                                <td>$86,000</td>
 
-                                                        </tr>
-                                                        <tr >
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Garrett Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                                <td>Garrett Winters</td>
+                                                                <td>Accountant</td>
+                                                                <td>Tokyo</td>
+                                                                <td>63</td>
+                                                                <td>2011/07/25</td>
+                                                                <td>$170,750</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
+                                                                <td>Ashton Cox</td>
+                                                                <td>Junior Technical Author</td>
+                                                                <td>San Francisco</td>
+                                                                <td>66</td>
+                                                                <td>2009/01/12</td>
+                                                                <td>$86,000</td>
 
-                                                        </tr>
-                                                        <tr >
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Garrett Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                            </td>
-                                                            <th>
-                                                                <input type="checkbox" class="item">
-                                                            </th>
+                                                                <td>Garrett Winters</td>
+                                                                <td>Accountant</td>
+                                                                <td>Tokyo</td>
+                                                                <td>63</td>
+                                                                <td>2011/07/25</td>
+                                                                <td>$170,750</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                                <th>
+                                                                    <input type="checkbox" class="item">
+                                                                </th>
 
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
+                                                                <td>Ashton Cox</td>
+                                                                <td>Junior Technical Author</td>
+                                                                <td>San Francisco</td>
+                                                                <td>66</td>
+                                                                <td>2009/01/12</td>
+                                                                <td>$86,000</td>
 
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <p>Showing 1 to 5 of 12 entries</p>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <ul class="pagination page" id="myPager2">
                                                         </ul>
                                                     </div>
@@ -901,7 +905,7 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="show-data">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="data">
                                                                 Show 
                                                                 <select class="form-control form-select">
@@ -913,128 +917,130 @@
                                                                 entries 
                                                             </span>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="search-query">
                                                                 Search: <input type="search" id="input3" onkeyup="searchDataTable3();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
                                                             </span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <table class="data-table table table-bordered" id="table3">
-                                                    <thead>
-                                                        <tr>
-                                                            <th onclick="sortTable3(0)">Name</th>
-                                                            <th onclick="sortTable3(1)">Position</th>
-                                                            <th onclick="sortTable3(2)">Office</th>
-                                                            <th onclick="sortTable3(3)">Age</th>
-                                                            <th onclick="sortTable3(4)">Start date</th>
-                                                            <th onclick="sortTable3(5)">Salary</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="myDataTable3">
-                                                        <tr>
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Bradley Greer</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>London</td>
-                                                            <td>41</td>
-                                                            <td>2012/10/13</td>
-                                                            <td>$132,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Brenden Wagner</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>San Francisco</td>
-                                                            <td>28</td>
-                                                            <td>2011/06/07</td>
-                                                            <td>$206,850</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Brielle Williamson</td>
-                                                            <td>Integration Specialist</td>
-                                                            <td>New York</td>
-                                                            <td>61</td>
-                                                            <td>2012/12/02</td>
-                                                            <td>$372,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bruno Nash</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>London</td>
-                                                            <td>38</td>
-                                                            <td>2011/05/03</td>
-                                                            <td>$163,500</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Caesar Vance</td>
-                                                            <td>Pre-Sales Support</td>
-                                                            <td>New York</td>
-                                                            <td>21</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>$106,450</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cara Stevens</td>
-                                                            <td>Sales Assistant</td>
-                                                            <td>New York</td>
-                                                            <td>46</td>
-                                                            <td>2011/12/06</td>
-                                                            <td>$145,600</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cara Stevens</td>
-                                                            <td>Sales Assistant</td>
-                                                            <td>New York</td>
-                                                            <td>46</td>
-                                                            <td>2011/12/06</td>
-                                                            <td>$145,600</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                <div class="table-responsive">
+                                                    <table class="data-table table table-bordered" id="table3">
+                                                        <thead>
+                                                            <tr>
+                                                                <th onclick="sortTable3(0)">Name</th>
+                                                                <th onclick="sortTable3(1)">Position</th>
+                                                                <th onclick="sortTable3(2)">Office</th>
+                                                                <th onclick="sortTable3(3)">Age</th>
+                                                                <th onclick="sortTable3(4)">Start date</th>
+                                                                <th onclick="sortTable3(5)">Salary</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="myDataTable3">
+                                                            <tr>
+                                                                <td>Ashton Cox</td>
+                                                                <td>Junior Technical Author</td>
+                                                                <td>San Francisco</td>
+                                                                <td>66</td>
+                                                                <td>2009/01/12</td>
+                                                                <td>$86,000</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Bradley Greer</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>London</td>
+                                                                <td>41</td>
+                                                                <td>2012/10/13</td>
+                                                                <td>$132,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Brenden Wagner</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>San Francisco</td>
+                                                                <td>28</td>
+                                                                <td>2011/06/07</td>
+                                                                <td>$206,850</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Brielle Williamson</td>
+                                                                <td>Integration Specialist</td>
+                                                                <td>New York</td>
+                                                                <td>61</td>
+                                                                <td>2012/12/02</td>
+                                                                <td>$372,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bruno Nash</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>London</td>
+                                                                <td>38</td>
+                                                                <td>2011/05/03</td>
+                                                                <td>$163,500</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Caesar Vance</td>
+                                                                <td>Pre-Sales Support</td>
+                                                                <td>New York</td>
+                                                                <td>21</td>
+                                                                <td>2011/12/12</td>
+                                                                <td>$106,450</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cara Stevens</td>
+                                                                <td>Sales Assistant</td>
+                                                                <td>New York</td>
+                                                                <td>46</td>
+                                                                <td>2011/12/06</td>
+                                                                <td>$145,600</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cara Stevens</td>
+                                                                <td>Sales Assistant</td>
+                                                                <td>New York</td>
+                                                                <td>46</td>
+                                                                <td>2011/12/06</td>
+                                                                <td>$145,600</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <p>Showing 1 to 5 of 12 entries</p>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <ul class="pagination page" id="myPager3">
                                                         </ul>
                                                     </div>
@@ -1081,7 +1087,7 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="show-data">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="data">
                                                                 Show 
                                                                 <select class="form-control form-select">
@@ -1093,128 +1099,131 @@
                                                                 entries 
                                                             </span>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="search-query">
                                                                 Search: <input type="search" id="input4" onkeyup="searchDataTable4();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
                                                             </span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <table class="data-table table table-bordered" id="table4">
-                                                    <thead>
-                                                        <tr>
-                                                            <th onclick="sortTable4(0)">Name</th>
-                                                            <th onclick="sortTable4(1)">Position</th>
-                                                            <th onclick="sortTable4(2)">Office</th>
-                                                            <th onclick="sortTable4(3)">Age</th>
-                                                            <th onclick="sortTable4(4)">Start date</th>
-                                                            <th onclick="sortTable4(5)">Salary</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="myDataTable4">
-                                                        <tr>
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Bradley Greer</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>London</td>
-                                                            <td>41</td>
-                                                            <td>2012/10/13</td>
-                                                            <td>$132,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Brenden Wagner</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>San Francisco</td>
-                                                            <td>28</td>
-                                                            <td>2011/06/07</td>
-                                                            <td>$206,850</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Brielle Williamson</td>
-                                                            <td>Integration Specialist</td>
-                                                            <td>New York</td>
-                                                            <td>61</td>
-                                                            <td>2012/12/02</td>
-                                                            <td>$372,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bruno Nash</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>London</td>
-                                                            <td>38</td>
-                                                            <td>2011/05/03</td>
-                                                            <td>$163,500</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Caesar Vance</td>
-                                                            <td>Pre-Sales Support</td>
-                                                            <td>New York</td>
-                                                            <td>21</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>$106,450</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cara Stevens</td>
-                                                            <td>Sales Assistant</td>
-                                                            <td>New York</td>
-                                                            <td>46</td>
-                                                            <td>2011/12/06</td>
-                                                            <td>$145,600</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cara Stevens</td>
-                                                            <td>Sales Assistant</td>
-                                                            <td>New York</td>
-                                                            <td>46</td>
-                                                            <td>2011/12/06</td>
-                                                            <td>$145,600</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                <div class="table-responsive">
+                                                    <table class="data-table table table-bordered" id="table4">
+                                                        <thead>
+                                                            <tr>
+                                                                <th onclick="sortTable4(0)">Name</th>
+                                                                <th onclick="sortTable4(1)">Position</th>
+                                                                <th onclick="sortTable4(2)">Office</th>
+                                                                <th onclick="sortTable4(3)">Age</th>
+                                                                <th onclick="sortTable4(4)">Start date</th>
+                                                                <th onclick="sortTable4(5)">Salary</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="myDataTable4">
+                                                            <tr>
+                                                                <td>Ashton Cox</td>
+                                                                <td>Junior Technical Author</td>
+                                                                <td>San Francisco</td>
+                                                                <td>66</td>
+                                                                <td>2009/01/12</td>
+                                                                <td>$86,000</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Bradley Greer</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>London</td>
+                                                                <td>41</td>
+                                                                <td>2012/10/13</td>
+                                                                <td>$132,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Brenden Wagner</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>San Francisco</td>
+                                                                <td>28</td>
+                                                                <td>2011/06/07</td>
+                                                                <td>$206,850</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Brielle Williamson</td>
+                                                                <td>Integration Specialist</td>
+                                                                <td>New York</td>
+                                                                <td>61</td>
+                                                                <td>2012/12/02</td>
+                                                                <td>$372,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bruno Nash</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>London</td>
+                                                                <td>38</td>
+                                                                <td>2011/05/03</td>
+                                                                <td>$163,500</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Caesar Vance</td>
+                                                                <td>Pre-Sales Support</td>
+                                                                <td>New York</td>
+                                                                <td>21</td>
+                                                                <td>2011/12/12</td>
+                                                                <td>$106,450</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cara Stevens</td>
+                                                                <td>Sales Assistant</td>
+                                                                <td>New York</td>
+                                                                <td>46</td>
+                                                                <td>2011/12/06</td>
+                                                                <td>$145,600</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cara Stevens</td>
+                                                                <td>Sales Assistant</td>
+                                                                <td>New York</td>
+                                                                <td>46</td>
+                                                                <td>2011/12/06</td>
+                                                                <td>$145,600</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <p>Showing 1 to 5 of 12 entries</p>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <ul class="pagination page" id="myPager4">
                                                         </ul>
                                                     </div>
@@ -1260,7 +1269,7 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="show-data">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="data">
                                                                 Show 
                                                                 <select class="form-control form-select">
@@ -1272,128 +1281,130 @@
                                                                 entries 
                                                             </span>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="search-query">
                                                                 Search: <input type="search" id="input5" onkeyup="searchDataTable5();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
                                                             </span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <table class="data-table table table-bordered" id="table5">
-                                                    <thead>
-                                                        <tr>
-                                                            <th onclick="sortTable5(0)">Name</th>
-                                                            <th onclick="sortTable5(1)">Position</th>
-                                                            <th onclick="sortTable5(2)">Office</th>
-                                                            <th onclick="sortTable5(3)">Age</th>
-                                                            <th onclick="sortTable5(4)">Start date</th>
-                                                            <th onclick="sortTable5(5)">Salary</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="myDataTable5">
-                                                        <tr>
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Bradley Greer</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>London</td>
-                                                            <td>41</td>
-                                                            <td>2012/10/13</td>
-                                                            <td>$132,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Brenden Wagner</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>San Francisco</td>
-                                                            <td>28</td>
-                                                            <td>2011/06/07</td>
-                                                            <td>$206,850</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Brielle Williamson</td>
-                                                            <td>Integration Specialist</td>
-                                                            <td>New York</td>
-                                                            <td>61</td>
-                                                            <td>2012/12/02</td>
-                                                            <td>$372,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bruno Nash</td>
-                                                            <td>Software Engineer</td>
-                                                            <td>London</td>
-                                                            <td>38</td>
-                                                            <td>2011/05/03</td>
-                                                            <td>$163,500</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Caesar Vance</td>
-                                                            <td>Pre-Sales Support</td>
-                                                            <td>New York</td>
-                                                            <td>21</td>
-                                                            <td>2011/12/12</td>
-                                                            <td>$106,450</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cara Stevens</td>
-                                                            <td>Sales Assistant</td>
-                                                            <td>New York</td>
-                                                            <td>46</td>
-                                                            <td>2011/12/06</td>
-                                                            <td>$145,600</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cara Stevens</td>
-                                                            <td>Sales Assistant</td>
-                                                            <td>New York</td>
-                                                            <td>46</td>
-                                                            <td>2011/12/06</td>
-                                                            <td>$145,600</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                <div class="table-responsive">
+                                                    <table class="data-table table table-bordered" id="table5">
+                                                        <thead>
+                                                            <tr>
+                                                                <th onclick="sortTable5(0)">Name</th>
+                                                                <th onclick="sortTable5(1)">Position</th>
+                                                                <th onclick="sortTable5(2)">Office</th>
+                                                                <th onclick="sortTable5(3)">Age</th>
+                                                                <th onclick="sortTable5(4)">Start date</th>
+                                                                <th onclick="sortTable5(5)">Salary</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="myDataTable5">
+                                                            <tr>
+                                                                <td>Ashton Cox</td>
+                                                                <td>Junior Technical Author</td>
+                                                                <td>San Francisco</td>
+                                                                <td>66</td>
+                                                                <td>2009/01/12</td>
+                                                                <td>$86,000</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Bradley Greer</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>London</td>
+                                                                <td>41</td>
+                                                                <td>2012/10/13</td>
+                                                                <td>$132,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Brenden Wagner</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>San Francisco</td>
+                                                                <td>28</td>
+                                                                <td>2011/06/07</td>
+                                                                <td>$206,850</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Brielle Williamson</td>
+                                                                <td>Integration Specialist</td>
+                                                                <td>New York</td>
+                                                                <td>61</td>
+                                                                <td>2012/12/02</td>
+                                                                <td>$372,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bruno Nash</td>
+                                                                <td>Software Engineer</td>
+                                                                <td>London</td>
+                                                                <td>38</td>
+                                                                <td>2011/05/03</td>
+                                                                <td>$163,500</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Caesar Vance</td>
+                                                                <td>Pre-Sales Support</td>
+                                                                <td>New York</td>
+                                                                <td>21</td>
+                                                                <td>2011/12/12</td>
+                                                                <td>$106,450</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cara Stevens</td>
+                                                                <td>Sales Assistant</td>
+                                                                <td>New York</td>
+                                                                <td>46</td>
+                                                                <td>2011/12/06</td>
+                                                                <td>$145,600</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cara Stevens</td>
+                                                                <td>Sales Assistant</td>
+                                                                <td>New York</td>
+                                                                <td>46</td>
+                                                                <td>2011/12/06</td>
+                                                                <td>$145,600</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Cedric Kelly</td>
+                                                                <td>Senior Javascript Developer</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>22</td>
+                                                                <td>2012/03/29</td>
+                                                                <td>$433,060</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <p>Showing 1 to 5 of 12 entries</p>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <ul class="pagination page" id="myPager5">
                                                         </ul>
                                                     </div>
@@ -1440,7 +1451,7 @@
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <div class="show-data">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="data">
                                                                 Show 
                                                                 <select class="form-control form-select">
@@ -1452,167 +1463,169 @@
                                                                 entries 
                                                             </span>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                                             <span class="search-query">
                                                                 Search: <input type="search" id="input6" onkeyup="searchDataTable6();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
                                                             </span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <table class="data-table table table-bordered" id="table6">
-                                                    <thead>
-                                                        <tr>
-                                                            <th onclick="sortTable6(0)" style="width: 71px;">First name</th>
-                                                            <th onclick="sortTable6(1)" style="width: 69px;">Last Name</th>
-                                                            <th onclick="sortTable6(2)" style="width: 155px;">Position</th>
-                                                            <th onclick="sortTable6(3)" style="width: 118px;">Office</th>
-                                                            <th onclick="sortTable6(4)" style="width: 67px;">Age</th>
-                                                            <th onclick="sortTable6(5)" style="width: 87px;">Start date</th>
-                                                            <th onclick="sortTable6(6)" style="width: 64px;">Salary</th>
-                                                            <th onclick="sortTable6(7)" style="width: 46px;">Extn.</th>
-                                                            <th onclick="sortTable6(8)" style="width: 148px;">Email</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="myDataTable6">
-                                                        <tr>
-                                                            <td>Cara</td>
-                                                            <td>Stevens</td>
-                                                            <td>Sales Assistant</td>
-                                                            <td>New York</td>
-                                                            <td>46</td>
-                                                            <td>2011/12/06</td>
-                                                            <td>$145,600</td>
-                                                            <td>3990</td>
-                                                            <td>c.stevens@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Hermione</td>
-                                                            <td>Butler</td>
-                                                            <td>Regional Director</td>
-                                                            <td>London</td>
-                                                            <td>47</td>
-                                                            <td>2011/03/21</td>
-                                                            <td>$356,250</td>
-                                                            <td>1016</td>
-                                                            <td>h.butler@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Lael</td>
-                                                            <td>Greer</td>
-                                                            <td>Systems Administrator</td>
-                                                            <td>London</td>
-                                                            <td>21</td>
-                                                            <td>2009/02/27</td>
-                                                            <td>$103,500</td>
-                                                            <td>6733</td>
-                                                            <td>l.greer@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Jonas</td>
-                                                            <td>Alexander</td>
-                                                            <td>Developer</td>
-                                                            <td>San Francisco</td>
-                                                            <td>30</td>
-                                                            <td>2010/07/14</td>
-                                                            <td>$86,500</td>
-                                                            <td>8196</td>
-                                                            <td>j.alexander@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Shad</td>
-                                                            <td>Decker</td>
-                                                            <td>Regional Director</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>51</td>
-                                                            <td>2008/11/13</td>
-                                                            <td>$183,000</td>
-                                                            <td>6373</td>
-                                                            <td>s.decker@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Michael</td>
-                                                            <td>Bruce</td>
-                                                            <td>Javascript Developer</td>
-                                                            <td>Singapore</td>
-                                                            <td>29</td>
-                                                            <td>2011/06/27</td>
-                                                            <td>$183,000</td>
-                                                            <td>5384</td>
-                                                            <td>m.bruce@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Donna</td>
-                                                            <td>Snider</td>
-                                                            <td>Customer Support</td>
-                                                            <td>New York</td>
-                                                            <td>27</td>
-                                                            <td>2011/01/25</td>
-                                                            <td>$112,000</td>
-                                                            <td>4226</td>
-                                                            <td>d.snider@datatables.net</td>
-                                                        </tr>   
-                                                        <tr>
-                                                            <td>Lael</td>
-                                                            <td>Greer</td>
-                                                            <td>Systems Administrator</td>
-                                                            <td>London</td>
-                                                            <td>21</td>
-                                                            <td>2009/02/27</td>
-                                                            <td>$103,500</td>
-                                                            <td>6733</td>
-                                                            <td>l.greer@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Jonas</td>
-                                                            <td>Alexander</td>
-                                                            <td>Developer</td>
-                                                            <td>San Francisco</td>
-                                                            <td>30</td>
-                                                            <td>2010/07/14</td>
-                                                            <td>$86,500</td>
-                                                            <td>8196</td>
-                                                            <td>j.alexander@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Shad</td>
-                                                            <td>Decker</td>
-                                                            <td>Regional Director</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>51</td>
-                                                            <td>2008/11/13</td>
-                                                            <td>$183,000</td>
-                                                            <td>6373</td>
-                                                            <td>s.decker@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Michael</td>
-                                                            <td>Bruce</td>
-                                                            <td>Javascript Developer</td>
-                                                            <td>Singapore</td>
-                                                            <td>29</td>
-                                                            <td>2011/06/27</td>
-                                                            <td>$183,000</td>
-                                                            <td>5384</td>
-                                                            <td>m.bruce@datatables.net</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Donna</td>
-                                                            <td>Snider</td>
-                                                            <td>Customer Support</td>
-                                                            <td>New York</td>
-                                                            <td>27</td>
-                                                            <td>2011/01/25</td>
-                                                            <td>$112,000</td>
-                                                            <td>4226</td>
-                                                            <td>d.snider@datatables.net</td>
-                                                        </tr>   
-                                                    </tbody>
-                                                </table>
+                                                <div class="table-responsive">
+                                                    <table class="data-table table table-bordered" id="table6">
+                                                        <thead>
+                                                            <tr>
+                                                                <th onclick="sortTable6(0)" style="width: 71px;">First name</th>
+                                                                <th onclick="sortTable6(1)" style="width: 69px;">Last Name</th>
+                                                                <th onclick="sortTable6(2)" style="width: 155px;">Position</th>
+                                                                <th onclick="sortTable6(3)" style="width: 118px;">Office</th>
+                                                                <th onclick="sortTable6(4)" style="width: 67px;">Age</th>
+                                                                <th onclick="sortTable6(5)" style="width: 87px;">Start date</th>
+                                                                <th onclick="sortTable6(6)" style="width: 64px;">Salary</th>
+                                                                <th onclick="sortTable6(7)" style="width: 46px;">Extn.</th>
+                                                                <th onclick="sortTable6(8)" style="width: 148px;">Email</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="myDataTable6">
+                                                            <tr>
+                                                                <td>Cara</td>
+                                                                <td>Stevens</td>
+                                                                <td>Sales Assistant</td>
+                                                                <td>New York</td>
+                                                                <td>46</td>
+                                                                <td>2011/12/06</td>
+                                                                <td>$145,600</td>
+                                                                <td>3990</td>
+                                                                <td>c.stevens@datatables.net</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Hermione</td>
+                                                                <td>Butler</td>
+                                                                <td>Regional Director</td>
+                                                                <td>London</td>
+                                                                <td>47</td>
+                                                                <td>2011/03/21</td>
+                                                                <td>$356,250</td>
+                                                                <td>1016</td>
+                                                                <td>h.butler@datatables.net</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Lael</td>
+                                                                <td>Greer</td>
+                                                                <td>Systems Administrator</td>
+                                                                <td>London</td>
+                                                                <td>21</td>
+                                                                <td>2009/02/27</td>
+                                                                <td>$103,500</td>
+                                                                <td>6733</td>
+                                                                <td>l.greer@datatables.net</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Jonas</td>
+                                                                <td>Alexander</td>
+                                                                <td>Developer</td>
+                                                                <td>San Francisco</td>
+                                                                <td>30</td>
+                                                                <td>2010/07/14</td>
+                                                                <td>$86,500</td>
+                                                                <td>8196</td>
+                                                                <td>j.alexander@datatables.net</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Shad</td>
+                                                                <td>Decker</td>
+                                                                <td>Regional Director</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>51</td>
+                                                                <td>2008/11/13</td>
+                                                                <td>$183,000</td>
+                                                                <td>6373</td>
+                                                                <td>s.decker@datatables.net</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Michael</td>
+                                                                <td>Bruce</td>
+                                                                <td>Javascript Developer</td>
+                                                                <td>Singapore</td>
+                                                                <td>29</td>
+                                                                <td>2011/06/27</td>
+                                                                <td>$183,000</td>
+                                                                <td>5384</td>
+                                                                <td>m.bruce@datatables.net</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Donna</td>
+                                                                <td>Snider</td>
+                                                                <td>Customer Support</td>
+                                                                <td>New York</td>
+                                                                <td>27</td>
+                                                                <td>2011/01/25</td>
+                                                                <td>$112,000</td>
+                                                                <td>4226</td>
+                                                                <td>d.snider@datatables.net</td>
+                                                            </tr>   
+                                                            <tr>
+                                                                <td>Lael</td>
+                                                                <td>Greer</td>
+                                                                <td>Systems Administrator</td>
+                                                                <td>London</td>
+                                                                <td>21</td>
+                                                                <td>2009/02/27</td>
+                                                                <td>$103,500</td>
+                                                                <td>6733</td>
+                                                                <td>l.greer@datatables.net</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Jonas</td>
+                                                                <td>Alexander</td>
+                                                                <td>Developer</td>
+                                                                <td>San Francisco</td>
+                                                                <td>30</td>
+                                                                <td>2010/07/14</td>
+                                                                <td>$86,500</td>
+                                                                <td>8196</td>
+                                                                <td>j.alexander@datatables.net</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Shad</td>
+                                                                <td>Decker</td>
+                                                                <td>Regional Director</td>
+                                                                <td>Edinburgh</td>
+                                                                <td>51</td>
+                                                                <td>2008/11/13</td>
+                                                                <td>$183,000</td>
+                                                                <td>6373</td>
+                                                                <td>s.decker@datatables.net</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Michael</td>
+                                                                <td>Bruce</td>
+                                                                <td>Javascript Developer</td>
+                                                                <td>Singapore</td>
+                                                                <td>29</td>
+                                                                <td>2011/06/27</td>
+                                                                <td>$183,000</td>
+                                                                <td>5384</td>
+                                                                <td>m.bruce@datatables.net</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Donna</td>
+                                                                <td>Snider</td>
+                                                                <td>Customer Support</td>
+                                                                <td>New York</td>
+                                                                <td>27</td>
+                                                                <td>2011/01/25</td>
+                                                                <td>$112,000</td>
+                                                                <td>4226</td>
+                                                                <td>d.snider@datatables.net</td>
+                                                            </tr>   
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <p>Showing 1 to 5 of 12 entries</p>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
                                                         <ul class="pagination page" id="myPager6">
                                                         </ul>
                                                     </div>

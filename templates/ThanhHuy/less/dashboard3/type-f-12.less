@@ -807,11 +807,21 @@ and open the template in the editor.
     }
 
 }
-@media (max-width: 980px) {
-    .logo, .img-user, .sidebar-menu, .nav-collapse {
-        display: none;
+
+@media (max-width: 1280px) {
+    .type-f-12 {
+        .nav-side-menu {
+            display: none;
+
+        }
+        .page-content-wrraper {
+            width: 100%;
+        }
     }
     .type-f-12.toggled {
+        .nav-side-menu {
+            display: block;
+        }
         margin-left: 75px;
         .nav-collapse {
             display: block;
@@ -830,16 +840,35 @@ and open the template in the editor.
         }
     }
 }
-@media (min-width: 980px) {
-    .nav-collapse {
-        display: none;
-    }
-    .nav-side-menu {
-        .menu-list {
-            ul#menu-content {
-                display: block;
+
+@media (max-width: 980px) {
+    .page-content-wrraper {     
+        transition: none!important;
+        .navbar-right {
+            li.dropdown {
+                ul.dropdown-menu {
+                    margin-left: -16px;
+                }
             }
         }
     }
 }
+@media (min-width: 980px) {
+    .nav-side-menu {
+        .logo {
+            white-space: nowrap;
 
+        }
+        .sidebar-menu {
+            ul#menu-content {
+                display: block;
+            }
+        }
+        .nav-collapse {
+            display: none;
+        }
+    }
+    .page-content-wrraper {
+        transition: none!important;
+    }
+}

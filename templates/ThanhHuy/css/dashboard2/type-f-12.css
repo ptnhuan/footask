@@ -308,31 +308,6 @@
 .type-f-12 .container-fluid .admin-panel.admin1 .admin-title .glyphicon {
   color: #BAB8B8;
 }
-.type-f-12 .container-fluid .admin-panel.admin1 .admin-title h2 {
-  margin: 5px 0 6px;
-  float: left;
-  display: block;
-  font-size: 20px;
-  color: #73879C;
-}
-.type-f-12 .container-fluid .admin-panel.admin1 .admin-title h2 small {
-  font-size: 13px;
-  margin-left: 10px;
-}
-.type-f-12 .container-fluid .admin-panel.admin1 .admin-title .filter-time {
-  font-size: 13px;
-}
-.type-f-12 .container-fluid .admin-panel.admin1 .admin-title .filter-time .show-calendar {
-  float: right;
-  border: 1px solid #E6E9ED;
-  cursor: pointer;
-  padding: 5px 10px;
-  background-color: #ffffff;
-}
-.type-f-12 .container-fluid .admin-panel.admin1 .admin-title .filter-time .show-calendar #datepicker {
-  border: none;
-  color: #2A3F54;
-}
 .type-f-12 .container-fluid .admin-panel.admin1 .admin-content {
   padding: 0 5px 6px;
   float: left;
@@ -564,6 +539,7 @@
 }
 .type-f-12 .container-fluid .admin-panel.admin3 .admin-content {
   padding: 0 5px 6px;
+  display: grid;
   width: 100%;
 }
 .type-f-12 .container-fluid .admin-panel.admin3 .admin-content div.list-items {
@@ -711,15 +687,18 @@
   font-size: 7px;
   padding: 2px 0;
 }
-@media (max-width: 980px) {
-  .logo,
-  .img-user,
-  .sidebar-menu,
-  .nav-collapse {
+@media (max-width: 1280px) {
+  .type-f-12 .nav-side-menu {
     display: none;
+  }
+  .type-f-12 .page-content-wrraper {
+    width: 100%;
   }
   .type-f-12.toggled {
     margin-left: 75px;
+  }
+  .type-f-12.toggled .nav-side-menu {
+    display: block;
   }
   .type-f-12.toggled .nav-collapse {
     display: block;
@@ -732,11 +711,81 @@
     margin-left: 54px !important;
   }
 }
-@media (min-width: 980px) {
+@media (max-width: 980px) {
+  .logo,
+  .img-user,
+  .sidebar-menu,
   .nav-collapse {
     display: none;
   }
-  .nav-side-menu .menu-list ul#menu-content {
+  .page-content-wrraper {
+    transition: none !important;
+  }
+  .page-content-wrraper .navbar-right li.dropdown ul.dropdown-menu {
+    margin-left: -16px;
+  }
+  .page-content-wrraper .admin-title h2 {
+    font-size: 18px;
+    color: #73879C;
+    float: left;
+  }
+  .page-content-wrraper .admin-title h2 small {
+    display: none;
+  }
+  .page-content-wrraper .admin-title .filter-time {
+    font-size: 13px;
+  }
+  .page-content-wrraper .admin-title .filter-time .show-calendar {
+    float: right;
+    border: 1px solid #E6E9ED;
+    cursor: pointer;
+    padding: 3px 8px;
+    background-color: #ffffff;
+  }
+  .page-content-wrraper .admin-title .filter-time .show-calendar #datepicker {
+    border: none;
+    color: #2A3F54;
+  }
+}
+@media (min-width: 980px) {
+  .nav-side-menu .logo {
+    white-space: nowrap;
+  }
+  .nav-side-menu .sidebar-menu ul#menu-content {
     display: block;
+  }
+  .nav-side-menu .nav-collapse {
+    display: none;
+  }
+  .page-content-wrraper {
+    transition: none !important;
+  }
+}
+@media (min-width: 480px) {
+  .admin-title h2 {
+    margin: 5px 0 6px;
+    float: left;
+    display: block;
+    font-size: 20px;
+    width: 50%;
+    color: #73879C;
+  }
+  .admin-title h2 small {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .admin-title .filter-time {
+    font-size: 13px;
+  }
+  .admin-title .filter-time .show-calendar {
+    float: right;
+    border: 1px solid #E6E9ED;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #ffffff;
+  }
+  .admin-title .filter-time .show-calendar #datepicker {
+    border: none;
+    color: #2A3F54;
   }
 }

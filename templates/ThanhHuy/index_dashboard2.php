@@ -89,9 +89,9 @@
                                     <li><a href="#">&#8226; Media Gallery</a></li>
                                     <li><a href="#">&#8226; Typography</a></li>
                                     <li><a href="#">&#8226; Icons</a></li>
-                                    <li><a href="#">&#8226; Glyphicons</a></li>
+                                    <li><a href="index_glyphicons.php">&#8226; Glyphicons</a></li>
                                     <li><a href="#">&#8226; Widgets</a></li>
-                                    <li><a href="#">&#8226; Invoice</a></li>
+                                    <li><a href="index_invoice.php">&#8226; Invoice</a></li>
                                     <li><a href="#">&#8226; Inbox</a></li>
                                     <li><a href="#">&#8226; Calendar</a></li>
                                 </ul>
@@ -231,9 +231,9 @@
                                         <li><a href="#">&#8226; Media Gallery</a></li>
                                         <li><a href="#">&#8226; Typography</a></li>
                                         <li><a href="#">&#8226; Icons</a></li>
-                                        <li><a href="#">&#8226; Glyphicons</a></li>
+                                        <li><a href="index_glyphicons.php">&#8226; Glyphicons</a></li>
                                         <li><a href="#">&#8226; Widgets</a></li>
-                                        <li><a href="#">&#8226; Invoice</a></li>
+                                        <li><a href="index_invoice.php">&#8226; Invoice</a></li>
                                         <li><a href="#">&#8226; Inbox</a></li>
                                         <li><a href="#">&#8226; Calendar</a></li>
                                     </ul>
@@ -666,7 +666,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="admin-panel admin3">
                                     <div class="admin-title">
                                         <h2>
@@ -770,7 +770,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="admin-panel admin3">
                                     <div class="admin-title">
                                         <h2>
@@ -874,7 +874,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="admin-panel admin3">
                                     <div class="admin-title">
                                         <h2>

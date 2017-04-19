@@ -93,9 +93,9 @@
                                     <li><a href="#">&#8226; Media Gallery</a></li>
                                     <li><a href="#">&#8226; Typography</a></li>
                                     <li><a href="#">&#8226; Icons</a></li>
-                                    <li><a href="#">&#8226; Glyphicons</a></li>
+                                    <li><a href="index_glyphicons.php">&#8226; Glyphicons</a></li>
                                     <li><a href="#">&#8226; Widgets</a></li>
-                                    <li><a href="#">&#8226; Invoice</a></li>
+                                    <li><a href="index_invoice.php">&#8226; Invoice</a></li>
                                     <li><a href="#">&#8226; Inbox</a></li>
                                     <li><a href="#">&#8226; Calendar</a></li>
                                 </ul>
@@ -235,9 +235,9 @@
                                         <li><a href="#">&#8226; Media Gallery</a></li>
                                         <li><a href="#">&#8226; Typography</a></li>
                                         <li><a href="#">&#8226; Icons</a></li>
-                                        <li><a href="#">&#8226; Glyphicons</a></li>
+                                        <li><a href="index_glyphicons.php">&#8226; Glyphicons</a></li>
                                         <li><a href="#">&#8226; Widgets</a></li>
-                                        <li><a href="#">&#8226; Invoice</a></li>
+                                        <li><a href="index_invoice.php">&#8226; Invoice</a></li>
                                         <li><a href="#">&#8226; Inbox</a></li>
                                         <li><a href="#">&#8226; Calendar</a></li>
                                     </ul>

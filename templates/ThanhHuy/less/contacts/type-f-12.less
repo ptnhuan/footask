@@ -546,23 +546,22 @@ and open the template in the editor.
             }
         }
     }
-
 }
-@media (max-width: 980px) {
-    .logo, .img-user, .sidebar-menu, .nav-collapse {
-        display: none;
-    }
-    .content {
-        .content-left {
-            h3 {
-                font-size: 16px;
-            }
+
+@media (max-width: 1280px) {
+    .type-f-12 {
+        .nav-side-menu {
+            display: none;
+
         }
-        .content-right {
-            margin-top: -5px;
+        .page-content-wrraper {
+            width: 100%;
         }
     }
     .type-f-12.toggled {
+        .nav-side-menu {
+            display: block;
+        }
         margin-left: 75px;
         .nav-collapse {
             display: block;
@@ -570,7 +569,7 @@ and open the template in the editor.
             top: 0;
             left: -245px;
             width: 33px;
-            
+
             ul {
                 li.dropdown {
                     ul.dropdown-menu {
@@ -581,15 +580,49 @@ and open the template in the editor.
         }
     }
 }
-@media (min-width: 980px) {
-    .nav-collapse {
-        display: none;
+
+@media (max-width: 980px) {
+    .page-content-wrraper {     
+        transition: none!important;
+        .navbar-right {
+            li.dropdown {
+                ul.dropdown-menu {
+                    margin-left: -16px;
+                }
+            }
+        }
+        .content {
+            .content-left {
+                h3 {
+                    font-size: 22px;
+                    small {
+                        display: none;
+                    }
+                }
+            }
+            .content-right {
+                margin-top: -5px;
+            }
+        }
     }
+}
+
+@media (min-width: 980px) {
     .nav-side-menu {
-        .menu-list {
-            ul.menu-content {
+        .logo {
+            white-space: nowrap;
+
+        }
+        .sidebar-menu {
+            ul#menu-content {
                 display: block;
             }
         }
+        .nav-collapse {
+            display: none;
+        }
+    }
+    .page-content-wrraper {
+        transition: none!important;
     }
 }
