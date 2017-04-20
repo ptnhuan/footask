@@ -84,6 +84,7 @@
 .type-47 .admin-panel .admin-content ul.detail-overview {
   list-style: none;
   margin-bottom: 10px;
+  white-space: nowrap;
   padding-bottom: 10px;
 }
 .type-47 .admin-panel .admin-content ul.detail-overview li {

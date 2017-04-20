@@ -68,7 +68,7 @@
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="show-data">
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
                                                     <span class="data">
                                                         Show 
                                                         <select class="form-control form-select">
@@ -80,210 +80,213 @@
                                                         entries 
                                                     </span>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
                                                     <span class="search-query">
                                                         Search: <input type="search" id="input" onkeyup="searchDataTable();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <table class="data-table table table-bordered" id="table">
-                                            <thead>
-                                                <tr role="row" class="">
-                                                    <th style="width: 6px;">
-                                                    </th>
-                                                    <th style="width: 34px;">
-                                                        <input type="checkbox" class="item" onclick="checkAll('item', this)">
-                                                    </th>
-                                                    <th onclick="sortTable(1)" style="width: 141px;">Name</th>
-                                                    <th onclick="sortTable(2)" style="width: 233px;">Position</th>
-                                                    <th onclick="sortTable(3)" style="width: 103px;">Office</th>
-                                                    <th onclick="sortTable(4)" style="width: 50px;">Age</th>
-                                                    <th onclick="sortTable(5)" style="width: 99px;">Start date</th>
-                                                    <th onclick="sortTable(6)" style="width: 76px;">Salary</th></tr>
-                                            </thead>
-                                            <tbody id="myDataTable">
-                                                <tr>
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                        <div class="table-responsive">
+                                            <table class="data-table table table-bordered" id="table">
+                                                <thead>
+                                                    <tr role="row" class="">
+                                                        <th style="width: 6px;">
+                                                        </th>
+                                                        <th style="width: 34px;">
+                                                            <input type="checkbox" class="item" onclick="checkAll('item', this)">
+                                                        </th>
+                                                        <th onclick="sortTable(1)" style="width: 141px;">Name</th>
+                                                        <th onclick="sortTable(2)" style="width: 233px;">Position</th>
+                                                        <th onclick="sortTable(3)" style="width: 103px;">Office</th>
+                                                        <th onclick="sortTable(4)" style="width: 50px;">Age</th>
+                                                        <th onclick="sortTable(5)" style="width: 99px;">Start date</th>
+                                                        <th onclick="sortTable(6)" style="width: 76px;">Salary</th></tr>
+                                                </thead>
+                                                <tbody id="myDataTable">
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Ashton Cox</td>
-                                                    <td>Junior Technical Author</td>
-                                                    <td>San Francisco</td>
-                                                    <td>66</td>
-                                                    <td>2009/01/12</td>
-                                                    <td>$86,000</td>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Garrett Winters</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>63</td>
-                                                    <td>2011/07/25</td>
-                                                    <td>$170,750</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Ashton Cox</td>
-                                                    <td>Junior Technical Author</td>
-                                                    <td>San Francisco</td>
-                                                    <td>66</td>
-                                                    <td>2009/01/12</td>
-                                                    <td>$86,000</td>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
 
-                                                </tr>
-                                                <tr >
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                    </tr>
+                                                    <tr >
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Garrett Winters</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>63</td>
-                                                    <td>2011/07/25</td>
-                                                    <td>$170,750</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Ashton Cox</td>
-                                                    <td>Junior Technical Author</td>
-                                                    <td>San Francisco</td>
-                                                    <td>66</td>
-                                                    <td>2009/01/12</td>
-                                                    <td>$86,000</td>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
 
-                                                </tr>
-                                                <tr >
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                    </tr>
+                                                    <tr >
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Garrett Winters</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>63</td>
-                                                    <td>2011/07/25</td>
-                                                    <td>$170,750</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Garrett Winters</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>63</td>
-                                                    <td>2011/07/25</td>
-                                                    <td>$170,750</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Ashton Cox</td>
-                                                    <td>Junior Technical Author</td>
-                                                    <td>San Francisco</td>
-                                                    <td>66</td>
-                                                    <td>2009/01/12</td>
-                                                    <td>$86,000</td>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
 
-                                                </tr>
-                                                <tr >
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                    </tr>
+                                                    <tr >
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Garrett Winters</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>63</td>
-                                                    <td>2011/07/25</td>
-                                                    <td>$170,750</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Ashton Cox</td>
-                                                    <td>Junior Technical Author</td>
-                                                    <td>San Francisco</td>
-                                                    <td>66</td>
-                                                    <td>2009/01/12</td>
-                                                    <td>$86,000</td>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
 
-                                                </tr>
-                                                <tr >
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                    </tr>
+                                                    <tr >
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Garrett Winters</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>63</td>
-                                                    <td>2011/07/25</td>
-                                                    <td>$170,750</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                    </td>
-                                                    <th>
-                                                        <input type="checkbox" class="item">
-                                                    </th>
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
 
-                                                    <td>Ashton Cox</td>
-                                                    <td>Junior Technical Author</td>
-                                                    <td>San Francisco</td>
-                                                    <td>66</td>
-                                                    <td>2009/01/12</td>
-                                                    <td>$86,000</td>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
 
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
                                                 <p>Showing 1 to 5 of 12 entries</p>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
                                                 <ul class="pagination page" id="myPager">
                                                 </ul>
                                             </div>

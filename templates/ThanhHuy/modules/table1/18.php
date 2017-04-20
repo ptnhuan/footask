@@ -62,7 +62,7 @@
                             </div>
                             <div class="admin-content">
                                 <p>Add class <code>bulk_action</code> to table for bulk actions options on row select</p>
-                                <div class="info-table">
+                                <div class="info-table table-responsive">
                                     <table class="table data-table">
                                         <thead>
                                             <tr>

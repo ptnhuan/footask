@@ -49,7 +49,7 @@
 
                 </div>
                 <div class="row">
-                    <div class="col-md-12 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="admin-panel">
                             <div class="admin-title">
                                 <h3>
@@ -151,7 +151,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <div class="col-md-3 col-sm-12 col-xs-12">
                                         <h4 class="title-des">Project Description</h4>
                                         <div class="project-description">
                                             <h3><i class="fa fa-paint-brush"> Gentelella</i></h3>
