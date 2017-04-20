@@ -133,8 +133,9 @@
 .type-f-12 .container-fluid .nav-side-menu .sidebar-menu .sidebar-footer a:hover {
   background-color: #425567;
 }
-.type-f-12 .container-fluid .nav-collapse {
-  display: none;
+.type-f-12 .container-fluid .top-nav {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .type-f-12 .container-fluid .top-nav .nav_menu {
   background-color: #ededed;
