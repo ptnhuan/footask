@@ -28,7 +28,7 @@
         <div class="type-27">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="title-login">
                             <div class="row">
                                 <div class="col-md-4">

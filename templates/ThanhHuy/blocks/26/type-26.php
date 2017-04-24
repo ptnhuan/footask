@@ -11,7 +11,6 @@
 
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
 
         <?php
         if (!class_exists('lessc')) {
