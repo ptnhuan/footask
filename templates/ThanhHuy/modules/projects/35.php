@@ -80,230 +80,233 @@
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <p>Simple table with project listing with progress and editing options</p>
 
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Project Name</th>
-                                                    <th>Team Members</th>
-                                                    <th>Project Progress</th>
-                                                    <th>Status</th>
-                                                    <th>#Edit</th>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Project Name</th>
+                                                        <th>Team Members</th>
+                                                        <th>Project Progress</th>
+                                                        <th>Status</th>
+                                                        <th>#Edit</th>
 
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>#</td>
-                                                    <td>
-                                                        <a href="#" class="title-name">Pesamakini Backend UI</a>
-                                                        <br>
-                                                        <small>Created 01.01.2015</small>
-                                                    </td>
-                                                    <td>
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                    </td>
-                                                    <td class="project-progress">
-                                                        <div class="progress">
-                                                            <div class="progress-bar" style="width: 57%;"></div>
-                                                        </div>
-                                                        <small>57% Complete</small>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="status">
-                                                            Success
-                                                        </a> 
-                                                    </td>
-                                                    <td class="btn-function">
-                                                        <a href="#" class="view">
-                                                            <i class="fa fa-folder"></i>View
-                                                        </a> 
-                                                        <a href="#" class="edit">
-                                                            <i class="fa fa-pencil"></i> Edit
-                                                        </a> 
-                                                        <a href="#" class="delete">
-                                                            <i class="fa fa-trash"></i>Delete
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#</td>
-                                                    <td>
-                                                        <a href="#" class="title-name">Pesamakini Backend UI</a>
-                                                        <br>
-                                                        <small>Created 01.01.2015</small>
-                                                    </td>
-                                                    <td>
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                    </td>
-                                                    <td class="project-progress">
-                                                        <div class="progress">
-                                                            <div class="progress-bar" style="width: 47%;"></div>
-                                                        </div>
-                                                        <small>47% Complete</small>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="status">
-                                                            Success
-                                                        </a> 
-                                                    </td>
-                                                    <td class="btn-function">
-                                                        <a href="#" class="view">
-                                                            <i class="fa fa-folder"></i>View
-                                                        </a> 
-                                                        <a href="#" class="edit">
-                                                            <i class="fa fa-pencil"></i> Edit
-                                                        </a> 
-                                                        <a href="#" class="delete">
-                                                            <i class="fa fa-trash"></i>Delete
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#</td>
-                                                    <td>
-                                                        <a href="#" class="title-name">Pesamakini Backend UI</a>
-                                                        <br>
-                                                        <small>Created 01.01.2015</small>
-                                                    </td>
-                                                    <td>
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                    </td>
-                                                    <td class="project-progress">
-                                                        <div class="progress">
-                                                            <div class="progress-bar" style="width: 77%;"></div>
-                                                        </div>
-                                                        <small>77% Complete</small>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="status">
-                                                            Success
-                                                        </a> 
-                                                    </td>
-                                                    <td class="btn-function">
-                                                        <a href="#" class="view">
-                                                            <i class="fa fa-folder"></i>View
-                                                        </a> 
-                                                        <a href="#" class="edit">
-                                                            <i class="fa fa-pencil"></i> Edit
-                                                        </a> 
-                                                        <a href="#" class="delete">
-                                                            <i class="fa fa-trash"></i>Delete
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#</td>
-                                                    <td>
-                                                        <a href="#" class="title-name">Pesamakini Backend UI</a>
-                                                        <br>
-                                                        <small>Created 01.01.2015</small>
-                                                    </td>
-                                                    <td>
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                    </td>
-                                                    <td class="project-progress">
-                                                        <div class="progress">
-                                                            <div class="progress-bar" style="width: 60%;"></div>
-                                                        </div>
-                                                        <small>60% Complete</small>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="status">
-                                                            Success
-                                                        </a> 
-                                                    </td>
-                                                    <td class="btn-function">
-                                                        <a href="#" class="view">
-                                                            <i class="fa fa-folder"></i>View
-                                                        </a> 
-                                                        <a href="#" class="edit">
-                                                            <i class="fa fa-pencil"></i> Edit
-                                                        </a> 
-                                                        <a href="#" class="delete">
-                                                            <i class="fa fa-trash"></i>Delete
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#</td>
-                                                    <td>
-                                                        <a href="#" class="title-name">Pesamakini Backend UI</a>
-                                                        <br>
-                                                        <small>Created 01.01.2015</small>
-                                                    </td>
-                                                    <td>
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                    </td>
-                                                    <td class="project-progress">
-                                                        <div class="progress">
-                                                            <div class="progress-bar" style="width: 12%;"></div>
-                                                        </div>
-                                                        <small>12% Complete</small>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="status">
-                                                            Success
-                                                        </a> 
-                                                    </td>
-                                                    <td class="btn-function">
-                                                        <a href="#" class="view">
-                                                            <i class="fa fa-folder"></i>View
-                                                        </a> 
-                                                        <a href="#" class="edit">
-                                                            <i class="fa fa-pencil"></i> Edit
-                                                        </a> 
-                                                        <a href="#" class="delete">
-                                                            <i class="fa fa-trash"></i>Delete
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>#</td>
-                                                    <td>
-                                                        <a href="#" class="title-name">Pesamakini Backend UI</a>
-                                                        <br>
-                                                        <small>Created 01.01.2015</small>
-                                                    </td>
-                                                    <td>
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                        <img src="../../images/user.png" alt="users" class="avartar">
-                                                    </td>
-                                                    <td class="project-progress">
-                                                        <div class="progress">
-                                                            <div class="progress-bar" style="width: 95%;"></div>
-                                                        </div>
-                                                        <small>95% Complete</small>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="status">
-                                                            Success
-                                                        </a> 
-                                                    </td>
-                                                    <td class="btn-function">
-                                                        <a href="#" class="view">
-                                                            <i class="fa fa-folder"></i>View
-                                                        </a> 
-                                                        <a href="#" class="edit">
-                                                            <i class="fa fa-pencil"></i> Edit
-                                                        </a> 
-                                                        <a href="#" class="delete">
-                                                            <i class="fa fa-trash"></i>Delete
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>#</td>
+                                                        <td>
+                                                            <a href="#" class="title-name">Pesamakini Backend UI</a>
+                                                            <br>
+                                                            <small>Created 01.01.2015</small>
+                                                        </td>
+                                                        <td>
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                        </td>
+                                                        <td class="project-progress">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" style="width: 57%;"></div>
+                                                            </div>
+                                                            <small>57% Complete</small>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="status">
+                                                                Success
+                                                            </a> 
+                                                        </td>
+                                                        <td class="btn-function">
+                                                            <a href="#" class="view">
+                                                                <i class="fa fa-folder"></i>View
+                                                            </a> 
+                                                            <a href="#" class="edit">
+                                                                <i class="fa fa-pencil"></i> Edit
+                                                            </a> 
+                                                            <a href="#" class="delete">
+                                                                <i class="fa fa-trash"></i>Delete
+                                                            </a> 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#</td>
+                                                        <td>
+                                                            <a href="#" class="title-name">Pesamakini Backend UI</a>
+                                                            <br>
+                                                            <small>Created 01.01.2015</small>
+                                                        </td>
+                                                        <td>
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                        </td>
+                                                        <td class="project-progress">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" style="width: 47%;"></div>
+                                                            </div>
+                                                            <small>47% Complete</small>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="status">
+                                                                Success
+                                                            </a> 
+                                                        </td>
+                                                        <td class="btn-function">
+                                                            <a href="#" class="view">
+                                                                <i class="fa fa-folder"></i>View
+                                                            </a> 
+                                                            <a href="#" class="edit">
+                                                                <i class="fa fa-pencil"></i> Edit
+                                                            </a> 
+                                                            <a href="#" class="delete">
+                                                                <i class="fa fa-trash"></i>Delete
+                                                            </a> 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#</td>
+                                                        <td>
+                                                            <a href="#" class="title-name">Pesamakini Backend UI</a>
+                                                            <br>
+                                                            <small>Created 01.01.2015</small>
+                                                        </td>
+                                                        <td>
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                        </td>
+                                                        <td class="project-progress">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" style="width: 77%;"></div>
+                                                            </div>
+                                                            <small>77% Complete</small>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="status">
+                                                                Success
+                                                            </a> 
+                                                        </td>
+                                                        <td class="btn-function">
+                                                            <a href="#" class="view">
+                                                                <i class="fa fa-folder"></i>View
+                                                            </a> 
+                                                            <a href="#" class="edit">
+                                                                <i class="fa fa-pencil"></i> Edit
+                                                            </a> 
+                                                            <a href="#" class="delete">
+                                                                <i class="fa fa-trash"></i>Delete
+                                                            </a> 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#</td>
+                                                        <td>
+                                                            <a href="#" class="title-name">Pesamakini Backend UI</a>
+                                                            <br>
+                                                            <small>Created 01.01.2015</small>
+                                                        </td>
+                                                        <td>
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                        </td>
+                                                        <td class="project-progress">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" style="width: 60%;"></div>
+                                                            </div>
+                                                            <small>60% Complete</small>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="status">
+                                                                Success
+                                                            </a> 
+                                                        </td>
+                                                        <td class="btn-function">
+                                                            <a href="#" class="view">
+                                                                <i class="fa fa-folder"></i>View
+                                                            </a> 
+                                                            <a href="#" class="edit">
+                                                                <i class="fa fa-pencil"></i> Edit
+                                                            </a> 
+                                                            <a href="#" class="delete">
+                                                                <i class="fa fa-trash"></i>Delete
+                                                            </a> 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#</td>
+                                                        <td>
+                                                            <a href="#" class="title-name">Pesamakini Backend UI</a>
+                                                            <br>
+                                                            <small>Created 01.01.2015</small>
+                                                        </td>
+                                                        <td>
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                        </td>
+                                                        <td class="project-progress">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" style="width: 12%;"></div>
+                                                            </div>
+                                                            <small>12% Complete</small>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="status">
+                                                                Success
+                                                            </a> 
+                                                        </td>
+                                                        <td class="btn-function">
+                                                            <a href="#" class="view">
+                                                                <i class="fa fa-folder"></i>View
+                                                            </a> 
+                                                            <a href="#" class="edit">
+                                                                <i class="fa fa-pencil"></i> Edit
+                                                            </a> 
+                                                            <a href="#" class="delete">
+                                                                <i class="fa fa-trash"></i>Delete
+                                                            </a> 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#</td>
+                                                        <td>
+                                                            <a href="#" class="title-name">Pesamakini Backend UI</a>
+                                                            <br>
+                                                            <small>Created 01.01.2015</small>
+                                                        </td>
+                                                        <td>
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                            <img src="../../images/user.png" alt="users" class="avartar">
+                                                        </td>
+                                                        <td class="project-progress">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" style="width: 95%;"></div>
+                                                            </div>
+                                                            <small>95% Complete</small>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="status">
+                                                                Success
+                                                            </a> 
+                                                        </td>
+                                                        <td class="btn-function">
+                                                            <a href="#" class="view">
+                                                                <i class="fa fa-folder"></i>View
+                                                            </a> 
+                                                            <a href="#" class="edit">
+                                                                <i class="fa fa-pencil"></i> Edit
+                                                            </a> 
+                                                            <a href="#" class="delete">
+                                                                <i class="fa fa-trash"></i>Delete
+                                                            </a> 
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>

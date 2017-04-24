@@ -211,7 +211,7 @@
                                                     </ul>
                                                 </nav>
                                             </div>
-                                            <div id="menu1" class="tab-pane fade">                                                
+                                            <div id="menu1" class="tab-pane fade table-responsive">                                                
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
