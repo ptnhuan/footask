@@ -20,7 +20,7 @@
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/close-validation.js" type="text/javascript"></script>
-        <script src="js/nump1.js" type="text/javascript"></script>
+        <script src="js/error.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -119,7 +119,7 @@
                                             </div>
 
                                             <div class="item form-group">
-                                                <label for="password" class="control-label col-md-3">Password</label>
+                                                <label for="password" class="control-label col-md-3 col-sm-3 col-xs-12">Password</label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                                     <input class="numb" type="password" name="password" data-validate-length="6,8" class="form-control col-md-7 col-xs-12" required="required">
                                                 </div>
