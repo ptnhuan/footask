@@ -1,0 +1,67 @@
+.type-26 {
+  color: #73879C;
+}
+.type-26 ul.nav-tabs {
+  margin-top: 15px;
+  padding-left: 10px;
+  background-color: #F5F7FA;
+}
+.type-26 ul.nav-tabs li {
+  color: #333 !important;
+  background-color: #F5F7FA;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+.type-26 ul.nav-tabs li a {
+  color: #5A738E;
+}
+.type-26 .tab-content {
+  padding: 10px 0;
+}
+.type-26 .tab-content #menu1,
+.type-26 .tab-content #menu2 {
+  padding: 0;
+}
+.type-26 .tab-content #menu1 .progress-bar {
+  background-color: #1ABB9C;
+}
+.type-26 .tab-content #home ul.comments {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.type-26 .tab-content #home ul.comments li {
+  border-bottom: 1px dotted #e6e6e6;
+  padding: 8px 0;
+}
+.type-26 .tab-content #home ul.comments li .img-user {
+  height: 32px;
+  width: 32px;
+  float: left;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px;
+  background-color: #f7f7f7;
+  border: 1px solid #e6e6e6;
+}
+.type-26 .tab-content #home ul.comments li .comment-content {
+  margin-left: 50px;
+}
+.type-26 .tab-content #home ul.comments li .comment-content h4 {
+  margin: 0 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.type-26 .tab-content #home ul.comments li .comment-content .content {
+  padding: 0 10px;
+  margin: 0;
+  border-left: 5px solid #eee;
+}
+.type-26 .tab-content #home ul.comments li .comment-content a.link-file {
+  text-decoration: none;
+  color: #73879C;
+}
+.type-26 .tab-content #home ul.comments li .date-comment {
+  float: right;
+  text-align: right;
+}

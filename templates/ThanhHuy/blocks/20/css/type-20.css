@@ -1,57 +1,252 @@
-.type-20 .title-login {
+.type-20 {
   color: #73879C;
 }
-.type-20 .title-login hr {
-  border-top: 1px solid #73879C;
-  margin-top: 40px;
+.type-20 .content .content-left {
+  float: left;
 }
-.type-20 .title-login h2 {
-  text-align: center;
+.type-20 .content .content-left h3 {
+  margin: 20px 0;
 }
-.type-20 .title-login .login-form form {
-  margin: 15px 0;
+.type-20 .content .content-right {
+  float: right;
 }
-.type-20 .title-login .login-form form .form-control {
-  margin-bottom: 15px;
+.type-20 .content .content-right .input-search {
+  margin-top: 22px;
+  position: relative;
+  display: flex;
 }
-.type-20 .title-login .login-form .functions {
-  text-align: center;
-  padding-top: 5px;
+.type-20 .content .content-right .input-search .form-search {
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.075);
+  border-radius: 25px 0 0 25px;
+  padding-left: 20px;
+  border: 1px solid rgba(221,226,232,0.49);
 }
-.type-20 .title-login .login-form .functions #btn-login,
-.type-20 .title-login .login-form .functions #link-lostpass {
-  text-decoration: none;
+.type-20 .content .content-right .input-search .input-btn-search .btn-search {
+  border-radius: 0 25px 25px 0;
+  border: 1px solid rgba(221,226,232,0.49);
+  border-left: 0;
+  background-color: #ffffff;
+  color: #73879C;
 }
-.type-20 .title-login .login-form .functions #btn-login {
-  padding: 7px 12px;
+.type-20 .content .content-right .input-search .input-btn-search .btn-search:hover {
+  background-color: #93A2B2;
+}
+.type-20 .admin-panel {
+  width: 100%;
+  padding: 10px 17px;
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid #E6E9ED;
+  opacity: 1;
+  transition: all .2s ease;
+  margin-bottom: 10px;
+  position: relative;
+}
+.type-20 .admin-panel .admin-title {
+  border-bottom: 2px solid #E6E9ED;
+  padding: 1px 5px 6px;
+}
+.type-20 .admin-panel .admin-title h3 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+  font-size: 18px;
+}
+.type-20 .admin-panel .admin-title ul.items {
+  margin-right: 0;
+  min-width: 70px;
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+.type-20 .admin-panel .admin-title ul.items li {
+  float: left;
+  cursor: pointer;
+}
+.type-20 .admin-panel .admin-title ul.items li a {
+  padding: 5px;
+  color: #C5C7CB;
+  font-size: 13px;
+}
+.type-20 .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
+  min-width: 0px !important;
+}
+.type-20 .admin-panel .admin-title ul.items .collapse-link,
+.type-20 .admin-panel .admin-title ul.items .close-link {
+  opacity: 1;
+}
+.type-20 .admin-panel .admin-content .product-img,
+.type-20 .admin-panel .admin-content .product-name {
+  margin-top: 15px;
+}
+.type-20 .admin-panel .admin-content .product-img img#main {
+  max-width: 100%;
+}
+.type-20 .admin-panel .admin-content .product-gallery a {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 10px;
+  border: 1px solid #e5e5e5;
+}
+.type-20 .admin-panel .admin-content .product-gallery a img {
+  max-width: 100%;
+  margin-top: 15px;
+}
+.type-20 .admin-panel .admin-content .product-name {
+  border-bottom: 1px solid #e0e0e0;
+}
+.type-20 .admin-panel .admin-content .product-info p.description {
+  padding: 25px 0;
+}
+.type-20 .admin-panel .admin-content .product-info .product-color ul.color-name {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.type-20 .admin-panel .admin-content .product-info .product-color ul.color-name li {
+  margin: 0 10px;
+  padding: 0 5px;
+  float: left;
+}
+.type-20 .admin-panel .admin-content .product-info .product-color ul.color-name li p {
+  margin-bottom: 0;
+}
+.type-20 .admin-panel .admin-content .product-info .product-color ul.color-name li .color {
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgba(51,51,51,0.28) !important;
+  padding: 2px;
+  border-radius: 50px;
+}
+.type-20 .admin-panel .admin-content .product-info .product-color ul.color-name li .color.green {
+  background-color: #1ABB9C !important;
+  color: #fff;
+}
+.type-20 .admin-panel .admin-content .product-info .product-color ul.color-name li .color.blue {
+  background-color: #3498DB !important;
+  color: #fff;
+}
+.type-20 .admin-panel .admin-content .product-info .product-color ul.color-name li .color.red {
+  background-color: #E74C3C !important;
+  color: #fff;
+}
+.type-20 .admin-panel .admin-content .product-info .product-color ul.color-name li .color.orange {
+  background-color: #F39C12 !important;
+  color: #fff;
+}
+.type-20 .admin-panel .admin-content .product-info .product-size {
+  padding: 25px 0;
+}
+.type-20 .admin-panel .admin-content .product-info .product-size ul.size-name {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.type-20 .admin-panel .admin-content .product-info .product-size ul.size-name li {
+  margin: 0;
+  padding: 0 5px;
+  float: left;
+}
+.type-20 .admin-panel .admin-content .product-info .product-size ul.size-name li a.btn-size {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  color: #333;
   background-color: #ffffff;
   border: 1px solid #ccc;
-  color: #333;
-  border-radius: 4px;
+  text-decoration: none;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 12px;
 }
-.type-20 .title-login .login-form .functions #btn-login:hover {
+.type-20 .admin-panel .admin-content .product-info .product-size ul.size-name li a.btn-size:hover {
   background-color: #e6e6e6;
+  border-color: #adadad;
 }
-.type-20 .title-login .login-form .functions #link-lostpass {
-  color: #73879C;
+.type-20 .admin-panel .admin-content .product-info .product-price {
+  margin-top: 50px;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  text-align: left;
+  border: 2px dashed #E0E0E0;
 }
-.type-20 .title-login .login-footer {
-  text-align: center;
-}
-.type-20 .title-login .login-footer p {
-  margin-top: 30px;
-}
-.type-20 .title-login .login-footer p a {
-  text-decoration: none;
-  color: #73879C;
-}
-.type-20 .title-login .login-footer h3 {
-  margin: 25px 0;
-}
-.type-20 .title-login .login-footer h3 a.logo {
-  text-decoration: none;
-  color: #73879C;
-}
-.type-20 .title-login .login-footer .footer {
+.type-20 .admin-panel .admin-content .product-info .product-price .price {
+  color: #26B99A;
   margin: 0;
+  font-weight: 400;
+}
+.type-20 .admin-panel .admin-content .product-info .product-price .price-tax {
+  font-size: 18px;
+}
+.type-20 .admin-panel .admin-content .product-info .product-btnadd {
+  margin-top: 25px;
+}
+.type-20 .admin-panel .admin-content .product-info .product-btnadd .add-to-cart {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  color: #333;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+}
+.type-20 .admin-panel .admin-content .product-info .product-btnadd .add-to-cart:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.type-20 .admin-panel .admin-content .product-info .product-social {
+  margin-top: 35px;
+}
+.type-20 .admin-panel .admin-content .product-info .product-social ul.list-social {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.type-20 .admin-panel .admin-content .product-info .product-social ul.list-social li {
+  float: left;
+  padding: 0 4px;
+  margin: 0;
+}
+.type-20 .admin-panel .admin-content .product-info .product-social ul.list-social li a {
+  color: #5A738E;
+}
+.type-20 .admin-panel .admin-content .product-info .product-social ul.list-social li a i {
+  font-size: 35px;
+}
+.type-20 .admin-panel .admin-content .product-info .product-social ul.list-social li a:hover {
+  color: #337ab7;
+}
+.type-20 .admin-panel .admin-content ul.nav-tabs {
+  margin-top: 25px;
+  padding-left: 10px;
+  background: #F5F7FA;
+}
+.type-20 .admin-panel .admin-content ul.nav-tabs li {
+  color: #333 !important;
+  background: #F5F7FA;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+.type-20 .admin-panel .admin-content ul.nav-tabs li a {
+  color: #5A738E;
+}
+.type-20 .admin-panel .admin-content .tab-content {
+  padding: 10px 0;
+}
+.type-20 .admin-panel .admin-content .tab-content #menu1,
+.type-20 .admin-panel .admin-content .tab-content #menu2 {
+  padding: 0;
+}
+@media (max-width: 980px) {
+  .content .content-left h3 {
+    font-size: 16px;
+  }
+  .content .content-right {
+    margin-top: -5px;
+  }
+  .product-name h3 {
+    display: inline-block;
+  }
 }
