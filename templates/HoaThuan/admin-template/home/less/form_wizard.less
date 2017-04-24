@@ -1,5 +1,8 @@
 .type-25{
     background:#2a3f54;
+    .dashboard{
+        position: relative;
+    }
     .left-col{ 
         #left-col {
             padding-left: 70px;
@@ -324,6 +327,7 @@
     .right-col{
         background: #f7f7f7;
         height: 100%;
+        min-height: 949px;
         float: right;
         transition: all .4s ease 0s; 
     }
@@ -541,6 +545,7 @@
             padding: 10px 17px;
             display: inline-block;
             background:#fff;
+            margin-bottom: 100px;
             border: 1px solid #E6E9ED;
             opacity: 1;
         }
@@ -912,12 +917,15 @@
         }
     }
     .footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+
         background: #fff;
         padding: 15px 20px;
         display: block;
-        width: 100%;
-        float:right;
-        margin-top:10px;
+
         a {
             color: #5A738E;
             text-decoration: none;

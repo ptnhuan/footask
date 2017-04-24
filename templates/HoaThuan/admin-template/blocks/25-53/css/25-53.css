@@ -28,6 +28,9 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.type-25-53 .icon .x_title .navbar-right {
+  margin-right: 0px;
+}
 .type-25-53 .icon small {
   margin-left: 10px;
   font-weight: 400;

@@ -19,6 +19,9 @@
   padding: 1px 5px 6px;
   margin-bottom: 15px;
 }
+.type-25-32 .content1 .x_title .navbar-right {
+  margin-right: 0px;
+}
 .type-25-32 .content1 h2 {
   margin: 5px 0 6px;
   float: left;

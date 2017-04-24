@@ -520,6 +520,9 @@
   padding: 1px 5px 6px;
   margin-bottom: 15px;
 }
+.type-25 .typography .x_title .navbar-right {
+  margin-right: 0px;
+}
 .type-25 .typography .x_title h2 {
   margin: 5px 0 6px;
   float: left;
@@ -558,7 +561,6 @@
   bottom: 0;
   right: 0;
   z-index: 5;
-  width: 83.32%;
   background: #fff;
   padding: 15px 20px;
   display: block;

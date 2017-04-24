@@ -1,5 +1,8 @@
 .type-25{
     background:#2a3f54;
+    .dashboard{
+        position: relative;
+    }
     .left-col{ 
         #left-col {
             padding-left: 70px;
@@ -325,6 +328,7 @@
         background: #f7f7f7;
         height: 100%;
         float: right;
+        min-height: 949px;
         transition: all .4s ease 0s; 
     }
     .nav_menu {
@@ -526,7 +530,7 @@
             color: #93A2B2;       
         }
     }
-   .content2{
+    .content2{
         @font-size:13px;
         @color:#fff;
         @color-bg:#fff;
@@ -548,6 +552,9 @@
         .x_title {
             border-bottom: 2px solid #E6E9ED;
             padding: 1px 5px 6px;
+            .navbar-right{
+              margin-right: 0px;
+            }
 
         }
         h2 {
@@ -652,12 +659,15 @@
         }
     }
     .footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+
         background: #fff;
         padding: 15px 20px;
         display: block;
-        width: 100%;
-        float:right;
-        margin-top:10px;
+
         a {
             color: #5A738E;
             text-decoration: none;
@@ -681,6 +691,9 @@
         width: 225px;
         transition: all .4s ease 0s;
     }
+    .x_panel{
+        margin-bottom: 70px;
+    }
 }
 @media(max-width:992px){
     .active{
@@ -693,5 +706,10 @@
 @media(max-width:1270px){
     small{
         display: none;
+    }
+}
+@media(max-width:480px){
+    .x_panel{
+        margin-bottom: 85px!important;
     }
 }

@@ -1,6 +1,9 @@
 .type-25 {
   background: #2a3f54;
 }
+.type-25 .dashboard {
+  position: relative;
+}
 .type-25 .left-col #left-col {
   padding-left: 70px;
   transition: all .4s ease 0s;
@@ -305,6 +308,7 @@
   height: 100%;
   float: right;
   transition: all .4s ease 0s;
+  min-height: 949px;
 }
 .type-25 .nav_menu {
   background-color: #ededed;
@@ -471,7 +475,7 @@
   display: block;
 }
 .type-25 .page-title h3 {
-  color: ;
+  color: #73879C;
 }
 .type-25 .page-title .title_right {
   width: 55%;
@@ -516,6 +520,9 @@
   border-bottom: 2px solid #E6E9ED;
   padding: 1px 5px 6px;
   margin-bottom: 15px;
+}
+.type-25 .content .x_title .navbar-right {
+  margin-right: 0px;
 }
 .type-25 .content h2 {
   margin: 5px 0 6px;
@@ -581,6 +588,9 @@
   padding: 1px 5px 6px;
   margin-bottom: 15px;
 }
+.type-25 .content1 .x_title .navbar-right {
+  margin-right: 0px;
+}
 .type-25 .content1 h2 {
   margin: 5px 0 6px;
   float: left;
@@ -637,6 +647,9 @@
   border-bottom: 2px solid #E6E9ED;
   padding: 1px 5px 6px;
   margin-bottom: 15px;
+}
+.type-25 .content2 .x_title .navbar-right {
+  margin-right: 0px;
 }
 .type-25 .content2 h2 {
   margin: 5px 0 6px;
@@ -695,6 +708,9 @@
   padding: 1px 5px 6px;
   margin-bottom: 15px;
 }
+.type-25 .content3 .x_title .navbar-right {
+  margin-right: 0px;
+}
 .type-25 .content3 h2 {
   margin: 5px 0 6px;
   float: left;
@@ -738,6 +754,9 @@
   border-bottom: 2px solid #E6E9ED;
   padding: 1px 5px 6px;
   margin-bottom: 15px;
+}
+.type-25 .content4 .x_title .navbar-right {
+  margin-right: 0px;
 }
 .type-25 .content4 h2 {
   margin: 5px 0 6px;
@@ -828,6 +847,9 @@
   padding: 1px 5px 6px;
   margin-bottom: 15px;
 }
+.type-25 .content5 .x_title .navbar-right {
+  margin-right: 0px;
+}
 .type-25 .content5 h2 {
   margin: 5px 0 6px;
   float: left;
@@ -881,6 +903,9 @@
   padding: 1px 5px 6px;
   margin-bottom: 15px;
 }
+.type-25 .content6 .x_title .navbar-right {
+  margin-right: 0px;
+}
 .type-25 .content6 h2 {
   margin: 5px 0 6px;
   float: left;
@@ -914,13 +939,20 @@
 .type-25 .content6 .text-muted {
   margin-left: 10px;
 }
+.type-25 .left {
+  margin-bottom: 70px;
+}
+.type-25 .right {
+  margin-bottom: 0px;
+}
 .type-25 .footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
   background: #fff;
   padding: 15px 20px;
   display: block;
-  width: 100%;
-  float: right;
-  margin-top: 10px;
 }
 .type-25 .footer a {
   color: #5A738E;
@@ -957,5 +989,22 @@
   }
   .step_descr {
     font-size: 11px;
+  }
+}
+@media (max-width: 992px) {
+  .content,
+  .content1,
+  .content2,
+  .content3,
+  .content4,
+  .content5,
+  .content6 {
+    padding: 10px 20px 0 !important;
+  }
+  .left {
+    margin-bottom: 0 !important;
+  }
+  .right {
+    margin-bottom: 70px !important;
   }
 }

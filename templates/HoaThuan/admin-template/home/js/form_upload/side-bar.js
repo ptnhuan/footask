@@ -24,6 +24,7 @@ $(document).ready(function () {
     }
     
     $(".right-col").css("width", $width_current);
+    $(".footer").css("width", $width_current);
     
     $('#menu-toggle').click( function () {
         if ($width_base > 992)
@@ -32,11 +33,13 @@ $(document).ready(function () {
             {
                 $width_current = $width_base - 225;
                 $(".right-col").css("width", $width_current);
+                $(".footer").css("width", $width_current);
             }
             else
             {
                $width_current = $width_base - 70;
                $(".right-col").css("width", $width_current);
+               $(".footer").css("width", $width_current);
             }
         }
         else
@@ -45,11 +48,13 @@ $(document).ready(function () {
             {
                 $width_current = $width_base;
                 $(".right-col").css("width", $width_current);
+                $(".footer").css("width", $width_current);
             }
             else
             {
                 $width_current = $width_base - 70;
                 $(".right-col").css("width", $width_current);
+                $(".footer").css("width", $width_current);
             }
         }
     });
@@ -62,11 +67,13 @@ $(document).ready(function () {
             {
                 $width_current = $width_base - 225;
                 $(".right-col").css("width", $width_current);
+                $(".footer").css("width", $width_current);
             }
             else
             {
                $width_current = $width_base - 70;
                $(".right-col").css("width", $width_current);
+               $(".footer").css("width", $width_current);
             }
         }
         else
@@ -75,11 +82,13 @@ $(document).ready(function () {
             {
                 $width_current = $width_base;
                $(".right-col").css("width", $width_current);
+               $(".footer").css("width", $width_current);
             }
             else
             {
                 $width_current = $width_base - 70;
                 $(".right-col").css("width", $width_current);
+                $(".footer").css("width", $width_current);
             }
         }
     });

@@ -1,5 +1,9 @@
 .type-25{
     background:#2a3f54;
+
+    .dashboard{
+        position: relative;
+    }
     .left-col{ 
         #left-col {
             padding-left: 70px;
@@ -326,6 +330,7 @@
         height: 100%;
         float: right;
         transition: all .4s ease 0s; 
+        min-height: 949px;
     }
     .nav_menu {
         @font-size: 11px;
@@ -493,6 +498,7 @@
 
     }
     .page-title{
+        @color:#73879C;
         padding:10px 7px 0 20px;
         .title_left {
             width: 45%;
@@ -547,6 +553,9 @@
             border-bottom: 2px solid #E6E9ED;
             padding: 1px 5px 6px;
             margin-bottom: 15px;
+            .navbar-right{
+                margin-right: 0px;
+            }
 
         }
         h2 {
@@ -616,6 +625,10 @@
             border-bottom: 2px solid #E6E9ED;
             padding: 1px 5px 6px;
             margin-bottom: 15px;
+            .navbar-right{
+                margin-right: 0px;
+            }
+
 
         }
         h2 {
@@ -678,6 +691,10 @@
             border-bottom: 2px solid #E6E9ED;
             padding: 1px 5px 6px;
             margin-bottom: 15px;
+            .navbar-right{
+                margin-right: 0px;
+            }
+
 
         }
         h2 {
@@ -739,7 +756,9 @@
             border-bottom: 2px solid #E6E9ED;
             padding: 1px 5px 6px;
             margin-bottom: 15px;
-
+            .navbar-right{
+                margin-right: 0px;
+            }
         }
         h2 {
             margin: 5px 0 6px;
@@ -786,8 +805,10 @@
         .x_title {
             border-bottom: 2px solid #E6E9ED;
             padding: 1px 5px 6px;
-            margin-bottom: 15px;
-
+            margin-bottom: 15px; 
+            .navbar-right{
+                margin-right: 0px;
+            }
         }
         h2 {
             margin: 5px 0 6px;
@@ -879,6 +900,9 @@
             border-bottom: 2px solid #E6E9ED;
             padding: 1px 5px 6px;
             margin-bottom: 15px;
+            .navbar-right{
+                margin-right: 0px;
+            }
 
         }
         h2 {
@@ -935,6 +959,9 @@
             border-bottom: 2px solid #E6E9ED;
             padding: 1px 5px 6px;
             margin-bottom: 15px;
+            .navbar-right{
+                margin-right: 0px;
+            }
 
         }
         h2 {
@@ -973,14 +1000,22 @@
 
 
     }
-
+    .left{
+        margin-bottom: 70px
+    }
+    .right{
+        margin-bottom: 0px;
+    }
     .footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+
         background: #fff;
         padding: 15px 20px;
         display: block;
-        width: 100%;
-        float:right;
-        margin-top:10px;
+
         a {
             color: #5A738E;
             text-decoration: none;
@@ -1021,4 +1056,16 @@
         font-size: 11px;
     }
 
+}
+@media(max-width:992px){
+    .content,.content1,.content2,
+    .content3,.content4,.content5,.content6{
+        padding: 10px 20px 0!important;
+    }
+    .left{
+        margin-bottom: 0!important;;
+    }
+    .right{
+        margin-bottom: 70px!important;
+    }
 }

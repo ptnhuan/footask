@@ -536,6 +536,7 @@
         @color:#fff;
         color: #73879C;
         font-size:13px;
+        float:none;
         padding:10px 20px 0;
         a {
             color: #5A738E;
@@ -553,6 +554,9 @@
             border-bottom: 2px solid #E6E9ED;
             padding: 1px 5px 6px;
             margin-bottom: 10px;
+            .navbar-right{
+                margin-right: 0px;
+            }
 
         }
         h2 {
@@ -594,7 +598,7 @@
         bottom: 0;
         right: 0;
         z-index: 5;
-        width: 83.32%;
+      
         background: #fff;
         padding: 15px 20px;
         display: block;
@@ -629,5 +633,11 @@
     }
     .right-col {
         transition: all 0s ease 0s!important;
+    }
+}
+@media(max-width:992px){
+    .content2{
+        float: left!important;
+        margin-bottom: 90px;
     }
 }

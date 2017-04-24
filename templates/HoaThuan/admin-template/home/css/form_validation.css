@@ -1,6 +1,9 @@
 .type-25 {
   background: #2a3f54;
 }
+.type-25 .dashboard {
+  position: relative;
+}
 .type-25 .left-col #left-col {
   padding-left: 70px;
   transition: all .4s ease 0s;
@@ -304,6 +307,7 @@
   background: #f7f7f7;
   height: 100%;
   float: right;
+  min-height: 949px;
   transition: all .4s ease 0s;
 }
 .type-25 .nav_menu {
@@ -516,6 +520,9 @@
   border-bottom: 2px solid #E6E9ED;
   padding: 1px 5px 6px;
 }
+.type-25 .content2 .x_title .navbar-right {
+  margin-right: 0px;
+}
 .type-25 .content2 h2 {
   margin: 5px 0 6px;
   float: left;
@@ -610,12 +617,13 @@
   display: block;
 }
 .type-25 .footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
   background: #fff;
   padding: 15px 20px;
   display: block;
-  width: 100%;
-  float: right;
-  margin-top: 10px;
 }
 .type-25 .footer a {
   color: #5A738E;
@@ -637,6 +645,9 @@
     width: 225px;
     transition: all .4s ease 0s;
   }
+  .x_panel {
+    margin-bottom: 70px;
+  }
 }
 @media (max-width: 992px) {
   .active {
@@ -649,5 +660,10 @@
 @media (max-width: 1270px) {
   small {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .x_panel {
+    margin-bottom: 85px !important;
   }
 }

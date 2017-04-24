@@ -1,6 +1,9 @@
 .type-25 {
   background: #2a3f54;
 }
+.type-25 .dashboard {
+  position: relative;
+}
 .type-25 .left-col #left-col {
   padding-left: 70px;
   transition: all .4s ease 0s;
@@ -531,6 +534,9 @@
 .type-25 .content2 .dashboard_graph .x_title p {
   margin: 0 0 4px;
 }
+.type-25 .content2 .dashboard_graph .x_title ul.nav {
+  float: right;
+}
 .type-25 .content2 .dashboard_graph .progress_sm {
   border-radius: 0;
   margin-bottom: 18px;
@@ -706,7 +712,10 @@
   font-size: 18px;
   font-weight: 400;
 }
-.type-25 .content3 ul.nav {
+.type-25 .content3 .x_title .navbar-right {
+  margin-right: 0;
+}
+.type-25 .content3 .x_title ul.nav {
   float: right;
 }
 .type-25 .content3 .panel_toolbox>li {
@@ -872,6 +881,12 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.type-25 .content4 .x_title ul.nav {
+  float: right;
+}
+.type-25 .content4 .x_title .navbar-right {
+  margin-right: 0;
+}
 .type-25 .content4 h2.title {
   position: relative;
   font-size: 18px;
@@ -932,6 +947,7 @@
 }
 .type-25 .content4 .content5 {
   color: #73879C;
+  margin-bottom: 50px;
   font-size: 13px;
 }
 .type-25 .content4 .content5 a {
@@ -949,6 +965,12 @@
 .type-25 .content4 .content5 .x_title {
   border-bottom: 2px solid #E6E9ED;
   padding: 1px 5px 6px;
+}
+.type-25 .content4 .content5 .x_title ul.nav {
+  float: right;
+}
+.type-25 .content4 .content5 .x_title .navbar-right {
+  margin-right: 0;
 }
 .type-25 .content4 .content5 h2 {
   margin: 5px 0 6px;
@@ -1028,11 +1050,13 @@
   padding: 5px 0;
 }
 .type-25 .footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
   background: #fff;
   padding: 15px 20px;
   display: block;
-  width: 100%;
-  float: right;
 }
 .type-25 .footer a {
   color: #5A738E;
@@ -1061,6 +1085,9 @@
   }
   .right-col {
     transition: all 0s ease 0s !important;
+  }
+  .content4 .content5 {
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 1200px) {

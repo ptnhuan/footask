@@ -16,6 +16,7 @@
         <script src="js/media/jquery.min.js" type="text/javascript"></script>
         <script src="js/media/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/media/side-bar.js" type="text/javascript"></script>
+        <script src="js/media/close-media.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="type-25">
@@ -41,7 +42,7 @@
                                         <h2>John Doe</h2>
                                     </div>
                                 </div>
-                                <div class="main_menu">
+                                  <div class="main_menu">
                                     <div class="menu_section">
                                         <h3>General</h3>
                                         <ul class="nav">
@@ -58,7 +59,7 @@
                                                 <div id="home" class="collapse">
                                                     <div class="c_home">
                                                         <ul class="nav child_menu">
-                                                            <li><a href="#">Dashboard</a></li>
+                                                            <li><a href="dashboard.php">Dashboard</a></li>
                                                             <li><a href="#">Dashboard2</a></li>
                                                             <li><a href="#">Dashboard3</a></li>
                                                         </ul>                  
@@ -76,12 +77,12 @@
                                                 <div id="from" class="collapse">
                                                     <div class="c_home">
                                                         <ul class="nav child_menu">
-                                                            <li><a href="#">General Form</a></li>
+                                                            <li><a href="general_form.php">General Form</a></li>
                                                             <li><a href="#">Advanced Components</a></li>
-                                                            <li><a href="#">Form Validation</a></li>
-                                                            <li><a href="#">Form Wizard</a></li>
-                                                            <li><a href="#">Form Upload</a></li>
-                                                            <li><a href="#">Form Buttons</a></li>
+                                                            <li><a href="form_validation.php">Form Validation</a></li>
+                                                            <li><a href="form_wizard.php">Form Wizard</a></li>
+                                                            <li><a href="form_upload.php">Form Upload</a></li>
+                                                            <li><a href="form_button.php">Form Buttons</a></li>
                                                         </ul>                  
                                                     </div>
                                                 </div>
@@ -97,10 +98,10 @@
                                                 <div id="ui" class="collapse">
                                                     <div class="c_home">
                                                         <ul class="nav child_menu">
-                                                            <li><a href="#">General Elements</a></li>
-                                                            <li><a href="#">Media Gallery</a></li>
-                                                            <li><a href="#">Typography</a></li>
-                                                            <li><a href="#">Icons</a></li>
+                                                            <li><a href="general_element.php">General Elements</a></li>
+                                                            <li><a href="media.php">Media Gallery</a></li>
+                                                            <li><a href="typography.php">Typography</a></li>
+                                                            <li><a href="icon.php">Icons</a></li>
                                                             <li><a href="#">Glyphicons</a></li>
                                                             <li><a href="#">Widgets</a></li>
                                                             <li><a href="#">Invoice</a></li>

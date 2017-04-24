@@ -1,6 +1,9 @@
 .type-25 {
   background: #2a3f54;
 }
+.type-25 .dashboard {
+  position: relative;
+}
 .type-25 .left-col #left-col {
   padding-left: 70px;
   transition: all .4s ease 0s;
@@ -304,6 +307,7 @@
   background: #f7f7f7;
   height: 100%;
   float: right;
+  min-height: 949px;
   transition: all .4s ease 0s;
 }
 .type-25 .nav_menu {
@@ -1270,6 +1274,7 @@
   padding: 10px 17px;
   display: inline-block;
   background: #fff;
+  margin-bottom: 70px;
   border: 1px solid #E6E9ED;
   opacity: 1;
 }
@@ -1316,12 +1321,13 @@
   border-radius: 0px;
 }
 .type-25 .footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
   background: #fff;
   padding: 15px 20px;
   display: block;
-  width: 100%;
-  float: right;
-  margin-top: 10px;
 }
 .type-25 .footer a {
   color: #5A738E;

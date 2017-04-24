@@ -519,6 +519,9 @@
   border-bottom: 2px solid #E6E9ED;
   padding: 1px 5px 6px;
 }
+.type-25 .media-gallery .x_title .navbar-right {
+  margin-right: 0px;
+}
 .type-25 .media-gallery h2 {
   margin: 5px 0 6px;
   float: left;
@@ -609,7 +612,6 @@
   bottom: 0;
   right: 0;
   z-index: 5;
-  width: 83.32%;
   background: #fff;
   padding: 15px 20px;
   display: block;

@@ -1,5 +1,8 @@
 .type-25{
     background:#2a3f54;
+    .dashboard{
+        position: relative;        
+    }
     .left-col{ 
         #left-col {
             padding-left: 70px;
@@ -565,6 +568,9 @@
                 p {
                     margin: 0 0 4px;
                 }
+                ul.nav{
+                    float: right;
+                }
 
             }
             .progress_sm {
@@ -750,10 +756,14 @@
                 font-size:@font-size;
                 font-weight: 400;
             }
+            .navbar-right {
+                margin-right: 0;
+            }
+            ul.nav{
+                float: right;
+            }
         }
-        ul.nav{
-            float: right;
-        }
+
         .panel_toolbox>li {
             float: left;
             cursor: pointer;
@@ -924,6 +934,12 @@
                 text-overflow: ellipsis;
                 overflow: hidden;
             }
+            ul.nav{
+                float: right;
+            }
+            .navbar-right {
+                margin-right: 0;
+            }
 
         }
         h2.title {
@@ -989,6 +1005,7 @@
             @font-size:16px;
             @color:#73879C;
             color: @color;
+            margin-bottom: 50px;
             font-size:13px;
             a {
                 color: #5A738E;
@@ -1005,6 +1022,12 @@
             .x_title {
                 border-bottom: 2px solid #E6E9ED;
                 padding: 1px 5px 6px;
+                ul.nav{
+                    float: right;
+                }
+                .navbar-right {
+                    margin-right: 0;
+                }
 
             }
             h2 {
@@ -1092,11 +1115,14 @@
     }
 
     .footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 5;      
         background: #fff;
         padding: 15px 20px;
         display: block;
-        width: 100%;
-        float:right;
+
         a {
             color: #5A738E;
             text-decoration: none;
@@ -1131,6 +1157,11 @@
     }
     .right-col {
         transition: all 0s ease 0s!important;
+    }
+    .content4{
+        .content5{
+            margin-bottom: 70px;
+        }
     }
 }
 @media (max-width: 1200px){

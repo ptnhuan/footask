@@ -18,6 +18,9 @@
   border-bottom: 2px solid #E6E9ED;
   padding: 1px 5px 6px;
 }
+.type-25-19 .media-gallery .x_title .navbar-right {
+  margin-right: 0px;
+}
 .type-25-19 .media-gallery h2 {
   margin: 5px 0 6px;
   float: left;
@@ -65,7 +68,7 @@
   color: #fff;
   padding: 10px 20px 20px;
   text-align: center;
-  top: 110px;
+  top: 174px;
   transition: top 0.5s ease;
   width: 100%;
 }
@@ -111,5 +114,10 @@
 @media (max-width: 1200px) {
   small.gallery {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .image:hover .mask .tools {
+    top: 120px;
   }
 }

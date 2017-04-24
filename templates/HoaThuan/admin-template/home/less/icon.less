@@ -1,5 +1,8 @@
 .type-25{
     background:#2a3f54;
+    .dashboard{
+        position: relative;
+    }
     .left-col{ 
         #left-col {
             padding-left: 70px;
@@ -325,6 +328,7 @@
         background: #f7f7f7;
         height: 100%;
         float: right;
+        min-height: 949px;
         transition: all .4s ease 0s; 
     }
     .nav_menu {
@@ -541,6 +545,7 @@
             padding: 10px 17px;
             display: inline-block;
             background:#fff;
+            margin-bottom: 70px;
             border: 1px solid #E6E9ED;
             opacity: 1;
         }
@@ -556,6 +561,9 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+            }
+            .navbar-right{
+                margin-right: 0px;
             }
         }
 
@@ -630,12 +638,14 @@
     }
 
      .footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
         background: #fff;
         padding: 15px 20px;
         display: block;
-        width: 100%;
-        float:right;
-        margin-top:10px;
+
         a {
             color: #5A738E;
             text-decoration: none;
