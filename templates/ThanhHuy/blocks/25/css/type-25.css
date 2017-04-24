@@ -1,0 +1,43 @@
+.type-25 {
+  color: #73879C;
+}
+.type-25 ul.recent-activity {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.type-25 ul.recent-activity li {
+  border-bottom: 1px dotted #e6e6e6;
+  padding: 8px 0;
+}
+.type-25 ul.recent-activity li .img-user {
+  height: 32px;
+  width: 32px;
+  float: left;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px;
+  background-color: #f7f7f7;
+  border: 1px solid #e6e6e6;
+}
+.type-25 ul.recent-activity li .comment-content {
+  margin-left: 50px;
+}
+.type-25 ul.recent-activity li .comment-content h4 {
+  margin: 0 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.type-25 ul.recent-activity li .comment-content .content {
+  padding: 0 10px;
+  margin: 0;
+  border-left: 5px solid #eee;
+}
+.type-25 ul.recent-activity li .comment-content a.link-file {
+  text-decoration: none;
+  color: #73879C;
+}
+.type-25 ul.recent-activity li .date-comment {
+  float: right;
+  text-align: right;
+}
