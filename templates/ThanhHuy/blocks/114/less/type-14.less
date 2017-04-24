@@ -1,0 +1,250 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 30, 2017, 2:49:40 PM
+    Author     : Administrator
+*/
+
+@color-body: #73879C;
+@none: none;
+@background-color-ffffff: #ffffff;
+@color-ffffff: #ffffff;
+@background-color-tabs: #F5F7FA;
+@background-color-edit: #26B99A;
+@background-color-edit-hover: #169F85;
+@border-color: #e6e6e6;
+@font-size-h3: 16px;
+
+.type-14 {
+    color: @color-body;
+    .content {
+        .content-left {
+            float: left;
+            h3 {
+                margin: 20px 0;
+
+            }
+        }
+        .content-right {
+            float: right;
+            .input-search {
+                margin-top: 22px;
+                position: relative;
+                display: flex;
+                .form-search {
+                    box-shadow: inset 0 1px 0 rgba(0,0,0,.075);
+                    border-radius: 25px 0 0 25px;
+                    padding-left: 20px;
+                    border: 1px solid rgba(221,226,232,.49);
+                }
+                .input-btn-search {
+                    .btn-search {
+                        border-radius: 0 25px 25px 0;
+                        border: 1px solid rgba(221,226,232,.49);
+                        border-left: 0;
+                        background-color:@background-color-ffffff;
+                        color: #73879C;
+                    }
+                    .btn-search:hover {
+                        background-color:#93A2B2;
+                    }
+                }
+            }
+        }
+    }
+    .admin-panel {
+        width: 100%;
+        padding: 10px 17px;
+        display: inline-block;
+        background-color: @background-color-ffffff;
+        border: 1px solid #E6E9ED;
+        opacity: 1;
+        transition: all .2s ease;
+        margin-bottom: 10px;
+        position: relative;
+
+        .admin-title {
+            border-bottom: 2px solid #E6E9ED;
+            padding: 1px 5px 6px;
+            h3 {
+                margin: 5px 0 6px;
+                float: left;
+                display: block;
+                font-size: 18px;
+                small {
+                    margin-left: 5px;
+                }
+            }
+            ul.items {
+                margin-right: 0;
+                min-width: 70px;
+                float: right;
+                list-style: @none;
+                margin-top: 5px;
+                li {
+                    float: left;
+                    cursor: pointer;
+                    a {
+                        padding: 5px;
+                        color: #C5C7CB;
+                        font-size: 13px;
+                    }
+                }
+                li.dropdown {
+                    ul.dropdown-menu {
+                        min-width: 0!important;
+                    }
+                }
+                .collapse-link, .close-link {
+                    opacity: 1;
+                }
+            }
+        }
+        .admin-content {
+            margin: 20px 8px;
+
+            .avartar-profile {
+                h4.name-profile {
+                    font-size: 24px;
+                }
+                .info-profile {
+                    i {
+                        margin: 8px 0;
+                    }
+                }
+                .btn-edit {
+                    margin-top: 10px;
+                    a {
+                        padding: 7px 5px;
+                        color: @color-ffffff;
+                        background-color: @background-color-edit;
+                        border: 1px solid #169F85;
+                        text-decoration: @none;
+                        border-radius: 3px;
+                    }
+                    a:hover {
+                        background-color: @background-color-edit-hover;
+                    }
+                }
+                .skills {
+                    padding: 12px 0;
+                    h4 {
+                        font-weight: normal;
+                    }
+                    p {
+                        margin-bottom: 0;
+                    }
+                    .progress {
+                        max-width: 90%;
+                        height: 10px;
+                        .progress-bar {
+                            height: 10px!important;
+                            background-color: #1ABB9C;
+                        }
+                    }
+                }
+
+            }
+            .user-report {
+                background-color: #F5F7FA;
+                padding: 7px 10px;
+                .show-calendar {
+                    margin-top: 5px;
+                    float: right;
+                    border: 1px solid #E6E9ED;
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    background-color: @background-color-ffffff;
+                    #datepicker {
+                        border: none;
+                        color: @color-body;
+                    }
+                }
+
+            }
+            #chartSkillsContainer {
+                height: 350px;
+            }
+
+            ul.nav-tabs {
+                margin-top: 15px;
+                padding-left: 10px;
+                background-color: @background-color-tabs;
+                li {
+                    color: #333!important;
+                    background-color: @background-color-tabs;
+                    border-bottom: @none;
+                    border-radius: 4px 4px 0 0;
+                    a {
+                        color: #5A738E;
+                    }
+                }
+            }
+            .tab-content {
+                padding: 10px 0;
+                #menu1, #menu2 {
+                    padding: 0;
+                }
+                #home {
+                    ul.comments {
+                        list-style: @none;
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            border-bottom: 1px dotted @border-color;
+                            padding: 8px 0;
+
+                            .img-user {
+                                height: 32px;
+                                width: 32px;
+                                float: left;
+                                display: inline-block;
+                                border-radius: 2px;
+                                padding: 2px;
+                                background-color: #f7f7f7;
+                                border: 1px solid @border-color;
+                            }
+                            .comment-content {
+                                margin-left: 50px;
+                                h4 {
+                                    margin: 0 0 10px;
+                                    cursor: pointer;
+                                    font-weight: bold;
+                                }
+                                .content {
+                                    padding: 0 10px;
+                                    margin: 0;
+                                    border-left: 5px solid #eee;
+                                }
+                                a.link-file {
+                                    text-decoration: @none;
+                                    color: @color-body;
+                                }
+                            }
+                            .date-comment {
+                                float: right;
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .content {
+        .content-left {
+            h3 {
+                font-size: @font-size-h3;
+            }
+        }
+        .content-right {
+            margin-top: -5px;
+        }
+    }
+}

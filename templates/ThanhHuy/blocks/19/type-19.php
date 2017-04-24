@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Module - Content e-commerce</title>
+        <title>Module - Login</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -23,34 +23,20 @@
         <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/collapse-close.js" type="text/javascript"></script>
+        <script src="js/pagination-table.js" type="text/javascript"></script>
+        <script src="js/search-table.js" type="text/javascript"></script>
     </head>
 
     <body>
         <div class="type-19">
             <div class="container">
-                <div class="content">
-                    <div class="content-left">
-                        <h3>Invoice <small>Some examples to get you started</small></h3>
-                    </div>
-                    <div class="content-right">
-                        <div class="input-search">
-                            <form method="get" action="#">
-                                <input type="text" class="form-search" placeholder="Search for...">
-
-                            </form>
-                            <span class="input-btn-search">
-                                <button class="btn-search" type="button">Go!</button>
-                            </span>
-                        </div>
-                    </div>  
-
-                </div>
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="admin-panel">
                             <div class="admin-title">
                                 <h3>
-                                    Invoice Design <small>Sample user invoice design</small>
+                                    Responsive example 
+                                    <small>Users</small>
                                 </h3>
                                 <ul class="items">
                                     <li>
@@ -76,118 +62,190 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="admin-content">
-                                <h1 class="pull-left">
-                                    <i class="fa fa-globe"></i> Invoice <h3 class="pull-right">Date: 18/04/2017</h3>
-                                </h1>
-                                <div class="clearfix"></div>
+                                <p>Responsive is an extension for DataTables that resolves that problem by optimising the table's layout for different screen sizes through the dynamic insertion and removal of columns from the table.</p>
                                 <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-6">
-                                        From<br><b>Iron Admin, Inc.</b><br>795 Freedom Ave, Suite 600 <br>New York, CA 94107 <br>Phone: 1 (804) 123-9876 <br>Email: ironadmin.com
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6">
-                                        To<br><b>John Doe </b><br>795 Freedom Ave, Suite 600 <br>New York, CA 94107 <br>Phone: 1 (804) 123-9876 <br>Email: ironadmin.com
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6">
-                                        <b>Invoice #007612 </b><br><br><b>Oder ID: </b>4F3S8J<br> <b>Payment Due: </b>04/22/2017<br> <b>Account: </b>968-34567
-                                    </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Qty</th>
-                                                <th>Product</th>
-                                                <th>Serial #</th>
-                                                <th style="width: 59%;">Description</th>
-                                                <th>Subtotal</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Call of Duty</td>
-                                                <td>455-981-221</td>
-                                                <td>455-El snort testosterone trophy driving gloves handsome gerry Richardson helvetica tousled street art master testosterone trophy driving gloves handsome gerry Richardson-221</td>
-                                                <td>$64.50</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Need for Speed IV</td>
-                                                <td>247-925-726</td>
-                                                <td>Wes Anderson umami biodiesel</td>
-                                                <td>$50.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Monsters DVD</td>
-                                                <td>735-845-642</td>
-                                                <td>Terry Richardson helvetica tousled street art master, El snort testosterone trophy driving gloves handsome letterpress erry Richardson helvetica tousled</td>
-                                                <td>$10.70</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Grown Ups Blue Ray</td>
-                                                <td>422-568-642</td>
-                                                <td>Tousled lomo letterpress erry Richardson helvetica tousled street art master helvetica tousled street art master, El snort testosterone</td>
-                                                <td>$25.99</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6 col-xs-6">
-                                        <h4>Payment Methods:</h4>
-                                        <a href="#"><img src="images/visa.png"></a>
-                                        <a href="#"><img src="images/mastercard.png"></a>
-                                        <a href="#"><img src="images/american-express.png"></a>
-                                        <a href="#"><img src="images/paypal.png"></a>
-                                        <div class="box-note">
-                                            <p>Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.</p>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="show-data">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <span class="data">
+                                                        Show 
+                                                        <select class="form-control form-select">
+                                                            <option value="5">5</option>
+                                                            <option value="5">10</option>
+                                                            <option value="5">15</option>
+                                                            <option value="5">20</option>
+                                                        </select>
+                                                        entries 
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <span class="search-query">
+                                                        Search: <input type="search" id="input" onkeyup="searchDataTable();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="data-table table table-bordered" id="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th onclick="sortTable(0)" style="width: 71px;">First name</th>
+                                                        <th onclick="sortTable(1)" style="width: 69px;">Last Name</th>
+                                                        <th onclick="sortTable(2)" style="width: 155px;">Position</th>
+                                                        <th onclick="sortTable(3)" style="width: 118px;">Office</th>
+                                                        <th onclick="sortTable(4)" style="width: 67px;">Age</th>
+                                                        <th onclick="sortTable(5)" style="width: 87px;">Start date</th>
+                                                        <th onclick="sortTable(6)" style="width: 64px;">Salary</th>
+                                                        <th onclick="sortTable(7)" style="width: 46px;">Extn.</th>
+                                                        <th onclick="sortTable(8)" style="width: 148px;">Email</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="myDataTable">
+                                                    <tr>
+                                                        <td>Cara</td>
+                                                        <td>Stevens</td>
+                                                        <td>Sales Assistant</td>
+                                                        <td>New York</td>
+                                                        <td>46</td>
+                                                        <td>2011/12/06</td>
+                                                        <td>$145,600</td>
+                                                        <td>3990</td>
+                                                        <td>c.stevens@datatables.net</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hermione</td>
+                                                        <td>Butler</td>
+                                                        <td>Regional Director</td>
+                                                        <td>London</td>
+                                                        <td>47</td>
+                                                        <td>2011/03/21</td>
+                                                        <td>$356,250</td>
+                                                        <td>1016</td>
+                                                        <td>h.butler@datatables.net</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lael</td>
+                                                        <td>Greer</td>
+                                                        <td>Systems Administrator</td>
+                                                        <td>London</td>
+                                                        <td>21</td>
+                                                        <td>2009/02/27</td>
+                                                        <td>$103,500</td>
+                                                        <td>6733</td>
+                                                        <td>l.greer@datatables.net</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonas</td>
+                                                        <td>Alexander</td>
+                                                        <td>Developer</td>
+                                                        <td>San Francisco</td>
+                                                        <td>30</td>
+                                                        <td>2010/07/14</td>
+                                                        <td>$86,500</td>
+                                                        <td>8196</td>
+                                                        <td>j.alexander@datatables.net</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shad</td>
+                                                        <td>Decker</td>
+                                                        <td>Regional Director</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>51</td>
+                                                        <td>2008/11/13</td>
+                                                        <td>$183,000</td>
+                                                        <td>6373</td>
+                                                        <td>s.decker@datatables.net</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Michael</td>
+                                                        <td>Bruce</td>
+                                                        <td>Javascript Developer</td>
+                                                        <td>Singapore</td>
+                                                        <td>29</td>
+                                                        <td>2011/06/27</td>
+                                                        <td>$183,000</td>
+                                                        <td>5384</td>
+                                                        <td>m.bruce@datatables.net</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Donna</td>
+                                                        <td>Snider</td>
+                                                        <td>Customer Support</td>
+                                                        <td>New York</td>
+                                                        <td>27</td>
+                                                        <td>2011/01/25</td>
+                                                        <td>$112,000</td>
+                                                        <td>4226</td>
+                                                        <td>d.snider@datatables.net</td>
+                                                    </tr>   
+                                                    <tr>
+                                                        <td>Lael</td>
+                                                        <td>Greer</td>
+                                                        <td>Systems Administrator</td>
+                                                        <td>London</td>
+                                                        <td>21</td>
+                                                        <td>2009/02/27</td>
+                                                        <td>$103,500</td>
+                                                        <td>6733</td>
+                                                        <td>l.greer@datatables.net</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jonas</td>
+                                                        <td>Alexander</td>
+                                                        <td>Developer</td>
+                                                        <td>San Francisco</td>
+                                                        <td>30</td>
+                                                        <td>2010/07/14</td>
+                                                        <td>$86,500</td>
+                                                        <td>8196</td>
+                                                        <td>j.alexander@datatables.net</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Shad</td>
+                                                        <td>Decker</td>
+                                                        <td>Regional Director</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>51</td>
+                                                        <td>2008/11/13</td>
+                                                        <td>$183,000</td>
+                                                        <td>6373</td>
+                                                        <td>s.decker@datatables.net</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Michael</td>
+                                                        <td>Bruce</td>
+                                                        <td>Javascript Developer</td>
+                                                        <td>Singapore</td>
+                                                        <td>29</td>
+                                                        <td>2011/06/27</td>
+                                                        <td>$183,000</td>
+                                                        <td>5384</td>
+                                                        <td>m.bruce@datatables.net</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Donna</td>
+                                                        <td>Snider</td>
+                                                        <td>Customer Support</td>
+                                                        <td>New York</td>
+                                                        <td>27</td>
+                                                        <td>2011/01/25</td>
+                                                        <td>$112,000</td>
+                                                        <td>4226</td>
+                                                        <td>d.snider@datatables.net</td>
+                                                    </tr>   
+                                                </tbody>
+                                            </table>
                                         </div>
 
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-6">
-                                        <h4>Amount Due 04/22/2017</h4>
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td>Subtotal:</td>
-                                                    <td>$250.30</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tax (9.3%)</td>
-                                                    <td>$10.34</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Shipping:</td>
-                                                    <td>$5.80</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Total:</td>
-                                                    <td>$265.24</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                    </div>                                    
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="pull-left">
-                                            <a href="#" class="btn-print">
-                                                <i class="fa fa-print"> Print</i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="pull-right">
-                                            <a href="#" class="btn-function btn-download-pdf">
-                                                <i class="fa fa-download"> Generate PDF</i>
-                                            </a>
-                                            <a href="#" class="btn-function btn-submit-payment">
-                                                <i class="fa fa-credit-card"> Submit Payment</i>
-                                            </a>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <p>Showing 1 to 5 of 12 entries</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <ul class="pagination page" id="myPager">
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -195,6 +253,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </body>

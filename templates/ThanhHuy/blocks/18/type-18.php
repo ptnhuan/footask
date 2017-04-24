@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Module - Content Glyphicons  </title>
+        <title>Module - Login</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -20,6 +20,11 @@
         $less->compileFile('less/type-18.less', 'css/type-18.css');
         ?>
         <link rel="stylesheet" href="css/type-18.css">
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/collapse-close.js" type="text/javascript"></script>
+        <script src="js/pagination-table.js" type="text/javascript"></script>
+        <script src="js/search-table.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -27,71 +32,190 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h4>How to use</h4>
-                        <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
-                        <h4>Don't mix with other components</h4>
-                        <p>Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <code>&lt;span&gt;</code> and apply the icon classes to the <code>&lt;span&gt;</code>.</p>
-                        <h4>Only for use on empty elements</h4>
-                        <p>Icon classes should only be used on elements that contain no text content and have no child elements.</p>
-                        <h4>Changing the icon font location</h4>
-                        <p>Bootstrap assumes icon font files will be located in the <code>../fonts/</code> directory, relative to the compiled CSS files. Moving or renaming those font files means updating the CSS in one of three ways:</p>
-                        <ul>
-                            <li>Change the <code>@icon-font-path</code> and/or <code>@icon-font-name</code> variables in the source Less files.</li>
-                            <li>Utilize the relative URLs option provided by the Less compiler.</li>
-                            <li>Change the <code>url()</code> paths in the compiled CSS.</li>
-                        </ul>
-                        Use whatever option best suits your specific development setup.
-                        <h4>Accessible icons</h4>
-                        <p>Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them with the <code>aria-hidden="true"</code>attribute.</p>
-                        <p>If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies – for instance, include additional content, visually hidden with the <code>.sr-only</code> class.</p>
-                        <p>If you're creating controls with no other text (such as a<code>&lt;button&gt;</code> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive technologies. In this case, you could add an <code>aria-label</code> attribute on the control itself.</p>
-                        Copy
-                        <div class="frame-copy">
-                            <span>&lt;span class="glyphicon glyphicon-search"aria-hidden="true"&gt;&lt;/span&gt;</span>
+                        <div class="admin-panel">
+                            <div class="admin-title">
+                                <h3>
+                                    KeyTable example 
+                                    <small>Users</small>
+                                </h3>
+                                <ul class="items">
+                                    <li>
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Settings 1</a></li>
+                                            <li><a href="#">Settings 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="close-link">
+                                            <i class="fa fa-close"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="admin-content">
+                                <p>KeyTable provides Excel like cell navigation on any table. Events (focus, blur, action etc) can be assigned to individual cells, columns, rows or all cells.</p>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="show-data">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <span class="data">
+                                                        Show 
+                                                        <select class="form-control form-select">
+                                                            <option value="5">5</option>
+                                                            <option value="5">10</option>
+                                                            <option value="5">15</option>
+                                                            <option value="5">20</option>
+                                                        </select>
+                                                        entries 
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <span class="search-query">
+                                                        Search: <input type="search" id="input" onkeyup="searchDataTable();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="data-table table table-bordered" id="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th onclick="sortTable(0)">Name</th>
+                                                        <th onclick="sortTable(1)">Position</th>
+                                                        <th onclick="sortTable(2)">Office</th>
+                                                        <th onclick="sortTable(3)">Age</th>
+                                                        <th onclick="sortTable(4)">Start date</th>
+                                                        <th onclick="sortTable(5)">Salary</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="myDataTable">
+                                                    <tr>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
+                                                    </tr>
+                                                    <tr >
+                                                        <td>Bradley Greer</td>
+                                                        <td>Software Engineer</td>
+                                                        <td>London</td>
+                                                        <td>41</td>
+                                                        <td>2012/10/13</td>
+                                                        <td>$132,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Brenden Wagner</td>
+                                                        <td>Software Engineer</td>
+                                                        <td>San Francisco</td>
+                                                        <td>28</td>
+                                                        <td>2011/06/07</td>
+                                                        <td>$206,850</td>
+                                                    </tr>
+                                                    <tr >
+                                                        <td>Brielle Williamson</td>
+                                                        <td>Integration Specialist</td>
+                                                        <td>New York</td>
+                                                        <td>61</td>
+                                                        <td>2012/12/02</td>
+                                                        <td>$372,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bruno Nash</td>
+                                                        <td>Software Engineer</td>
+                                                        <td>London</td>
+                                                        <td>38</td>
+                                                        <td>2011/05/03</td>
+                                                        <td>$163,500</td>
+                                                    </tr>
+                                                    <tr >
+                                                        <td>Caesar Vance</td>
+                                                        <td>Pre-Sales Support</td>
+                                                        <td>New York</td>
+                                                        <td>21</td>
+                                                        <td>2011/12/12</td>
+                                                        <td>$106,450</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cara Stevens</td>
+                                                        <td>Sales Assistant</td>
+                                                        <td>New York</td>
+                                                        <td>46</td>
+                                                        <td>2011/12/06</td>
+                                                        <td>$145,600</td>
+                                                    </tr>
+                                                    <tr >
+                                                        <td>Cedric Kelly</td>
+                                                        <td>Senior Javascript Developer</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>22</td>
+                                                        <td>2012/03/29</td>
+                                                        <td>$433,060</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cara Stevens</td>
+                                                        <td>Sales Assistant</td>
+                                                        <td>New York</td>
+                                                        <td>46</td>
+                                                        <td>2011/12/06</td>
+                                                        <td>$145,600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cedric Kelly</td>
+                                                        <td>Senior Javascript Developer</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>22</td>
+                                                        <td>2012/03/29</td>
+                                                        <td>$433,060</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cedric Kelly</td>
+                                                        <td>Senior Javascript Developer</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>22</td>
+                                                        <td>2012/03/29</td>
+                                                        <td>$433,060</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cedric Kelly</td>
+                                                        <td>Senior Javascript Developer</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>22</td>
+                                                        <td>2012/03/29</td>
+                                                        <td>$433,060</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <p>Showing 1 to 5 of 12 entries</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <ul class="pagination page" id="myPager">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4>Example</h4>
-                        <p>Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs</p>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default" aria-label="Left Align"><i class="glyphicon glyphicon-align-left" aria-hidden="true"></i>
-                            </button>
-                            <button type="button" class="btn btn-default" aria-label="Center Align"><i class="glyphicon glyphicon-align-center" aria-hidden="true"></i>
-                            </button>
-                            <button type="button" class="btn btn-default" aria-label="Right Align"><i class="glyphicon glyphicon-align-right" aria-hidden="true"></i>
-                            </button>
-                            <button type="button" class="btn btn-default" aria-label="Justify"><i class="glyphicon glyphicon-align-justify" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <div class="btn-toolbar">
-                            <button type="button" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-star" aria-hidden="true"></i> Star</button>
-                            <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-star" aria-hidden="true"></i> Star</button>
-                            <button type="button" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-star" aria-hidden="true"></i> Star</button>
-                            <button type="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-star" aria-hidden="true"></i> Star</button>
-                        </div>
-                        Copy
-                        <div class="frame-copy">
-                            <span>&lt;button type="button" class="btn btn-default" aria-label="Left Align"&gt;<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-align-left" aria-hidden="true"&gt;&lt;/span>
-                                <br>&lt;button&gt;<br><br>
-                                &lt;button type="button" class="btn btn-default btn-lg"&gt;<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-star" aria-hidden="true"&gt;&lt;/span> Star
-                                <br>&lt;button&gt;
-                            </span>
-                        </div>
-                        <p style="margin: 10px 0;">An icon used in an alert to convey that it's an error message, with additional .sr-only text to convey this hint to users of assistive technologies.</p>
-                        <div class="alert error-message">
-                            <i class="glyphicon glyphicon-exclamation-sign"></i> Enter a valid email address
-                        </div>
-                        Copy
-                        <div class="frame-copy">
-                            <span>&lt;div class="alert alert-danger" role="alert"&gt;<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"&gt;&lt;/span><br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="sr-only">Error:&lt;/span> Star<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter a valid email address
-                                <br>&lt;/div&gt;
-                            </span>
-                        </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </body>

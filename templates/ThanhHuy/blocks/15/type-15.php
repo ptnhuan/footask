@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Module - Content e-commerce</title>
+        <title>Module - Login</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -22,36 +22,21 @@
         <link rel="stylesheet" href="css/type-15.css">
         <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/canvasjs.min.js" type="text/javascript"></script>
-        <script src="js/chart-dynamic.js" type="text/javascript"></script>
         <script src="js/collapse-close.js" type="text/javascript"></script>
+        <script src="js/pagination-table.js" type="text/javascript"></script>
+        <script src="js/search-table.js" type="text/javascript"></script>
+        <script src="js/check-all.js" type="text/javascript"></script>
     </head>
 
     <body>
         <div class="type-15">
             <div class="container">
-                <div class="content">
-                    <div class="content-left">
-                        <h3>Project Detail <small>design</small></h3>
-                    </div>
-                    <div class="content-right">
-                        <div class="input-search">
-                            <form method="get" action="#">
-                                <input type="text" class="form-search" placeholder="Search for...">
-
-                            </form>
-                            <span class="input-btn-search">
-                                <button class="btn-search" type="button">Go!</button>
-                            </span>
-                        </div>
-                    </div>  
-                </div>
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="admin-panel">
                             <div class="admin-title">
                                 <h3>
-                                    New Partner Contracts Consultancy
+                                    Plus Table Design
                                 </h3>
                                 <ul class="items">
                                     <li>
@@ -77,50 +62,233 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="admin-content">
+                                <p>DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function:<code>$().DataTable();</code></p>
+
                                 <div class="row">
-                                    <div class="col-md-9 col-sm-12 col-xs-12">
-                                        <ul class="detail-overview">
-                                            <li>
-                                                <p>
-                                                    Estimated budget <br><b>2300</b>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    Total amount spent <br><b>2000</b>
-                                                </p>
-                                            </li>
-                                            <li class="border-none">
-                                                <p>
-                                                    Estimated project duration <br><b>20</b>
-                                                </p>
-                                            </li>
-                                        </ul><br><br>
-                                        <div id="chartDynamicContainer"></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-12 col-xs-12">
-                                        <h4 class="title-des">Project Description</h4>
-                                        <div class="project-description">
-                                            <h3><i class="fa fa-paint-brush"> Gentelella</i></h3>
-                                            <p>
-                                                Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.
-                                            </p>
-                                            <div class="location-company">
-                                                <b>Client Company</b>Deveint Inc
-                                                <b>Project Leader</b>Tony Chicken
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="show-data">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <span class="data">
+                                                        Show 
+                                                        <select class="form-control form-select">
+                                                            <option value="5">5</option>
+                                                            <option value="5">10</option>
+                                                            <option value="5">15</option>
+                                                            <option value="5">20</option>
+                                                        </select>
+                                                        entries 
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                                    <span class="search-query">
+                                                        Search: <input type="search" id="input" onkeyup="searchDataTable();" class="form-control form-search" placeholder="Search for name..." title="Type in a name">
+                                                    </span>
+                                                </div>
                                             </div>
-                                            <div class="project-files">
-                                                <b>Project files</b>
-                                                <br>
-                                                <a href="#" class="files"><i class="fa fa-file-word-o"></i> Functional-requirements.docx</a>
-                                                <a href="#" class="files"><i class="fa fa-file-pdf-o"></i> UAT.pdf</a>
-                                                <a href="#" class="files"><i class="fa fa-mail-forward"></i> Email-from-flatbal.mln</a>
-                                                <a href="#" class="files"><i class="fa fa-picture-o"></i> Logo.png</a>
-                                                <a href="#" class="files"><i class="fa fa-file-word-o"></i> Contract-10_12_2014.docx</a>
-                                            </div>     
-                                            <div class="button-function">
-                                                <a href="#" class="btn-add">Add files</a>
-                                                <a href="#" class="btn-report">Report contact</a>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="data-table table table-bordered" id="table">
+                                                <thead>
+                                                    <tr role="row" class="">
+                                                        <th style="width: 6px;">
+                                                        </th>
+                                                        <th style="width: 34px;">
+                                                            <input type="checkbox" class="item" onclick="checkAll('item', this)">
+                                                        </th>
+                                                        <th onclick="sortTable(1)" style="width: 141px;">Name</th>
+                                                        <th onclick="sortTable(2)" style="width: 233px;">Position</th>
+                                                        <th onclick="sortTable(3)" style="width: 103px;">Office</th>
+                                                        <th onclick="sortTable(4)" style="width: 50px;">Age</th>
+                                                        <th onclick="sortTable(5)" style="width: 99px;">Start date</th>
+                                                        <th onclick="sortTable(6)" style="width: 76px;">Salary</th></tr>
+                                                </thead>
+                                                <tbody id="myDataTable">
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
+
+                                                    </tr>
+                                                    <tr >
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
+
+                                                    </tr>
+                                                    <tr >
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
+
+                                                    </tr>
+                                                    <tr >
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
+
+                                                    </tr>
+                                                    <tr >
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011/07/25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <th>
+                                                            <input type="checkbox" class="item">
+                                                        </th>
+
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009/01/12</td>
+                                                        <td>$86,000</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <p>Showing 1 to 5 of 12 entries</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <ul class="pagination page" id="myPager">
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -129,7 +297,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </body>

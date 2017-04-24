@@ -1,19 +1,17 @@
 .type-14 {
   color: #73879C;
 }
-.type-14 .content .content-left {
-  float: left;
-}
 .type-14 .content .content-left h3 {
-  margin: 20px 0;
+  margin: 9px 0;
 }
 .type-14 .content .content-right {
+  margin: -33px 0;
   float: right;
+  padding: 0;
 }
 .type-14 .content .content-right .input-search {
-  margin-top: 22px;
+  margin-bottom: 10px;
   position: relative;
-  display: flex;
 }
 .type-14 .content .content-right .input-search .form-search {
   box-shadow: inset 0 1px 0 rgba(0,0,0,0.075);
@@ -26,16 +24,16 @@
   border: 1px solid rgba(221,226,232,0.49);
   border-left: 0;
   background-color: #ffffff;
-  color: #73879C;
+  color: #93a2b2;
 }
 .type-14 .content .content-right .input-search .input-btn-search .btn-search:hover {
-  background-color: #93A2B2;
+  background-color: #e6e6e6;
 }
 .type-14 .admin-panel {
   width: 100%;
   padding: 10px 17px;
   display: inline-block;
-  background-color: #ffffff;
+  background: #fff;
   border: 1px solid #E6E9ED;
   opacity: 1;
   transition: all .2s ease;
@@ -50,10 +48,7 @@
   margin: 5px 0 6px;
   float: left;
   display: block;
-  font-size: 18px;
-}
-.type-14 .admin-panel .admin-title h3 small {
-  margin-left: 5px;
+  font-size: 16px;
 }
 .type-14 .admin-panel .admin-title ul.items {
   margin-right: 0;
@@ -72,137 +67,55 @@
   font-size: 13px;
 }
 .type-14 .admin-panel .admin-title ul.items li.dropdown ul.dropdown-menu {
-  min-width: 0 !important;
+  min-width: 0px !important;
 }
 .type-14 .admin-panel .admin-title ul.items .collapse-link,
 .type-14 .admin-panel .admin-title ul.items .close-link {
   opacity: 1;
 }
-.type-14 .admin-panel .admin-content {
-  margin: 20px 8px;
+.type-14 .admin-panel .admin-content p {
+  margin-top: 12px !important;
 }
-.type-14 .admin-panel .admin-content .avartar-profile h4.name-profile {
-  font-size: 24px;
+.type-14 .admin-panel .admin-content .show-data .data,
+.type-14 .admin-panel .admin-content .show-data .search-query {
+  display: inline-flex;
+  margin: 10px 0;
 }
-.type-14 .admin-panel .admin-content .avartar-profile .info-profile i {
-  margin: 8px 0;
-}
-.type-14 .admin-panel .admin-content .avartar-profile .btn-edit {
-  margin-top: 10px;
-}
-.type-14 .admin-panel .admin-content .avartar-profile .btn-edit a {
-  padding: 7px 5px;
-  color: #ffffff;
-  background-color: #26B99A;
-  border: 1px solid #169F85;
-  text-decoration: none;
-  border-radius: 3px;
-}
-.type-14 .admin-panel .admin-content .avartar-profile .btn-edit a:hover {
-  background-color: #169F85;
-}
-.type-14 .admin-panel .admin-content .avartar-profile .skills {
-  padding: 12px 0;
-}
-.type-14 .admin-panel .admin-content .avartar-profile .skills h4 {
-  font-weight: normal;
-}
-.type-14 .admin-panel .admin-content .avartar-profile .skills p {
-  margin-bottom: 0;
-}
-.type-14 .admin-panel .admin-content .avartar-profile .skills .progress {
-  max-width: 90%;
-  height: 10px;
-}
-.type-14 .admin-panel .admin-content .avartar-profile .skills .progress .progress-bar {
-  height: 10px !important;
-  background-color: #1ABB9C;
-}
-.type-14 .admin-panel .admin-content .user-report {
-  background-color: #F5F7FA;
-  padding: 7px 10px;
-}
-.type-14 .admin-panel .admin-content .user-report .show-calendar {
-  margin-top: 5px;
-  float: right;
-  border: 1px solid #E6E9ED;
+.type-14 .admin-panel .admin-content .show-data .data .form-search,
+.type-14 .admin-panel .admin-content .show-data .data .form-select,
+.type-14 .admin-panel .admin-content .show-data .search-query .form-search,
+.type-14 .admin-panel .admin-content .show-data .search-query .form-select {
   cursor: pointer;
-  padding: 5px 10px;
-  background-color: #ffffff;
+  margin: -6px 5px 0 5px;
 }
-.type-14 .admin-panel .admin-content .user-report .show-calendar #datepicker {
-  border: none;
-  color: #73879C;
+.type-14 .admin-panel .admin-content .show-data .search-query {
+  float: right !important;
 }
-.type-14 .admin-panel .admin-content #chartSkillsContainer {
-  height: 350px;
+.type-14 .admin-panel .admin-content .data-table {
+  margin-top: 8px;
 }
-.type-14 .admin-panel .admin-content ul.nav-tabs {
-  margin-top: 15px;
-  padding-left: 10px;
-  background-color: #F5F7FA;
+.type-14 .admin-panel .admin-content .data-table tr:nth-child(even) {
+  background-color: #f5f5f5;
 }
-.type-14 .admin-panel .admin-content ul.nav-tabs li {
-  color: #333 !important;
-  background-color: #F5F7FA;
-  border-bottom: none;
-  border-radius: 4px 4px 0 0;
-}
-.type-14 .admin-panel .admin-content ul.nav-tabs li a {
-  color: #5A738E;
-}
-.type-14 .admin-panel .admin-content .tab-content {
-  padding: 10px 0;
-}
-.type-14 .admin-panel .admin-content .tab-content #menu1,
-.type-14 .admin-panel .admin-content .tab-content #menu2 {
-  padding: 0;
-}
-.type-14 .admin-panel .admin-content .tab-content #home ul.comments {
-  list-style: none;
-  padding: 0;
+.type-14 .admin-panel .admin-content .data-table #myDataTable {
   margin: 0;
 }
-.type-14 .admin-panel .admin-content .tab-content #home ul.comments li {
-  border-bottom: 1px dotted #e6e6e6;
-  padding: 8px 0;
+.type-14 .admin-panel .admin-content #myPager {
+  opacity: 1;
+  float: right;
 }
-.type-14 .admin-panel .admin-content .tab-content #home ul.comments li .img-user {
-  height: 32px;
-  width: 32px;
-  float: left;
+.type-14 .admin-panel .admin-content .pagination {
   display: inline-block;
-  border-radius: 2px;
-  padding: 2px;
-  background-color: #f7f7f7;
-  border: 1px solid #e6e6e6;
-}
-.type-14 .admin-panel .admin-content .tab-content #home ul.comments li .comment-content {
-  margin-left: 50px;
-}
-.type-14 .admin-panel .admin-content .tab-content #home ul.comments li .comment-content h4 {
-  margin: 0 0 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.type-14 .admin-panel .admin-content .tab-content #home ul.comments li .comment-content .content {
-  padding: 0 10px;
   margin: 0;
-  border-left: 5px solid #eee;
 }
-.type-14 .admin-panel .admin-content .tab-content #home ul.comments li .comment-content a.link-file {
+.type-14 .admin-panel .admin-content .pagination a {
+  color: #337ab7;
+  float: left;
+  padding: 5px 10px;
   text-decoration: none;
-  color: #73879C;
+  background-color: #ddd;
+  border: none;
 }
-.type-14 .admin-panel .admin-content .tab-content #home ul.comments li .date-comment {
-  float: right;
-  text-align: right;
-}
-@media (max-width: 980px) {
-  .content .content-left h3 {
-    font-size: 16px;
-  }
-  .content .content-right {
-    margin-top: -5px;
-  }
+.type-14 .admin-panel .admin-content .pagination a:hover {
+  color: #23527c;
 }
