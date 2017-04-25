@@ -33,10 +33,10 @@
         <script src="js/dashboard3/excanvas.js" type="text/javascript"></script>
         <script src="js/dashboard3/script-gauge.js" type="text/javascript"></script>
         <script src="js/dashboard3/back-to-top.js" type="text/javascript"></script>
-        
+
     </head>
 
-    <body style="background-color: #2A3F54;">
+    <body>
         <div class="type-f-12">
             <div class="container-fluid">
                 <div class="nav-side-menu col-md-2">
@@ -973,5 +973,7 @@
                 <div id="back-to-top"><i class="fa fa-chevron-up"></i></div>
             </div>  
         </div>
-    </body>
+        <div class="clearfix"></div>
+    </div>
+</body>
 </html>

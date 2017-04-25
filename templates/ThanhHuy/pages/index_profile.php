@@ -31,7 +31,7 @@
         <script src="js/profile/collapse-close.js" type="text/javascript"></script>
     </head>
 
-    <body style="background-color: #2A3F54;">
+    <body>
         <div class="type-f-12">
             <div class="container-fluid">
                 <div class="nav-side-menu col-md-2">
@@ -666,6 +666,7 @@
                     <div id="back-to-top"><i class="fa fa-chevron-up"></i></div>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
     </body>
 </html>

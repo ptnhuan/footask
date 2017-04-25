@@ -24,7 +24,7 @@
         <script src="js/login/bootstrap.min.js" type="text/javascript"></script>
     </head>
 
-    <body style="background-color: #F7F7F7;">
+    <body>
         <div class="type-f-12">
             <div class="container">
                 <div class="row">
