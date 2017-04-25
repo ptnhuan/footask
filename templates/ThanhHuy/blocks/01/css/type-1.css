@@ -60,7 +60,7 @@
   border: none;
 }
 .type-1 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content li {
-  padding: 3px 0;
+  padding: 5px 0;
   line-height: 35px;
   cursor: pointer;
   font-size: 13px;
@@ -80,7 +80,10 @@
   padding: 12px 8px;
   font-size: 10px;
 }
-.type-1 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content li.active {
+.type-1 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content li .label {
+  padding: 3px 0;
+}
+.type-1 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content li:active {
   background-color: rgba(255,255,255,0.05);
 }
 .type-1 .container-fluid .nav-side-menu .sidebar-menu .menu-list ul#menu-content ul.sub-menu {

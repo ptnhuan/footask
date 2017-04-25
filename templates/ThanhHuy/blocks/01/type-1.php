@@ -47,121 +47,121 @@
                         
                         <div class="menu-list">
                             <ul id="menu-content" class="menu-content collapse out">
-                                <li data-toggle="collapse" data-target="#home" class="collapsed active">
+                                <li data-toggle="collapse" data-target="#home" class="collapsed">
                                     <a href="#">
                                         <i class="fa fa-home"></i> Home <i class="fa fa-chevron-down arrow"></i>
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="home">
-                                    <li><a href="#">&#8226; Dashboard</a></li>
-                                    <li><a href="#">&#8226; Dashboard2</a></li>
-                                    <li><a href="#">&#8226; Dashboard3</a></li>
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="#">Dashboard2</a></li>
+                                    <li><a href="#">Dashboard3</a></li>
                                 </ul>
 
-                                <li data-toggle="collapse" data-target="#form" class="collapsed active">
+                                <li data-toggle="collapse" data-target="#form" class="collapsed">
                                     <a href="#">
                                         <i class="fa fa-edit"></i> Forms <i class="fa fa-chevron-down arrow"></i>
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="form">
-                                    <li><a href="#">&#8226; General Form</a></li>
-                                    <li><a href="#">&#8226; Advanced Components</a></li>
-                                    <li><a href="#">&#8226; Form Validation</a></li>
-                                    <li><a href="#">&#8226; Form Wizard</a></li>
-                                    <li><a href="#">&#8226; Form Upload</a></li>
-                                    <li><a href="#">&#8226; Form Buttons</a></li>
+                                    <li><a href="#">General Form</a></li>
+                                    <li><a href="#">Advanced Components</a></li>
+                                    <li><a href="#">Form Validation</a></li>
+                                    <li><a href="#">Form Wizard</a></li>
+                                    <li><a href="#">Form Upload</a></li>
+                                    <li><a href="#">Form Buttons</a></li>
                                 </ul>
 
-                                <li data-toggle="collapse" data-target="#uie" class="collapsed active">
+                                <li data-toggle="collapse" data-target="#uie" class="collapsed">
                                     <a href="#">
                                         <i class="fa fa-desktop"></i>  UI Elements  <i class="fa fa-chevron-down arrow"></i>
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="uie">
-                                    <li><a href="#">&#8226; General Elements</a></li>
-                                    <li><a href="#">&#8226; Media Gallery</a></li>
-                                    <li><a href="#">&#8226; Typography</a></li>
-                                    <li><a href="#">&#8226; Icons</a></li>
-                                    <li><a href="#">&#8226; Glyphicons</a></li>
-                                    <li><a href="#">&#8226; Widgets</a></li>
-                                    <li><a href="#">&#8226; Invoice</a></li>
-                                    <li><a href="#">&#8226; Inbox</a></li>
-                                    <li><a href="#">&#8226; Calendar</a></li>
+                                    <li><a href="#">General Elements</a></li>
+                                    <li><a href="#">Media Gallery</a></li>
+                                    <li><a href="#">Typography</a></li>
+                                    <li><a href="#">Icons</a></li>
+                                    <li><a href="#">Glyphicons</a></li>
+                                    <li><a href="#">Widgets</a></li>
+                                    <li><a href="#">Invoice</a></li>
+                                    <li><a href="#">Inbox</a></li>
+                                    <li><a href="#">Calendar</a></li>
                                 </ul>
 
-                                <li data-toggle="collapse" data-target="#tables" class="collapsed active">
+                                <li data-toggle="collapse" data-target="#tables" class="collapsed">
                                     <a href="#">
                                         <i class="fa fa-table"></i> Tables <i class="fa fa-chevron-down arrow"></i>
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="tables">
-                                    <li><a href="#">&#8226; Tables</a></li>
-                                    <li><a href="#">&#8226; Table Dynamic</a></li>
+                                    <li><a href="#">Tables</a></li>
+                                    <li><a href="#">Table Dynamic</a></li>
                                 </ul>
 
-                                <li data-toggle="collapse" data-target="#chart" class="collapsed active">
+                                <li data-toggle="collapse" data-target="#chart" class="collapsed">
                                     <a href="#">
                                         <i class="fa fa-bar-chart-o"></i> Data Presentation  <i class="fa fa-chevron-down arrow"></i>
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="chart">
-                                    <li><a href="#">&#8226; Chart JS</a></li>
-                                    <li><a href="#">&#8226; Chart JS2</a></li>
-                                    <li><a href="#">&#8226; Moris JS</a></li>
-                                    <li><a href="#">&#8226; Echarts</a></li>
-                                    <li><a href="#">&#8226; Other Charts</a></li>
+                                    <li><a href="#">Chart JS</a></li>
+                                    <li><a href="#">Chart JS2</a></li>
+                                    <li><a href="#">Moris JS</a></li>
+                                    <li><a href="#">Echarts</a></li>
+                                    <li><a href="#">Other Charts</a></li>
                                 </ul>
 
-                                <li data-toggle="collapse" data-target="#layout" class="collapsed active">
+                                <li data-toggle="collapse" data-target="#layout" class="collapsed">
                                     <a href="#">
                                         <i class="fa fa-clone"></i>  Layouts  <i class="fa fa-chevron-down arrow"></i>
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="layout">
-                                    <li><a href="#">&#8226; Fixed Sidebar</a></li>
-                                    <li><a href="#">&#8226; Fixed Footer</a></li>
+                                    <li><a href="#">Fixed Sidebar</a></li>
+                                    <li><a href="#">Fixed Footer</a></li>
                                 </ul>
                                 <h3>Live on</h3>
                                 
-                                <li data-toggle="collapse" data-target="#pages" class="collapsed active">
+                                <li data-toggle="collapse" data-target="#pages" class="collapsed">
                                     <a href="#">
                                         <i class="fa fa-pagelines"></i>  Additional Pages  <i class="fa fa-chevron-down arrow"></i>
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="pages">
-                                    <li><a href="#">&#8226; E-commerce</a></li>
-                                    <li><a href="#">&#8226; Projects</a></li>
-                                    <li><a href="#">&#8226; Project Detail</a></li>                                    
-                                    <li class="active"><a href="#">&#8226; Contacts</a></li>
-                                    <li><a href="#">&#8226; Profile</a></li>
+                                    <li><a href="#">E-commerce</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Project Detail</a></li>                                    
+                                    <li><a href="#">Contacts</a></li>
+                                    <li><a href="#">Profile</a></li>
                                 </ul>
                                 
-                                <li data-toggle="collapse" data-target="#extras" class="collapsed active">
+                                <li data-toggle="collapse" data-target="#extras" class="collapsed">
                                     <a href="#">
                                         <i class="fa fa-windows"></i>  Extras  <i class="fa fa-chevron-down arrow"></i>
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="extras">
-                                    <li><a href="#">&#8226; 403 Error</a></li>
-                                    <li><a href="#">&#8226; 404 Error</a></li>
-                                    <li><a href="#">&#8226; 500 Error</a></li>                                    
-                                    <li><a href="#">&#8226; Plain Page</a></li>
-                                    <li><a href="#">&#8226; Login Page</a></li>
-                                    <li><a href="#">&#8226; Pricing Tables</a></li>
+                                    <li><a href="#">403 Error</a></li>
+                                    <li><a href="#">404 Error</a></li>
+                                    <li><a href="#">500 Error</a></li>                                    
+                                    <li><a href="#">Plain Page</a></li>
+                                    <li><a href="#">Login Page</a></li>
+                                    <li><a href="#">Pricing Tables</a></li>
                                 </ul>
                                 
-                                <li data-toggle="collapse" data-target="#menu" class="collapsed active">
+                                <li data-toggle="collapse" data-target="#menu" class="collapsed">
                                     <a href="#">
                                         <i class="fa fa-sitemap"></i>   Multilevel Menu   <i class="fa fa-chevron-down arrow"></i>
                                     </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="menu">
-                                    <li><a href="#">&#8226; Level One</a></li>
-                                    <li><a href="#">&#8226; Level One</a></li>
-                                    <li><a href="#">&#8226; Level One</a></li>    
+                                    <li><a href="#">Level One</a></li>
+                                    <li><a href="#">Level One</a></li>
+                                    <li><a href="#">Level One</a></li>    
                                 </ul>
                                 
-                                <li class="active">
+                                <li>
                                     <a href="#">
                                         <i class="fa fa-laptop"></i>  Landing Page 
                                         <span class="label label-success pull-right" style="margin-top: 11px;">Coming Soon</span>
