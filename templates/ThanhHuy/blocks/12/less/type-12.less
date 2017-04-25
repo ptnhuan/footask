@@ -1,12 +1,10 @@
-@color: #73879C;
-@color-a: #C5C7CB;
-@font-size-h3: 18px;
-@font-size-a: 13px;
+
 @background-color: #fff;
-@background-color-button-hover: #93A2B2;
-@color-button: #93A2B2;
+@border-color: #E6E9ED;
+@opacity: 1;
+
 .type-12 {
-    color: @color;
+    color: #73879C;
     .content {
         .content-left {
             h3 {
@@ -32,34 +30,35 @@
                         border: 1px solid rgba(221,226,232,.49);
                         border-left: 0;
                         background-color: @background-color;
-                        color: @color-button;
+                        color: #93A2B2;
                     }
                     .btn-search:hover {
-                        background-color:@background-color-button-hover;
+                        background-color: #93A2B2;
                     }
                 }
             }
         }
     }
+    
     .admin-panel {
         width: 100%;
         padding: 10px 17px;
         display: inline-block;
         background: @background-color;
-        border: 1px solid #E6E9ED;
+        border: 1px solid @border-color;
         opacity: 1;
         transition: all .2s ease;
         margin-bottom: 10px;
         position: relative;
 
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
             h3 {
                 margin: 5px 0 6px;
                 float: left;
                 display: block;
-                font-size: @font-size-h3;
+                font-size: 18px;
             }
             ul.items {
                 margin-right: 0;
@@ -72,8 +71,8 @@
                     cursor: pointer;
                     a {
                         padding: 5px;
-                        color: @color-a;
-                        font-size: @font-size-a;
+                        color: #C5C7CB;
+                        font-size: 13px;
                     }
                 }
                 li.dropdown {
@@ -82,12 +81,12 @@
                     }
                 }
                 .collapse-link, .close-link {
-                    opacity: 1;
+                    opacity: @opacity;
                 }
             }
         }
         .admin-content {
-            opacity: 1;
+            opacity: @opacity;
         }
     }
 

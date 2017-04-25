@@ -1,14 +1,13 @@
-@color: #73879C;
-@color-a: #C5C7CB;
-@background-btnsearch: #ffffff;
-@background-btnsearch-hover: #e6e6e6;
-@color-btnsearch: #93a2b2;
-@font-size-h3: 16px;
-@font-size-a: 13px;
+
 @float: right;
-@text-decoration: none;
+@margin: 0;
+@border-color: rgba(221,226,232,.49);
+@margin-bottom: 10px;
+@border-color-admin: #E6E9ED;
+@background-color: #ffffff;
+
 .type-14 {
-    color: @color;
+    color: #73879C;
     .content {
         .content-left {
             h3 {
@@ -20,21 +19,21 @@
             float: @float;
             padding: 0;
             .input-search {
-                margin-bottom: 10px;
+                margin-bottom: @margin-bottom;
                 position: relative;
                 .form-search {
                     box-shadow: inset 0 1px 0 rgba(0,0,0,.075);
                     border-radius: 25px 0 0 25px;
                     padding-left: 20px;
-                    border: 1px solid rgba(221,226,232,.49);
+                    border: 1px solid @border-color;
                 }
                 .input-btn-search {
                     .btn-search {
                         border-radius: 0 25px 25px 0;
-                        border: 1px solid rgba(221,226,232,.49);
+                        border: 1px solid @border-color;
                         border-left: 0;
-                        background-color: @background-btnsearch;
-                        color: @color-btnsearch;
+                        background-color: @background-color;
+                        color: #93a2b2;
                     }
                     .btn-search:hover {
                         background-color: #e6e6e6;
@@ -47,21 +46,21 @@
         width: 100%;
         padding: 10px 17px;
         display: inline-block;
-        background: #fff;
-        border: 1px solid #E6E9ED;
+        background: @background-color;
+        border: 1px solid @border-color-admin;
         opacity: 1;
         transition: all .2s ease;
-        margin-bottom: 10px;
+        margin-bottom: @margin-bottom;
         position: relative;
 
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color-admin;
             padding: 1px 5px 6px;
             h3 {
                 margin: 5px 0 6px;
                 float: left;
                 display: block;
-                font-size: @font-size-h3;
+                font-size: 16px;
             }
             ul.items {
                 margin-right: 0;
@@ -74,8 +73,8 @@
                     cursor: pointer;
                     a {
                         padding: 5px;
-                        color: @color-a;
-                        font-size: @font-size-a;
+                        color: #C5C7CB;
+                        font-size: 13px;
                     }
                 }
                 li.dropdown {
@@ -112,23 +111,23 @@
                     background-color: #f5f5f5;
                 }
                 #myDataTable {
-                    margin: 0;
+                    margin: @margin;
                 }
             }
             #myPager {
                 opacity: 1;
-                float: right;
+                float: @float;
             }
-            
+
 
             .pagination {
                 display: inline-block;
-                margin: 0;
+                margin: @margin;
                 a {
                     color: #337ab7;
                     float: left;
                     padding: 5px 10px;
-                    text-decoration: @text-decoration;
+                    text-decoration: none;
                     background-color: #ddd;
                     border: none;
                 }

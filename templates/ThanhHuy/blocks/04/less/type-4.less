@@ -10,20 +10,22 @@ and open the template in the editor.
 @font-size: 13px;
 @background-color: #fff;
 @color: #73879C;
+@border-color: #E6E9ED;
+@list-style: none;
 .type-4 {
     .admin-panel {
         width: 100%;
         padding: 10px 17px;
         display: inline-block;
         background: @background-color;
-        border: 1px solid #E6E9ED;
+        border: 1px solid @border-color;
         opacity: 1;
         transition: all .2s ease;
         margin-bottom: 10px;
         position: relative;
         margin-top: 10px;
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
             span, .fa{
                 color: #BAB8B8;
@@ -44,7 +46,7 @@ and open the template in the editor.
                 font-size: @font-size;
                 .show-calendar {
                     float: right;
-                    border: 1px solid #E6E9ED;
+                    border: 1px solid @border-color;
                     cursor: pointer;
                     padding: 4px 10px;
                     background-color: @background-color;
@@ -83,7 +85,7 @@ and open the template in the editor.
                 }
             }
             .admin-title {
-                border-bottom: 2px solid #E6E9ED;
+                border-bottom: 2px solid @border-color;
                 padding: 1px 5px 6px;
 
                 h2 {
@@ -95,7 +97,7 @@ and open the template in the editor.
                     min-width: 70px;
                     float: right;
                     margin-right: 0;
-                    list-style: none;
+                    list-style: @list-style;
                     padding-left: 0;
                     margin-top: 5px;
                 }
@@ -114,7 +116,7 @@ and open the template in the editor.
             }
             ul.profiles-user {
                 padding-left: 0;
-                list-style: none;
+                list-style: @list-style;
                 li:nth-child(odd) {
                     background-color: #eee;
                 }

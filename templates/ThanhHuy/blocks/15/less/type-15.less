@@ -8,36 +8,33 @@ and open the template in the editor.
     Author     : Administrator
 */
 
-@color: #73879C;
-@color-a: #C5C7CB;
-@background-btnsearch: #ffffff;
-@background-btnsearch-hover: #e6e6e6;
-@color-btnsearch: #93a2b2;
-@font-size-h3: 16px;
-@font-size-a: 13px;
 @float: right;
-@text-decoration: none;
+@margin: 0;
+@cursor: pointer;
+@border-color: #E6E9ED;
+@opacity: 1;
+
 .type-15 {
-    color: @color;
+    color: #73879C;
     .admin-panel {
         width: 100%;
         padding: 10px 17px;
         display: inline-block;
         background: #fff;
-        border: 1px solid #E6E9ED;
-        opacity: 1;
+        border: 1px solid @border-color;
+        opacity: @opacity;
         transition: all .2s ease;
         margin-bottom: 10px;
         position: relative;
 
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
             h3 {
                 margin: 5px 0 6px;
                 float: left;
                 display: block;
-                font-size: @font-size-h3;
+                font-size: 16px;
             }
             ul.items {
                 margin-right: 0;
@@ -47,11 +44,11 @@ and open the template in the editor.
                 margin-top: 5px;
                 li {
                     float: left;
-                    cursor: pointer;
+                    cursor: @cursor;
                     a {
                         padding: 5px;
-                        color: @color-a;
-                        font-size: @font-size-a;
+                        color:  #C5C7CB;
+                        font-size: 13px;
                     }
                 }
                 li.dropdown {
@@ -59,8 +56,8 @@ and open the template in the editor.
                         min-width: 0px!important;
                     }
                 }
-               .collapse-link, .close-link {
-                    opacity: 1;
+                .collapse-link, .close-link {
+                    opacity: @opacity;
                 }
             }
         }
@@ -73,7 +70,7 @@ and open the template in the editor.
                     display: inline-flex;
                     margin: 10px 0;
                     .form-search, .form-select {
-                        cursor: pointer;
+                        cursor: @cursor;
                         margin: -6px 5px 0 5px;
                     }
                 }
@@ -88,21 +85,21 @@ and open the template in the editor.
                     background-color: #f5f5f5;
                 }
                 #myDataTable {
-                    margin: 0;
+                    margin: @margin;
                 }
             }
             #myPager {
-                opacity: 1;
-                float: right;
+                opacity: @opacity;
+                float: @float;
             }
             .pagination {
                 display: inline-block;
-                margin: 0;
+                margin: @margin;
                 a {
                     color: #337ab7;
                     float: left;
                     padding: 5px 10px;
-                    text-decoration: @text-decoration;
+                    text-decoration: none;
                     background-color: #ddd;
                     border: none;
                 }

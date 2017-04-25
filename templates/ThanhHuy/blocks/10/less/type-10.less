@@ -7,38 +7,34 @@ and open the template in the editor.
     Created on : Mar 1, 2017, 9:22:52 AM
     Author     : Administrator
 */
-@background-color-admin: #FFF;
-@font-size-title: 20px;
 @font-size-body: 13px;
+@border-color: #E6E9ED;
 @color: #73879C;
-@color-blue: blue;
-@color-red: red;
-@color-black: black;
-@color-gray: gray;
-@color-orange: orange;
+@list-style: none;
+@margin-bottom: 10px;
 
 .type-10 {
     .admin-panel {
         width: 100%;
         padding: 10px 17px;
         display: inline-block;
-        background: @background-color-admin;
-        border: 1px solid #E6E9ED;
+        background-color: #FFF;
+        border: 1px solid @border-color;
         opacity: 1;
         transition: all .2s ease;
-        margin-bottom: 10px;
+        margin-bottom: @margin-bottom;
         position: relative;
         margin-top: 20px;
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
-            margin-bottom: 10px;
+            margin-bottom: @margin-bottom;
 
             h2 {
                 margin: 5px 0 6px;
                 float: left;
                 display: block;
-                font-size: @font-size-title;
+                font-size: 20px;
                 color: @color;
 
                 small {
@@ -49,7 +45,7 @@ and open the template in the editor.
 
             ul.items {
                 min-width: 70px;
-                list-style: none;
+                list-style: @list-style;
                 margin-top: 5px;
                 float: right;
                 .collapse-link, .close-link {
@@ -145,29 +141,29 @@ and open the template in the editor.
 
             }
             .fa.blue {
-                color: @color-blue;
+                color: blue;
             }
             .fa.red {
-                color: @color-red;
+                color: red;
             }
             .fa.black {
-                color: @color-black;
+                color: black;
             }
             .fa.gray {
-                color: @color-gray;
+                color: gray;
             }
             .fa.orange {
-                color: @color-orange;
+                color: orange;
             }
             ul.quick-list {
                 width: 45%;
                 padding-left: 0;
                 float: left;
-                list-style: none;
+                list-style: @list-style;
                 padding: 0px;
                 li {
                     padding-left: 10px;
-                    list-style: none;
+                    list-style: @list-style;
                     margin: 0;
                     padding-bottom: 6px;
                     padding-top: 4px;

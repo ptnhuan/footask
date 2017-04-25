@@ -7,51 +7,48 @@ and open the template in the editor.
     Created on : Mar 1, 2017, 9:22:52 AM
     Author     : Administrator
 */
-@background-color-admin: #FFF;
-@font-size-title: 20px;
-@font-size-body: 13px;
+@background-color: #FFF;
+@font-size: 13px;
 @color: #73879C;
-@color-blue: #3498DB;
-@color-green: #1ABB9C;
-@color-purple: #9B59B6;
-@color-aero: #9CC2CBl;
-@color-red: #E74C3C;
-@color-a: #5A738E;
-@color-a-hover: #23527c;
+@border-color: #E6E9ED;
+@margin-bottom: 10px;
+@display: block;
+@list-style: none;
+@border-color-h2: #e0e0e0;
 
 .type-11 {
     .admin-panel {
         width: 100%;
         padding: 10px 17px;
         display: inline-block;
-        background: @background-color-admin;
-        border: 1px solid #E6E9ED;
+        background: @background-color;
+        border: 1px solid @border-color;
         opacity: 1;
         transition: all .2s ease;
-        margin-bottom: 10px;
+        margin-bottom: @margin-bottom;
         position: relative;
         margin-top: 20px;
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
-            margin-bottom: 10px;
+            margin-bottom: @margin-bottom;
 
             h2 {
                 margin: 5px 0 6px;
                 float: left;
-                display: block;
-                font-size: @font-size-title;
+                display: @display;
+                font-size: 20px;
                 color: @color;
 
                 small {
                     margin-left: 10px;
-                    font-size: @font-size-body;
+                    font-size: @font-size;
                 }
             }
 
             ul.items {
                 min-width: 70px;
-                list-style: none;
+                list-style: @list-style;
                 margin-top: 5px;
                 float: right;
                 .collapse-link, .close-link {
@@ -65,7 +62,7 @@ and open the template in the editor.
             ul.items > li > a {
                 padding: 5px;
                 color: #C5C7CB;
-                font-size: @font-size-body;
+                font-size: @font-size;
             }
         }
         .admin-content {
@@ -83,23 +80,22 @@ and open the template in the editor.
                 }
             }
 
-
             h2 {
                 font-size: 14px;
-                border-bottom: 2px solid #e0e0e0;
-                border-top: 2px solid #e0e0e0;
+                border-bottom: 2px solid @border-color-h2;
+                border-top: 2px solid @border-color-h2;
                 text-align: center;
                 padding: 5px 0;
             }
             h4 { 
-                font-size: @font-size-body;
+                font-size: @font-size;
                 color: @color;
             }
             #partly-cloudy-day, #snow, #sleet, #cloudy {
-                display: block;
+                display: @display;
             }
             #clear-day {
-                display: block;
+                display: @display;
             }
             .title-weather {
                 margin: 10px 0;
@@ -133,11 +129,11 @@ and open the template in the editor.
                 width: 45%;
                 padding-left: 0;
                 float: left;
-                list-style: none;
+                list-style: @list-style;
                 padding: 0px;
                 li {
                     padding-left: 10px;
-                    list-style: none;
+                    list-style: @list-style;
                     margin: 0;
                     padding-bottom: 6px;
                     padding-top: 4px;
@@ -147,16 +143,16 @@ and open the template in the editor.
                     color: @color;
                 }
                 a{
-                    color: @color-a;
+                    color: #5A738E;
                     text-decoration: none;
                 }
                 a:hover {
-                    color: @color-a-hover;
+                    color: #23527c;
 
                 }
             }
             .sidebar-widget {
-                background: @background-color-admin;
+                background: @background-color;
                 border: 1px solid #abd9ea;
                 border-radius: 5px;
                 text-align: center;
@@ -164,11 +160,11 @@ and open the template in the editor.
                 padding: 2px;
                 h4
                 {
-                    font-size: @font-size-body;
+                    font-size: @font-size;
                     font-weight: 500;
                 }
                 .goal-wrapper {
-                    display: block;
+                    display: @display;
 
                 }
                 #jqRadialGauge {

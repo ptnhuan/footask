@@ -7,24 +7,22 @@ and open the template in the editor.
     Created on : Mar 1, 2017, 7:04:27 AM
     Author     : Administrator
 */
-@color: #73879C;
-@background-color-admin: #FFF;
-@font-size-title: 20px;
-@font-size-body: 13px;
+@background-color: #FFF;
+@border-color: #E6E9ED;
 .type-9 {
     .admin-panel {
         width: 100%;
         padding: 10px 17px;
         display: inline-block;
-        background: @background-color-admin;
-        border: 1px solid #E6E9ED;
+        background: @background-color;
+        border: 1px solid @border-color;
         opacity: 1;
         transition: all .2s ease;
         margin-bottom: 10px;
         position: relative;
         margin-top: 10px;
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
             span, .fa{
                 color: #BDBDBD;
@@ -34,7 +32,7 @@ and open the template in the editor.
                 margin: 5px 0 6px;
                 float: left;
                 display: block;
-                font-size: @font-size-title;
+                font-size: 20px;
                 color: #73879C;
                 small {
                     margin-left: 10px;
@@ -43,10 +41,10 @@ and open the template in the editor.
             }
             .show-calendar {
                 float: right;
-                border: 1px solid #E6E9ED;
+                border: 1px solid @border-color;
                 cursor: pointer;
                 padding: 2px 10px;
-                background-color: @background-color-admin;
+                background-color: @background-color;
                 #datepicker {
                     border: none;
                     color: @color;
@@ -65,7 +63,7 @@ and open the template in the editor.
                 width: 1100px;
             }
             .admin-title {
-                border-bottom: 2px solid #E6E9ED;
+                border-bottom: 2px solid @border-color;
                 padding: 1px 5px 6px;
 
                 h2 {

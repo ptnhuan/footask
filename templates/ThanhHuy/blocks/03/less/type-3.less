@@ -7,9 +7,8 @@ and open the template in the editor.
     Created on : Feb 28, 2017, 11:23:40 PM
     Author     : Administrator
 */
-@font-size: 13px;
-@background-color: #fff;
 @color: #73879C;
+@width-height: 20px;
 
 .type-3 {
     padding: 10px 20px;
@@ -21,12 +20,12 @@ and open the template in the editor.
         overflow: hidden;
         padding-bottom: 5px;
         border-radius: 5px;
-        background: @background-color;
+        background-color: #fff;
         transition: all .3s ease-in-out;
 
         .icon {
-            width: 20px;
-            height: 20px;
+            width: @width-height;
+            height: @width-height;
             color: #BAB8B8;
             position: absolute;
             right: 45px;
@@ -58,7 +57,7 @@ and open the template in the editor.
         }
         p {
             margin-top: 5px;
-            font-size: @font-size;
+            font-size: 13px;
             color: @color;
         }
     }

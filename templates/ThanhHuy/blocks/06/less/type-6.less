@@ -9,7 +9,8 @@ and open the template in the editor.
 */
 @font-size-title: 20px;
 @font-size-body: 13px;
-@background-color: #fff;
+@border-color: #E6E9ED;
+@float: left;
 @color: #73879C;
 .type-6 {
     .admin-panel {
@@ -17,14 +18,14 @@ and open the template in the editor.
         padding: 10px 17px;
         display: inline-block;
         background: #fff;
-        border: 1px solid #E6E9ED;
+        border: 1px solid @border-color;
         opacity: 1;
         transition: all .2s ease;
         margin-bottom: 10px;
         position: relative;
         margin-top: 20px;
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
             margin-bottom: 10px;
 
@@ -53,7 +54,7 @@ and open the template in the editor.
                 }
             }
             ul.items > li {
-                float: left;
+                float: @float;
                 cursor: pointer;
             }
             ul.items > li > a {
@@ -75,7 +76,7 @@ and open the template in the editor.
                     margin-right: 10px;
                     border-radius: 10px;
                     padding: 5px;
-                    float: left;
+                    float: @float;
                     text-decoration: none;
 
                     .month, .day {
