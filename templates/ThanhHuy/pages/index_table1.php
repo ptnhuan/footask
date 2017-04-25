@@ -28,7 +28,7 @@
         <script src="js/table1/collapse-close.js" type="text/javascript"></script>
     </head>
 
-    <body>
+    <body style="background-color: #2A3F54;">
         <div class="type-f-12">
             <div class="container-fluid">
                 <div class="nav-side-menu col-md-2">
@@ -798,7 +798,6 @@
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
     </body>
 </html>

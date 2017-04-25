@@ -31,7 +31,7 @@
         <script src="js/dashboard2/back-to-top.js" type="text/javascript"></script>
     </head>
 
-    <body>
+    <body style="background-color: #2A3F54;">
         <div class="type-f-12">
             <!-- Sidebar -->
             <div class="container-fluid">
@@ -985,12 +985,9 @@
                         <a href="#"> Colorlib</a>
                     </footer>
                 </div>  
-
-
                 <div id="back-to-top"><i class="fa fa-chevron-up"></i>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
     </body>
 </html>
