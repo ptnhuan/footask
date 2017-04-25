@@ -8,50 +8,43 @@ and open the template in the editor.
     Author     : ITLAB
 */
 
-@color-body: #73879C;
-@font-size: 13px;
 @border-color: #E6E9ED;
 @background-color: #fff;
-@background-color-status: #169F85;
-@background-color-status-hover: #449d44;
-@a-none: none;
-@background-color-view: #286090;
-@background-color-view-hover: #337ab7;
-@border-color-view: #46b8da;
-@background-color-edit: #5bc0de;
-@background-color-edit-hover: #31b0d5;
-@border-color-edit: #269abc;
-@background-color-delete: #d9534f;
-@background-color-delete-hover: #c9302c;
-@border-color-delete: #d43f3a;
-@background-color-tr-child: #f2f2f2;
+@text-decoration: none;
+@color: #ffffff;
+@display: inline-block;
+@float-left: left;
+@float-right: right;
+@position: relative;
+@border-color-frmsearch: rgba(221,226,232,.49); 
+@opacity: 1;
 
 .type-21 {
-    color: @color-body;
+    color: #73879C;
     .content {
         .content-left {
-            float: left;
+            float: @float-left;
             h3 {
                 margin: 20px 0;
 
             }
         }
         .content-right {
-            float: right;
+            float: @float-right;
             .input-search {
                 margin-top: 22px;
-                position: relative;
+                position: @position;
                 display: flex;
                 .form-search {
                     box-shadow: inset 0 1px 0 rgba(0,0,0,.075);
                     border-radius: 25px 0 0 25px;
                     padding-left: 20px;
-                    border: 1px solid rgba(221,226,232,.49);
+                    border: 1px solid @border-color-frmsearch;
                 }
                 .input-btn-search {
                     .btn-search {
                         border-radius: 0 25px 25px 0;
-                        border: 1px solid rgba(221,226,232,.49);
+                        border: 1px solid @border-color-frmsearch;
                         border-left: 0;
                         background-color: @background-color;
                         color: #73879C;
@@ -66,36 +59,36 @@ and open the template in the editor.
     .admin-panel {
         width: 100%;
         padding: 10px 17px;
-        display: inline-block;
+        display: @display;
         background: @background-color;
         border: 1px solid @border-color;
-        opacity: 1;
+        opacity: @opacity;
         transition: all .2s ease;
         margin-bottom: 10px;
-        position: relative;
+        position: @position;
 
         .admin-title {
             border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
             h3 {
                 margin: 5px 0 6px;
-                float: left;
+                float: @float-left;
                 display: block;
                 font-size: 18px;
             }
             ul.items {
                 margin-right: 0;
                 min-width: 70px;
-                float: right;
-                list-style: @a-none;
+                float: @float-right;
+                list-style: none;
                 margin-top: 5px;
                 li {
-                    float: left;
+                    float: @float-left;
                     cursor: pointer;
                     a {
                         padding: 5px;
                         color: #C5C7CB;
-                        font-size: @font-size;
+                        font-size: 13px;
                     }
                 }
                 li.dropdown {
@@ -104,7 +97,7 @@ and open the template in the editor.
                     }
                 }
                 .collapse-link, .close-link {
-                    opacity: 1;
+                    opacity: @opacity;
                 }
             }
         }
@@ -117,7 +110,7 @@ and open the template in the editor.
                     tr {
                         .title-name {
                             color: #5A738E;
-                            text-decoration: @a-none;
+                            text-decoration: @text-decoration;
                         }
                         .title-name:hover {
                             color: #23527c;
@@ -144,26 +137,26 @@ and open the template in the editor.
                             }
                         }
                         .status {
-                            background-color: @background-color-status;
+                            background-color: #169F85;
                             padding: 5px 5px;
-                            color: #ffffff;
+                            color: @color;
                             border: 1px solid #398439;
                             border-radius: 5px;
-                            text-decoration: @a-none;
-                            display: inline-block;
+                            text-decoration: @text-decoration;
+                            display: @display;
 
                         }
                         .status:hover {
-                            background-color: @background-color-status-hover;
+                            background-color: #449d44;
                         }
                         .btn-function {
                             .view, .edit, .delete {
                                 padding: 5px 5px;
-                                text-decoration: @a-none;
-                                color: #ffffff;
+                                text-decoration: @text-decoration;
+                                color: @color;
                                 border-radius: 5px;
                                 margin-left: 8px;
-                                display: inline-block;
+                                display: @display;
 
                                 i {
                                     padding-right: 3px;
@@ -171,32 +164,32 @@ and open the template in the editor.
                             }
 
                             .view {
-                                background-color: @background-color-view;
-                                border: 1px solid @border-color-view;
+                                background-color: #286090;
+                                border: 1px solid #46b8da;
                             }
                             .view:hover {
-                                background-color: @background-color-view-hover;
+                                background-color: #337ab7;
                             }
 
                             .edit {
-                                background-color: @background-color-edit;
-                                border: 1px solid @border-color-edit;
+                                background-color: #5bc0de;
+                                border: 1px solid #269abc;
                             }
                             .edit:hover {
-                                background-color: @background-color-edit-hover;
+                                background-color: #31b0d5;
                             }
 
                             .delete {
-                                background-color: @background-color-delete;
-                                border: 1px solid @border-color-delete;
+                                background-color: #d9534f;
+                                border: 1px solid #d43f3a;
                             }
                             .delete:hover {
-                                background-color: @background-color-delete-hover;
+                                background-color: #c9302c;
                             }
                         }
                     }
                     tr:nth-child(even){
-                        background-color: @background-color-tr-child;
+                        background-color: #f2f2f2;
                     }
                 }
             }

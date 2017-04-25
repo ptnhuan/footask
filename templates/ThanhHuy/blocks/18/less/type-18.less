@@ -7,51 +7,48 @@ and open the template in the editor.
     Created on : Mar 21, 2017, 11:40:56 PM
     Author     : Administrator
 */
+@float-right: right;
+@float-left: left;
+@opacity: 1;
+@border-color: #E6E9ED;
+@cursor: pointer;
+@display: inline-block;
 
-@color: #73879C;
-@color-a: #C5C7CB;
-@background-btnsearch: #ffffff;
-@background-btnsearch-hover: #e6e6e6;
-@color-btnsearch: #93a2b2;
-@font-size-h3: 16px;
-@font-size-a: 13px;
-@float: right;
-@text-decoration: none;
 .type-18 {
-    color: @color;
+    color: #73879C;
     .admin-panel {
         width: 100%;
         padding: 10px 17px;
-        display: inline-block;
+        display: @display;
         background: #fff;
-        border: 1px solid #E6E9ED;
-        opacity: 1;
+        border: 1px solid @border-color;
+        opacity: @opacity;
         transition: all .2s ease;
         margin-bottom: 10px;
         position: relative;
 
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
             h3 {
                 margin: 5px 0 6px;
-                float: left;
+                float: @float-left;
                 display: block;
-                font-size: @font-size-h3;
+                font-size: 16px;
             }
             ul.items {
                 margin-right: 0;
                 min-width: 70px;
-                float: right;
+                float: @float-right;
                 list-style: none;
                 margin-top: 5px;
                 li {
-                    float: left;
-                    cursor: pointer;
+                    float: @float-left;
+                    cursor: @cursor;
                     a {
                         padding: 5px;
-                        color: @color-a;
-                        font-size: @font-size-a;
+                        color: #C5C7CB;
+                        font-size: 13px;
                     }
                 }
                 li.dropdown {
@@ -60,7 +57,7 @@ and open the template in the editor.
                     }
                 }
                 .collapse-link,.close-link {
-                    opacity: 1;
+                    opacity: @opacity;
                 }
             }
         }
@@ -73,12 +70,12 @@ and open the template in the editor.
                     display: inline-flex;
                     margin: 10px 0;
                     .form-search, .form-select {
-                        cursor: pointer;
+                        cursor: @cursor;
                         margin: -6px 5px 0 5px;
                     }
                 }
                 .search-query {
-                    float: @float!important;
+                    float: @float-right!important;
                 }
 
             }
@@ -92,19 +89,19 @@ and open the template in the editor.
                 }
             }
             #myPager {
-                opacity: 1;
-                float: right;
+                opacity: @opacity;
+                float: @float-right;
             }
 
 
             .pagination {
-                display: inline-block;
+                display: @display;
                 margin: 0;
                 a {
                     color: #337ab7;
-                    float: left;
+                    float: @float-left;
                     padding: 5px 10px;
-                    text-decoration: @text-decoration;
+                    text-decoration: none;
                     background-color: #ddd;
                     border: none;
                 }

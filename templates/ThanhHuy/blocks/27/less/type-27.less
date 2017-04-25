@@ -10,6 +10,8 @@ and open the template in the editor.
 @text-decoration: none;
 @text-align: center;
 @color: #73879C;
+@margin: 0;
+
 .type-27 {
     .title-login {
         color: @color;
@@ -22,14 +24,14 @@ and open the template in the editor.
         }
         .login-form {
             form {
-                margin: 15px 0;
+                margin: 15px @margin;
 
                 .form-control {
                     margin-bottom: 15px;
                 }
             }
             .functions {
-                text-align: center;
+                text-align: @text-align;
                 padding-top: 5px;
                 #btn-login, #link-lostpass {
                     text-decoration: none;
@@ -62,14 +64,14 @@ and open the template in the editor.
                 }
             }
             h3 {
-                margin: 25px 0;
+                margin: 25px @margin;
                 a.logo {
                     text-decoration: @text-decoration;
                     color: @color;
                 }
             }
             .footer {
-                margin: 0;
+                margin: @margin;
             }
         }
     }

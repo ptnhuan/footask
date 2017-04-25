@@ -8,12 +8,14 @@ and open the template in the editor.
     Author     : Administrator
 */
 
-@color-body: #73879C;
+@color: #73879C;
 @background-color-tabs: #F5F7FA;
 @border-color: #e6e6e6;
+@padding: 0;
+@margin: 0;
 
 .type-26 {
-    color: @color-body;
+    color: @color;
 
 
     ul.nav-tabs {
@@ -31,9 +33,9 @@ and open the template in the editor.
         }
     }
     .tab-content {
-        padding: 10px 0;
+        padding: 10px @padding;
         #menu1, #menu2 {
-            padding: 0;
+            padding: @padding;
         }
         #menu1 {
             .progress-bar {
@@ -43,11 +45,11 @@ and open the template in the editor.
         #home {
             ul.comments {
                 list-style: none;
-                padding: 0;
-                margin: 0;
+                padding: @padding;
+                margin: @margin;
                 li {
                     border-bottom: 1px dotted @border-color;
-                    padding: 8px 0;
+                    padding: 8px @padding;
 
                     .img-user {
                         height: 32px;
@@ -62,18 +64,18 @@ and open the template in the editor.
                     .comment-content {
                         margin-left: 50px;
                         h4 {
-                            margin: 0 0 10px;
+                            margin: @margin @margin 10px;
                             cursor: pointer;
                             font-weight: bold;
                         }
                         .content {
-                            padding: 0 10px;
-                            margin: 0;
+                            padding: @padding 10px;
+                            margin: @margin;
                             border-left: 5px solid #eee;
                         }
                         a.link-file {
                             text-decoration: none;
-                            color: @color-body;
+                            color: @color;
                         }
                     }
                     .date-comment {

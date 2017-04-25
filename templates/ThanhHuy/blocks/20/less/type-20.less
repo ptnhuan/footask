@@ -12,18 +12,23 @@ and open the template in the editor.
 @text-decoration: none;
 @list-style: none;
 @background-color: #ffffff;
-@background-color-green: #1ABB9C;
-@background-color-blue: #3498DB;
-@background-color-red: #E74C3C;
-@background-color-orange: #F39C12;
+@float-left: left;
+@background-color-tab: #F5F7FA;
 @color-white: #fff;
+@border-color: #E6E9ED;
+@opacity: 1;
+@margin: 0;
+@padding: 0;
+@border-color-frmsearch: rgba(221,226,232,.49);
+
+
 .type-20 {
     color: @color;
     .content {
         .content-left {
-            float: left;
+            float: @float-left;
             h3 {
-                margin: 20px 0;
+                margin: 20px @margin;
 
             }
         }
@@ -37,12 +42,12 @@ and open the template in the editor.
                     box-shadow: inset 0 1px 0 rgba(0,0,0,.075);
                     border-radius: 25px 0 0 25px;
                     padding-left: 20px;
-                    border: 1px solid rgba(221,226,232,.49);
+                    border: 1px solid @border-color-frmsearch;
                 }
                 .input-btn-search {
                     .btn-search {
                         border-radius: 0 25px 25px 0;
-                        border: 1px solid rgba(221,226,232,.49);
+                        border: 1px solid @border-color-frmsearch;
                         border-left: 0;
                         background-color: @background-color;
                         color: @color;
@@ -59,29 +64,29 @@ and open the template in the editor.
         padding: 10px 17px;
         display: inline-block;
         background-color: @background-color;
-        border: 1px solid #E6E9ED;
-        opacity: 1;
+        border: 1px solid @border-color;
+        opacity: @opacity;
         transition: all .2s ease;
         margin-bottom: 10px;
         position: relative;
 
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
             h3 {
-                margin: 5px 0 6px;
-                float: left;
+                margin: 5px @margin 6px;
+                float: @float-left;
                 display: block;
                 font-size: 18px;
             }
             ul.items {
-                margin-right: 0;
+                margin-right: @margin;
                 min-width: 70px;
                 float: right;
                 list-style: @list-style;
                 margin-top: 5px;
                 li {
-                    float: left;
+                    float: @float-left;
                     cursor: pointer;
                     a {
                         padding: 5px;
@@ -95,7 +100,7 @@ and open the template in the editor.
                     }
                 }
                 .collapse-link, .close-link {
-                    opacity: 1;
+                    opacity: @opacity;
                 }
             }
         }
@@ -112,7 +117,7 @@ and open the template in the editor.
                 a {
                     width: 100px;
                     height: 100px;
-                    float: left;
+                    float: @float-left;
                     margin: 10px;
                     border: 1px solid #e5e5e5;
                     img {
@@ -126,7 +131,7 @@ and open the template in the editor.
             }
             .product-info {
                 p.description {
-                    padding: 25px 0;
+                    padding: 25px @padding;
                 }
 
                 .product-color {
@@ -136,11 +141,11 @@ and open the template in the editor.
                         margin-left: -5px;
                         list-style: @list-style;
                         li {
-                            margin: 0 10px; 
-                            padding: 0 5px;
+                            margin: @margin 10px; 
+                            padding: @padding 5px;
                             float: left;
                             p {
-                                margin-bottom: 0;
+                                margin-bottom: @margin;
                             }
                             .color {
                                 width: 25px;
@@ -151,22 +156,22 @@ and open the template in the editor.
                             }
 
                             .color.green {
-                                background-color: @background-color-green!important;
+                                background-color: #1ABB9C!important;
                                 color: @color-white;
                             }
                             .color.blue {
 
-                                background-color: @background-color-blue!important;
+                                background-color: #3498DB!important;
                                 color: @color-white;
                             }
                             .color.red {
 
-                                background-color: @background-color-red!important;
+                                background-color: #E74C3C!important;
                                 color: @color-white;
                             }
                             .color.orange {
 
-                                background-color: @background-color-orange!important;
+                                background-color: #F39C12!important;
                                 color: @color-white;
                             }
                         }
@@ -175,12 +180,12 @@ and open the template in the editor.
                 .product-size {
                     padding: 25px 0;
                     ul.size-name {
-                        padding-left: 0;
+                        padding-left: @padding;
                         margin-left: -5px;
                         list-style: @list-style;
                         li {
-                            margin: 0; 
-                            padding: 0 5px;
+                            margin: @margin; 
+                            padding: @padding 5px;
                             float: left;
                             a.btn-size {
                                 margin-bottom: 5px;
@@ -208,7 +213,7 @@ and open the template in the editor.
                     border: 2px dashed #E0E0E0; 
                     .price {
                         color: #26B99A;
-                        margin: 0;
+                        margin: @margin;
                         font-weight: 400;
                     }
                     .price-tax {
@@ -236,13 +241,13 @@ and open the template in the editor.
                 .product-social {
                     margin-top: 35px;
                     ul.list-social {
-                        padding-left: 0;
+                        padding-left: @padding;
                         margin-left: -5px;
                         list-style: @list-style;
                         li {
-                            float: left;
-                            padding: 0 4px;
-                            margin: 0;
+                            float: @float-left;
+                            padding: @padding 4px;
+                            margin: @margin;
                             a {
                                 color: #5A738E;
                                 i {
@@ -257,13 +262,14 @@ and open the template in the editor.
                     }
                 }                    
             }
+
             ul.nav-tabs {
                 margin-top: 25px;
                 padding-left: 10px;
-                background: #F5F7FA;
+                background-color: @background-color-tab;
                 li {
                     color: #333!important;
-                    background: #F5F7FA;
+                    background-color: @background-color-tab;
                     border-bottom: none;
                     border-radius: 4px 4px 0 0;
                     a {
@@ -272,9 +278,9 @@ and open the template in the editor.
                 }
             }
             .tab-content {
-                padding: 10px 0;
+                padding: 10px @padding;
                 #menu1, #menu2 {
-                    padding: 0;
+                    padding: @padding;
                 }
             }
         }

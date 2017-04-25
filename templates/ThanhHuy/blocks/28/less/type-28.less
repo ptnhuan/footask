@@ -9,36 +9,30 @@ and open the template in the editor.
 */
 
 @color: #73879C;
-@none: none;
-@background-color-ffffff: #ffffff;
-
-@color-fa-remove: #a94442;
-@color-fa-check: #3c763d;
-
-@background-color-btn-download: #26B99A;
-@border-color-btn-download: #169F85;
-@background-color-btn-download-hover: #169F85;
-
-@background-color-btn-saleoff: #337ab7;
-@border-color-btn-saleoff: #2e6da4;
-@background-color-btn-saleoff-hover: #2e6da4;
-
-@border-color: #e6e6e6;
-@font-size-h3: 16px;
+@border: none;
+@list-style: none;
+@border-color-frmsearch: rgba(221,226,232,.49);
+@border-color: #E6E9ED;
+@background-color: #ffffff;
+@color-ffffff: #ffffff;
+@margin: 0;
+@padding: 0;
+@float-right: right;
+@float-left: left;
 
 .type-28 {
     color: @color;
     .content {
-        margin: 25px 0;
+        margin: 25px @margin;
         .content-left {
             h3 {
-                margin: 9px 0;
+                margin: 9px @margin;
             }
         }
         .content-right {
-            margin: -33px 0;
-            float: right;
-            padding: 0;
+            margin: -33px @margin;
+            float: @float-right;
+            padding: @padding;
             .input-search {
                 margin-bottom: 10px;
                 position: relative;
@@ -47,14 +41,14 @@ and open the template in the editor.
                     box-shadow: inset 0 1px 0 rgba(0,0,0,.075);
                     border-radius: 25px 0 0 25px;
                     padding-left: 20px;
-                    border: 1px solid rgba(221,226,232,.49);
+                    border: 1px solid @border-color-frmsearch;
                 }
                 .input-btn-search {
                     .btn-search {
                         border-radius: 0 25px 25px 0;
-                        border: 1px solid rgba(221,226,232,.49);
+                        border: 1px solid @border-color-frmsearch;
                         border-left: 0;
-                        background-color: #fff;
+                        background-color: @background-color;
                         color: #93A2B2;
                     }
                     .btn-search:hover {
@@ -68,19 +62,19 @@ and open the template in the editor.
         width: 100%;
         padding: 10px 17px;
         display: inline-block;
-        background-color: @background-color-ffffff;
-        border: 1px solid #E6E9ED;
+        background-color: @background-color;
+        border: 1px solid @border-color;
         opacity: 1;
         transition: all .2s ease;
         margin-bottom: 10px;
         position: relative;
 
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color;
             padding: 1px 5px 6px;
             h3 {
-                margin: 5px 0 6px;
-                float: left;
+                margin: 5px @margin 6px;
+                float: @float-left;
                 display: block;
                 font-size: 18px;
                 small {
@@ -88,13 +82,13 @@ and open the template in the editor.
                 }
             }
             ul.items {
-                margin-right: 0;
+                margin-right: @margin;
                 min-width: 70px;
-                float: right;
-                list-style: @none;
+                float: @float-right;
+                list-style: @list-style;
                 margin-top: 5px;
                 li {
-                    float: left;
+                    float: @float-left;
                     cursor: pointer;
                     a {
                         padding: 5px;
@@ -120,10 +114,10 @@ and open the template in the editor.
                 .title-price {
                     background-color: #1ABB9C;
                     height: 110px;
-                    padding: 15px 0 0;
-                    color: #ffffff;
+                    padding: 15px @padding @padding;
+                    color: @color-ffffff;
                     h4 {
-                        margin: 0;
+                        margin: @margin;
                     }
                     h3 {
                         font-size: 30px;
@@ -135,48 +129,48 @@ and open the template in the editor.
                     }
                 }
                 ul.list-group-item {
-                    list-style: @none;
-                    padding: 25px 0;
+                    list-style: @list-style;
+                    padding: 25px @padding;
                     text-align: left;
-                    border-top: @none;
-                    border-left: @none;
-                    border-right: @none;
+                    border-top: @border;
+                    border-left: @border;
+                    border-right: @border;
                     li {
                         padding: 5px 15px;
 
                         .fa-remove {
-                            color:  @color-fa-remove;
+                            color:  #a94442;
                         }
                         .fa-check {
-                            color: @color-fa-check;
+                            color: #3c763d;
                         }
                     }
                 }
                 .price-footer {
                     background-color: #f5f5f5;
-                    padding: 20px 0;
+                    padding: 20px @padding;
                     a {
-                        text-decoration: @none;
-                        color: #ffffff;
+                        text-decoration: none;
+                        color: @color-ffffff;
                         padding: 8px 55px;
                         border-radius: 5px;
                     }
 
                     a#btn-download {
-                        background-color: @background-color-btn-download;
-                        border: 1px solid @border-color-btn-download;
+                        background-color: #26B99A;
+                        border: 1px solid #169F85;
                     }
 
                     a#btn-download:hover {
-                        background-color: @background-color-btn-download-hover;
+                        background-color: #169F85;
                     }
 
                     a#btn-download-saleoff {
-                        background-color: @background-color-btn-saleoff;
-                        border: 1px solid @border-color-btn-saleoff;
+                        background-color: #337ab7;
+                        border: 1px solid #2e6da4;
                     }
                     a#btn-download-saleoff:hover {
-                        background-color: @background-color-btn-saleoff-hover;
+                        background-color: #2e6da4;
                     }
                     a#sign-up {
                         color: @color;
@@ -195,9 +189,9 @@ and open the template in the editor.
                 #percent {
                     position: relative;
                     font-weight: bold;
-                    color: #ffffff;
+                    color: @color-ffffff;
                     transform: rotate(55deg);
-                    padding: 7px 0;
+                    padding: 7px @padding;
                     left: -5px;
                     top: 15px;
                     background-color: #555;
@@ -211,7 +205,7 @@ and open the template in the editor.
     .content {
         .content-left {
             h3 {
-                font-size: @font-size-h3;
+                font-size: 16px;
             }
         }
         .content-right {

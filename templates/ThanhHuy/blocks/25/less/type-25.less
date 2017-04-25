@@ -8,45 +8,52 @@ and open the template in the editor.
     Author     : Administrator
 */
 
-@color-body: #73879C;
-@none: none;
-@background-color-ffffff: #ffffff;
-@color-ffffff: #ffffff;
+@color: #73879C;
+@list-style: none;
+@text-decoration: none;
+@background-color: #ffffff;
 @background-color-tabs: #F5F7FA;
-@background-color-edit: #26B99A;
-@background-color-edit-hover: #169F85;
 @border-color: #e6e6e6;
-@font-size-h3: 16px;
+@border-color-panel: #E6E9ED;
+@position: relative;
+@border-color-frmsearch:  rgba(221,226,232,.49);
+@float-left: left;
+@float-right: right;
+@margin: 0;
+@padding: 0;
+@cursor: pointer;
+@display: inline-block;
+@opacity: 1;
 
 .type-25 {
-    color: @color-body;
+    color: @color;
     .content {
         .content-left {
-            float: left;
+            float: @float-left;
             h3 {
-                margin: 20px 0;
+                margin: 20px @margin;
 
             }
         }
         .content-right {
-            float: right;
+            float: @float-right;
             .input-search {
                 margin-top: 22px;
-                position: relative;
+                position: @position;
                 display: flex;
                 .form-search {
                     box-shadow: inset 0 1px 0 rgba(0,0,0,.075);
                     border-radius: 25px 0 0 25px;
                     padding-left: 20px;
-                    border: 1px solid rgba(221,226,232,.49);
+                    border: 1px solid @border-color-frmsearch;
                 }
                 .input-btn-search {
                     .btn-search {
                         border-radius: 0 25px 25px 0;
-                        border: 1px solid rgba(221,226,232,.49);
+                        border: 1px solid @border-color-frmsearch;
                         border-left: 0;
-                        background-color:@background-color-ffffff;
-                        color: #73879C;
+                        background-color:@background-color;
+                        color: @color;
                     }
                     .btn-search:hover {
                         background-color:#93A2B2;
@@ -58,20 +65,20 @@ and open the template in the editor.
     .admin-panel {
         width: 100%;
         padding: 10px 17px;
-        display: inline-block;
-        background-color: @background-color-ffffff;
-        border: 1px solid #E6E9ED;
-        opacity: 1;
+        display: @display;
+        background-color: @background-color;
+        border: 1px solid @border-color-panel;
+        opacity: @opacity;
         transition: all .2s ease;
         margin-bottom: 10px;
-        position: relative;
+        position: @position;
 
         .admin-title {
-            border-bottom: 2px solid #E6E9ED;
+            border-bottom: 2px solid @border-color-panel;
             padding: 1px 5px 6px;
             h3 {
                 margin: 5px 0 6px;
-                float: left;
+                float: @float-left;
                 display: block;
                 font-size: 18px;
                 small {
@@ -79,14 +86,14 @@ and open the template in the editor.
                 }
             }
             ul.items {
-                margin-right: 0;
+                margin-right: @margin;
                 min-width: 70px;
-                float: right;
-                list-style: @none;
+                float: @float-right;
+                list-style: @list-style;
                 margin-top: 5px;
                 li {
-                    float: left;
-                    cursor: pointer;
+                    float: @float-left;
+                    cursor: @cursor;
                     a {
                         padding: 5px;
                         color: #C5C7CB;
@@ -99,7 +106,7 @@ and open the template in the editor.
                     }
                 }
                 .collapse-link, .close-link {
-                    opacity: 1;
+                    opacity: @opacity;
                 }
             }
         }
@@ -112,21 +119,21 @@ and open the template in the editor.
                 }
                 .info-profile {
                     i {
-                        margin: 8px 0;
+                        margin: 8px @margin;
                     }
                 }
                 .btn-edit {
                     margin-top: 10px;
                     a {
                         padding: 7px 5px;
-                        color: @color-ffffff;
-                        background-color: @background-color-edit;
+                        color: #ffffff;
+                        background-color: #26B99A;
                         border: 1px solid #169F85;
-                        text-decoration: @none;
+                        text-decoration: @text-decoration;
                         border-radius: 3px;
                     }
                     a:hover {
-                        background-color: @background-color-edit-hover;
+                        background-color: #169F85;
                     }
                 }
                 .skills {
@@ -135,7 +142,7 @@ and open the template in the editor.
                         font-weight: normal;
                     }
                     p {
-                        margin-bottom: 0;
+                        margin-bottom: @margin;
                     }
                     .progress {
                         max-width: 90%;
@@ -153,14 +160,14 @@ and open the template in the editor.
                 padding: 7px 10px;
                 .show-calendar {
                     margin-top: 5px;
-                    float: right;
+                    float: @float-right;
                     border: 1px solid #E6E9ED;
-                    cursor: pointer;
+                    cursor: @cursor;
                     padding: 5px 10px;
-                    background-color: @background-color-ffffff;
+                    background-color: @background-color;
                     #datepicker {
                         border: none;
-                        color: @color-body;
+                        color: @color;
                     }
                 }
 
@@ -176,7 +183,7 @@ and open the template in the editor.
                 li {
                     color: #333!important;
                     background-color: @background-color-tabs;
-                    border-bottom: @none;
+                    border-bottom: none;
                     border-radius: 4px 4px 0 0;
                     a {
                         color: #5A738E;
@@ -184,24 +191,24 @@ and open the template in the editor.
                 }
             }
             .tab-content {
-                padding: 10px 0;
+                padding: 10px @padding;
                 #menu1, #menu2 {
-                    padding: 0;
+                    padding: @padding;
                 }
                 #home {
                     ul.comments {
-                        list-style: @none;
-                        padding: 0;
-                        margin: 0;
+                        list-style: @list-style;
+                        padding: @padding;
+                        margin: @margin;
                         li {
                             border-bottom: 1px dotted @border-color;
-                            padding: 8px 0;
+                            padding: 8px @padding;
 
                             .img-user {
                                 height: 32px;
                                 width: 32px;
-                                float: left;
-                                display: inline-block;
+                                float: @float-left;
+                                display: @display;
                                 border-radius: 2px;
                                 padding: 2px;
                                 background-color: #f7f7f7;
@@ -210,22 +217,22 @@ and open the template in the editor.
                             .comment-content {
                                 margin-left: 50px;
                                 h4 {
-                                    margin: 0 0 10px;
-                                    cursor: pointer;
+                                    margin: @margin @margin 10px;
+                                    cursor: @cursor;
                                     font-weight: bold;
                                 }
                                 .content {
-                                    padding: 0 10px;
-                                    margin: 0;
+                                    padding: @padding 10px;
+                                    margin: @margin;
                                     border-left: 5px solid #eee;
                                 }
                                 a.link-file {
-                                    text-decoration: @none;
-                                    color: @color-body;
+                                    text-decoration: @text-decoration;
+                                    color: @color;
                                 }
                             }
                             .date-comment {
-                                float: right;
+                                float: @float-right;
                                 text-align: right;
                             }
                         }
@@ -240,7 +247,7 @@ and open the template in the editor.
     .content {
         .content-left {
             h3 {
-                font-size: @font-size-h3;
+                font-size: 16px;
             }
         }
         .content-right {
