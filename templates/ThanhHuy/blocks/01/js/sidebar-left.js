@@ -1,14 +1,6 @@
-$( document ).ready(function() {
-    $('#btn_menu').click( function() {
-        if($('.main').hasClass('nav-sm'))
-        {
-            $('.main').removeClass('nav-sm');
-            $('.main').addClass('nav-md');
-        }
-        else
-        {
-            $('.main').removeClass('nav-md');
-            $('.main').addClass('nav-sm');
-        }
+$(document).ready(function (e) {
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $(".type-1").toggleClass("toggled");
     });
 });

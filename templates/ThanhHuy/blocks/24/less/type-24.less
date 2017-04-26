@@ -19,35 +19,35 @@ and open the template in the editor.
 .type-24 {
     color: #73879C;
     .content {
+        margin-top: 10px;
         .content-left {
-            float: left;
+            display: inline-block;
             h3 {
-                margin: 20px @margin;
-
+                margin: 12px 0;
             }
         }
         .content-right {
             float: right;
-            .input-search {
-                margin-top: 22px;
-                position: relative;
-                display: flex;
-                .form-search {
+            .top_search {
+                padding: 0;
+                margin: 10px 0;
+                .input-group {
+                    margin-bottom: 10px;
+                }
+                .form-control {
                     box-shadow: inset 0 1px 0 rgba(0,0,0,.075);
                     border-radius: 25px 0 0 25px;
                     padding-left: 20px;
-                    border: 1px solid @border-color-frmsearch;
+                    border: 1px solid rgba(221,226,232,.49);
                 }
-                .input-btn-search {
-                    .btn-search {
+                .input-group-btn {
+                    button {
                         border-radius: 0 25px 25px 0;
-                        border: 1px solid @border-color-frmsearch;
+                        border: 1px solid rgba(221,226,232,.49);
                         border-left: 0;
-                        background-color: @background-color;
-                        color: #73879C;
-                    }
-                    .btn-search:hover {
-                        background-color:#93A2B2;
+                        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                        color: #93A2B2;
+                        margin-bottom: 0!important;
                     }
                 }
             }

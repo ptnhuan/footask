@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Module - Login</title>
+        <title>Module</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -29,17 +29,21 @@
         <div class="type-12">
             <div class="container">
                 <div class="content">
-                    <div class="content-left">
-                        <h3>Tables <small>Some examples to get you started</small></h3>
-                    </div>
-                    <div class="content-right">
-                        <div class="input-search">
-                            <input type="text" class="form-search" placeholder="Search for...">
-                            <span class="input-btn-search">
-                                <button class="btn-search" type="button">Go!</button>
-                            </span>
+                    <div class="row">
+                        <div class="content-left col-md-6 col-sm-6 col-xs-6">
+                            <h3>Tables <small>Some examples to get you started</small></h3>
                         </div>
-                    </div>
+                        <div class="content-right col-md-6 col-sm-6 col-xs-6">
+                            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div> 
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">

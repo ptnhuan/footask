@@ -29,21 +29,21 @@
         <div class="type-21">
             <div class="container">
                 <div class="content">
-                    <div class="content-left">
-                        <h3>Projects <small>Listing design</small></h3>
-                    </div>
-                    <div class="content-right">
-                        <div class="input-search">
-                            <form method="get" action="#">
-                                <input type="text" class="form-search" placeholder="Search for...">
-
-                            </form>
-                            <span class="input-btn-search">
-                                <button class="btn-search" type="button">Go!</button>
-                            </span>
+                    <div class="row">
+                        <div class="content-left col-md-6 col-sm-6 col-xs-6">
+                            <h3>Projects <small>Listing design </small></h3>
                         </div>
-                    </div>  
-
+                        <div class="content-right col-md-6 col-sm-6 col-xs-6">
+                            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div> 
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-sm-6 col-xs-12">

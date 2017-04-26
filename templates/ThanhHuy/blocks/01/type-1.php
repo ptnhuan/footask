@@ -28,19 +28,17 @@
     <body>
         <div class="type-1">
             <div class="container-fluid">
-                <div class="row main nav-md">
-                    <div class="col-md-3 nav-sidebar-menu">
-                        <div class="scroll-view">
-                            <div class="navbar nav_title">
+                <div class="row">
+                    <div class="col-md-2 left_col">
+                        <div class="nav-sidemenu">
+                            <div class="navbar nav_logo">
                                 <a href="#" class="site_title">
                                     <i class="fa fa-paw"></i>
                                     <span>Gentelella Alela!</span>
                                 </a>
                             </div>
-
                             <div class="clearfix"></div>
-
-                            <div class="profile clearfix">
+                            <div class="nav_profile clearfix">
                                 <div class="profile_pic">
                                     <img src="images/img.jpg" alt="..." class="img-circle profile_img">
                                 </div>
@@ -49,8 +47,7 @@
                                     <h2>John Doe</h2>
                                 </div>
                             </div>
-                            <br>
-                            <div class="main_menu">
+                            <div class="nav_mainmenu">
                                 <div class="menu-list">
                                     <h3>General</h3>
                                     <ul class="nav side-menu panel-group" id="collapsed">
@@ -189,8 +186,7 @@
 
                                 </div>
                             </div><!-- End Sidebar Menu -->
-                            <!-- Menu Footer-->
-                            <div class="sidebar-footer hidden-small">
+                            <div class="nav_footer hidden-small">
                                 <a href="#">
                                     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                                 </a>
@@ -204,21 +200,138 @@
                                     <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                                 </a>
                             </div>
-                            <!-- End Menu Footer-->
                         </div>
-                    </div><!-- End Col-Left -->
-                    <!-- Top NAV -->
-                    <div class="top_nav">
-                        <div class="nav_menu">
-                            <nav>
-                                <div class="nav toggle">
-                                    <a id="btn_menu"><i class="fa fa-bars"></i></a>
-                                </div>
+                        <div class="nav_response">
+                            <div class="logo-res">
+                                <a href="#"><i class="fa fa-paw"></i></a>
+                            </div>
+                            <nav class="menu-res">
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-home"></i><h5>Home</h5>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Dashboard</a></li>
+                                            <li><a href="#">Dashboard2</a></li>
+                                            <li><a href="#">Dashboard3</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-edit"></i><h5>Form</h5>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">General Form</a></li>
+                                            <li><a href="#">Advanced Components</a></li>
+                                            <li><a href="#">Form Validation</a></li>
+                                            <li><a href="#">Form Wizard</a></li>
+                                            <li><a href="#">Form Upload</a></li>
+                                            <li><a href="#">Form Buttons</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-laptop"></i><h5>UI Elements</h5>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">General Elements</a></li>
+                                            <li><a href="#">Media Gallery</a></li>
+                                            <li><a href="#">Typography</a></li>
+                                            <li><a href="#">Icons</a></li>
+                                            <li><a href="#">Glyphicons</a></li>
+                                            <li><a href="#">Widgets</a></li>
+                                            <li><a href="#">Invoice</a></li>
+                                            <li><a href="#">Inbox</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-table"></i><h5>Tables</h5>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Tables</a></li>
+                                            <li><a href="#">Table Dynamic</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-bar-chart-o"></i><h5>Data Present</h5>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Chart JS</a></li>
+                                            <li><a href="#">Chart JS2</a></li>
+                                            <li><a href="#">Moris JS</a></li>
+                                            <li><a href="#">Echarts</a></li>
+                                            <li><a href="#">Other Charts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-clone"></i><h5>Layouts</h5>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Fixed Sidebar</a></li>
+                                            <li><a href="#">Fixed Footer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-bug"></i><br><h5>Add Pages</h5>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">E-commerce</a></li>
+                                            <li><a href="#">Projects</a></li>
+                                            <li><a href="#">Project Detail</a></li>                                    
+                                            <li><a href="#">Contacts</a></li>
+                                            <li><a href="#">Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-windows"></i><h5>Extras</h5>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">403 Error</a></li>
+                                            <li><a href="#">404 Error</a></li>
+                                            <li><a href="#">500 Error</a></li>                                    
+                                            <li><a href="#">Plain Page</a></li>
+                                            <li><a href="#">Login Page</a></li>
+                                            <li><a href="#">Pricing Tables</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-sitemap"></i><h5>Mullevel Menu</h5>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Level One</a></li>
+                                            <li><a href="#">Level One</a></li>
+                                            <li><a href="#">Level One</a></li>    
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">
+                                            <i class="fa fa-laptop"></i><h5>Landing page</h5>
+                                        </a>
+                                        <span class="label label-success pull-right">Comming Soon</span>
+                                    </li>
+                                </ul>
                             </nav>
                         </div>
-
-                    </div><!-- End Top_nav-->
-
+                    </div>
+                    <!-- Top NAV -->
+                    <div class="col-md-10 right_col">
+                        <div class="top-nav">
+                            <div class="nav_menu">
+                                <nav>
+                                    <a href="#menu-toggle" id="menu-toggle" class="btn btn-default toggled"><i class="fa fa-bars"></i></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

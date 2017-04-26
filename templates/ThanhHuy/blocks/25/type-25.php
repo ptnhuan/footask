@@ -34,21 +34,21 @@
         <div class="type-25">
             <div class="container">
                 <div class="content">
-                    <div class="content-left">
-                        <h3>User Profile</h3>
-                    </div>
-                    <div class="content-right">
-                        <div class="input-search">
-                            <form method="get" action="#">
-                                <input type="text" class="form-search" placeholder="Search for...">
-
-                            </form>
-                            <span class="input-btn-search">
-                                <button class="btn-search" type="button">Go!</button>
-                            </span>
+                    <div class="row">
+                        <div class="content-left col-md-6 col-sm-6 col-xs-6">
+                            <h3>User Profile</h3>
                         </div>
-                    </div>  
-
+                        <div class="content-right col-md-6 col-sm-6 col-xs-6">
+                            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div> 
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -134,151 +134,151 @@
                                             </div>                                                  
                                         </div>
                                         <div id="chartSkillsContainer"></div>
-<!--
-                                        <ul class="nav nav-tabs">
-                                            <li class="active"><a data-toggle="tab" href="#home">Recent Activity</a></li>
-                                            <li><a data-toggle="tab" href="#menu1">Projects Worked on</a></li>
-                                            <li><a data-toggle="tab" href="#menu2">Profile</a></li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div id="home" class="tab-pane fade in active">
-                                                <nav>
-                                                    <ul class="comments">
-                                                        <li>
-                                                            <img src="images/img.jpg" alt="" class="img-user">
-                                                            <div class="date-comment">
-                                                                <h3>24</h3>
-                                                                <p>May</p>
-                                                            </div>
-                                                            <div class="comment-content">
-                                                                <h4>Desmond Davison</h4>
-                                                                <p class="content">
-                                                                    Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
-                                                                </p><br>
-                                                                <a href="#" class="link-file">
-                                                                    <i class="fa fa-paperclip"></i> User Acceptance Test.doc
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <img src="images/picture.jpg" alt="" class="img-user">
-                                                            <div class="date-comment">
-                                                                <h3>21</h3>
-                                                                <p>May</p>
-                                                            </div>
-                                                            <div class="comment-content">
-                                                                <h4>Brian Michaels</h4>
-                                                                <p class="content">
-                                                                    Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
-                                                                </p><br>
-                                                                <a href="#" class="link-file">
-                                                                    <i class="fa fa-paperclip"></i> Download
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <img src="images/img.jpg" alt="" class="img-user">
-                                                            <div class="date-comment">
-                                                                <h3>24</h3>
-                                                                <p>May</p>
-                                                            </div>
-                                                            <div class="comment-content">
-                                                                <h4>Desmond Davison</h4>
-                                                                <p class="content">
-                                                                    Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
-                                                                </p><br>
-                                                                <a href="#" class="link-file">
-                                                                    <i class="fa fa-paperclip"></i> User Acceptance Test.doc
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <img src="images/picture.jpg" alt="" class="img-user">
-                                                            <div class="date-comment">
-                                                                <h3>21</h3>
-                                                                <p>May</p>
-                                                            </div>
-                                                            <div class="comment-content">
-                                                                <h4>Brian Michaels</h4>
-                                                                <p class="content">
-                                                                    Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
-                                                                </p><br>
-                                                                <a href="#" class="link-file">
-                                                                    <i class="fa fa-paperclip"></i> Download
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                            <div id="menu1" class="tab-pane fade table-responsive">                                                
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Project Name</th>
-                                                            <th>Client Company</th>
-                                                            <th>Hours Spent</th>
-                                                            <th>Contribution</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>New Company Takeover Review</td>
-                                                            <td>Deveint Inc</td>
-                                                            <td>18</td>
-                                                            <td>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" style="width: 35%">
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Partners and Inverstors report</td>
-                                                            <td>Deveint Inc</td>
-                                                            <td>30</td>
-                                                            <td>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" style="width: 55%">
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>New Partner Contracts Consultanci</td>
-                                                            <td>Deveint Inc</td>
-                                                            <td>13</td>
-                                                            <td>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" style="width: 15%; background-color: #d9534f;">
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>4</td>
-                                                            <td>New Company Takeover Review</td>
-                                                            <td>Deveint Inc</td>
-                                                            <td>18</td>
-                                                            <td>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" style="width: 75%">
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div id="menu2" class="tab-pane fade">
-                                                <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk</p>
-                                            </div>
-                                        </div>
--->
+                                        <!--
+                                                                                <ul class="nav nav-tabs">
+                                                                                    <li class="active"><a data-toggle="tab" href="#home">Recent Activity</a></li>
+                                                                                    <li><a data-toggle="tab" href="#menu1">Projects Worked on</a></li>
+                                                                                    <li><a data-toggle="tab" href="#menu2">Profile</a></li>
+                                                                                </ul>
+                                                                                <div class="tab-content">
+                                                                                    <div id="home" class="tab-pane fade in active">
+                                                                                        <nav>
+                                                                                            <ul class="comments">
+                                                                                                <li>
+                                                                                                    <img src="images/img.jpg" alt="" class="img-user">
+                                                                                                    <div class="date-comment">
+                                                                                                        <h3>24</h3>
+                                                                                                        <p>May</p>
+                                                                                                    </div>
+                                                                                                    <div class="comment-content">
+                                                                                                        <h4>Desmond Davison</h4>
+                                                                                                        <p class="content">
+                                                                                                            Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
+                                                                                                        </p><br>
+                                                                                                        <a href="#" class="link-file">
+                                                                                                            <i class="fa fa-paperclip"></i> User Acceptance Test.doc
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <img src="images/picture.jpg" alt="" class="img-user">
+                                                                                                    <div class="date-comment">
+                                                                                                        <h3>21</h3>
+                                                                                                        <p>May</p>
+                                                                                                    </div>
+                                                                                                    <div class="comment-content">
+                                                                                                        <h4>Brian Michaels</h4>
+                                                                                                        <p class="content">
+                                                                                                            Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
+                                                                                                        </p><br>
+                                                                                                        <a href="#" class="link-file">
+                                                                                                            <i class="fa fa-paperclip"></i> Download
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <img src="images/img.jpg" alt="" class="img-user">
+                                                                                                    <div class="date-comment">
+                                                                                                        <h3>24</h3>
+                                                                                                        <p>May</p>
+                                                                                                    </div>
+                                                                                                    <div class="comment-content">
+                                                                                                        <h4>Desmond Davison</h4>
+                                                                                                        <p class="content">
+                                                                                                            Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
+                                                                                                        </p><br>
+                                                                                                        <a href="#" class="link-file">
+                                                                                                            <i class="fa fa-paperclip"></i> User Acceptance Test.doc
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <img src="images/picture.jpg" alt="" class="img-user">
+                                                                                                    <div class="date-comment">
+                                                                                                        <h3>21</h3>
+                                                                                                        <p>May</p>
+                                                                                                    </div>
+                                                                                                    <div class="comment-content">
+                                                                                                        <h4>Brian Michaels</h4>
+                                                                                                        <p class="content">
+                                                                                                            Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
+                                                                                                        </p><br>
+                                                                                                        <a href="#" class="link-file">
+                                                                                                            <i class="fa fa-paperclip"></i> Download
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </nav>
+                                                                                    </div>
+                                                                                    <div id="menu1" class="tab-pane fade table-responsive">                                                
+                                                                                        <table class="table">
+                                                                                            <thead>
+                                                                                                <tr>
+                                                                                                    <th>#</th>
+                                                                                                    <th>Project Name</th>
+                                                                                                    <th>Client Company</th>
+                                                                                                    <th>Hours Spent</th>
+                                                                                                    <th>Contribution</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td>1</td>
+                                                                                                    <td>New Company Takeover Review</td>
+                                                                                                    <td>Deveint Inc</td>
+                                                                                                    <td>18</td>
+                                                                                                    <td>
+                                                                                                        <div class="progress">
+                                                                                                            <div class="progress-bar" style="width: 35%">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>2</td>
+                                                                                                    <td>Partners and Inverstors report</td>
+                                                                                                    <td>Deveint Inc</td>
+                                                                                                    <td>30</td>
+                                                                                                    <td>
+                                                                                                        <div class="progress">
+                                                                                                            <div class="progress-bar" style="width: 55%">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>3</td>
+                                                                                                    <td>New Partner Contracts Consultanci</td>
+                                                                                                    <td>Deveint Inc</td>
+                                                                                                    <td>13</td>
+                                                                                                    <td>
+                                                                                                        <div class="progress">
+                                                                                                            <div class="progress-bar" style="width: 15%; background-color: #d9534f;">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>4</td>
+                                                                                                    <td>New Company Takeover Review</td>
+                                                                                                    <td>Deveint Inc</td>
+                                                                                                    <td>18</td>
+                                                                                                    <td>
+                                                                                                        <div class="progress">
+                                                                                                            <div class="progress-bar" style="width: 75%">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                    <div id="menu2" class="tab-pane fade">
+                                                                                        <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk</p>
+                                                                                    </div>
+                                                                                </div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
