@@ -210,7 +210,7 @@
                                 <ul>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="fa fa-home"></i><small>Home</small>
+                                            <i class="fa fa-home"></i><h5>Home</h5>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Dashboard</a></li>
@@ -221,7 +221,7 @@
 
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="fa fa-edit"></i><small>Form</small>
+                                            <i class="fa fa-edit"></i><h5>Form</h5>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">General Form</a></li>
@@ -234,7 +234,7 @@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="fa fa-laptop"></i><br><small>UIE</small>
+                                            <i class="fa fa-laptop"></i><h5>UI Elements</h5>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">General Elements</a></li>
@@ -250,7 +250,7 @@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="fa fa-table"></i><small>Tables</small>
+                                            <i class="fa fa-table"></i><h5>Tables</h5>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="../tables/tables.php">Tables</a></li>
@@ -259,7 +259,7 @@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="fa fa-bar-chart-o"></i><small>Data Present</small>
+                                            <i class="fa fa-bar-chart-o"></i><h5>Data Present</h5>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Chart JS</a></li>
@@ -271,7 +271,7 @@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="fa fa-clone"></i><small>Layouts</small>
+                                            <i class="fa fa-clone"></i><h5>Layouts</h5>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Fixed Sidebar</a></li>
@@ -280,7 +280,7 @@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="fa fa-bug"></i><br><small>Add Pages</small>
+                                            <i class="fa fa-bug"></i><h5>Additional Pages</h5>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="../e_commerce/e_commerce.php">E-commerce</a></li>
@@ -292,7 +292,7 @@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="fa fa-windows"></i><small>Extras</small>
+                                            <i class="fa fa-windows"></i><h5>Extras</h5>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">403 Error</a></li>
@@ -305,7 +305,7 @@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="fa fa-sitemap"></i><small>Mullevel Menu</small>
+                                            <i class="fa fa-sitemap"></i><h5>Mullevel Menu</h5>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Level One</a></li>
@@ -315,7 +315,7 @@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">
-                                            <i class="fa fa-laptop"></i><small>Landing page</small>
+                                            <i class="fa fa-laptop"></i><h5>Landing page</h5>
                                         </a>
                                         <span class="label label-success pull-right">Comming Soon</span>
                                     </li>

@@ -4,7 +4,6 @@
 .invoice .left_col {
   border: none;
   min-height: 100%;
-  z-index: 998;
   padding: 0;
   background: #2A3F54;
 }
@@ -109,6 +108,7 @@
 .invoice .left_col .nav-sidemenu .nav_mainmenu .menu-list .side-menu li a {
   color: #E7E7E7;
   font-weight: 500;
+  font-size: 13px;
   padding: 13px 15px 12px;
   position: relative;
   display: block;
@@ -472,7 +472,7 @@
   background: #ff6734;
 }
 .invoice.toggled {
-  margin-left: -190px;
+  margin-left: -180px;
 }
 .invoice.toggled .nav-sidemenu {
   display: none;
@@ -485,7 +485,7 @@
 }
 .invoice.toggled .nav_response {
   display: block;
-  margin-left: 190px;
+  margin-left: 180px;
 }
 .invoice.toggled .nav_response .logo-res {
   border: 1px solid #fff;
@@ -517,13 +517,14 @@
 .invoice.toggled .nav_response nav.menu-res ul li.dropdown a i {
   font-size: 25px;
 }
-.invoice.toggled .nav_response nav.menu-res ul li.dropdown a small {
-  font-size: 10px;
+.invoice.toggled .nav_response nav.menu-res ul li.dropdown a h5 {
+  margin: 5px;
+  font-size: 11px;
 }
 .invoice.toggled .nav_response nav.menu-res ul li.dropdown ul.dropdown-menu {
   position: absolute;
   top: 0;
-  margin-left: 50px;
+  margin-left: 62px;
   padding: 0;
   border-right: 3px solid #1ABB9C;
 }
@@ -537,7 +538,7 @@
   background-color: rgba(255,255,255,0.05);
 }
 .invoice.toggled .nav_response nav.menu-res ul li.dropdown .label {
-  margin-right: -5px;
+  margin-right: 0;
   font-size: 7px;
   padding: 2px 0;
 }
@@ -555,7 +556,7 @@
     display: none;
   }
   .invoice .logo-res {
-    margin: 10px -3px;
+    margin: 10px 13px;
   }
   .invoice .menu-res {
     margin: 35px 0;
@@ -572,10 +573,23 @@
     position: absolute;
     top: 0;
     left: -245px;
-    width: 45px;
   }
   .invoice.toggled .nav_response ul li.dropdown ul.dropdown-menu {
-    margin-left: 54px !important;
+    margin-left: 74px !important;
+  }
+}
+@media (max-width: 480px) {
+  .nav_response {
+    display: none;
+    background: #2A3F54;
+    width: 75px !important;
+  }
+}
+@media (min-width: 481px) {
+  .nav_response {
+    display: none;
+    background: #2A3F54;
+    width: 75px !important;
   }
 }
 @media (max-width: 980px) {
@@ -585,8 +599,9 @@
   .right_col {
     transition: none !important;
   }
-  .right_col .navbar-right li.dropdown ul.dropdown-menu {
-    margin-left: -16px;
+  .nav_response {
+    margin-left: 170px !important;
+    width: 75px;
   }
 }
 body {
@@ -600,13 +615,15 @@ body {
     display: block;
   }
   .logo-res {
-    margin: 10px;
+    margin: 14px;
   }
   .menu-res {
     margin: 35px 12px;
   }
   .nav_response {
     display: none;
+    background: #2A3F54;
+    left: -255px !important;
   }
   .right_col {
     transition: none !important;
