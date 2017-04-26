@@ -729,9 +729,6 @@
 .dashboard2.toggled .nav_response nav.menu-res ul li.dropdown ul.dropdown-menu li a:hover {
   background-color: rgba(255,255,255,0.05);
 }
-.dashboard2.toggled .nav_response nav.menu-res ul li.dropdown ul.dropdown-menu li.active a {
-  background-color: rgba(255,255,255,0.05) !important;
-}
 .dashboard2.toggled .nav_response nav.menu-res ul li.dropdown .label {
   margin-right: -5px;
   font-size: 7px;
@@ -784,15 +781,6 @@
   .right_col .navbar-right li.dropdown ul.dropdown-menu {
     margin-left: -16px;
   }
-  .right_col .content .content-left h3 {
-    font-size: 22px;
-  }
-  .right_col .content .content-left h3 small {
-    display: none;
-  }
-  .right_col .content .content-right {
-    margin-top: -5px;
-  }
 }
 body {
   background-color: #2A3F54 !important;
@@ -801,7 +789,7 @@ body {
   .nav-sidemenu .nav_logo {
     white-space: nowrap;
   }
-  .nav-sidemenu .nav_mainmenu ul#menu-content {
+  .nav-sidemenu .nav_mainmenu ul.menu-list {
     display: block;
   }
   .logo-res {
