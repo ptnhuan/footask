@@ -96,9 +96,9 @@
                                         </div>
 
                                         <h4>Inline Form </h4>
-                                        <p >
-                                            Add .form-inline to your form (which doesn't have to be a </p><form>) for left-aligned and inline-block controls.
-                                            <p></p>
+                                        <p>
+                                            Add .form-inline to your form (which doesn't have to be a ) for left-aligned and inline-block controls.
+                                          </p>
 
                                             <div class="form-group">
                                                 <label for="ex3">Email address</label>
