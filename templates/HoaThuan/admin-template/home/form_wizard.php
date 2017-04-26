@@ -191,7 +191,7 @@
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="content2">
+                        <div class="content2" id="form-wizard">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="x_panel">
                                     <div class="x_title">

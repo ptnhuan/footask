@@ -355,17 +355,17 @@
   border-left: 0;
   color: #93A2B2;
 }
-.type-25 .right-col .content2 {
+.type-25 .right-col .upload {
   color: #73879C;
   font-size: 13px;
   float: none;
-  padding: 10px 10px 190px 10px;
+  padding: 10px 10px 20px 10px;
 }
-.type-25 .right-col .content2 a {
+.type-25 .right-col .upload a {
   color: #5A738E;
   text-decoration: none;
 }
-.type-25 .right-col .content2 .x_panel {
+.type-25 .right-col .upload .x_panel {
   width: 100%;
   padding: 10px 17px;
   display: inline-block;
@@ -373,43 +373,43 @@
   border: 1px solid #E6E9ED;
   opacity: 1;
 }
-.type-25 .right-col .content2 .x_title {
+.type-25 .right-col .upload .x_title {
   border-bottom: 2px solid #E6E9ED;
   padding: 1px 5px 6px;
   margin-bottom: 10px;
 }
-.type-25 .right-col .content2 .x_title .navbar-right {
+.type-25 .right-col .upload .x_title .navbar-right {
   margin-right: 0px;
 }
-.type-25 .right-col .content2 h2 {
+.type-25 .right-col .upload h2 {
   margin: 5px 0 6px;
   float: left;
   display: block;
   font-size: 18px;
   font-weight: 400;
 }
-.type-25 .right-col .content2 .navbar-right {
+.type-25 .right-col .upload .navbar-right {
   float: right;
 }
-.type-25 .right-col .content2 .panel_toolbox>li {
+.type-25 .right-col .upload .panel_toolbox>li {
   float: left;
   cursor: pointer;
 }
-.type-25 .right-col .content2 .panel_toolbox>li>a {
+.type-25 .right-col .upload .panel_toolbox>li>a {
   padding: 5px;
   color: #C5C7CB;
   font-size: 14px;
 }
-.type-25 .right-col .content2 dropzone.dz-clickable {
+.type-25 .right-col .upload dropzone.dz-clickable {
   cursor: pointer;
 }
-.type-25 .right-col .content2 .dropzone {
+.type-25 .right-col .upload .dropzone {
   min-height: 300px;
   border: 1px solid #e5e5e5;
   background: #fff;
   padding: 20px 20px;
 }
-.type-25 .right-col .content2 .dropzone .dz-message {
+.type-25 .right-col .upload .dropzone .dz-message {
   text-align: center;
   margin: 2em 0;
 }

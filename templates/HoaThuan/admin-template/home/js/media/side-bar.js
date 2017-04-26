@@ -10,6 +10,14 @@ $(document).ready(function () {
             $('.main').addClass('nav-sm');
         }
     });
+    
+    document.getElementById("media_gallery").style.minHeight = $('.left_col').height()+'px';
+    $('.left_col').click(function () {
+        setTimeout(function () {
+            document.getElementById("media_gallery").style.minHeight = $('.left_col').height()+'px';
+        }, 100);
+    });
+    
 });
 $(document).ready(function () {
     $('.sidebar').tooltip();

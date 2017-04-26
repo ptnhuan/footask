@@ -189,7 +189,7 @@
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="media-gallery">
+                        <div class="media-gallery" id="media_gallery">
                             <div class="col-md-12">
                                 <div class="x_panel">
                                     <div class="x_title">

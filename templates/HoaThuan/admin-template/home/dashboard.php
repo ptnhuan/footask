@@ -187,7 +187,7 @@
                         </div>
                     </div><!-- End Top_nav-->
                     <div class="clearfix"></div>
-                    <div class="right-col">
+                    <div class="right-col"id="dashboard">
                         <div class="content1">
                             <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
                                 <span>

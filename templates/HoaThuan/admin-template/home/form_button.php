@@ -178,7 +178,7 @@
                         </div>
                     </div><!-- End Top_nav-->
                     <div class="clearfix"></div>
-                    <div class="right-col">
+                    <div class="right-col" id="button">
                         <div class="page-title">
                             <div class="title_left">
                                 <h3>Form Buttons</h3>

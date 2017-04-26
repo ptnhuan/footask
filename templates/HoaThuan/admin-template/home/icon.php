@@ -189,7 +189,7 @@
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class=" icon">
+                        <div class=" icon" id="icon">
                             <div class="col-md-12">
                                 <div class="x_panel">
                                     <div class="x_title">

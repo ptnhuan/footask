@@ -358,7 +358,7 @@
 .type-25 .right-col .media-gallery {
   color: #73879C;
   font-size: 13px;
-  padding-bottom: 20px;
+  min-width: 10px;
 }
 .type-25 .right-col .media-gallery a {
   color: #5A738E;
