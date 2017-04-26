@@ -52,10 +52,10 @@
                                         <i class="fa fa-home"></i> Home <i class="fa fa-chevron-down arrow"></i>
                                     </a>
                                 </li>
-                                <ul class="sub-menu collapse" id="home">
-                                    <li><a href="#">&#8226; Dashboard</a></li>
-                                    <li><a href="index_dashboard2.php">&#8226; Dashboard2</a></li>
-                                    <li><a href="index_dashboard3.php">&#8226; Dashboard3</a></li>
+                                <ul class="sub-menu child_menu collapse" id="home">
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="index_dashboard2.php">Dashboard2</a></li>
+                                    <li><a href="index_dashboard3.php">Dashboard3</a></li>
                                 </ul>
 
                                 <li data-toggle="collapse" data-target="#form" class="collapsed active">
